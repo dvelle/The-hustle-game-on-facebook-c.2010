@@ -1,0 +1,34 @@
+#####################################
+# AJAX Pagination with PHP/MYSQL
+#####################################
+Created by: 		Todd Horst
+Created date:		02/05/2008
+Version:		0.1
+Website:		www.checkndo.com
+Forum:			www.checkndo.com/forum
+
+#####################################
+# Intro
+#####################################
+This is a simple project that can be studied and implemented into
+your site or web application to provide a richer user expirience.
+
+Often when dealing with a database there are too many records to
+display on the screen at once, so creating pages can both improve
+page load speed and page readability. To many results at once can
+be confusing and make pages too long. This is a simple way to 
+page your results without requiring your user to reload the entire
+page.
+
+#####################################
+# History
+#####################################
+We wanted a richer expirence for our users of DL Monitor 
+(visit www.dlmonitor.com for more details), we wanted to learn 
+AJAX as well as help others learn, we also have a new project
+on the horizon that we are trying tp go all out on the GUI.
+
+
+
+Notes:
+See the Change Log.txt file for more information about this version

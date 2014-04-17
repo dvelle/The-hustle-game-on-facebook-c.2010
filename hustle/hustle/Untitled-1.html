@@ -1,0 +1,8714 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<style type="text/css">
+	
+/* global xwars css */
+
+/****************************************************************************
+												UTILITY STYLES
+****************************************************************************/
+
+.clearfix:after
+{
+	content: ".";
+	display:block;
+	clear:both;
+	visibility:hidden;
+	line-height:0;
+	height:0;
+}
+
+* html .clearfix,
+.clearfix
+{
+	display: block;
+	zoom: 1; /* Probably move this to a separate stylesheet isolated by IE6/7 conditional comments */
+}
+
+table.layout
+{
+	margin: 0;
+	border: 0;
+	padding: 0;
+	border-spacing: 0;
+}
+
+table.layout tr
+{
+	margin: 0;
+	border: 0;
+	padding: 0;
+}
+
+table.layout td
+{
+	margin: 0;
+	border: 0;
+	padding: 0;
+}
+
+/****************************************************************************
+												APP STYLES
+****************************************************************************/
+
+
+.app
+{
+	background: white;
+	color: black;
+	font-size: 14px;
+	font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
+	width: 645px;
+	margin: 0 auto 0 auto;
+}
+
+.app a,
+.app a:link,
+.app a:visited
+{
+	/*font-size: 14px; */
+	color: #3B5998;
+	text-decoration: none;
+	cursor: hand;
+	cursor: pointer;
+}
+
+.app a:hover
+{
+	text-decoration: underline;
+}
+
+img {
+	border: none;
+}
+
+#menubar_table, #menubar_table_tutorial
+{
+	width: 645px;
+	border-spacing: 0px;
+}
+
+#menubar_table td
+{
+	background-color: #311;
+	text-align: center;	
+	font-size: 14px;
+}
+
+.menubar_button
+{
+	font-size: 14px;
+	text-align: center;
+	background-color: #331111;
+}
+
+#banner_row a
+{
+	font-size: 14px;	
+}
+
+#content_row
+{
+	font-size: 14px;
+	padding: 5px;
+	background-position: -5px 0;
+	background-repeat: no-repeat;
+}
+
+#main_menu_link
+{
+	margin-bottom: 10px;
+}
+
+.title
+{
+	font-size: 22px;
+	border-bottom: 1px solid #555555;
+	margin-bottom: 5px;
+	padding: 4px;
+	font-style: normal;
+	position: relative;
+}
+
+.subtitle
+{
+   font-size: 16px;
+   margin-top: 10px;
+   padding: 4px 0;
+   font-weight: bold;
+}
+
+.title_action
+{
+	font-size: 14px;
+}
+
+div.crosslink_wrapper
+{
+    position: relative;
+}
+
+span.crosslink
+{
+    font-size: 14px;
+    position: absolute;
+    right: 0px;
+    top: -26px;
+}
+
+table.main_table
+{
+	width: 98%;
+	font-size: 14px;
+	margin-bottom: 20px;
+	margin: 5px;
+}
+
+table.main_table th
+{
+	font-size: 14px;
+	text-align: left;
+	vertical-align: top;
+}
+
+div.main_menu
+{
+	width: 450px;
+	clear: none;
+	float: left;
+	text-align: center;
+}
+
+div.main_menu table
+{
+	padding-top: 20px;	
+}
+
+div.main_menu table td
+{
+	margin: 0px;
+	vertical-align: top;
+	font-size: 90%;
+	padding: 1px 10px;
+	text-align: center;
+}
+
+div.main_menu img
+{
+	width: 64px;
+	height: 64px;
+}
+
+table.fight_table,
+table.hit_list
+{
+	width: 100%;
+}
+
+table.fight_table td,
+table.hit_list td
+{
+  height: 30px;
+}
+
+table.fight_table td.groupsize, table.fight_table th.groupsize,
+table.hit_list td.groupsize, table.hit_list th.groupsize
+{
+	text-align: center;
+}
+
+table.fight_table td.action, table.fight_table th.action,
+table.hit_list td.action, table.hit_list th.action
+{
+	width: 120px;
+}
+
+table.fight_table td.action form,
+table.hit_list td.action form
+{
+	margin: 0;
+}
+
+ul.news
+{
+	padding: 10px 10px 20px 10px;
+	width: 95%;
+	list-style-type: none;
+	max-height: 1000px;
+    	overflow: auto;
+}
+
+ul.news li
+{
+	margin: 0px 0px 10px 0px;
+	padding: 0;
+}
+
+div.news_title
+{
+	font-size: 10px;
+	font-weight: 700;
+}
+
+table.leader
+{
+	width: 600px;
+}
+
+table.leader th
+{
+	border-bottom: 1px solid #FFFFFF;
+}
+
+td.leaders_name
+{
+	color: #FFD927;
+	font-size: 14px;	
+}
+
+div.text
+{
+	margin: 10px 0px 10px 0px;
+}
+
+.messages {
+	border: 1px solid #fff;
+	padding: 5px;
+}
+
+.good {
+	color: #52e259;
+	font-weight: bold;
+}
+
+span#joinlink {
+      display: block;
+    word-wrap: break-word;
+  }
+
+.bad {
+	color: #ec2d2d;
+	font-weight: bold;
+}
+
+.badtimer{
+	color: #ec2d2d;
+	font-weight: bold;
+	position:relative;
+	float:right;
+	right:55px;
+}
+
+.line
+{
+	border-bottom: 1px solid;
+}
+
+.requests
+{
+	list-style-type: none;
+	padding: 10px;
+	width: 95%;
+	max-height: 1000px;
+          	overflow: auto;
+}
+
+.requests li
+{
+	text-align: center;
+	float: left;
+	margin: 3px;
+	width: 90px;
+	margin: 5px;
+	height: 200px;
+}
+
+.requests li div.pic
+{
+	width: 90px;
+	height: 60px;
+	overflow: hidden;
+}
+
+.incoming_requests
+{
+	list-style-type: none;
+	padding: 10px;
+	width: 680px;
+	max-height: 1000px;
+    	overflow: auto;
+}
+
+.incoming_requests li
+{
+	float: left;
+	overflow: hidden;
+	margin: 3px;
+	width: 180px;
+	height: 140px;
+}
+
+.incoming_requests li span
+{
+}
+
+.rewards_frame
+{
+	width: 720px;
+	height: 2200px;
+	background: #262626;
+}
+
+.rewards_frame_gambit
+{
+	width: 900px;
+	height: 1750px;
+	background: #000000;
+}
+
+.rewards_frame_zynga
+{
+	width: 720px;
+	height: 220px;
+	background: black;
+}
+
+.energy_highlight
+{
+	color: #ffd927;	
+}
+
+.round_border_1,
+.round_border_2,
+.round_border_3 {
+	
+	border-left: 1px solid #666;
+	border-right: 1px solid #666;
+	
+	display: block;
+	height: 1px;
+	overflow: hidden;
+}
+
+/* Setting width on these three just to trigger hasLayout for IE6/7 */
+.round_border_1
+{
+	background: #666;
+	margin: 0 3px;
+	width: 356px;
+}
+
+.round_border_2
+{
+	margin: 0 2px;
+	width: 358px;
+}
+
+.round_border_3
+{
+	margin: 0 1px;
+	width: 360px;
+}
+
+.round_border_1_3B3B3B,
+.round_border_2_3B3B3B,
+.round_border_3_3B3B3B {
+	border-left: 1px solid #3B3B3B;
+	border-right: 1px solid #3B3B3B;
+	display: block;
+	height: 1px;
+	overflow: hidden;	
+}
+
+/* Setting width on these three just to trigger hasLayout for IE6/7 */
+.round_border_1_3B3B3B
+{	
+	margin: 0 3px;
+	width: 356px;
+	background-color: #3B3B3B; 	
+}
+
+.round_border_2_3B3B3B
+{
+	margin: 0 2px;
+	width: 358px;
+	background-color: #0E0E0E;
+}
+
+.round_border_3_3B3B3B
+{
+	margin: 0 1px;
+	width: 360px;
+	background-color: #0E0E0E; 
+}
+
+/******************************
+   new index styles
+ ********************************/
+ 
+ body {
+	background-color:#000000;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+}
+
+.tab_box {
+	margin: 0px;
+	padding-top: 15px;
+}
+
+.topmafia_box {
+	width: 731px;
+	clear:both;
+	font-size: 13px;
+}
+
+.friendladder_box {
+	width: 732;
+	margin-top: 15px;
+	border: 1px solid #454545;
+}
+
+.action_box_container {
+	width: 364px;
+	float: left;
+	background-color: black;
+	height: 230px;
+	color: white;
+	font-size: 12px;
+}
+
+.action_box_container div.action_box {
+	
+	border-left: 1px solid #666666; 
+	border-right: 1px solid #666666;
+	
+	padding: 0px;
+	height: 230px;		
+}
+
+.action_box_container div.action_box_div_contents {
+	height: 220px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 330px;
+	display: none; 
+	padding-top: 10px; 
+	padding-left: 10px;
+	padding-right: 20px;
+}
+
+.action_box_container td.action_box_td {
+	width: 80px;
+	font-size: 12px;
+}
+
+.action_box_container img.action_box_img_loot {
+	width: 40px;
+	height: 40px;
+}
+
+.action_box_container img.action_box_img_loot_needed {
+	border: 1px solid red;
+}
+
+.action_box_container div.progressbar_area {
+	position: absolute; 
+	bottom: 10px; 
+	left: 10px; 
+	width: 340px; 
+	height: 15px; 
+	background-color: #e5e5e5;
+	border: 1px solid rgb(100,100,100);	
+}
+
+.action_box_container div.progressbar_text {
+		
+}
+
+.action_box_container div.success_black {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 230px;
+	width: 362px;
+	background-color: rgb(0,0,0);
+	filter:alpha(opacity=0);
+	-moz-opacity:.0;
+	opacity: 0.0;
+	display: none;
+	z-index: 1;
+}
+
+.action_box_container div.success_msg {
+	position: absolute;
+	top: 80px;
+	left: 50%;
+	width: 200px;
+	font-size: 36px;
+	color: #f7d200;
+	font-weight: bold;
+	text-align: center;
+	margin-left: -100px;
+	filter:alpha(opacity=0);
+	-moz-opacity:.0;
+	opacity: 0.0;
+	display: none;
+	z-index: 2;
+}
+
+.action_box_container div.success_msg_custom {
+	position: absolute;
+	top: 0px;
+	left: 0;
+	width: 362px;
+	font-size: 36px;
+	color: #f7d200;
+	font-weight: bold;
+	text-align: left;
+	margin-left: 0px;
+	filter:alpha(opacity=0);
+	-moz-opacity:.0;
+	opacity: 0.0;
+	display: none;
+	z-index: 2;
+	/*float: left;*/
+}
+
+.action_box_container table td.energy_req_text {
+	font-size: 12px;
+	color: #FFCC33;
+}
+
+.action_box_container table td.cash_req_text {
+	font-size: 12px;
+	height: 16px;
+	color: #00CC00;
+}
+
+.action_box_container div.job_title {
+	font-size: 16px;
+	font-weight: bold;	
+}
+
+.action_box_container div.job_subtext {
+	font-size: 14px;
+	font-weight: bold;	
+}
+
+.action_box_container div.msg_box_div_contents {
+	padding: 10px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 340px;
+}
+
+.action_box_container div.msg_box_div_contents a.sexy_button {
+	display: none !important;
+}
+
+.action_box_container div.msg_box_title {
+	font-weight: bold;
+	color: #FBCE00;
+	font-size: 14px;
+	padding-bottom: 10px;
+}
+
+.action_box_container div#msg_box_counter_div {
+	float: right;
+	margin-top: 10px;
+	margin-right: 10px;
+	height: 19px;
+	width: 100px; /* For IE6 even though there shouldn't be a width */
+}
+
+.action_box_container div#msg_box_counter_number_div {
+	background: transparent url(http://mwfb.static.zynga.com/mwfb/graphics/msg_box_counter_middle.gif) repeat-x;
+	color: black;
+	height: 19px;
+	float: right;
+	font-size: 14px;
+	font-weight: bold;
+	padding-top: 2px;
+}
+
+.action_box_container div#msg_box_counter_right {
+	background: transparent url(http://mwfb.static.zynga.com/mwfb/graphics/msg_box_counter_rightend.gif) no-repeat;
+	float: right;
+	height: 20px;
+	width: 9px;
+}
+
+.action_box_container div#msg_box_counter_left {
+	background: transparent url(http://mwfb.static.zynga.com/mwfb/graphics/msg_box_counter_leftend.gif) no-repeat;
+	float: right;
+	height: 20px;
+	width: 9px;
+	/*padding-left: 9px;*/
+}
+
+.playerupdate_box {
+	width: 522px;
+	float: left;
+	overflow-x: hidden; /* makes sure layout is ok */
+}
+
+.playerprofile_box {
+	width: 200px;
+	margin-left:10px;
+	float:left;
+}
+
+.tab_box_header {
+	height:27px; 
+	overflow:hidden;
+}
+
+.tab {
+	float: left;
+}
+
+.tab_box_header .tab_start {
+	width: 6px; 
+	height: 27px; 
+	float: left;
+	background-image: url(http://mwfb.static.zynga.com/mwfb/graphics/tab_left_6x27_01.gif);
+}
+
+.tab_box_header .tab_middle {
+	float: left; 
+	height: 27px; 
+	width:auto;
+	padding-left:5px; 
+	padding-right:10px; 
+	padding-top: 2px;
+	background-image: url(http://mwfb.static.zynga.com/mwfb/graphics/tab_middle_1x27_01.gif);
+}
+.tab_box_header .tab_middle a:link, .tab_middle a:visited{
+	color:#FFFFFF;  
+	font-size:16px;
+	text-decoration: none;
+}
+.tab_box_header .tab_middle a:hover{
+	text-decoration: underline;
+}
+
+.tab_box_header .tab_end {
+	width: 13px;
+	height:27px; 
+	float: left;
+	background-image: url(http://mwfb.static.zynga.com/mwfb/graphics/tab_right_13x27_01.gif)
+}
+
+.tab_box_header .tab_help {
+	float: left; 
+	height: 27px;
+	padding-left:10px;
+	padding-top:5px;
+	color: #ccc; 
+	font-size:12px; 	
+}
+
+.tab_help a:link, .tab_help a:visited{
+	font-size:10px; 
+	color:#FFD927; 
+	text-decoration: none;
+}
+.tab_help a:hover{
+	text-decoration: underline;
+}
+
+.tab_box_header .send_all_box {
+	float: right;  
+	width:auto;	
+}
+.send_all_box a:link, .send_all_box a:visited {
+	text-decoration: none; 
+	font-size:12px;
+	color: #FFD927;
+}
+.send_all_box a:hover {
+	text-decoration: underline; 
+}
+.send_all_box a img{
+	text-decoration: none;
+	vertical-align: middle; 
+	border: none;
+}
+
+.tab_clear {
+	float: left;
+	width: auto;
+	padding-top: 5px;
+	font-size: 12px;
+}
+
+.tab_box_header .tab_recruit {
+	float: left;  
+	width:auto;	
+	padding-top: 3px;
+	padding-left: 10px;
+}
+.tab_recruit a:link, .tab_recruit a:visited {
+	text-decoration: none; 
+	font-size:12px;
+	color: #FFD927;
+}
+.tab_recruit a:hover {
+	text-decoration: underline; 
+}
+.tab_recruit a img{
+	text-decoration: none;
+	vertical-align: middle; 
+	border: none;
+}
+
+.tab_box_content {
+	background-color:#111111; 
+	border:solid 1px #666666; 
+	overflow: hidden;
+}
+
+.player_updates {
+	height: 230px;
+	margin-left: 10px;
+	margin-right: 10px;
+	overflow:auto;
+}
+
+.profile_content {
+	height: 230px;
+	margin-left: 10px;
+	margin-right: 10px;
+	overflow:auto;
+}
+
+.topmafia_content {
+	height:149px; 
+	background-color:#111111; 
+	background-image:url(http://mwfb.static.zynga.com/mwfb/graphics/topmafia_bg.jpg);
+	background-repeat: no-repeat;
+	border:solid 1px #666666; 
+	overflow: hidden;
+}
+
+.topmafia_name {
+	margin-bottom: 5px; 
+	color:#FFFFFF; 
+	font-size:10px; 
+	text-align:center; 
+	clear:both;
+}
+
+.topmafia_name a:link, .topmafia_name a:visited {
+	color:#FFFFFF; 
+	font-size:10px;
+	text-decoration: none;
+}
+.topmafia_name a:hover{
+	text-decoration: underline;
+}
+.topmafia_member {
+	float: left; 
+	width: 89px; 
+	height:149px; 
+	padding-top:12px; 
+	margin-right:2px; 
+	overflow: hidden;
+	text-align: center;
+}
+.topmafia_member_last {
+	float: left; 
+	width:114px; 
+	height:149px; 
+	padding-top:12px;  
+	overflow: hidden;
+}
+
+.topmafia_center {
+	margin: 0 auto; 
+	width:65px;
+}
+.topmafia_pic {
+	width:65px; 
+	height:65px; 
+	border: solid 1px #FFFFFF; 
+	clear: both; 
+	overflow: hidden;
+}
+
+.topmafia_pic a img{
+	width:65px; 
+	height:65px; 
+	border: 0px;
+}
+.give_energy{
+	clear: both;
+	padding-top:8px;
+	text-align: center;
+}
+.give_energy a:link, .give_energy a:visited{
+	font-size:10px; 
+	color:#FFD927; 
+	text-decoration: none;
+}
+.give_energy a:hover{
+	text-decoration: underline;
+}
+
+.give_energy a img{
+	margin: 0 auto; 
+	display:block;
+	border: 0px;
+}
+
+.add_topmafia {
+	clear: both; 
+	padding-top:98px;
+	text-align: center;
+}
+.add_topmafia a:link, .add_topmafia a:visited {
+	font-size:12px; 
+	color:#FFD927; 
+	text-decoration: none;
+}
+.add_topmafia a:hover { 
+	text-decoration: underline;
+}
+
+
+.tab_box_header .tab_middle .tab_edit a:link, .tab_middle .tab_edit a:visited{
+	font-size:10px; 
+	color:#FFD927; 
+	text-decoration: none;
+}
+.tab_box_header .tab_middle .tab_edit a:hover{
+	text-decoration: underline;
+}
+.profile_stat_icon {
+	padding-right: 10px;
+	
+}
+.profile_stat_name {
+	color:#BCD2EA;
+	font-size: 14px;
+	width: 110px;
+}
+.profile_stat_number {
+	color:#ffffff;
+	font-size: 14px;
+	text-align: right;
+}
+
+.upgrade_txt {
+	color:#BCD2EA;
+	font-size: 10px;
+}
+
+.profile_middle {
+	float: left; 
+	height: 27px;
+	width:150px;
+	overflow:hidden; 
+	padding-left:5px; 
+	padding-right:10px; 
+	padding-top: 2px;
+	background-image: url(http://mwfb.static.zynga.com/mwfb/graphics/tab_middle_1x27_01.gif);
+}
+
+.tab_box_header .profile_middle a:link, .profile_middle a:visited{
+	color:#FFFFFF;  
+	font-size:16px;
+	height: 16px;
+	overflow: hidden;
+	text-decoration: none;
+}
+.tab_box_header .profile_middle a:hover{
+	text-decoration: underline;
+}
+.profile_stat_table {
+	margin-top: 10px;
+}
+.update_item {
+	clear:both;
+	float: left;
+	margin-top: 5px;
+	padding-bottom: 5px;
+	width: 100%;
+	border-bottom:solid 1px #333333;
+}
+.update_timestamp {
+	
+	float: left;
+	clear: both;
+	width: 100%;
+	padding-bottom: 5px;
+	font-size: 10px;
+	color:#666666;
+}
+
+.update_icon {
+	float:left;
+	border: 0px;
+}
+
+.update_pic {
+	width:40px; 
+	height:40px; 
+	float:left;
+	margin-left: 10px;
+	border: solid 1px #FFD927;  
+	overflow: hidden;
+}
+
+.update_pic a img{
+	width:40px; 
+	height:40px; 
+	border: 0px;
+}
+
+.update_txt {
+	float:left;
+	margin-left: 15px;
+	font-size:12px;
+	color: #BCD2EA;
+	vertical-align:top;
+	width: 340px;
+}
+
+.update_txt a:link, .update_txt a:link{
+	color:#FFD927; 
+	text-decoration: none;
+}
+.update_txt a:hover{
+	text-decoration: underline;
+}
+.update_numbers {
+	font-size:18px
+}
+.positive_number {
+	color: #00cc00;
+}
+
+.negative_number {
+	color: #ed1c24;
+}
+ 
+/***********
+new header
+***********/
+#mw_header {
+	width:928px;
+	margin: 0px;
+	padding: 0px;
+}
+
+#mw_masthead {
+	margin: 0px;
+	padding: 0px;
+	height:56px;
+ 	position: relative;
+	background-color: transparent;
+	background-position: 0 0;
+	background-repeat: no-repeat;
+}
+
+#mw_instructions {
+	width:260px; 
+	height: auto;
+	margin-top: 5px;
+	margin-right: 5px;
+	padding: 0px;
+	font-size: 12px;
+	font-weight: bold;
+	text-align:left;
+	float: right;
+	display: inline;
+}
+
+#mw_instructions a:link{
+	text-decoration: none;
+	color:#FFD927;
+}
+#mw_instructions a:hover, a:visited{
+	text-decoration: underline;
+	color:#FFD927;
+}
+.mw_help {
+	border-right: 1px solid #ccc;
+	padding-right: 5px;
+	margin-right: 5px;
+	display: inline;
+}
+
+.icon {
+	border: 0px;
+	margin-right: 5px;
+	vertical-align: middle;
+}
+
+.icon_mafia {
+	border: 0px;
+	margin-right: 2px;
+	padding-top: 0px;
+	margin-top: 0px;
+	vertical-align: middle;
+}
+.mw_forums {
+	display: inline;
+}
+.mw_sms{
+  float: right;
+  padding: 4px 12px;
+}
+.mw_tos {
+	display: inline;
+}
+#mw_stats {
+	margin: 0px;
+	padding: 0px 0px 0px 2px;
+	width:745px;
+	height:62px;
+	border-top: 1px solid #999;
+}
+
+#game_stats {
+	margin: 0;
+	padding: 0px;
+	width:492px;
+	height:62px;
+	float: left;
+	display:inline;
+	color:#FFFFFF;
+	text-decoration:none;
+	clear:none;
+}
+
+#user_stats {
+	margin: 0px;
+	padding: 0px;
+	height:62px;
+	width: 247px;
+	float: right;
+	display:inline;
+	color:#FFFFFF;
+	text-decoration:none;
+	clear:none;
+}
+
+#user_stats .user_xp_level .stat {
+	width: 140px;
+	overflow: hidden;
+	margin-left:15px;
+	padding: 0px;
+	float: left;
+	display:inline;
+}
+
+#user_stats .user_xp_level .level_stat {
+	width: 55px;
+	overflow: hidden;
+	padding: 5px 0px 0px 0px;
+	float: right;
+	margin-right: 10px;
+	text-align: right;
+	display:inline;
+}
+
+#user_stats .user_xp_level .level_stat .cur_level {
+	color: #FFD927;
+}
+
+#user_stats .user_xp_level {
+	
+}
+
+.stat_title {
+	margin: 0px;
+	padding: 0px;
+	font-size: 12px;
+	font-weight: normal;
+}
+
+.cash_stats {
+	width: 155px;
+	margin-left:15px;
+	background-position: 0 3px;
+	background-repeat: no-repeat;
+	padding: 0px 0px 0px 0px;
+	float: left;
+	display: inline;
+}
+.stat {
+	width: 92px;
+	padding-left:8px;
+	padding-top: 2px;
+	display:inline;
+	float: left;
+}
+
+.cash_stats_winf {
+   width: 124px;
+   overflow: hidden;
+   margin-left:10px;
+   background-position: 0 3px;
+   background-repeat: no-repeat;
+   padding: 0px 0px 0px 0px;
+   float: left;
+   display: inline;
+   font-size: 12px;
+}
+.stat_winf {
+   width: 80px;
+   padding-left:8px;
+   /*padding-top: 2px;*/
+   display:inline;
+   float: left;
+   font-size: 12px;
+}
+
+.cur_cash {
+	color:#00cc00;
+}
+
+.bank_deposit {
+	text-decoration: none;
+	font-size: 12px;
+	font-weight: normal;
+}
+
+.bank_deposit a:link, .bank_deposit a:visited{
+	text-decoration: none;
+	font-size: 12px;
+	font-weight: normal;
+	color:#FFD927;
+}
+
+.bank_deposit a:hover{
+	text-decoration: underline;
+	color:#FFD927;
+}
+
+.heal_link {
+	text-decoration: none;
+	font-size: 12px;
+	font-weight: normal;
+	
+}
+
+.heal_link a:link, .heal_link a:visited{
+	text-decoration: none;
+	font-size: 12px;
+	font-weight: normal;
+	color:#FFD927;
+}
+
+.heal_link a:hover{
+	text-decoration: underline;
+	color:#FFD927;
+}
+
+.stat_numbers {
+	overflow: hidden;
+	padding: 0px;
+	margin: 0px;
+}
+
+cur_stats {
+	font-size: 16px;
+	color: #fff;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+stat_max {
+	/* color: #d7d7d7; */
+	color: #999933;
+	background-color:#0033FF;
+	font-size: 16px;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+.more_text {
+	padding: 0px;
+	margin: 0px;
+	line-height: 14px;
+	font-size: 10px;
+	font-weight: normal;
+	width: 100px;
+	float: left;
+}
+
+.more_in {
+	
+	color:#898989;
+	margin:0px;
+	padding:0px;
+
+	
+}
+.more_time {
+	color: #d7d7d7;
+	margin:0px;
+	padding:0px;
+	
+}
+
+.xp_bar_fix {
+	padding-left: 15px;
+}
+
+#level_bar_container {
+	background-color: #000;
+	border-top: 1px solid #999999;
+	border-bottom: 1px solid #fff;
+	border-right: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+	height: 6px;
+	margin-top: 5px;
+	padding:0px;
+	float: left;
+	overflow: hidden;
+			   width: 200px;
+	}
+#level_bar {
+	background: url(http://mwfb.static.zynga.com/mwfb/graphics/xp_bar_bg.gif) top repeat-x; 
+	/* background-color: #FFD927; */
+	float: left;
+	overflow: hidden;
+	text-align: left;
+}
+#mw_navigation {
+	margin: 0;
+	padding: 2px 0px 0px 2px;
+	width: 745px;
+}
+
+#user_nav {
+	margin: 0px;
+	padding: 0px;
+	width: 245px;
+	height:30px;
+	float: right;
+	background-position: 0 0;
+	background-repeat: repeat-x;
+	display:inline;
+	color:#FFFFFF;
+		line-height: 28px;
+		font-size: 13px;
+	border: solid 1px #FFFFFF;
+}
+
+#game_nav {
+	margin: 0px;
+	width: 490px;
+	height:30px;
+	float: left;
+	display:inline;
+	overflow: hidden;
+	color:#FFFFFF;
+	background-position: 0 0;
+	background-repeat: repeat-x;
+	line-height: 28px;
+	font-size: 13px;
+	border: solid 1px #FFFFFF;
+}
+
+#game_nav a:link, #game_nav a:visited{
+	text-decoration: none;
+	color: #FFFFFF;
+}
+#game_nav a:hover{
+	text-decoration: underline;
+
+}
+
+#game_nav a.alert_number:link, #game_nav a.alert_number:visited{
+	text-decoration: none;
+	color: #FFD927;
+}
+#game_nav a.alert_number:hover{
+	text-decoration: underline;
+
+}
+
+#user_nav a:link, #game_nav a:visited{
+	text-decoration: none;
+	color: #FFFFFF;
+}
+#user_nav a:hover{
+	text-decoration: underline;
+
+}
+
+#user_nav a.alert_number:link, #user_nav a.alert_number:visited{
+	text-decoration: none;
+	color: #FFD927;
+}
+#user_nav a.alert_number:hover{
+	text-decoration: underline;
+
+}
+
+#user_nav a.mafia_size_link:link, #user_nav a.mafia_size_link:visited{
+	text-decoration: none;
+	color: #d7d7d7;
+}
+#user_nav a.mafia_size_link:hover{
+	text-decoration: underline;
+
+}
+
+.nav_link 
+{
+	border-right: solid 1px #000;
+	float: left;
+	text-align: center;
+}
+
+.nav_link a:link, .nav_link a:visited,
+.nav_godfather a:link, .nav_godfather a:visited,
+.mafia_link a:link, .mafia_link a:visited
+{
+	color: #fff;
+	font-weight: bold;
+}
+
+
+.home_link {
+	width: 65px;
+}
+.jobs_link {
+	width: 50px;
+}
+.fight_link {
+	width: 55px;
+}
+.properties_link {
+	width: 85px;
+}
+.inventory_link {
+	width: 85px;
+}
+.profile_link {
+	width: 115px;
+}
+.nav_godfather {
+	float: left;
+	width: 145px;
+	text-align: center;
+	overflow: hidden;
+}
+
+.mafia_link {
+	float: left;
+	width: 125px;
+	text-align: center;
+	
+}
+.containme {
+}
+
+#mw_navigation .icon {
+	margin: 0;
+}
+
+/*************************
+Viral loot box css
+*************************/
+.tab_box_content_black {
+	background-color:#000000;
+	border:solid 1px #666666;
+	overflow: hidden;
+}
+
+/***************
+new feature box
+*****************/
+.feature_update_notice {
+border:solid 1px #999999;
+background-color: #111111;
+padding-left: 10px;
+padding-right: 10px;
+padding-top: 5px;
+padding-bottom: 5px;
+margin-top: 10px;
+margin-bottom: 5px;
+}
+
+.feature_update_notice .notice_title {
+color: #FFFF00; 
+font-weight:bold;
+}
+
+.feature_update_notice .notice_date {
+font-size: 10px; 
+color:#666666;
+}
+
+.feature_update_notice a img{
+border: none;
+margin-right: 5px;
+vertical-align: text-top;
+}
+
+td.stats_right
+{
+	width: 300px;
+	vertical-align: top;
+}
+
+/*************************
+    mentorship
+*************************/
+#mentor {
+	margin-top: 5px;
+	margin-bottom: 25px;
+}
+
+#mentor .pic {
+	padding: 10px;
+}
+
+#mentor .info {
+	padding: 10px;
+	font-size: 16px;
+}
+
+/*************************
+    Friend Bar Stuff
+*************************/
+
+td.friendbar_item
+{
+  height: 197px;
+}
+#button_outercontainer { position:relative }
+#button_innercontainer { position:absolute; top:50%; height:10em; margin-top:-5em }
+
+div.fbar_message_text
+{
+  font-size: 14px;
+  padding: 5px 5px 0 5px;
+  font-weight: bold;
+}
+div.fbar_navlinks
+{
+	text-align: center;
+}
+div.fbar_parrow
+{
+  width: 24px; 
+  float: left; 
+  margin-left: 10px;
+}
+div.fbar_narrow
+{
+  width: 24px; 
+  float: left;
+}
+div.fbar_ptxt
+{
+  width: 52px; 
+  float: left; 
+  margin-top: -1px;
+}
+
+/*************************
+  Godfather UI Buttons
+*************************/
+
+div.gf_ui_button_l
+{
+  height: 35px;
+}
+div.gf_ui_button_r
+{
+  height: 35px;
+  width: 9px;
+}
+img.redeem_coin_img
+{
+  padding: 0 5px;
+}
+
+
+div.int_gift_unselected
+{
+	width: 106px;
+	height: 140px;
+	border: 2px solid #333;
+	margin: 1px 12px 1px 1px;
+	cursor: pointer;
+	float: left;
+	clear: none;
+}
+
+div.int_gift_selected
+{
+	width: 106px;
+	height: 140px;
+	/*border: 2px solid #ff0;*/
+	border: 2px solid #fff;
+	font-weight: bold;
+	color: #fff;
+	margin: 1px 12px 1px 1px;
+	cursor: pointer;
+	float: left;
+	clear: none;
+}
+
+div.int_gift_locked
+{
+	width: 106px;
+	height: 140px;
+	border: 2px solid #333;
+	margin: 1px 12px 1px 1px;
+	float: left;
+	clear: none;
+}
+
+.holiday_timer
+{
+	font-weight: bold;
+	color: #f00;
+}
+
+div.feed_comment_wrapper
+{
+   margin: 10px;
+   padding: 10px;
+   border: 1px solid #3B5998;
+   height: 50px;
+}
+
+div.feed_comment_msg
+{
+   font-weight: bold;
+   margin-bottom: 3px;
+}
+
+div.feed_comment_confirm
+{
+   font-weight: bold;
+   margin-top: 17px;
+}
+
+textarea.feed_comment_ta
+{
+   float: left;
+   clear: none;
+   width: 520px;
+   height: 20px;
+   border: 1px solid #BDC7D8;
+   padding: 3px;
+   font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
+   font-size: 14px;
+   resize: none;
+}
+
+input.feed_comment_btn
+{
+   float: right;
+   background: #3B5998;
+   background-color: #3B5998;
+   border-color: #D9DFEA #0E1F5B #0E1F5B #D9DFEA;
+   border-style: solid;
+   border-width: 1px;
+   color: #FFFFFF;
+   text-align:center;
+   padding: 3px 6px;
+   
+}
+
+.msg_energy_outer {
+	background: url('http://mwfb.static.zynga.com/mwfb/graphics/msg_background.gif') no-repeat; padding: 10px 0 10px 0;
+}
+
+.msg_energy_hdr {
+	font-size: 22px;
+}
+
+.msg_energy_but_col {
+	float: left; margin-left: 50px; 
+}
+
+div[id^="fb_swf_fbjs_holder"] 
+{
+	width: auto !important;
+}
+
+div.job_gift_item
+{
+   margin: 10px;
+   width: 170px;
+   height: 170px;
+   
+   float: left;
+   clear: none;
+   display: block;
+   
+   border: 2px solid #555;
+   
+   cursor: pointer;
+}
+
+div.job_gift_item div
+{
+   text-align: center;
+   font-weight: bold;
+   clear: both;
+}
+
+div.job_gift_item_selected
+{
+   background: #333;
+   /*border: 2px solid yellow;*/
+   cursor: default;
+}
+
+div.job_gift_item_name
+{
+   margin: 5px;
+   height: 30px;
+   vertical-align: bottom;
+}
+
+div.job_gift_item_img
+{
+   margin: 5px 47px;
+}
+
+div.job_gift_item_desc
+{
+   margin: 5px;
+}
+
+a.btn_cancel
+{
+   margin-right: 20px; 
+   display: block; 
+   background: transparent url('http://mwfb.static.zynga.com/mwfb/graphics/btn_cancel_87x32_01.gif');
+   width: 87px;
+   height: 32px;
+   
+   float: left;
+   clear: none;
+   
+   border: none;
+}
+
+a.btn_helpout
+{
+   margin-right: 20px; 
+   display: block; 
+   background: transparent url('http://mwfb.static.zynga.com/mwfb/graphics/btn_helpout_198x32_01.gif');
+   width: 198px;
+   height: 32px;
+
+   float: left;
+   clear: none;
+   
+   border: none;
+}
+
+a.btn_cancel:hover, a.btn_helpout:hover
+{
+   text-decoration: none;
+   border: none;
+}
+
+
+/** NEW CHARACTER CLASS UI **/
+div.char_class_item
+{
+   margin: 3px;
+   width: 220px;
+   height: 460px;
+   
+   float: left;
+   clear: none;
+   display: block;
+   
+   background: #000;
+   
+   cursor: pointer;
+}
+
+div.char_class_item div
+{
+   text-align: center;
+   font-weight: bold;
+   clear: both;
+}
+
+div.char_class_item_selected
+{
+   background: #333;
+   cursor: default;
+}
+
+div.char_class_title
+{
+	/*margin: 5px;*/
+   	text-align: center;
+		
+	font-size: 24px;
+	font-weight: bold;
+	
+	color: #BBD3EB;
+}
+
+div.char_class_item_name
+{
+   margin: 5px;
+   /*height: 30px;*/
+   font-size: 18px;
+   font-weight: 100;
+   
+   vertical-align: bottom;
+}
+
+div.char_class_item_img
+{
+   margin: 5px;
+}
+
+div.char_class_item_desc
+{
+   margin: 5px;
+}
+
+
+/******************************* NEW LOOK SEXY BUTTON ******************************************/
+
+a.sexy_button_new, button.sexy_button_new {
+	display: inline-block;
+	height: 27px;
+	padding: 0 1px 0 0;
+	vertical-align: middle;
+}
+
+a.sexy_button_new:hover {
+	text-decoration: none !important;
+}
+
+button.sexy_button_new {
+	border: none;
+	overflow: visible; /* Gets rid of extra button padding in IE6 */
+}
+
+.app button.sexy_button_new {
+	background: transparent;
+}
+
+a.sexy_button_new span, button.sexy_button_new span {
+	color: #fff;
+	display: block;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 15px;
+	padding: 0 0 0 9px;
+	text-align: center;
+}
+
+a.sexy_button_new span, button.sexy_button_new span {
+	background: transparent url("http://mwfb.static.zynga.com/mwfb/graphics/v3/buttons_600x633_01.gif") 0 0 no-repeat;
+}
+
+a.sexy_button_new:hover span, button.sexy_button_new:hover span {
+	background-image: url("http://mwfb.static.zynga.com/mwfb/graphics/v3/buttons_600x633_01_hover.gif");
+}
+
+a.sexy_button_new span span, button.sexy_button_new span span, a.sexy_button_new:hover span span, button.sexy_button_new:hover span span {
+	background-position: right 0;
+	margin: 0 -1px 0 0;
+	padding: 0 14px 0 0;
+	white-space: nowrap;
+}
+
+a.short_black span, button.short_black span {
+	/* default */
+}
+
+a.short_green span, button.short_green span, a.short_green:hover span, button.short_green:hover span {
+	background-position: 0 -100px;
+	color: #1b3100;
+}
+a.short_green span span, button.short_green span span, a.short_green:hover span span, button.short_green:hover span span {
+	background-position: right -100px;
+}
+
+a.short_orange span, button.short_orange span, a.short_orange:hover span, button.short_orange:hover span {
+	background-position: 0 -200px;
+	color: #412800;
+}
+a.short_orange span span, button.short_orange span span, a.short_orange:hover span span, button.short_orange:hover span span {
+	background-position: right -200px;
+}
+
+a.short_red span span, button.short_red span span, a.short_red:hover span span, button.short_red:hover span span {
+	background-position: right -300px;
+}
+
+a.short_red span, button.short_red span {
+	background-position: 0 -300px;
+	color: #fff;
+}
+a.short_red span span, button.short_red span span {
+	background-position: right -300px;
+}
+
+a.short_white span, button.short_white span, a.short_white:hover span, button.short_white:hover span {
+	background-position: 0 -400px;
+	color: #1a1a1a;
+}
+a.short_white span span, button.short_white span span, a.short_white:hover span span, button.short_white:hover span span {
+	background-position: right -400px;
+}
+
+a.tall_black, button.tall_black {
+	height: 54px;
+}
+a.tall_black span, button.tall_black span {
+	background-position: 0 -500px;
+}
+a.tall_black span span, button.tall_black span span {
+	background-position: right -500px;
+}
+
+
+
+
+/***** Sexy button icons *****/
+
+a.sexy_button_new span span span, button.sexy_button_new span span span, a.sexy_button_new:hover span span span, button.sexy_button_new:hover span span span {
+	background-position: 1000px 1000px; /* push it off screen */
+	margin: 0;
+	padding: 5px 0 7px 6px;
+}
+
+a.sexy_attack_new span span span, button.sexy_attack_new span span span {
+	background-position: 0 -350px; /* Red button */
+	padding-left: 23px;
+}
+
+a.sexy_buy_new span span span, button.sexy_buy_new span span span, a.sexy_buy_new:hover span span span, button.sexy_buy_new:hover span span span {
+	background: url("http://mwfb.static.zynga.com/mwfb/graphics/v3/icon_buy_18x13_01.gif") no-repeat 0 50%;
+	padding-left: 24px;
+}
+
+a.sexy_buy_new_cuba span span span, button.sexy_buy_new_cuba span span span, a.sexy_buy_new_cuba:hover span span span, button.sexy_buy_new_cuba:hover span span span {
+	background: url("http://mwfb.static.zynga.com/mwfb/graphics/v3/icon_cash_cuba_15x11_01.gif") no-repeat 0 50%;
+	padding-left: 24px;
+}
+
+a.sexy_buy_new_moscow span span span, button.sexy_buy_new_moscow span span span, a.sexy_buy_new_moscow:hover span span span, button.sexy_buy_new_moscow:hover span span span {
+	background: url("http://mwfb.static.zynga.com/mwfb/graphics/icon_cash_moscow_16x16_01.gif") no-repeat 0 50%;
+	padding-left: 24px;
+}
+
+a.sexy_buy_new_bangkok span span span, button.sexy_buy_new_bangkok span span span, a.sexy_buy_new_bangkok:hover span span span, button.sexy_buy_new_bangkok:hover span span span {
+	background: url("http://mwfb.static.zynga.com/mwfb/graphics/icon_cash_bangkok_16x16_01.gif") no-repeat 0 50%;
+	padding-left: 24px;
+}
+
+a.sexy_call_new span span span, button.sexy_call_new span span span, a.sexy_call_new:hover span span span, button.sexy_call_new:hover span span span {
+	background: url("http://mwfb.static.zynga.com/mwfb/graphics/v3/bullorn_icon_yellow.gif") 0 50% no-repeat;
+	padding-left: 28px;
+}
+
+a.sexy_call_green_new span span span, button.sexy_call_green_new span span span, a.sexy_call_green_new:hover span span span, button.sexy_call_green_new:hover span span span {
+	background: url("http://mwfb.static.zynga.com/mwfb/graphics/v3/bullorn_icon_green.gif") 0 50% no-repeat;
+	padding-left: 28px;
+}
+
+a.sexy_call_small_new span span span, button.sexy_call_small_new span span span {
+	background: url("http://mwfb.static.zynga.com/mwfb/graphics/v3/icon_ask_friends_17x21_01.gif") 0 50% no-repeat;
+	padding-left: 22px;
+}
+
+a.sexy_energy_black_new span span span, button.sexy_energy_black_new span span span, a.sexy_energy_black_new:hover span span span, button.sexy_energy_black_new:hover span span span {
+	background-position: -300px -250px; /* Black button */
+	padding-left: 16px;
+}
+
+a.sexy_energy_new span span span, button.sexy_energy_new span span span, a.sexy_energy_new:hover span span span, button.sexy_energy_new:hover span span span {
+	background-position: 0 -250px; /* Orange button */
+	padding-left: 16px;
+}
+
+a.sexy_energy_pack_new span span span, button.sexy_energy_pack_new span span span {
+	background: url("http://mwfb.static.zynga.com/mwfb/graphics/v3/icon_energy_pack_22x21_01.gif") 0 2px no-repeat;
+	padding-left: 26px;
+}
+
+a.sexy_favor_new span span span, button.sexy_favor_new span span span, a.sexy_favor_new:hover span span span, button.sexy_favor_new:hover span span span {
+	background: url("http://mwfb.static.zynga.com/mwfb/graphics/v3/icon-gf-coin.gif") 0 50% no-repeat;
+	padding-left: 20px;
+}
+
+a.sexy_favor_new_for_white span span span, button.sexy_favor_new_for_white span span span, a.sexy_favor_new_for_white:hover span span span, button.sexy_favor_new_for_white:hover span span span {
+	background: url("http://mwfb.static.zynga.com/mwfb/graphics/marketplace_icon_coin.gif") 0 45% no-repeat;
+	padding-left: 20px;
+}
+
+a.sexy_health_new span span span, button.sexy_health_new span span span {
+	background: url("http://mwfb.static.zynga.com/mwfb/graphics/v3/icon_health_15x13_01.gif") 0 50% no-repeat;
+	padding-left: 20px;
+}
+
+a.sexy_little_promote_new span, button.sexy_little_promote_new span {
+	padding-left: 7px;
+}
+a.sexy_little_promote_new span span span, button.sexy_little_promote_new span span span {
+	background-position: 0 -50px; /* Black button */
+	padding-left: 20px;
+}
+
+a.sexy_plus_new span span span, button.sexy_plus_new span span span {
+	background-position: -300px -50px; /* Black button */
+	padding-left: 20px;
+}
+
+a.sexy_promote_new, button.sexy_promote_new {
+	margin: 1.5em auto 0;
+	padding-top: 6px;
+	width: 66px;
+}
+a.sexy_promote_new span, button.sexy_promote_new span {
+	padding-left: 3px;
+}
+a.sexy_promote_new span span, button.sexy_promote_new span span {
+	padding-right: 5px;
+}
+a.sexy_promote_new span span span, button.sexy_promote_new span span span {
+	background-position: 12px -600px; /* Black button */
+	font-size: 12px;
+	height: 15px;
+	padding: 31px 0 8px 2px;
+}
+
+a.sexy_sell_new span span span, button.sexy_sell_new span span span {
+	background: url("http://mwfb.static.zynga.com/mwfb/graphics/v3/icon_sell_18x13_01.gif") no-repeat 0 50%;
+	padding-left: 24px;
+}
+
+a.sexy_send_gift_new span span span, button.sexy_send_gift_new span span span,
+a.sexy_send_gift_new:hover span span span, button.sexy_send_gift_new:hover span span span {
+	background: url("http://mwfb.static.zynga.com/mwfb/graphics/v3/icon_sendgift_22x16_01.gif") 0 40% no-repeat;
+	padding-left: 28px;
+}
+
+a.sexy_vault_new span span span, button.sexy_vault_new span span span {
+	background-position: -294px -594px;
+	font-size: 12px;
+	height: 19px;
+	margin-left: 6px;
+	padding-top: 36px;
+	padding-left: 0;
+}
+
+a.sexy_wishlist_add_new span span span, button.sexy_wishlist_add_new span span span {
+	background: url("http://mwfb.static.zynga.com/mwfb/graphics/v3/icon_wishlist_add_19x14_01.gif") no-repeat 0 40%;
+	padding-left: 24px;
+}
+
+a.sexy_wishlist_remove_new span span span, button.sexy_wishlist_remove_new span span span {
+	background: url("http://mwfb.static.zynga.com/mwfb/graphics/v3/icon_wishlist_remove_19x14_01.gif") no-repeat 0 40%;
+	padding-left: 24px;
+}
+
+a.sexy_install_new span span span, button.sexy_install_new span span span, a.sexy_install_new:hover span span span, button.sexy_install_new:hover span span span {
+	background: url("http://mwfb.static.zynga.com/mwfb/graphics/v3/mw_setup-install-icon.gif") no-repeat 0 50%;
+	padding-left: 24px;
+}
+
+
+/* friend selector */
+div.fs_single_box
+{
+   width: 250px;
+   height: 250px;
+   float: right;
+   clear: none;
+   
+   overflow: auto;
+   background: #1a1a1a;
+   color: #fff;
+   border: 1px solid #555;
+}
+
+a.fs_single_friend
+{
+   width: 220px;
+   padding: 5px;
+   margin: 2px;
+   overflow: none; 
+   clear: none; 
+   float: left;
+   
+   font-size: 12px;
+}
+
+a.fs_single_friend:hover
+{
+   background: #222;
+}
+
+a.fs_single_friend_selected
+{
+   color: #000;
+   background: #ffd927;
+   font-weight: bold;
+}
+
+a.fs_single_friend_selected:hover
+{
+   color: #000;
+   background: #ffd927;
+}
+
+div.stuffed_crate_open
+{
+	padding-bottom:20px;
+	padding-right:10px;
+	float: left; 
+	height: auto;
+	text-align:center
+}
+
+/* SEXY BUTTON DIV */
+
+div.sexy_button_new {
+	display: inline-block;
+	height: 27px;
+	width:40px;
+	padding: 0 1px 0 0;
+}
+
+div.sexy_button_new {
+}
+
+
+div.sexy_button_new span {
+	color: #000;
+	display: block;
+	font-size: 10px;
+	font-weight: bold;
+	line-height: 12px;
+	padding: 0 0 0 0;
+	text-align: center;
+}
+
+div.sexy_button_new span {
+	background: transparent url("http://mwfb.static.zynga.com/mwfb/graphics/v3/buttons_600x633_01.gif") 0 0 no-repeat;
+}
+
+
+div.sexy_button_new:hover span {
+	background-image: url("http://mwfb.static.zynga.com/mwfb/graphics/v3/buttons_600x633_01_hover.gif") 0 0 no-repeat;
+}
+
+div.sexy_button_new span span,  div.short_red:hover span span {
+	background-position: right -300px;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	white-space: nowrap;
+}
+
+
+
+div.short_red span {
+	background-position: 0 -300px;
+	color: #000;
+}
+
+div.short_red span span {
+	background-position: right -300px;
+}
+
+
+
+div.short_green span {
+	background-position: 0 -100px;
+	color: #1b3100;
+}
+
+div.short_green span span {
+	background-position: right -100px;
+}
+
+
+a.sexy_call_new_new span span span, button.sexy_call_new_new span span span, a.sexy_call_new_new:hover span span span, button.sexy_call_new_new:hover span span span  {
+	background: url("http://mwfb.static.zynga.com/mwfb/graphics/v3/mw_ask-friend-icon.gif") no-repeat 0 40%;
+	padding-left: 28px;
+}
+
+
+
+a.sexy_announce span span span, a.sexy_announce:hover span span span
+{
+   background:url('http://mwfb.static.zynga.com/mwfb/graphics/icon_announce_21x19_01.gif') no-repeat 0 40%;
+   padding-left: 24px;
+
+}
+
+a.sexy_passport_new span span span, a.sexy_passport_new:hover span span span
+{
+   background:url('http://mwfb.static.zynga.com/mwfb/graphics/mw_bk_passport_icon_25x26_01.gif') no-repeat 0 40%;
+   padding-left: 24px;
+}
+
+a.sexy_travel_new span span span, a.sexy_travel_new:hover span span span
+{
+   background:url('http://mwfb.static.zynga.com/mwfb/graphics/mw_bk_passport_icon_25x26_01.gif') no-repeat 0 40%;
+   padding-left: 24px;
+}
+
+
+/*SETUP METER*/
+
+/* popup */
+#popup_memter_pop {
+  background-color: #101010;
+  width: 600px;
+  color: #fff;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+}
+
+#setupTop a,
+#popup_memter_pop a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#popup_memter_pop a img, 
+#fan_btn_meter {
+  float: right;
+  clear: right;
+  border:0px;
+}
+
+#popup_memter_pop span.bonus {
+  width: auto;
+  float: none;
+  color:#7ec94d;
+}
+
+#popup_memter_pop ul {
+  list-style: none;
+  padding: 10px 0 0 0;
+}
+
+#popup_memter_pop li {
+  padding: 15px 0 0 0;
+}
+
+#popup_memter_pop span {
+  float: left;
+}
+
+#popup_memter_pop li.done {
+  color: #666;
+}
+
+#popup_memter_pop .btnClose {
+  background: url(http://mwfb.static.zynga.com/mwfb/graphics/mw_wishlist_close-btn.gif) no-repeat;
+  width: 20px;
+  height: 20px;
+  display: block;
+  font-size: 0px;
+  text-indent: -9999px;
+  position: absolute;
+  top: 6px;
+  right: 1px;
+  cursor: pointer;
+}
+
+/* top area */
+#setupTop {
+  margin: 0 0 0 0;
+  width: 760px;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  position: relative;
+  overflow:hidden;
+}
+
+#setupTop a {
+  display: block;
+}
+
+#setupTop .setupMeter {
+  width: 200px;
+  float: left;
+}
+
+#setupTop .setupButtons {
+  float: left;
+  padding-top: 8px;
+}
+
+/* meter in both top and popup */
+#popup_memter_pop .setupMeter {
+  padding: 16px 20px 0 20px;
+}
+
+.setupMeter {
+  font-size: 14px;
+  font-weight: bold;
+  padding-left: 0px;
+}
+
+.setupMeter span {
+  font-size: 14px;
+  float: none!important;
+}
+
+.setupMeterBar {
+  overflow: auto;
+}
+/*******************************
+			MESSAGES
+*******************************/
+
+table.messages {
+	border: 1px solid #fff;
+	padding: 5px;
+	background: #000;
+	width: 100%;
+}
+
+.message_title
+{
+	padding: 2px 5px;
+	font-weight: bold;
+}
+
+.message_body
+{
+	padding: 2px 5px;
+}
+
+.message_body dl
+{
+	display: block;
+	clear: none;
+	float: left;
+	margin: 0 15px 0 0;
+	font-weight: bold;
+}
+
+.message_body dt
+{
+	margin-bottom: 10px;
+}
+
+.message_body dd
+{
+	margin: 0 0 5px;
+	vertical-align: middle;
+}
+
+.message_energy
+{
+	background:url(http://mwfb.static.zynga.com/mwfb/graphics/icon-energy.gif) no-repeat 0px 3px;
+	padding-left: 18px;
+}
+
+.message_experience
+{
+	background:url(http://mwfb.static.zynga.com/mwfb/graphics/icon_experience_16x16_01.gif) no-repeat 0px 0px;
+	padding-left: 20px;
+}
+
+.message_experience_new
+{
+	background:url(http://mwfb.static.zynga.com/mwfb/graphics/icon_star_16x16_gold_01.gif) no-repeat 0px 0px;
+	padding-left: 20px;
+}
+
+.message_jobmastery
+{
+	background:url(http://mwfb.static.zynga.com/mwfb/graphics/icon_job_progress_16x16.gif) no-repeat 0px 0px;
+	padding-left: 20px;
+}
+
+.message_jobmastered
+{
+	background:url(http://mwfb.static.zynga.com/mwfb/graphics/icon_star_16x16_01.gif) no-repeat 0px 0px;
+	padding-left: 20px;
+}
+
+.message_group
+{
+	background:url(http://mwfb.static.zynga.com/mwfb/graphics/icon_group_16x16_01.gif) no-repeat 0px 0px;
+	padding-left: 30px;
+}
+
+.message_cash
+{
+	background-repeat: no-repeat;
+	padding-left: 20px;
+}
+
+.message_health
+{
+	background:url(http://mwfb.static.zynga.com/mwfb/graphics/icon-health.gif) no-repeat 0px 3px;
+	padding-left: 18px;
+}
+
+.message_stamina
+{
+	background:url(http://mwfb.static.zynga.com/mwfb/graphics/icon_stamina_16x16_01.gif) no-repeat 0px 0px;
+	padding-left: 20px;
+}
+
+.message_influence
+{
+   background:url(http://mwfb.static.zynga.com/mwfb/graphics/icon_influence_16x16_01.gif) no-repeat 0px 0px;
+   padding-left: 22px;
+}
+
+.message_item
+{
+	background:url(http://mwfb.static.zynga.com/mwfb/graphics/icon_loot_16x16_01.gif) no-repeat 0px 0px;
+	padding-left: 20px;
+}
+
+.message_item_new
+{
+	background:url(http://mwfb.static.zynga.com/mwfb/graphics/icon_loot_12x14_02.gif) no-repeat 0px 0px;
+	padding-left: 20px;
+}
+
+.message_alert
+{
+	background:url(http://mwfb.static.zynga.com/mwfb/graphics/icon_urgent_32x32_01.gif) no-repeat 0px 0px;
+	padding-left: 38px;
+	min-height: 40px;
+}
+
+.message_boost
+{
+   background:url(http://mwfb.static.zynga.com/mwfb/graphics/icon_boost_14x14_01.gif) no-repeat 0px 2px;
+   padding-left: 20px;
+}
+
+div.message_float
+{
+	clear: none;
+	float: left;
+	display: block;
+}
+
+div.cmessage_1 {
+	background:url(http://mwfb.static.zynga.com/mwfb/graphics/icon_alert_yellow_21x18_01.gif) no-repeat 5px 5px;
+	padding: 5px 5px 5px 38px;
+	min-height: 26px;
+	border: 1px solid #FBFA23;
+	margin: 2px 0 2px 0;
+}
+
+div.cmessage_1 .msgtitle {
+	font-weight: bold;
+	color: #FBFA23;
+}
+
+div.cmessage_2 {
+	background:url(http://mwfb.static.zynga.com/mwfb/graphics/icon_alert_red_21x18_01.gif) no-repeat 5px 5px;
+	padding: 5px 5px 5px 38px;
+	min-height: 26px;
+	border: 1px solid #E82830;
+	margin: 2px 0 2px 0;
+}
+
+div.cmessage_2 .msgtitle {
+	font-weight: bold;
+	color: #E82830;
+}
+
+div.cmessage_3 {
+	background:url(http://mwfb.static.zynga.com/mwfb/graphics/icon_alert_green_21x18_01.gif) no-repeat 5px 5px;
+	padding: 5px 5px 5px 38px;
+	min-height: 26px;
+	border: 1px solid #18A619;
+	margin: 2px 0 2px 0;
+}
+
+div.cmessage_3 .msgtitle {
+	font-weight: bold;
+	color: #18A619;
+}/****************************************************************************
+					JOBS PAGE
+****************************************************************************/
+
+p.next_job_level
+{
+	padding: 4px;
+	text-align: center;
+	font-size: 16px;
+	font-weight: bold;	
+}
+
+p.job_outcome
+{
+	padding: 0;
+	margin: 0 0 2px 0;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+table.job_list
+{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+table.job_list tr th
+{
+	padding: 6px;
+	margin: 0;
+	
+	font-size: 90%;
+	font-weight: bold;
+	text-align: left;
+	
+	border-top: none;
+}
+
+table.job_list td
+{
+	height: 70px;
+	padding: 0 3px;
+	margin: 0;
+	
+	font-size: 90%;
+	text-align: left;
+	
+	border-bottom: 1px solid #333;
+}
+
+td.job_name
+{
+	font-size: 150%;
+	font-weight: bold;
+	width: 180px;
+}
+
+td.job_reward
+{
+	/*width: 160px;*/
+}
+
+td.job_energy
+{
+	/*width: 70px;*/
+}
+
+td.job_action
+{
+	/*width: 80px;*/
+}
+
+td.job_required_items
+{
+	vertical-align: top;
+	width: 189px;
+}
+td.job_required_items .need_item
+{
+	border: 1px solid #ec2d2d;
+}
+td.job_required_items .need_item div
+{
+  color: #000;
+  background: #ec2d2d;
+}
+td.job_required_items .have_item
+{
+}
+
+div.req_item
+{
+	margin: 2px;
+	display: inline;
+	float:left;
+	clear: none;
+}
+
+div.req_boss_item
+{
+	display: inline;
+	float:left;
+	width: 30px;
+	height: 40px;
+	clear: none;
+	
+}
+
+div.req_item div
+{
+	text-align: center;
+	padding-bottom: 5px;
+}
+
+span.bold_number
+{
+	color: #fff;
+	font-weight: bold;	
+}
+
+span.job_loot_chance
+{
+	color: green;	
+}
+
+div.boss_wrapper
+{
+	width: 100%;
+	text-align: center;	
+}
+
+div.boss_box
+{
+	margin: 10px auto 20px auto;
+	padding: 10px;
+	border: 1px solid #fff;
+	vertical-align: middle;
+	text-align: left;
+	
+	width: 700px;
+	display: block;
+	clear: both;
+}
+
+img.boss_image
+{
+	width: 200px;
+	height: 150px;
+}
+
+span.boss_name
+{
+	font-size: 18px;
+	color: #fff;	
+}
+
+div.boss_locked 
+{
+	font-size: 120%;
+	text-align: center;
+}
+
+div.boss_float
+{
+	float: left;
+	padding: 10px 0 0 15px;
+}
+
+ul.bullet_list
+{
+	margin: 0 0 0 35px;
+	padding: 0;
+	list-style-image: url(http://mwfb.static.zynga.com/mwfb/graphics/MW_BulletPoint_20x10-01.gif);
+}
+
+ul.bullet_list li
+{
+	margin-left: 0;
+}
+
+div.sexy_popup_prompt {
+	border: 3px solid #B7AFAD;
+	background-color: #101010;
+	color: #fff;
+	padding: 5px;
+	width: 250px;
+	min-height: 70px;
+	position: absolute;
+	top: -10px;
+	right: 30px;
+	display: block;
+	z-index: 10;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 15px;
+}
+
+div.cuba {
+	background-color: #1c1502;
+}
+
+div.moscow {
+	background-color: #220300;
+}
+
+div.bangkok {
+	background-color: #170032;
+}
+
+div.buy_crowbar_prompt
+{
+        border: 1px solid #ccc;
+        background-color: #333;
+        padding: 5px;
+        width: 250px;
+        min-height: 70px;
+	position: absolute;
+	top: -10px;
+	right: 30px;
+	display: block;
+	z-index: 10;
+}
+
+div.job_travel_footer
+{
+	padding: 0;
+	vertical-align: middle;
+	height: 38px;
+}
+
+div.job_travel_footer_text
+{
+	font-weight: bold;
+	width: 500px;
+	float: left;
+	clear: left;
+	vertical-align: middle;
+	padding: 5px;
+}
+
+div.job_travel_footer_button
+{
+	font-weight: bold;
+	width: 165px;
+	float: right;
+	clear: none;
+	text-align: right;
+	padding: 5px;
+}
+
+
+
+/* MW-5185: New User Job Flow */
+#new_user_jobs {
+	padding-bottom: 50px;
+}
+
+#new_user_jobs h1,
+#new_user_jobs h2,
+#new_user_jobs h3,
+#new_user_jobs p,
+#new_user_jobs dl,
+#new_user_jobs dt,
+#new_user_jobs dd {
+	margin: 0;
+	padding: 0;
+}
+
+
+
+#intro_box {
+	border: 1px solid #666;
+	height: 87px;
+	margin-top: 10px;
+}
+
+#intro_box h2 {
+	color: #fff;
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 24px;
+	padding-top: 30px;
+	text-align: center;
+}
+
+#intro_box h2.two_line {
+	padding-top: 18px;
+}
+
+#intro_box a {
+	text-decoration: underline;
+}
+
+#new_user_jobs #intro_box .energy {		padding-left: 25px; }
+#new_user_jobs #intro_box .cash {		padding-left: 29px; }
+#new_user_jobs #intro_box .experience {	padding-left: 25px; }
+
+
+
+#new_user_jobs p,
+#new_user_jobs dt,
+#new_user_jobs dd {
+	color: #999;
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 14px;
+}
+
+#new_user_jobs .job {
+	background: url("http://mwfb.static.zynga.com/mwfb/graphics/new_user_jobs/divider_dotted_horizontal.gif") 0 100% repeat-x;
+	padding: 15px 0 4px;
+}
+
+#new_user_jobs .title_results {
+	float: left;
+	width: 265px;
+}
+
+#new_user_jobs h3 {
+	color: #fff;
+	font-size: 14px;
+	margin: 0 0 0 8px;
+}
+
+#new_user_jobs .job_results {
+	padding: 2px 0 0 8px;
+}
+
+#new_user_jobs .job_results h2 {
+	font-size: 14px;
+	margin: 2px 20px 0 0;
+}
+
+#new_user_jobs .job_results dt {	display: none; }
+
+#new_user_jobs .job_results dd img {
+	float: left;
+	margin-right: 4px;
+}
+
+#new_user_jobs .job_results h2.success {	color: #fce232; float: left; }
+#new_user_jobs .job_results h2.failure {	color: #ec2d2d;	}
+
+#new_user_jobs .featured h3 { font-size: 18px; }
+
+#new_user_jobs .featured .job_results h2 {
+	font-size: 24px;
+	margin: 8px 0;
+}
+
+#new_user_jobs .featured .job_results h2,
+#new_user_jobs .featured .job_results p,
+#new_user_jobs .featured .job_results dl,
+#new_user_jobs .featured .job_results dt {
+	display: block;
+	float: none;
+}
+
+#new_user_jobs .featured .job_results dt {
+	float: left;
+	width: 58px;
+}
+
+#new_user_jobs .featured .job_results dd {				float: left; }
+#new_user_jobs .featured .job_results dd.one_and_only {	width: 199px; }
+
+
+
+#new_user_jobs .required_items,
+#new_user_jobs .use_pay {
+	float: right;
+}
+
+#new_user_jobs .use_pay {			width: 360px; }
+#new_user_jobs .featured .use_pay { width: auto; padding-top: 4px; }
+
+#new_user_jobs .use_pay dl {			float: left; }
+#new_user_jobs .featured .use_pay dl {	float: none; }
+
+#new_user_jobs .required_items dl,
+#new_user_jobs .use_pay dl {
+	padding: 0 0 0 8px;
+}
+
+#new_user_jobs .required_items dl,
+#new_user_jobs .featured .use_pay dl {
+	width: 277px;
+}
+
+#new_user_jobs .required_items dt,
+#new_user_jobs .use_pay dt {
+	float: left;
+	padding: 2px 0 11px;
+}
+
+#new_user_jobs .required_items dt {	width: 70px; }
+#new_user_jobs .use_pay dt {		width: 40px; }
+
+#new_user_jobs .featured .use_pay dt { clear: left; padding: 0 0 18px; }
+
+#new_user_jobs .use_pay dt.pays {			margin-left: 30px; display: inline; }
+#new_user_jobs .featured .use_pay dt.pays {	margin-left: 0; display: block; }
+
+#new_user_jobs .job_results .cash,
+#new_user_jobs .job_results .experience,
+#new_user_jobs .use_pay dd {
+	float: left;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 22px;
+	margin: 0 20px 0 0;
+	padding: 0 0 0 20px;
+}
+
+#new_user_jobs .energy {		color: #fc3; }
+#new_user_jobs .cash {			color: #0c0; }
+#new_user_jobs .experience {	color: #0ae; }
+
+#new_user_jobs dd.energy {
+	background: url("http://mwfb.static.zynga.com/mwfb/graphics/new_user_jobs/icon_energy_12x16.gif") 2px 50% no-repeat;
+}
+
+#new_user_jobs .cash_nyc {
+	background: url("http://mwfb.static.zynga.com/mwfb/graphics/new_user_jobs/icon_cash_nyc_16x12.gif") 0 35% no-repeat;
+}
+
+#new_user_jobs dd.experience {
+	background: url("http://mwfb.static.zynga.com/mwfb/graphics/new_user_jobs/icon_experience_15x16.gif") 0 50% no-repeat;
+}
+
+#new_user_jobs dd.cash span,
+#new_user_jobs .featured a.buy_items strong span {
+	position: relative;
+	font-size: 11px;
+	top: -3px;
+}
+
+
+
+#new_user_jobs .featured .use_pay dd {	font-size: 18px; padding-left: 29px; }
+
+#new_user_jobs #intro_box .energy,
+#new_user_jobs .featured .use_pay dd.energy {
+	background: url("http://mwfb.static.zynga.com/mwfb/graphics/new_user_jobs/icon_energy_16x21.gif") 5px 50% no-repeat;
+}
+
+#new_user_jobs #intro_box .cash,
+#new_user_jobs .featured .use_pay dd.cash_nyc {
+	background: url("http://mwfb.static.zynga.com/mwfb/graphics/new_user_jobs/icon_cash_nyc_22x16.gif") 0 35% no-repeat;
+}
+
+#new_user_jobs #intro_box .experience,
+#new_user_jobs .featured .use_pay dd.experience {
+	background: url("http://mwfb.static.zynga.com/mwfb/graphics/new_user_jobs/icon_experience_21x22.gif") 0 50% no-repeat;
+}
+
+#new_user_jobs .featured .use_pay dd.cash span {
+	font-size: 13px;
+	top: -4px;
+}
+
+
+
+#new_user_jobs .required_items dd {
+	color: #000;
+	float: left;
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 25px;
+	margin-top: 1px;
+	margin-right: 16px;
+}
+
+#new_user_jobs .required_items dd span {
+	background: #fc3;
+	float: left;
+	padding: 0 6px 0 5px;
+}
+
+#new_user_jobs .required_items img {
+	background: #000;
+	border: 1px solid #fc3;
+	float: left;
+}
+
+#new_user_jobs .not_enough_money dd span {	background: #a39e8f; }
+#new_user_jobs .not_enough_money img {		border: 1px solid #a39e8f; }
+
+
+
+
+#new_user_jobs a.do_job {
+	background: url("http://mwfb.static.zynga.com/mwfb/graphics/new_user_jobs/do_job.gif") 0 0 no-repeat;
+	color: #fc3;
+	display: block;
+	float: right;
+	font-size: 14px;
+	font-weight: bold;
+	height: 35px;
+	line-height: 34px;
+	text-align: left;
+	text-decoration: none;
+	text-indent: 30px;
+	width: 95px;
+}
+
+#new_user_jobs .featured a.do_job {
+	background: url("http://mwfb.static.zynga.com/mwfb/graphics/new_user_jobs/do_job_big.gif") 0 -150px no-repeat;
+	font-size: 24px;
+	height: 59px;
+	line-height: 58px;
+	margin: 0 0 12px;
+	text-indent: 56px;
+	width: 170px;
+}
+
+#new_user_jobs .featured a.do_job_grey {
+	background-position: -300px -150px;
+	color: #a39e8f;
+}
+
+#new_user_jobs .featured a.buy_items {
+	background: url("http://mwfb.static.zynga.com/mwfb/graphics/new_user_jobs/do_job_big.gif") 0 0 no-repeat;
+	color: #fc3;
+	display: block;
+	float: right;
+	font-size: 24px;
+	font-weight: bold;
+	height: 50px;
+	line-height: 24px;
+	margin: 0 0 12px;
+	padding-top: 9px;
+	text-align: center;
+	text-decoration: none;
+	width: 170px;
+}
+
+#new_user_jobs .featured a.buy_items_grey {
+	background-position: -300px 0;
+	color: #a39e8f;
+}
+
+#new_user_jobs .featured a.buy_items_grey .cash {
+	color: #a39e8f;
+}
+
+#new_user_jobs .featured a.buy_items em {
+	display: block;
+	font-size: 14px;
+	font-style: normal;
+	line-height: 24px;
+}
+
+#new_user_jobs .featured a.buy_items strong {
+	font-weight: bold;
+	padding-right: 10px;
+	padding-left: 20px;
+}
+
+
+
+#new_user_jobs .mastery_bar {
+	background: #0c0c0c;
+	border: 1px solid #5f5f5f;
+	color: #fff;
+	float: right;
+	font-size: 12px;
+	font-weight: bold;
+	height: 4px;
+	margin-right: 20px;
+	margin-bottom: 11px;
+	padding: 1px;
+	width: 336px;
+}
+
+#new_user_jobs .mastery_level_1 .mastery_bar_full {	width: 320px; }
+#new_user_jobs .mastery_level_2 .mastery_bar_full {	width: 302px; }
+#new_user_jobs .mastery_level_3 .mastery_bar_full,
+#new_user_jobs .mastery_level_4 .mastery_bar_full {	width: 284px; }
+
+#new_user_jobs .mastery_bar p {
+	background: url("http://mwfb.static.zynga.com/mwfb/graphics/new_user_jobs/mastery_bar_bg.gif") 0 0 repeat-x;
+	padding: 4px 0 0;
+}
+
+#new_user_jobs .mastery_bar_full p {
+	background: url("http://mwfb.static.zynga.com/mwfb/graphics/new_user_jobs/mastery_bar_bg.gif") 0 0 repeat-x;
+}
+
+#new_user_jobs .mastery_bar_not_full,
+#new_user_jobs .mastery_blocker {
+	display: none;
+}
+
+#new_user_jobs .featured .mastery_bar {
+	background: url("http://mwfb.static.zynga.com/mwfb/graphics/new_user_jobs/mastery_bar_big.gif") 100% 0 no-repeat;
+	border: none;
+	clear: right;
+	display: block;
+	height: 23px;
+	margin: -27px 0 0;
+
+	padding: 2px 10px 2px 0;
+	text-align: right;
+	width: 446px;
+}
+
+#new_user_jobs .featured .mastery_bar,
+#new_user_jobs .featured .mastery_bar p {
+	color: #fff;
+	line-height: 19px;
+}
+
+#new_user_jobs .featured .mastery_bar_full {
+	background: url("http://mwfb.static.zynga.com/mwfb/graphics/new_user_jobs/mastery_bar_big.gif") 100% 0 no-repeat;
+	margin: 0;
+}
+
+#new_user_jobs .featured .mastery_bar_full p {
+	background: none;
+	padding: 0;
+}
+
+#new_user_jobs .featured .mastery_blocker {
+	clear: right;
+	display: block;
+	float: right;
+	margin-top: -25px;
+	margin-bottom: 17px;
+	position: relative;
+	overflow: hidden;
+}
+
+#new_user_jobs .featured .mastery_blocker p {
+	background: #0c0c0c;
+	height: 19px;
+	line-height: 19px;
+	margin: 0 1px 0 0;
+	padding: 0 9px 0 0;
+	text-align: right;
+	width: 444px;
+}
+
+
+
+#new_user_jobs div.job_mastered {
+	background: #000;
+	position: absolute;
+	text-align: center;
+	width: 740px;
+	z-index: 2;
+}
+
+#new_user_jobs div.job_mastered h1 {
+	color: #fff;
+	font-size: 36px;
+	line-height: 64px;
+	text-transform: uppercase;
+}
+
+#new_user_jobs div.mastery_stars img {
+	display: inline;
+	float: right;
+	margin-right: 1px;
+}
+
+#new_user_jobs div.mastery_stars {
+	display: none;
+	float: right;
+	margin-top: -4px;
+	margin-right: 3px;
+	width: 18px;
+}
+
+#new_user_jobs .mastery_level_2 div.mastery_stars {	width: 36px; }
+#new_user_jobs .mastery_level_3 div.mastery_stars,
+#new_user_jobs .mastery_level_4 div.mastery_stars {	width: 54px; }
+
+#new_user_jobs .mastery_level_1 div.mastery_stars,
+#new_user_jobs .mastery_level_2 div.mastery_stars,
+#new_user_jobs .mastery_level_3 div.mastery_stars,
+#new_user_jobs .mastery_level_4 div.mastery_stars {	display: inline; }
+
+#new_user_jobs div.mastery_stars img {	display: none; }
+
+#new_user_jobs .mastery_level_1 div.mastery_stars .mastery_star_bronze,
+#new_user_jobs .mastery_level_2 div.mastery_stars .mastery_star_bronze,
+#new_user_jobs .mastery_level_3 div.mastery_stars .mastery_star_bronze,
+#new_user_jobs .mastery_level_4 div.mastery_stars .mastery_star_bronze {	display: inline; }
+
+#new_user_jobs .mastery_level_2 div.mastery_stars .mastery_star_silver,
+#new_user_jobs .mastery_level_3 div.mastery_stars .mastery_star_silver,
+#new_user_jobs .mastery_level_4 div.mastery_stars .mastery_star_silver {	display: inline; }
+
+#new_user_jobs .mastery_level_3 div.mastery_stars .mastery_star_gold,
+#new_user_jobs .mastery_level_4 div.mastery_stars .mastery_star_gold {		display: inline; }
+
+#new_user_jobs .featured div.mastery_stars {	display: none; }
+
+
+
+
+
+.job_name_oneline
+{
+   font-size: 150%;
+   font-weight: bold;
+   width: 220px;
+   height:20px !important;
+}
+
+.job_no_border
+{
+   border:none !important;
+}
+
+#job_choice_title
+{
+   font-weight:bold;
+   margin:2px 0;
+   text-align:center;
+   width:100%;
+}
+
+#job_choice_main
+{
+   border:1px solid #6C7A8F;
+}
+
+#job_choice_message
+{
+   border-bottom:1px solid #333333;
+   color:yellow; 
+   font-weight:bold; margin:10px; 
+   padding-bottom:10px; 
+}
+
+#job_choice_table_wrap
+{
+   margin-bottom:10px;
+}/****************************************************************************
+					TABS & MINITABS
+****************************************************************************/
+ul.tabs {
+	margin-left: 0;
+	margin-top:5px;
+	margin-bottom:5px;
+	padding:0px;
+	display:block;
+}
+
+ul.tabs li{
+	display:inline;
+	float:left;
+	margin-left: 0;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size: 0.9em;
+	text-align: center;
+	font-weight: bold;
+}
+
+ul.minitabs {
+	margin-left: 0;
+	margin-top:15px;
+	margin-bottom:5px;
+	padding:0px;
+	display:block;
+	
+}
+
+ul.minitabs li{
+	display:inline;
+	float:left;
+	margin-left: 0;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size: 0.9em;
+	text-align: center;
+	font-weight: bold;
+	margin-right: 4px;
+}
+
+.minitab_content {
+	height:20px;
+	width: 98px;
+	font-weight: bold;
+	padding-top: 3px;
+}
+
+.minitab_content a {
+	font-weight: bold;
+}
+
+.tab_content {
+	height:38px;
+	font-weight: bold;
+}
+
+.tab_content a {
+	font-weight: bold;
+}
+
+.lock_icon {
+	float: left;
+	padding-top: 8px;
+	padding-left: 10px;
+	margin: 0px;
+}
+
+.levels {
+	font-size:0.8em;
+	font-weight: normal;
+}
+
+.levels a:link, .levels a:visited
+{
+	font-weight: normal;
+}
+
+.red_black_cap img, .red_red_cap img, .black_black_cap img, .black_black_cap_back img, .black_red_cap img, .black_grey_cap img, .red_grey_cap img, .grey_red_cap img, .grey_grey_cap img, .grey_black_cap img, .black_red_cap_back img, .grey_red_cap_back img {
+	margin:0px;
+	padding:0px;
+	width:28px;
+	height:40px;
+}
+
+li.tab_off{
+	background-repeat: repeat-x;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	color:#fff;
+	
+}
+li.tab_on{
+	background-repeat: repeat-x;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	color:#fff;
+}
+li.tab_on a:link, li.tab_on a:visited{
+	text-decoration: none;
+	color:#FFD927;
+}
+li.tab_on a:hover {
+	text-decoration: underline;
+}
+
+li.tab_locked {
+	background: url('http://mwfb.static.zynga.com/mwfb/graphics/grey_bg.gif') repeat-x;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	color: #CCCCCC;
+}
+
+li.tab_locked a,
+li.tab_locked a:link,
+li.tab_locked a:visited
+{
+	color: #CCCCCC;
+}
+
+li.tab_first{
+	border-left: 1px solid #fff;
+}
+
+li.tab_middle{
+	border-left: 1px solid #fff;
+	border-right: 1px solid #fff;
+}
+
+li.tab_last{
+	border-right: 1px solid #fff;
+	padding-right: 4px;
+	
+}
+li.red_black_cap, li.black_red_cap_back, li.red_red_cap, li.black_black_cap, li.black_black_cap_back, li.black_red_cap, li.red_grey_cap, li.black_grey_cap
+{
+	background-position: 0 0;
+	background-repeat: no-repeat;
+
+}
+li.grey_grey_cap {
+	background: url('http://mwfb.static.zynga.com/mwfb/graphics/grey_grey_cap.gif') 0px 0px no-repeat;
+}
+
+li.grey_black_cap {
+   background: url('http://mwfb.static.zynga.com/mwfb/graphics/black_grey_cap.gif') 0px 0px no-repeat;
+}
+
+li.grey_red_cap {
+   background: url('http://mwfb.static.zynga.com/mwfb/graphics/grey_red_cap.gif') 0px 0px no-repeat;
+}
+
+li.grey_red_cap_back {
+   background: url('http://mwfb.static.zynga.com/mwfb/graphics/grey_red_cap_back.gif') 0px 0px no-repeat;
+}
+
+/* End of tab class definitions *//****************************************************************************
+					BOSS FIGHT
+****************************************************************************/
+
+table.boss_fight
+{
+	border: 1px solid #fff;
+	padding: 0;
+	margin: 0;
+	width: 650px;
+	background: #000;
+}
+
+table.boss_fight td
+{
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	vertical-align: top;
+}
+
+table.boss_fight td table, table.boss_fight td td
+{
+	margin: 0;
+	padding: 0;
+}
+
+
+td.boss_side, td.boss_side td
+{
+	width: 175px;
+	text-align: left;
+	font-size: 14px;
+	vertical-align: middle;
+}
+
+td.boss_image
+{
+	width: 300px;	
+}
+
+div.bossfight_health_bar
+{
+	height: 25px;
+	border: 1px solid #888;
+	vertical-align: middle;
+	margin: 0;
+	padding: 0;
+	width: 175px;	
+}
+
+div.bossfight_current_health_low
+{
+	height: 25px;
+	background: #e21 url(http://mwfb.static.zynga.com/mwfb/graphics/health_bar_low.png) repeat-x;
+	margin: 0;
+	padding: 0;
+	vertical-align: middle;
+	overflow: visible;
+	font-size: 15px;
+	font-weight: bold;
+	text-align: left;
+	color: #fff;
+}
+
+div.bossfight_current_health_med
+{
+	height: 25px;
+	background: #ee0 url(http://mwfb.static.zynga.com/mwfb/graphics/health_bar_med.png) repeat-x;
+	margin: 0;
+	padding: 0;
+	vertical-align: middle;
+	overflow: visible;
+	font-size: 15px;
+	font-weight: bold;
+	text-align: left;
+	color: #fff;
+}
+
+div.bossfight_current_health_high
+{
+	height: 25px;
+	background: #2e1 url(http://mwfb.static.zynga.com/mwfb/graphics/health_bar_high.png) repeat-x;
+	margin: 0;
+	padding: 0;
+	vertical-align: middle;
+	overflow: visible;
+	font-size: 15px;
+	font-weight: bold;
+	text-align: left;
+	color: #fff;
+}
+
+div.bossfight_health_bar_small
+{
+	height: 10px;
+	border: 1px solid #888;
+	vertical-align: middle;
+	margin: 0;
+	padding: 0;
+	width: 140px;	
+}
+
+div.bossfight_current_health_small_low
+{
+	height: 10px;
+	background: #e21 url(http://mwfb.static.zynga.com/mwfb/graphics/health_bar_low.png) repeat-x;
+	margin: 0;
+	padding: 0;
+	vertical-align: middle;
+	overflow: visible;
+	font-size: 15px;
+	font-weight: bold;
+	text-align: left;
+	color: #fff;
+}
+
+div.bossfight_current_health_small_med
+{
+	height: 10px;
+	background: #ee0 url(http://mwfb.static.zynga.com/mwfb/graphics/health_bar_med.png) repeat-x;
+	margin: 0;
+	padding: 0;
+	vertical-align: middle;
+	overflow: visible;
+	font-size: 15px;
+	font-weight: bold;
+	text-align: left;
+	color: #fff;
+}
+
+div.bossfight_current_health_small_high
+{
+	height: 10px;
+	background: #2e1 url(http://mwfb.static.zynga.com/mwfb/graphics/health_bar_high.png) repeat-x;
+	margin: 0;
+	padding: 0;
+	vertical-align: middle;
+	overflow: visible;
+	font-size: 15px;
+	font-weight: bold;
+	text-align: left;
+	color: #fff;
+}
+
+span.bossfight_health_text
+{
+	float: left;
+	display: inline;
+	font-size: 14px;
+}
+
+span.bossfight_health_num
+{
+	float: right;
+	display: inline;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+span.bossfight_low { color: #e11; }
+span.bossfight_med { color: #fff; }
+span.bossfight_high { color: #fff; }
+
+div.boss_fight_health
+{
+	font-size: 15px;
+	text-align: right;
+	color: white;
+}
+
+div.bossfight_last_attack
+{
+	/*border: 1px solid #888;*/
+	padding: 5px;
+	margin: 5px 0 0 0;
+	font-size: 15px;
+	text-align: left;
+	width: 165px;
+}
+
+div.bossfight_story
+{
+	border: 1px solid #888;
+	text-align: left;
+	margin: 4px 20px;
+	padding: 4px;
+	font-size: 90%;
+}
+
+div.bossfight_history_block
+{
+	border: 1px solid #888;
+	text-align: center;
+	margin: 0 20px 20px 20px;
+	padding: 4px;
+	max-height: 200px;
+	overflow: auto;
+}
+
+ul.bossfight_history_list
+{
+	text-align: left;
+	margin-left: 35px;
+	padding-left: 0;
+	list-style-image: url(http://mwfb.static.zynga.com/mwfb/graphics/MW_BulletPoint_20x10-01.gif);
+	font-size: 13px;
+}
+
+td.bossfight_items
+{
+	padding: 5px;
+	vertical-align: middle;	
+}
+
+div.bossfight_item
+{
+	margin-left: 10px;
+	float: left;
+	font-size: 13px;
+	vertical-align: middle;
+}
+
+div.bossfight_item img
+{
+	border: 2px outset #888;
+	height: 40px;
+	width: 40px;
+	display: inline;
+}
+
+div.bossfight_item div
+{
+	text-align: center;
+	float: left;
+}
+/****************************************************************************
+					POPUP WINDOW
+****************************************************************************/
+
+div.zy_popup_box_bg
+{
+	display: none;
+
+	position:absolute;
+	background-color:black;
+	filter:alpha(opacity=50);
+	-moz-opacity:.50;
+	opacity: 0.5; 
+	vertical-align:top; 
+	top:0; 
+	left:0;
+	z-index:2;
+	
+	height: 3000px;
+	width: 945px;
+}
+
+div.zy_popup_border_gray
+{
+	border: 3px solid #A99E9E;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+}
+
+div.zy_popup_border_white
+{
+	border: 3px solid #FFFFFF;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+}
+
+div.zy_popup_border_yellow
+{
+	border: 4px solid #ffd461;
+}
+
+div.zy_popup_box,
+div.zy_popup_box_dark,
+div.zy_popup_box_dark_wide,
+div.zy_popup_box_dark_xtrawide,
+div.zy_popup_box_dark_xtrawide,
+div.zy_popup_box_gray,
+div.zy_popup_box_gray_wide,
+div.zy_popup_box_gray_xtrawide
+{
+	display: none;
+	
+	position:absolute;
+	background-color: #fffadb;
+	
+	top: 150px;
+	left: 125px;
+	width: 500px;
+	z-index:30;
+	text-align: left;
+	color: #000;
+}
+
+div.zy_popup_box_dark
+{
+	background-color: #000;
+}
+
+div.zy_popup_box_gray
+{
+	background-color: rgb(25,25,25);
+}
+
+a.zy_popup_box_button,
+a.zy_popup_box_button_dark,
+a.zy_popup_box_button_gray
+{
+	border: none;
+	display: inline; /* IE6/7 double margin fix */
+	float: right;
+	margin: 9px 10px 0 0;
+	text-decoration: none;
+}
+
+div.zy_popup_box_title,
+div.zy_popup_box_title_dark,
+div.zy_popup_box_title_gray
+{
+	margin: 5px;
+	
+	font-size: 18px;
+	font-weight: bold;
+	
+	color: #000;
+}
+
+div.zy_popup_box_title_dark,
+div.zy_popup_box_title_gray
+{	
+	color: #BBD3EB;
+}
+
+div.zy_popup_box_body,
+div.zy_popup_box_body_dark,
+div.zy_popup_box_dark_wide,
+div.zy_popup_box_dark_xtrawide,
+div.zy_popup_box_body_gray,
+div.zy_popup_box_gray_wide,
+div.zy_popup_box_gray_xtrawide
+{
+	margin: 15px 5px;
+
+	font-size: 14px;
+	font-weight: normal;
+	
+	color: #000;
+}
+
+div.zy_popup_box_body_dark,
+div.zy_popup_box_body_gray
+{	
+	color: #BBD3EB;
+}
+
+div.zy_popup_box_dark_wide
+{	
+	background-color: #000;
+	
+	top: 150px;
+	left: 5px;
+	width: 735px;
+}
+
+div.zy_popup_box_gray_wide
+{	
+	background-color: rgb(25,25,25);
+	
+	top: 150px;
+	left: 80px;
+	width: 600px;
+}
+
+div.zy_popup_box_dark_xtrawide{
+	background-color: #000;
+	
+	top: 150px;
+	left: -2px;
+	width: 746px;
+}
+
+div.zy_popup_box_gray_xtrawide{
+	background-color: rgb(25,25,25);
+	
+	top: 150px;
+	left: 4px;
+	width: 740px;
+	height: 550px;
+}
+
+div.zy_popup_box_body_dark_wide,
+div.zy_popup_box_body_gray_wide
+{
+	/* margin: 0px 5px 15px 5px; */
+	padding: 0px 5px 15px 5px;
+
+	font-size: 14px;
+	font-weight: normal;
+	
+	color: #BBD3EB;
+}
+
+div.zy_popup_box_body td,
+div.zy_popup_box_body li,
+div.zy_popup_box_body p
+{
+	font-size: 14px;
+}
+
+
+div.popup_safehouse {
+	background: #000 url("http://mwfb.static.zynga.com/mwfb/graphics/popup_safehouse_bg_700x285.gif") 0 0 no-repeat;
+	height: 247px;
+}
+
+div.popup_safehouse div.safehouse_side_gift {
+	background: url("http://mwfb.static.zynga.com/mwfb/graphics/mw_giftBox_red_75.gif") 35px 55px no-repeat;
+	padding: 50px 10px 0 150px;
+	text-align: center;
+}
+
+div.popup_safehouse h2 {
+	color: #fff;
+	font-size: 16px;
+	font-weight: bold;
+	margin: 0;
+	text-align: left;
+}
+
+div.popup_safehouse p {
+	color: #fff;
+	font-size: 12px;
+	line-height: 18px;
+	margin: 14px 50px 25px 0;
+	text-align: left;
+}
+
+div.popup_safehouse a.sexy_button {
+	display: inline-block;
+	float: none;
+	position: relative;
+	left: -25px;
+}
+
+div.featjobpopup
+{
+	background-image: url('http://mwfb.static.zynga.com/mwfb/graphics/feat_job_popup_bg.gif');
+	background-repeat: no-repeat;
+	background-position: top center;	
+}
+
+div.featjobimpatientpopup
+{
+	background-image: url('http://mwfb.static.zynga.com/mwfb/graphics/feat_job_impatient_popup_bg.gif');
+	background-repeat: no-repeat;
+	background-position: top left;	
+}
+
+div.holiday_2ai_pop
+{
+   border: 3px solid #fff;
+   background-color: #000;
+   background-image: url('http://mwfb.static.zynga.com/mwfb/graphics/mw_holiday_snow.jpg');
+   background-attachment: scroll;
+   background-position: bottom center;
+   background-repeat: no-repeat;
+}
+
+div.holiday_2ai_pop_header
+{
+   position: absolute;
+   top: -36px;
+   left: 150px;
+   width: 400px;
+   height: 64px;
+   z-index: 32;
+   
+   background-color: transparent;
+   background-image: url('http://mwfb.static.zynga.com/mwfb/graphics/holidaysales_rewardshead_394x64_01.gif');
+   background-attachment: scroll;
+   background-position: center center;
+   background-repeat: no-repeat;
+}
+
+div.holiday_2ai_body
+{
+   color: #fff;
+   font-size: 18px;
+   padding-left: 100px;
+   padding-top: 27px;
+   margin: 30px;
+   background: transparent url('http://mwfb.static.zynga.com/mwfb/graphics/gift_red_75x75.gif') no-repeat scroll top left;
+}
+
+div.hodiay_2ai_buttons
+{
+   height: 60px;
+   margin: 50px 0 20px 55px;
+}
+
+div.gf_whatsthis_key
+{
+	top:1200px;
+}
+
+div.loot_whatsthis_treasure
+{
+	top:580px;
+}
+
+div.bk_unlock_pop
+{
+   height: 227px;
+   border-color: #fff;
+   color: #ddd;
+   background: #000 url('http://mwfb.static.zynga.com/mwfb/graphics/mw_bangkok_pop_bg_500x227_01.gif');
+}
+
+#messages .new_user_level_up,
+.messages .new_user_level_up,
+#messages .stj_message,
+#messages .new_user_banner {
+	background: #000;
+	border: 1px solid #4d4d4d;
+	height: 227px;
+	position: relative;
+	width: 743px;
+}
+
+#messages .new_user_level_up,
+#messages .stj_message,
+#messages .new_user_banner {
+	display: none;
+	position: absolute;
+}
+
+#messages .new_user_level_up,
+.messages .new_user_level_up {
+	background: #000 url('http://mwfb.static.zynga.com/mwfb/graphics/new_user_level_up/level_up_bg_gold_742x227.jpg') 0 0 no-repeat;
+	text-align: center;
+}
+
+div.bk_viral_message_choose
+{
+   height: 231px;
+   border-color: #fff;
+   color: #fff;
+   background: #000 url('http://mwfb.static.zynga.com/mwfb/graphics/popup_bg_bk_vrial_choose_508x231_01.jpg');
+}
+
+div.bk_viral_message_sorry
+{
+   height: 231px;
+   border-color: #fff;
+   color: #fff;
+   background: #000 url('http://mwfb.static.zynga.com/mwfb/graphics/popup_bg_bk_vrial_sorry_508x231_01.jpg');
+}
+
+
+
+
+#messages .new_user_level_up a.close,
+.messages .new_user_level_up a.close,
+#messages .stj_message a.close,
+#messages .new_user_banner a.close {
+   background: url('http://mwfb.static.zynga.com/mwfb/graphics/icon_remove_yellow_14x14_01.gif') 0 0 no-repeat;
+   display: block;
+   float: right;
+   height: 14px;
+   margin: 8px 8px 0 0;
+   width: 14px;
+}
+
+#messages .stj_message {
+   text-align: center;
+}
+
+#messages .stj_message img.tier_mastery {
+   display: block;
+   margin: 0 auto 1em;
+}
+
+#messages .stj_message p {
+   margin: 1em auto;
+   text-align: left;
+   width: 450px;
+}
+
+#messages .stj_message div.tier_mastery_3 {
+   margin: 0 auto;
+   text-align: right;
+   width: 475px;
+}
+
+#messages .stj_message div.tier_mastery_3 img {
+   float: left;
+}
+
+#messages .stj_message div.tier_mastery_3 p {
+   margin: 0 0 1em auto;
+   text-align: left;
+   width: 385px;
+}
+
+#messages .new_user_level_up dl,
+.messages .new_user_level_up dl {
+   margin: 0;
+   padding: 36px 0 0 36px;
+   text-transform: uppercase;
+
+   /* Overriding BS message styles */
+   float: none;
+   font-weight: normal;
+}
+
+#messages .new_user_level_up dt,
+.messages .new_user_level_up dt {
+   color: #ffc001;
+   font-family: Palatino, "Book Antiqua", serif;
+   font-size: 18px;
+   line-height: 22px;
+   margin: 0 0 6px;
+   padding: 0;
+}
+
+#messages .new_user_level_up dd,
+.messages .new_user_level_up dd {
+   color: #ffc001;
+   font-size: 32px;
+   font-weight: bold;
+   line-height: 36px;
+   margin: 0 0 16px;
+   padding: 0;
+}
+
+#messages .new_user_level_up div,
+.messages .new_user_level_up div {
+   margin-bottom: 24px;
+   padding: 0 0 0 36px;
+}
+
+#messages .new_user_level_up p,
+.messages .new_user_level_up p {
+   color: #ccc;
+   font-size: 14px;
+   font-weight: normal;
+   padding: 0 0 0 36px;
+}
+
+#messages .new_user_level_up p span,
+.messages .new_user_level_up p span {
+   color: #00cb00;
+}
+
+#messages .new_user_level_up .skip,
+.messages .new_user_level_up .skip,
+#messages .stj_message .skip {
+   position: absolute;
+   right: 8px;
+   bottom: 8px;
+}
+
+#messages .new_user_level_up .energy,
+.messages .new_user_level_up .energy {    color: #fc3; padding-left: 14px }
+#messages .new_user_level_up .cash,
+.messages .new_user_level_up .cash {      color: #0c0; padding-left: 18px }
+#messages .new_user_level_up .experience,
+.messages .new_user_level_up .experience {   color: #0ae; padding-left: 17px; }
+
+#messages .new_user_level_up .energy,
+.messages .new_user_level_up .energy {
+   background: url("http://mwfb.static.zynga.com/mwfb/graphics/new_user_jobs/icon_energy_12x16.gif") 2px 50% no-repeat;
+}
+
+#messages .new_user_level_up .cash,
+.messages .new_user_level_up .cash {
+   background: url("http://mwfb.static.zynga.com/mwfb/graphics/new_user_jobs/icon_cash_nyc_16x12.gif") 0 35% no-repeat;
+}
+
+#messages .new_user_level_up .experience,
+.messages .new_user_level_up .experience {
+   background: url("http://mwfb.static.zynga.com/mwfb/graphics/new_user_jobs/icon_experience_15x16.gif") 0 50% no-repeat;
+}
+
+div.giftcard_storelocator 
+{
+	-moz-border-radius: 80px;
+	border-radius: 80px;
+	-webkit-border-radius: 80px;
+}
+a.giftcard_storelocator_close_bttn
+{
+	right:7%;
+	position:relative;
+}
+
+div.valentine_popup {
+  left: 10px;
+  width: 740px;
+}
+
+div.chop_pop
+{
+   background: #000 url('http://mwfb.static.zynga.com/mwfb/graphics/chop_pop_bg_703x554_01.jpg');
+   border-color: #ccc;
+   -moz-border-radius: 8px;
+   border-radius: 8px;
+   -webkit-border-radius: 8px;
+}
+.sexy_button, a.sexy_button, a.sexy_button:visited, a.sexy_button:link, button
+{
+	padding:5px;
+	color:#FFD927;
+	border:1px solid #FFD927;
+	text-decoration:none;
+	width:auto;
+	font-size:14px;
+	cursor:pointer;
+    font-weight: bold;
+	display: block;
+	float: left;
+}
+
+#travel_container .sexy_button,
+#travel_container a.sexy_button,
+#travel_container a.sexy_button:link,
+#travel_container a.sexy_button:visited {
+	float: none;
+}
+
+a.gift_category_button, a.gift_category_button:visited, a.gift_category_button:link {
+	width: 100px;
+	margin-bottom: 3px;
+}
+
+.sexy_button input
+{
+	width: auto;
+	border: none;
+	padding: 0 0 0 20px;
+	margin: 0;
+	color:#FFD927;
+	font-size: 14px;
+	cursor:pointer;
+    font-weight: bold;
+}
+
+.sexy_button:hover, a.sexy_button:hover, a.sexy_button:active, .sexy_button input:hover, button:hover
+{
+	color:#BCD2EA;
+	text-decoration:none;
+    font-weight: bold;
+}
+
+div.sexy_button_locked
+{
+    padding: 5px;
+    color: #bbb;
+    border: 1px solid #bbb;
+    text-decoration: none;
+    width:auto;
+    font-size: 14px;
+    font-weight: bold;
+    display: block;
+    float: left;
+    background-image: url(http://mwfb.static.zynga.com/mwfb/graphics/grey_bg.gif);
+}
+
+.sexy_arrow
+{
+	background:url(http://mwfb.static.zynga.com/mwfb/graphics/icon_arrow_16x16_01.gif) no-repeat 0px 0px;
+	padding-left:20px;
+}
+
+.sexy_health
+{
+	background:url(http://mwfb.static.zynga.com/mwfb/graphics/icon-health.gif) no-repeat 0px 3px;
+	padding-left:18px;
+}
+
+.sexy_energy
+{
+	background:url(http://mwfb.static.zynga.com/mwfb/graphics/icon-energy.gif) no-repeat 0px 3px;
+	padding-left:18px;
+}
+
+.sexy_grow_group
+{
+	background:url(http://mwfb.static.zynga.com/mwfb/graphics/icon_grow_group_16x16_01.gif) no-repeat 0px 0px;
+	padding-left:30px;
+}
+
+.sexy_cash
+{
+	background-color: transparent;
+	background-repeat: no-repeat;
+	padding-left:20px;
+}
+
+.sexy_jobhelp
+{
+	background:url(http://mwfb.static.zynga.com/mwfb/graphics/icon_jobhelp_16x16_01.gif) no-repeat 0px 0px;
+	padding-left:20px;
+}
+
+.sexy_fight
+{
+	background:url(http://mwfb.static.zynga.com/mwfb/graphics/icon_stamina_16x16_01.gif) no-repeat 0px 0px;
+	padding-left:20px;
+}
+
+.sexy_gift
+{
+	background:url(http://mwfb.static.zynga.com/mwfb/graphics/icon_sendgift_25x16.gif) no-repeat 0px 0px;
+	padding-left:28px;
+}
+
+.sexy_wishlist_add
+{
+	background:url(http://mwfb.static.zynga.com/mwfb/graphics/icon_wishlist_add_21x18_01.gif) no-repeat 0px 0px;
+	padding-left:24px;
+}
+
+.sexy_wishlist_remove
+{
+	background:url(http://mwfb.static.zynga.com/mwfb/graphics/icon_wishlist_remove_21x18_01.gif) no-repeat 0px 0px;
+	padding-left:24px;
+}
+
+.sexy_add
+{
+	background:url(http://mwfb.static.zynga.com/mwfb/graphics/icon_add_16x16_01.gif) no-repeat 0px 0px;
+	padding-left:16px;
+}
+
+.sexy_add_center
+{
+	background:url(http://mwfb.static.zynga.com/mwfb/graphics/icon_add_16x16_01.gif) no-repeat top center;
+	padding-left:16px;
+}
+
+.sexy_remove
+{
+	background:url(http://mwfb.static.zynga.com/mwfb/graphics/icon_remove_16x16_01.gif) no-repeat 0px 0px;
+	padding-left:16px;
+}
+
+.sexy_repair
+{
+	background:url(http://mwfb.static.zynga.com/mwfb/graphics/icon_repair_16x16_01.gif) no-repeat 0px 0px;
+	padding-left:16px;
+}
+
+.sexy_protect
+{
+	background:url(http://mwfb.static.zynga.com/mwfb/graphics/icon_protect_16x16_01.gif) no-repeat 0px 0px;
+	padding-left:20px;
+}
+
+.sexy_pack_send
+{
+	background:url(http://mwfb.static.zynga.com/mwfb/graphics/icon_send_energy_16x16_01.gif) no-repeat 0px 0px;
+	padding-left:20px;
+}
+
+.sexy_pack_use
+{
+	background:url(http://mwfb.static.zynga.com/mwfb/graphics/icon_use_energy_17x16_01.gif) no-repeat 0px 0px;
+	padding-left:20px;
+}
+
+.sexy_energy2
+{
+	background:url(http://mwfb.static.zynga.com/mwfb/graphics/icon_energy2_21x18_01.gif) no-repeat 0px 0px;
+	padding-left:21px;
+}
+
+.sexy_energy2_send
+{
+	background:url(http://mwfb.static.zynga.com/mwfb/graphics/icon_energy2_send_25x18_01.gif) no-repeat 0px 0px;
+	padding-left:25px;
+}
+
+.sexy_energy2_use
+{
+	background:url(http://mwfb.static.zynga.com/mwfb/graphics/icon_energy2_use_25x18_01.gif) no-repeat 0px 0px;
+	padding-left:25px;
+}
+
+.sexy_achievement
+{
+	background:url('http://mwfb.static.zynga.com/mwfb/graphics/icon_achievement_12x16_01.gif') no-repeat 0px 0px;
+	padding-left:16px;
+}
+
+.sexy_favor
+{
+	background:url('http://mwfb.static.zynga.com/mwfb/graphics/reward_coin_17x17_01.gif') no-repeat 0px 0px;
+	padding-left:22px;
+	height: 17px;
+}
+
+.sexy_travel
+{
+	background:url('http://mwfb.static.zynga.com/mwfb/graphics/icon_travel_32x17_01.gif') no-repeat 0px 0px;
+	padding-left: 38px;
+}
+
+.sexy_destination
+{
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-right: 5px;
+	padding-left: 20px;
+  font-weight: bold;
+	background-color: #000018;
+	width: 110px;
+	color: white;
+	border: 1px solid #FFD927;
+	overflow: hidden;
+}
+
+.sexy_destination.top
+{
+	border-bottom:none
+}
+.sexy_destination.middle
+{
+	border-bottom:none;
+	border-top:none;
+}
+.sexy_destination.bottom
+{
+	border-top:none;
+}
+
+.sexy_destination:hover, a.sexy_destination:hover, div.sexy_destination:hover, .sexy_destination:active, .sexy_destination input:hover
+{
+	background: #000050 url('http://mwfb.static.zynga.com/mwfb/graphics/travel_arrow.gif') no-repeat 5px 11px;
+	color: #FFD927;
+	text-decoration: none;
+}
+
+.sexy_new_destination
+{
+	background:url('http://mwfb.static.zynga.com/mwfb/graphics/new_tag_35x14_01.gif') no-repeat 68px 2px;
+}
+
+.sexy_soon
+{
+	font-size: 9px;
+	color: gray;
+}
+
+.sexy_dropdown
+{
+	background:url('http://mwfb.static.zynga.com/mwfb/graphics/sort_arrow_16x16_01.gif') no-repeat 97px 1px;
+}
+
+input.sexy_normal
+{
+  padding-left: 0px;
+}
+
+.sexy_upgrade
+{
+	background:url('http://mwfb.static.zynga.com/mwfb/graphics/icon_promote_up_15x15_01.gif') no-repeat 0px 0px;
+	padding-left: 18px;
+}
+.sexy_coin
+{
+	background:url(http://mwfb.static.zynga.com/mwfb/graphics/reward_point_coin_16x16_01.gif) no-repeat 0px 0px;
+	padding-left:23px;
+	padding-right: 3px;
+}
+
+.sexy_lotto
+{
+	background:url(http://mwfb.static.zynga.com/mwfb/graphics/lottery_ticket_16x16_01.gif) no-repeat 0px 0px;
+	padding-left:23px;
+	padding-right: 3px;
+}
+
+.sexy_cash
+{
+	background: url('http://mwfb.static.zynga.com/mwfb/graphics/icon_cash_16x16_01.gif') no-repeat 0px 0px;
+	padding-left: 20px;
+}
+
+.sexy_nyc_cash
+{
+	background: url('http://mwfb.static.zynga.com/mwfb/graphics/icon_cash_16x16_01.gif') no-repeat 0px 0px;
+	padding-left: 20px;
+}
+
+.sexy_cuba_cash
+{
+	background: url('http://mwfb.static.zynga.com/mwfb/graphics/icon_cubanpeso_16x11_01.gif') no-repeat 0px 3px;
+	padding-left: 20px;
+}
+
+.sexy_lock
+{
+    background: url('http://mwfb.static.zynga.com/mwfb/graphics/lock.gif') no-repeat 0px 0px;
+    padding-left: 22px;
+    display: block;
+    width: auto;
+    float: left;
+    clear: none;
+}
+
+.sexy_boost
+{
+    background: url('http://mwfb.static.zynga.com/mwfb/graphics/icon_boost_14x14_01.gif') no-repeat 0px 0px;
+    padding-left: 16px;
+}
+
+.sexy_influence
+{
+    background: url('http://mwfb.static.zynga.com/mwfb/graphics/icon_influence_16x16_01.gif') no-repeat 0 1px;
+    padding-left: 16px;
+}
+
+.sexy_loot
+{
+   background:url(http://mwfb.static.zynga.com/mwfb/graphics/icon_loot_16x16_01.gif) no-repeat 0px 0px;
+   padding-left: 20px;
+}
+
+.sexy_movie
+{
+   background:url(http://mwfb.static.zynga.com/mwfb/graphics/icon_racketmastered_16x16_01.gif) no-repeat 0px 0px;
+   padding-left: 20px;
+}
+
+.episode_lock_center
+{
+	margin-left: 12px;
+}
+
+.sexy_passport
+{
+   background:url(http://mwfb.static.zynga.com/mwfb/graphics/mw_bk_passport_icon_25x26_01.gif) no-repeat 0px 0px;
+   padding: 5px 5px 5px 30px;
+}
+
+.sexy_help
+{
+   background:url(http://mwfb.static.zynga.com/mwfb/graphics/icon-help.gif) no-repeat 1px 1px;
+   padding-left: 20px;
+}
+#classchoice_form {
+	display: block;
+	padding-bottom: 24px;
+	text-align: center;
+}
+
+#classchoice_form h2 {
+	color: #fff;
+	font-size: 18px;
+	margin: 30px 0 14px;
+	text-align: center;
+}
+
+#classchoice_form p {
+	margin: 0 50px 16px;
+}
+
+#classchoice_form .character_types {
+	margin: 0 auto 16px;
+	padding: 0 0 0 15px;
+	width: 606px;
+}
+
+#classchoice_form .character_types div {
+	background: #111;
+	border: 1px solid #333;
+	float: left;
+	margin-right: 15px;
+	padding: 8px 0 12px;
+	text-align: center;
+	width: 185px;
+}
+
+#classchoice_form .character_types div.selected {
+	border: 1px solid #ffd927;
+}
+
+#classchoice_form .character_types p {
+	color: #fff;
+	font-size: 14px;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+#classchoice_form .character_types img {
+	margin: 8px 0 0;
+}
+
+#classchoice_form .submit {
+	margin: 0 auto;
+	text-align: center;
+	width: 360px;
+}
+
+#classchoice_form .submit button {
+	float: none;
+	margin-right: 8px;
+}
+
+/* Gets rid of extra button padding on internal span in Firefox */
+#classchoice_form button::-moz-focus-inner,
+#classchoice_form input[type="reset"]::-moz-focus-inner,
+#classchoice_form input[type="button"]::-moz-focus-inner,
+#classchoice_form input[type="submit"]::-moz-focus-inner,
+#classchoice_form input[type="file"] > input[type="button"]::-moz-focus-inner {
+  padding: 0;
+  border-width: 0;
+}
+
+div.char_class_title {
+   color: #fff;
+   font-size: 28px;
+}/*****************
+  TOP GROUP CSS
+*****************/
+
+/****  INDEX/RECRUIT PAGES  ****/
+
+.top_group_sidebar
+{
+	width: 190px;
+	text-align: center;
+	vertical-align: top;
+}
+
+div#tg_list
+{
+	border-style: solid;
+	border-color: #701919;
+	border-width: 2px;
+	background-color: #000;
+	padding: 3px;
+	width: 170px;
+	margin-left: 10px;
+	position: relative;
+}
+
+div#tg_list_header
+{
+	margin: 10px 2px 2px 2px;
+}
+
+span.tg_list_title
+{
+	background: url('http://mwfb.static.zynga.com/mwfb/graphics/icon_mymafia.gif') no-repeat center left;
+	padding-left: 25px;
+}
+
+span.tg_income
+{
+	font-size: 12px;
+	padding-left: 16px;	
+}
+
+div.tg_list_empty
+{
+	text-align: center;
+	padding: 10px;
+}
+
+div.tg_list_main
+{
+	width: 160px;
+	margin: 15px auto 0 auto;
+	border-top: 1px solid #701919;	
+}
+
+div.tg_list_main table
+{
+	width: 160px;
+}
+
+td.tg_list_left
+{
+	width: 100px;
+	font-size: 12px;
+	text-align: center;
+	overflow: hidden;
+	padding-top: 15px;
+}
+
+div.tg_list_friendpic_hat
+{
+	position: absolute;
+	top: -5px;
+	left: 3px;
+	z-index: 5;	
+	width: 24px;
+	height: 18px;
+	border: 0;
+	background: url('http://mwfb.static.zynga.com/mwfb/graphics/icon_mymafia.gif') no-repeat center left;
+}
+
+div.tg_list_friendpic
+{
+	width: 75px;
+	height: 75px;
+	overflow: hidden;
+	margin: 0 auto;
+	border: 2px solid #701919;	
+}
+
+div.tg_list_friendpic img,
+div.tg_list_friendpic a img
+{
+	border: none;
+	width: 75px;
+	height: 75px;	
+}
+
+div.tg_list_friendname
+{
+	text-align: center;
+	margin-top: 5px;	
+}
+
+td.tg_list_right
+{
+	 width: 60px;
+	 font-size: 12px;
+	 text-align: center;
+	 vertical-align: top;
+	 padding-top: 15px;
+}
+
+
+div.tg_healthbar
+{
+	height: 7px;
+	width: 60px;
+	margin: 5px 0 15px 0;
+	overflow: hidden;
+	border: 1px solid #701919;
+	text-align: left;	
+}
+
+div.tg_hb_empty
+{
+	background-color: #000;	
+}
+
+div.tg_hb_fill
+{
+	height: 7px;
+	background-color: #701919;	
+}
+
+div.tg_energybar
+{
+	height: 7px;
+	width: 60px;
+	margin: 5px 0 15px 0;
+	overflow: hidden;
+	border: 1px solid #345AA0;
+	text-align: left;	
+}
+
+div.tg_eb_empty
+{
+	background-color: #000;	
+}
+
+div.tg_eb_fill
+{
+	height: 7px;
+	background-color: #345AA0;	
+}
+
+
+div#tg_list_editlink_top
+{
+	position: absolute;
+	top: -10px;
+	left: 37px;
+}
+
+div#tg_list_editlink_bottom
+{
+	position: absolute;
+	top: 12px;
+	left: 37px;
+}
+
+div#tg_list_footer
+{
+	position: relative;
+	margin-top: 10px;
+	text-align: left;
+}
+
+/****  GROUP PAGE  ****/
+
+div.tg_main
+{
+	border: 2px solid #701919; 
+	background-color: #000; 
+	margin: 10px 0; 
+	padding: 10px;
+}
+
+div.tg_main_header
+{
+	font-size: 18px;
+	margin-bottom: 10px;
+	background: url('http://mwfb.static.zynga.com/mwfb/graphics/icon_mymafia.gif') no-repeat center left;
+	padding-left: 28px;	
+}
+
+div.tg_main ul
+{
+	margin: 0; 
+	padding: 0; 
+	overflow: hidden;
+	width: 710px;
+}
+
+li#tg_main_li
+{
+	padding-top: 10px;
+}
+
+div.tg_main_friendlist
+{
+	position: relative;
+}
+
+div.tg_main_hat
+{
+	position: absolute; 
+	top: -8px; 
+	left: -2px; 
+	z-index: 5;
+
+	width: 24px; 
+	height: 18px; 
+	border: 0;
+	
+	background: url('http://mwfb.static.zynga.com/mwfb/graphics/icon_mymafia.gif') no-repeat 0 0;
+}
+
+div.tg_main_name
+{
+	width: 85px; 
+	height: 45px; 
+	overflow: hidden; 
+	margin: 0 auto; 
+	text-align: center;
+	font-size: 11px;
+}
+
+div.tg_main_pic
+{
+	width: 75px; 
+	height: 75px; 
+	overflow: hidden; 
+	margin: 0 auto; 
+	border: 2px solid #701919;
+}
+
+div.tg_main_pic img
+{
+	width: 75px; 
+	height: 75px; 
+	overflow: hidden; 
+	margin: 0; 
+	border: none;
+}
+
+div.tg_main_level
+{
+	text-align: center; 
+	margin-bottom: 5px;
+	font-size: 11px;
+}
+
+div.tg_main_button
+{
+	font-size: 11px; 
+	margin: 3px 2px;
+	height: 16px;
+}
+
+div.tg_demote
+{
+	background: url('http://mwfb.static.zynga.com/mwfb/graphics/button_X.gif') no-repeat 4px 0;
+}
+
+div.tg_promote
+{
+	background: url('http://mwfb.static.zynga.com/mwfb/graphics/button_plus.gif') no-repeat 4px 0;
+}
+
+div.tg_demote a,
+div.tg_promote a
+{
+	display: block;
+	padding-left: 10px;	
+}
+
+/****  STATS PAGE  ****/
+
+div.tg_stats
+{
+	border: 1px solid #999; 
+	margin: 10px 0 0 20px; 
+	padding: 0 5px 5px 5px;
+}
+
+div.tg_stats_box
+{
+	float: left; 
+	width: 170px; 
+	margin: 5px;
+}
+
+div.tg_stats_my_top_group_pic
+{
+	float: left; 
+	width: 75px; 
+	height: 75px; 
+	overflow: hidden; 
+	margin-right: 5px;
+}
+
+div.tg_stats_my_top_group_pic img
+{
+	width: 75px;
+	overflow: hidden;
+}
+
+div.tg_stats_my_top_group_name_box
+{
+	float: left; 
+	width: 85px; 
+	height: 80px; 
+	overflow: hidden;
+}
+
+div.tg_stats_my_top_group_name
+{
+	width: 85px; 
+	height: 60px; 
+	overflow: hidden;
+}
+
+div.tg_stats_their_top_group_pic
+{
+	float: left; 
+	width: 37px; 
+	height: 37px; 
+	overflow: hidden; 
+	margin-right: 5px;
+	background: url('http://mwfb.static.zynga.com/mwfb/graphics/icon_group_16x16_01.gif') no-repeat center left;
+}
+
+div.tg_stats_their_top_group_name_box
+{
+	float: left; 
+	width: 133px; 
+	height: 38px; 
+	overflow: hidden;
+}
+
+div.tg_stats_their_top_group_name
+{
+	width: 133px; 
+	height: 19px; 
+	overflow: hidden;
+}/*****************
+  VIRAL LOOT CSS
+*****************/
+
+span#viral_new
+{
+	color: #f00; 
+	font-weight: bold;
+}
+
+
+table#viral_table
+{
+	width: 500px; 
+}
+
+td#viral_picture
+{
+	padding-right: 10px;
+	width: 75px;
+}
+
+td#viral_description
+{
+		width: 165px; 
+	font-size: 12px;
+	}
+
+td#viral_attack
+{
+	width: 100px; 
+	font-size: 10px;
+}
+
+td#viral_defense
+{
+		width: 125px; 
+	font-size: 10px;
+	}
+
+td#viral_buy
+{
+	width: 60px; 
+	font-size: 10px;
+	padding-left: 10px;
+}
+
+td#viral_invite
+{
+	padding-left: 10px;
+	font-size: 10px;
+	
+		width: 165px; 
+	}/*****************
+   Achievements
+*****************/
+
+/*** Stats Page ***/
+
+.stats_ach_tab
+{
+	width: 300px;
+	padding: 5px;
+}
+
+ul.stats_achievements
+{
+	margin: 0 0 5px 0;
+	padding: 0;
+	
+	list-style-type: none;
+}
+
+li.stats_ach
+{
+	position: relative;
+	padding: 5px;
+	
+	border-bottom: 1px solid #555555;
+}
+
+li.stats_ach:hover
+{
+	background: #000;
+}
+
+div.stats_ach_top_row
+{
+	height: 35px;
+	position: relative;
+}
+
+div.stats_ach_img
+{
+	position: absolute;
+	top: 3px;
+	left: 3px;
+	
+	width: 25px;
+	height: 25px;
+}
+
+div.stats_ach_name
+{
+	margin-left: 31px;
+	height: 20px;
+	font-weight: bold;
+}
+
+div.stats_ach_arrow
+{	
+	position: absolute;
+	right: 3px;
+	top: 7px;
+
+	width: 16px;
+	height: 16px;
+	
+	cursor: pointer;
+}
+
+div.stats_ach_arrow_down
+{
+	background: transparent url('http://mwfb.static.zynga.com/mwfb/graphics/sort_arrow_16x16_01.gif') no-repeat scroll center center;
+}
+
+div.stats_ach_arrow_up
+{
+	background: transparent url('http://mwfb.static.zynga.com/mwfb/graphics/sort_arrow_up_16x16_01.gif') no-repeat scroll center center;
+	display: none;
+}
+
+div.stats_ach_date
+{
+	color: #666666;
+	font-size: 10px;
+	margin-left: 31px;
+	display: none;
+}
+
+div.stats_ach_description
+{
+	color: #ccc;
+	margin-left: 31px;
+	display: none;
+}
+
+/*** Award Message ***/
+
+div.achievement_message {
+	border: 2px solid #ffd927;
+	padding: 5px;
+	background: #000;
+	margin-bottom: 5px;
+	position: relative;
+}
+
+div.achievement_message_lightbox {
+	padding: 5px;
+	margin-bottom: 5px;
+}
+
+div.achievement_message_image
+{
+	float: left;
+	
+	padding: 0;
+	margin-right: 10px;
+	width: 75px;
+	height: 75px;
+}
+
+div.achievement_message_congrats
+{
+	font-size: 16px;
+	font-weight: bold;
+}
+
+
+div.achievement_message_text
+{
+}
+
+div.achievement_message_text_short
+{
+	float: left;
+	
+	width: 450px;
+}
+
+div.achievement_message_button
+{
+	position: absolute;
+	bottom: 5px;
+	right: 5px;
+	
+	width: 140px;
+	text-align: right;
+}
+
+
+div.achievement_message_button_post
+{
+	position: absolute;
+	bottom: 5px;
+	left: 255px;
+	
+	width: 160px;
+	text-align: right;
+}
+
+div.achievement_message_button_skip
+{
+	position: absolute;
+	bottom: 5px;
+	left: 415px;
+	
+	width: 120px;
+	text-align: right;
+}
+
+div.achievement_message_button_short
+{
+	float: left;
+	
+	width: 155px;
+	text-align: right;
+}
+
+div.achievement_message_footer
+{
+	clear: both;
+	font-size: 12px;
+	position: relative;
+	top: 15px;
+	margin-bottom: 5px;
+}
+
+/*** Achievement celeb light box ***/
+
+div.ach_celeb_image
+{
+	float: left;
+	width: 75px;
+	height: 75px;
+}
+
+div.ach_celeb_message
+{
+	float: left;
+	width: 550px;
+	padding-bottom: 10px;
+}
+
+div.ach_celeb_block
+{
+	float: left;
+	width: 180px;
+}
+
+/*** Achievement list page ***/
+
+ul.ach_achievements
+{
+	margin: 0;
+	padding: 0;
+	
+	list-style-type: none;
+	
+	width: 100%;
+}
+
+li.ach_ach
+{
+	position: relative;
+	height: 85px;
+	
+	margin: 0;
+	padding: 0;
+	
+	border-bottom: 1px solid #555555;
+}
+
+div.ach_ach_img
+{
+	position: absolute;
+	top: 0px;
+	left: 15px;
+	
+	width: 75px;
+	height: 75px;
+}
+
+div.ach_ach_name
+{
+	margin: 10px 0 10px 105px;
+	
+	font-weight: bold;
+	font-size: 16px;
+}
+
+div.ach_ach_date
+{
+	margin: 5px 0 5px 105px;
+	
+	color: #666666;
+	font-size: 10px;
+}
+
+div.ach_ach_description
+{
+	margin: 5px 0 5px 105px;
+	font-size: 14px;
+	color: #ccc;
+}
+
+div.ach_not_earned
+{
+	color: #666;
+}
+
+div.ach_not_earned img
+{
+	filter:alpha(opacity=25);
+	-moz-opacity:.25;
+	opacity:.25;
+}
+
+div.ach_brag_button
+{
+    position: absolute;
+    right: 30px;
+    top: 10px; 
+}/* Business CSS */
+
+ul.business_list
+{
+	padding: 0;
+	text-align: center;
+	margin: 5px 0px;
+}
+
+li.business
+{
+	display: block;
+	clear: both;
+	position: relative;
+	border-bottom: 1px solid #ffffcc;
+	margin-top: 5px;
+	
+	width: 735px;
+	text-align: left;
+}
+
+div.business_name
+{
+	clear: both;
+	font-size: 16px;
+	font-weight: bold;
+	margin-left: 10px;
+}
+
+div.business_description
+{
+   margin-bottom: 10px;
+}
+
+div.business_stats
+{
+	margin-top: 5px;
+	height: 110px;
+	clear:both;
+}
+
+li.business_disabled
+{
+	color: #555;
+}
+
+li.business_disabled div.business_image img
+{
+    filter:alpha(opacity=25);
+    -moz-opacity:.25;
+    opacity:.25;
+}
+
+div.business_image
+{
+   position: relative;
+	float: left;
+	width: 150px;
+	height: 120px;
+	clear: left;
+	margin: 5px;
+}
+
+div.business_stars
+{
+   position: absolute;
+   top: 85px;
+   left: 9px;
+   width: 132px;
+}
+
+div.business_star_on
+{
+    float: left;
+    clear: none;
+    width: 16px;
+    height: 16px;
+    background: transparent url('http://mwfb.static.zynga.com/mwfb/graphics/icon_star_on_16x16_01.gif') no-repeat scroll 0 0;
+    margin: 0 5px;
+    padding: 0;
+}
+
+div.business_star_off
+{
+    float: left;
+    clear: none;
+    width: 16px;
+    height: 16px;
+    background: transparent url('http://mwfb.static.zynga.com/mwfb/graphics/icon_star_off_16x16_01.gif') no-repeat scroll 0 0;
+    margin: 0 5px;
+}
+
+div.business_stat
+{
+	position: relative;
+	height: 34px;
+	width: 565px;
+	margin-left: 5px;
+	border-bottom: 1px solid #555;
+	vertical-align: middle;
+	float:left;
+}
+
+div.business_stat_name
+{
+	position: absolute;
+	left: 0px;
+	top: 8px;
+	font-size: 13px;
+}
+
+div.business_stat_upgrade
+{
+	position: absolute;
+	left: 205px;
+	top: 2px;
+	vertical-align: middle;
+}
+
+div.business_stat_upgrade_max
+{
+	position: absolute;
+	top: 8px;
+	font-size: 14px;
+	color: #555;
+}
+
+div.business_stat_bottom
+{
+	border-bottom: none;
+}
+
+div.business_sell_row
+{
+	position: relative;
+	clear: both;
+	margin: 10px 0px;
+	height: 30px;
+	border-top: 1px solid #555;
+}
+
+div.business_sell_button
+{
+	position: absolute;
+	left: 377px;
+	top: 4px;
+}
+
+div.business_sell_button div
+{
+    overflow: hidden;
+}
+
+div.business_all_sold
+{
+    text-align: center;
+    font-weight: bold;
+    padding: 7px;
+}
+
+div.business_progress_bar_outside
+{
+	position: absolute;
+	left: 0px;
+	top: 4px;
+	
+	border: 1px solid #555;
+	background: #000;
+	
+	width: 360px;
+	height: 26px;
+	
+	vertical-align: middle;
+	text-align: center;
+}
+
+div.business_progress_bar_inside
+{
+	background: #555;
+	height: 26px;
+	
+	z-index: 1;
+	
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+
+div.business_progress_bar_inside_partial
+{
+	border-right: 1px solid #555;
+}
+
+div.business_progress_bar_current_stock
+{
+	position: absolute;
+	left: 85px;
+	top: 2px;
+	
+	width: 190px;
+	height: 18px;
+	padding: 1px;
+	
+	border: 1px solid #555;
+	background: #000;
+	color: #fff;
+	
+	filter:alpha(opacity=70);
+	-moz-opacity:.70;
+	opacity:.70; 
+	
+	vertical-align: middle;
+	text-align: center;
+	
+	z-index: 10;
+}
+
+div.business_production_timer
+{
+	font-weight: bold;
+}
+
+span.business_timer_span
+{
+	font-weight: bold;
+	color: #52E259;
+}
+/*** NYC ***/
+
+.mw_city1, .mw_city1 td, .mw_city1 th, .mw_city1 dd, .mw_city1 dl { color: #bcd2ea; } 
+
+
+.mw_city1 #content_row { background-image: url(http://mwfb.static.zynga.com/mwfb/graphics/MW_FB_Background_760.gif); }
+.mw_city1 #mw_masthead { background-image: url(http://mwfb.static.zynga.com/mwfb/graphics/mafia_wars_928x56_02.jpg); }
+.mw_city1 .tab_content { width: 98px; }
+
+
+
+.mw_city1 #game_stats { background-color: #111111; }
+.mw_city1 #user_stats { background-color: #09122f; }
+.mw_city1 #user_nav { background-image: url(http://mwfb.static.zynga.com/mwfb/graphics/black_bg.gif); }
+.mw_city1 #game_nav { background-image: url(http://mwfb.static.zynga.com/mwfb/graphics/red_bg.gif); }
+
+#LoadingRefresh .sexy_button,
+.mw_city1 .sexy_button, 
+.mw_city1 a.sexy_button, 
+.mw_city1 a.sexy_button:visited, 
+.mw_city1 a.sexy_button:link, 
+.mw_city1 button
+{
+	background-image: url(http://mwfb.static.zynga.com/mwfb/graphics/button_static.gif);
+}
+
+.mw_city1 .sexy_cash, .mw_city1 .message_cash, .mw_city1 .fightres_cash  { background-image: url(http://mwfb.static.zynga.com/mwfb/graphics/icon_cash_16x16_01.gif); background-position: 0 0; }
+.mw_city1 li.tab_on { background-image: url(http://mwfb.static.zynga.com/mwfb/graphics/red_bg.gif); }
+.mw_city1 li.tab_off { background-image: url(http://mwfb.static.zynga.com/mwfb/graphics/black_bg.gif); }
+.mw_city1 li.red_black_cap { background-image: url(http://mwfb.static.zynga.com/mwfb/graphics/red_black_cap.gif); }
+.mw_city1 li.black_red_cap_back { background-image: url(http://mwfb.static.zynga.com/mwfb/graphics/black_red_cap_back.gif); }
+.mw_city1 li.red_red_cap { background-image: url(http://mwfb.static.zynga.com/mwfb/graphics/red_red_cap.gif); }
+.mw_city1 li.black_black_cap { background-image: url(http://mwfb.static.zynga.com/mwfb/graphics/black_cap.gif); }
+.mw_city1 li.black_black_cap_back { background-image: url(http://mwfb.static.zynga.com/mwfb/graphics/black_black_cap_back.gif); }
+.mw_city1 li.black_red_cap { background-image: url(http://mwfb.static.zynga.com/mwfb/graphics/black_red_cap.gif); }
+.mw_city1 li.red_grey_cap { background-image: url(http://mwfb.static.zynga.com/mwfb/graphics/red_grey_cap.gif); }
+.mw_city1 li.black_grey_cap { background-image: url(http://mwfb.static.zynga.com/mwfb/graphics/black_grey_cap.gif); }
+
+
+/*** CUBA ***/
+
+.mw_city2, .mw_city2 td, .mw_city2 th, .mw_city2 dd, .mw_city2 dl { color: #e9e9af; } 
+
+
+.mw_city2 #content_row { background-image: url(http://mwfb.static.zynga.com/mwfb/graphics/cuba_bg_facebook_760x418_01.jpg); }
+.mw_city2 #mw_masthead { background-image: url(http://mwfb.static.zynga.com/mwfb/graphics/cuba_header_facebook_760x56_02.jpg); }
+.mw_city2 .tab_content { width: 98px; }
+
+.mw_city2 #game_stats { background-color: #1d1604; }
+.mw_city2 #user_stats { background-color: #3d1104; }
+.mw_city2 #user_nav { background-image: url(http://mwfb.static.zynga.com/mwfb/graphics/button_cuba_dark_bg_100x144_01.gif); }
+.mw_city2 #game_nav { background-image: url(http://mwfb.static.zynga.com/mwfb/graphics/button_cuba_brown_bg_100x144_01.gif); }
+
+.mw_city2 .sexy_button, 
+.mw_city2 a.sexy_button, 
+.mw_city2 a.sexy_button:visited, 
+.mw_city2 a.sexy_button:link, 
+.mw_city2 button
+{
+	background-image: url(http://mwfb.static.zynga.com/mwfb/graphics/button_cuba_dark_bg_100x144_01.gif);
+}
+
+.mw_city2 .sexy_cash, .mw_city2 .message_cash, .mw_city2 .fightres_cash  { background-image: url(http://mwfb.static.zynga.com/mwfb/graphics/icon_cubanpeso_16x11_01.gif); background-position: 0 3px; }
+.mw_city2 li.tab_on { background-image: url(http://mwfb.static.zynga.com/mwfb/graphics/button_cuba_brown_bg_100x144_01.gif); }
+.mw_city2 li.tab_off { background-image: url(http://mwfb.static.zynga.com/mwfb/graphics/button_cuba_dark_bg_100x144_01.gif); }
+.mw_city2 li.red_black_cap { background-image: url(http://mwfb.static.zynga.com/mwfb/graphics/brown_dark_forward_cap_28x40_01.gif); }
+.mw_city2 li.black_red_cap_back { background-image: url(http://mwfb.static.zynga.com/mwfb/graphics/dark_brown_reverse_cap_28x40_01.gif); }
+.mw_city2 li.red_red_cap { background-image: url(http://mwfb.static.zynga.com/mwfb/graphics/brown_brown_forward_cap_28x40_01.gif); }
+.mw_city2 li.black_black_cap { background-image: url(http://mwfb.static.zynga.com/mwfb/graphics/dark_dark_forward_cap_28x40_01.gif); }
+.mw_city2 li.black_black_cap_back { background-image: url(http://mwfb.static.zynga.com/mwfb/graphics/dark_dark_reverse_cap_28x40_01.gif); }
+.mw_city2 li.black_red_cap { background-image: url(http://mwfb.static.zynga.com/mwfb/graphics/dark_brown_forward_cap_28x40_01.gif); }
+.mw_city2 li.red_grey_cap { background-image: url(http://mwfb.static.zynga.com/mwfb/graphics/brown_grey_forward_cap_28x49_01.gif); }
+.mw_city2 li.black_grey_cap { background-image: url(http://mwfb.static.zynga.com/mwfb/graphics/dark_grey_forward_cap_28x40_01.gif); }
+
+/*** MOSCOW ***/
+
+.mw_city3, .mw_city3 td, .mw_city3 th, .mw_city3 dd, .mw_city3 dl { color: #d7c1a7; } 
+
+
+.mw_city3 #content_row { background-image: url(http://mwfb.static.zynga.com/mwfb/graphics/moscow_body_bg_760x418_01.jpg); }
+.mw_city3 #mw_masthead { background-image: url(http://mwfb.static.zynga.com/mwfb/graphics/moscow_header_bg_760x56_01.jpg); }
+.mw_city3 .tab_content { width: 98px; }
+
+.mw_city3 #game_stats { background-color: #101010; }
+.mw_city3 #user_stats { background-color: #242424; }
+.mw_city3 #user_nav { background-image: url(http://mwfb.static.zynga.com/mwfb/graphics/button_cuba_dark_bg_100x144_01.gif); }
+.mw_city3 #game_nav { background-image: url(http://mwfb.static.zynga.com/mwfb/graphics/moscow_texture_red_100x140_01.gif); }
+
+.mw_city3 .sexy_button, 
+.mw_city3 a.sexy_button, 
+.mw_city3 a.sexy_button:visited, 
+.mw_city3 a.sexy_button:link, 
+.mw_city3 button
+{
+	background-image: url(http://mwfb.static.zynga.com/mwfb/graphics/moscow_red_button_bg.gif);
+}
+
+.mw_city3 .sexy_cash, .mw_city3 .message_cash, .mw_city3 .fightres_cash  { background-image: url(http://mwfb.static.zynga.com/mwfb/graphics/icon_cash_moscow_16x16_02.gif); background-position: 0 3px; }
+.mw_city3 li.tab_on { background-image: url(http://mwfb.static.zynga.com/mwfb/graphics/moscow_texture_red_100x140_01.gif); }
+.mw_city3 li.tab_off { background-image: url(http://mwfb.static.zynga.com/mwfb/graphics/button_cuba_dark_bg_100x144_01.gif); }
+.mw_city3 li.red_black_cap { background-image: url(http://mwfb.static.zynga.com/mwfb/graphics/red_dark_forward_cap.gif); }
+.mw_city3 li.black_red_cap_back { background-image: url(http://mwfb.static.zynga.com/mwfb/graphics/dark_red_reverse_cap.gif); }
+.mw_city3 li.red_red_cap { background-image: url(http://mwfb.static.zynga.com/mwfb/graphics/brown_brown_forward_cap_28x40_01.gif); }
+.mw_city3 li.black_black_cap { background-image: url(http://mwfb.static.zynga.com/mwfb/graphics/dark_dark_forward_cap.gif); }
+.mw_city3 li.black_black_cap_back { background-image: url(http://mwfb.static.zynga.com/mwfb/graphics/dark_dark_reverse_cap_28x40_01.gif); }
+.mw_city3 li.black_red_cap { background-image: url(http://mwfb.static.zynga.com/mwfb/graphics/dark_red_forward_cap.gif); }
+.mw_city3 li.red_grey_cap { background-image: url(http://mwfb.static.zynga.com/mwfb/graphics/red_grey_forward_cap.gif); }
+.mw_city3 li.black_grey_cap { background-image: url(http://mwfb.static.zynga.com/mwfb/graphics/dark_grey_forward_cap.gif); }
+
+.mw_city3 .chapter_title { background-image: url(http://mwfb.static.zynga.com/mwfb/graphics/bangkobk_chapter_texture.gif); }
+
+.mw_city3 .job_chapter_title
+{	
+	border: 1px solid #660000;
+	margin-top: 10px !important;
+	text-align: center !important;
+	background-color:#350400;
+	color:#99000000;
+}
+.mw_city3 .job_chapter_continue
+{
+   border: 1px solid #6C7A8F; 
+   text-align:center;
+   background-color:#111; 
+   font-size:15px; 
+   margin: 2px 0px 0px 0px; 
+   padding: 5px 0px;
+}
+
+.mw_city3 .job_chapter_image
+{   
+   border: 1px solid #2E2935 !important;
+}
+
+
+/*** BANGKOK ***/
+
+.mw_city4, .mw_city4 td, .mw_city4 th, .mw_city4 dd, .mw_city4 dl { color: #FFFFFF; } 
+
+
+.mw_city4 #content_row { background-image: url(http://mwfb.static.zynga.com/mwfb/graphics/mw_bangkok_background_760x418_02.jpg); }
+.mw_city4 #mw_masthead { background-image: url(http://mwfb.static.zynga.com/mwfb/graphics/mw_bangkok_header_760x56_02.jpg); }
+.mw_city4 .tab_content { width: 98px; }
+
+.mw_city4 #game_stats { background-color: #101010; }
+.mw_city4 #user_stats { background-color: #101010; }
+.mw_city4 #user_nav { background-image: url(http://mwfb.static.zynga.com/mwfb/graphics/bangkok_nav_texture_100x100_01.gif);  border: 1px solid black; }
+.mw_city4 #game_nav { background-image: url(http://mwfb.static.zynga.com/mwfb/graphics/bangkok_nav_texture_100x100_01.gif); border: 1px solid black; }
+
+.mw_city4 .sexy_button, 
+.mw_city4 a.sexy_button, 
+.mw_city4 a.sexy_button:visited,
+.mw_city4 a.sexy_button:link,
+.mw_city4 button
+{
+	background-image: url(http://mwfb.static.zynga.com/mwfb/graphics/bangkok_button_texture_100x144_02.gif);
+}
+
+.mw_city4 .sexy_cash, .mw_city4 .message_cash, .mw_city4 .fightres_cash  { background-image: url(http://mwfb.static.zynga.com/mwfb/graphics/icon_cash_bangkok_16x16_01.gif); background-position: 0 3px; }
+
+.mw_city4 li.tab_on { background-image: url(http://mwfb.static.zynga.com/mwfb/graphics/bangkok_tab_texture_active_100x144_01.gif);  border-top:1px solid #5C5C5C !important; border-bottom:1px solid #5C5C5C !important; }
+.mw_city4 li.tab_off { background-image: url(http://mwfb.static.zynga.com/mwfb/graphics/bangkok_tab_texture_inactive_100x144_01.gif); border-top:1px solid #2E2E2E !important; border-bottom:1px solid #2E2E2E !important; }
+.mw_city4 li.tab_locked { background-image: url(http://mwfb.static.zynga.com/mwfb/graphics/bangkok_tab_texture_locked_100x144_01.gif); border-top:1px solid #2E2E2E !important; border-bottom:1px solid #2E2E2E !important; }
+.mw_city4 li.tab_first { border-left:1px solid #3E3E3E !important; }
+.mw_city4 li.tab_last { border-right:1px solid #3E3E3E !important; }
+.mw_city4 li.red_black_cap { background-image: url(http://mwfb.static.zynga.com/mwfb/graphics/bangkok_tab_light_dark.gif); }
+.mw_city4 li.black_red_cap_back { background-image: url(http://mwfb.static.zynga.com/mwfb/graphics/bangkok_tab_dark_light_reversed.gif); }
+.mw_city4 li.red_red_cap { background-image: url(http://mwfb.static.zynga.com/mwfb/graphics/bangkok_tab_light_dark.gif); }
+.mw_city4 li.black_black_cap { background-image: url(http://mwfb.static.zynga.com/mwfb/graphics/bangkok_tab_dark_dark.gif); }
+.mw_city4 li.black_black_cap_back { background-image: url(http://mwfb.static.zynga.com/mwfb/graphics/dark_dark_reverse_cap_28x40_01.gif); }
+.mw_city4 li.black_red_cap { background-image: url(http://mwfb.static.zynga.com/mwfb/graphics/bangkok_tab_dark_light.gif); }
+.mw_city4 li.red_grey_cap { background-image: url(http://mwfb.static.zynga.com/mwfb/graphics/bangkok_tab_light_locked.gif); }
+.mw_city4 li.black_grey_cap { background-image: url(http://mwfb.static.zynga.com/mwfb/graphics/bangkok_tab_dark_locked.gif); }
+.mw_city4 li.grey_grey_cap { background-image: url(http://mwfb.static.zynga.com/mwfb/graphics/bangkok_tab_locked_locked.gif); }
+.mw_city4 li.grey_black_cap { background-image: url(http://mwfb.static.zynga.com/mwfb/graphics/bangkok_tab_locked_dark.gif); }
+.mw_city4 li.grey_red_cap { background-image: url(http://mwfb.static.zynga.com/mwfb/graphics/bangkok_tab_locked_light.gif); }
+.mw_city4 li.grey_red_cap_back { background-image: url(http://mwfb.static.zynga.com/mwfb/graphics/bangkok_tab_locked_light_reversed.gif); }
+
+
+.mw_city4 .chapter_title { background-image: url(http://mwfb.static.zynga.com/mwfb/graphics/bangkobk_chapter_texture.gif); }
+
+.mw_city4 .job_chapter_title
+{
+   background-image: url(http://mwfb.static.zynga.com/mwfb/graphics/bangkok_chapter_texture.gif);
+   margin-top: 10px !important;
+   text-align: center !important;
+}
+.mw_city4 .job_chapter_continue
+{
+   border: 1px solid #6C7A8F; 
+   text-align:center;
+   background-color:#111; 
+   font-size:15px; 
+   margin: 2px 0px 0px 0px; 
+   padding: 5px 0px;
+}
+
+.mw_city4 .job_chapter_image
+{   
+   border: 1px solid #2E2935 !important;
+}
+
+
+.mw_city4 .fight_table
+{
+   background: transparent url('http://mwfb.static.zynga.com/mwfb/graphics/bangkok_fight_bg_720x250_01.jpg') no-repeat top center;
+}
+/******************************
+  Goodbuyer Interstitial Page
+******************************/
+
+div.goodbuyer_wrapper
+{
+    width: 100%;
+    position: relative;
+    height: 600px;
+}
+
+div.goodbuyer
+{
+    width: 540px;
+    border: 1px solid #555;
+    background: #000;
+    margin: 20px;
+    padding: 10px;
+    
+    position: absolute;
+    left: 68px;
+    top: 0px;
+}
+
+div.goodbuyer_description
+{
+    padding: 13px 0 0 5px;
+}
+
+div.goodbuyer_pricebox
+{
+    width: 160px;
+    height: 91px;
+    border: 1px solid #555;
+    padding-top: 15px; 
+    float: left;
+    margin-right: 10px;
+    text-align: center;
+    color: #ffd927;
+}
+
+div.goodbuyer_pricebox_last
+{
+    margin-right: 0px;
+}
+
+div.goodbuyer_pricebox_wrapper
+{
+    padding: 20px 0 0 10px;
+    clear: both;
+    height: 100px;
+}
+
+div.goodbuyer_price_orig
+{
+    margin-top: 16px;
+    text-decoration: line-through;
+    color: #ccc;
+}
+
+span.goodbuyer_points
+{
+    font-weight: bold;
+    color: #ff0;
+}
+
+div.goodbuyer_button_wrapper
+{
+    margin-top: 10px;
+    height: 40px;
+    position: relative;
+}
+
+div.goodbuyer_button
+{
+    position: absolute;
+    top: 0px;
+    left: 160px;
+}
+
+div.goodbuyer_text
+{
+    padding-top: 10px;
+    text-align: left; 
+}
+
+div.goodbuyer_congtrats
+{
+    text-align: left;
+}
+
+div.goodbuyer_favor_message
+{
+    font-weight: bold;
+    color: #ff0;
+    padding: 5px;
+    text-align: center;
+}
+
+
+/*********************************************
+	New Buyer Popup
+*********************************************/
+
+div.newbuyer_wrapper
+{
+    width: 100%;
+    position: relative;
+    height: 400px;
+}
+
+div.newbuyer
+{
+    width: 540px;
+    margin: 20px;
+    padding: 10px;
+    
+    position: absolute;
+    left: 50px;
+    top: -30px;
+}
+
+div.newbuyer_description
+{
+    padding: 13px 0 0 5px;
+}
+
+div.newbuyer_pricebox
+{
+    width: 160px;
+    height: 121px;
+    border: 1px solid #555;
+    padding-top: 15px; 
+    float: left;
+    margin-right: 10px;
+    text-align: center;
+    color: #ffd927;
+}
+
+div.newbuyer_pricebox_last
+{
+    margin-right: 0px;
+}
+
+div.newbuyer_pricebox_wrapper
+{
+    padding: 20px 0 0 10px;
+    clear: both;
+    height: 145px;
+}
+
+div.newbuyer_price_orig
+{
+    margin-top: 16px;
+    text-decoration: line-through;
+    color: #ccc;
+}
+
+span.newbuyer_points
+{
+    font-weight: bold;
+    color: #ff0;
+}
+
+div.newbuyer_button_wrapper
+{
+    margin-top: 10px;
+    height: 40px;
+    position: relative;
+}
+
+div.newbuyer_button
+{
+    position: absolute;
+    top: 0px;
+    left: 160px;
+}
+
+div.newbuyer_button_now
+{
+    position: relative;
+    top: 10px;
+    left: 45px;
+}
+
+div.newbuyer_text
+{
+    padding-top: 10px;
+    text-align: left; 
+}
+
+div.newbuyer_congrats
+{
+    text-align: left;
+}
+
+div.newbuyer_favor_message
+{
+    font-weight: bold;
+    color: #ff0;
+    padding: 5px;
+    text-align: center;
+}#black_friday h2,
+#black_friday h3,
+#black_friday h4,
+#black_friday p,
+#black_friday dl,
+#black_friday dt,
+#black_friday dd,
+#black_friday ul,
+#black_friday li,
+#black_friday div {
+	margin: 0;
+	padding: 0;
+}
+
+#black_friday {
+	padding-top: 36px;
+	width: 734px;
+	background-image: url("http://mwfb.static.zynga.com/mwfb/graphics/black_friday/holidaysale_bg.gif");
+	background-position: -14px -103px;
+}
+
+#black_friday .market_mastery,
+#black_friday div.three_wide {
+	border: 1px solid #4c4c4c;
+	margin-bottom: 24px;
+}
+
+#black_friday .bf_title {
+	float: left;
+	margin-bottom: 24px;
+	width: 236px;
+}
+
+#black_friday .bf_title h2 {
+	background: url("http://mwfb.static.zynga.com/mwfb/graphics/black_friday/holidaysale_logo_01.gif") 50% 0 no-repeat;
+	height: 99px;
+	padding-top: 1px;
+	width: 203px;
+}
+
+#black_friday .bf_title h2 a {
+	display: block;
+	margin-top: 36px;
+	margin-left: 204px;
+	width: 15px;
+}
+
+#black_friday .bf_title dt,
+#black_friday .bf_title dd {
+	color: #666;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+#black_friday .bf_title dt {
+	clear: left;
+	float: left;
+	font-weight: normal;
+	margin-right: 10px;
+	text-align: right;
+	width: 50px;
+}
+
+
+
+#black_friday .market_mastery {
+	background: #0a0a0a url("http://mwfb.static.zynga.com/mwfb/graphics/black_friday/right_angle_bracket_bg.gif") -43px 50% no-repeat;
+	border: 1px solid #4c4c4c;
+	float: right;
+	padding: 0 10px;
+	text-align: center;
+	width: 457px;
+}
+
+#black_friday .mastery {
+	float: left;
+	width: 280px;
+}
+
+#black_friday .mastery p {
+	color: #999;
+	font-size: 12px;
+	margin: 12px 0 16px;
+	text-align: center;
+}
+
+#black_friday .mastery p.big {		font-size: 14px; margin-bottom: 9px; margin-top:23px;}
+#black_friday .mastery p.small {	font-size: 11px; margin-top: 15px; }
+
+#black_friday .mastery p span {			color: #ddd; }
+#black_friday .mastery p span span {	color: #66b401; }
+
+#black_friday .mastery .sexy_button {
+	display: inline;
+	float: none;
+}
+
+#black_friday div.mastery_bar {
+	background: url("http://mwfb.static.zynga.com/mwfb/graphics/black_friday/mastery_bar_border.gif") 0 0 no-repeat;
+	height: 20px;
+	margin: 22px auto 0;
+	padding: 2px;
+	text-align: left;
+	width: 159px;
+}
+
+#black_friday .mastery_bar p {
+	background: url("http://mwfb.static.zynga.com/mwfb/graphics/black_friday/mastery_bar_segment.gif") 0 0 repeat-x;
+	height: 20px;
+	margin: 0;
+}
+
+#black_friday .market_mastery dl.item {
+	float: right;
+}
+
+#black_friday dl.item {
+	background-position: 0 100%;
+	background-repeat: no-repeat;
+	height: 105px;
+	margin-top: 10px;
+	margin-bottom: 24px;
+	width: 150px;
+}
+
+#black_friday dl.consumable {
+	background-position: 50% 100%;
+}
+
+#black_friday dl.item dt {
+	color: #fff;
+	font-size: 14px;
+	font-weight: bold;
+	height: 32px;
+	line-height: 16px;
+	padding-bottom: 4px;
+	text-align: center;
+}
+
+#black_friday dl.item dd {
+	color: #999;
+	font-size: 14px;
+	line-height: 18px;
+	margin: 6px 0 12px 95px;
+	padding-left: 19px;
+	text-align: left;
+}
+
+#black_friday dl.item dd.attack {		background: url("http://mwfb.static.zynga.com/mwfb/graphics/icon-attack.gif") 0 50% no-repeat; }
+#black_friday dl.item dd.defense {		background: url("http://mwfb.static.zynga.com/mwfb/graphics/icon-defense.gif") 0 50% no-repeat; }
+#black_friday dl.item dd.rob_defense {	background: url("http://mwfb.static.zynga.com/mwfb/graphics/icon_protect_16x16_01.gif") -2px 50% no-repeat; }
+#black_friday dl.item dd.energy {		background: url("http://mwfb.static.zynga.com/mwfb/graphics/icon_energy_16x16_01.gif") 0 50% no-repeat; }
+#black_friday .three_wide dl.boost dd {
+	background-position: 0 3px;
+	font-size: 12px;
+	line-height: 15px;
+}
+
+#black_friday .three_wide dl.boost dd span {
+	color: #ccc;
+	display: block;
+	font-size: 14px;
+	line-height: 18px;
+	margin-bottom: 2px;
+}
+
+
+#black_friday div.three_wide {
+	background: #0a0a0a;
+	clear: both;
+	padding-bottom: 8px;
+	position: relative;
+}
+
+#black_friday div.three_wide h3 {
+	background: #111;
+	border-bottom: 1px solid #333;
+	color: #fff;
+	font-size: 14px;
+	line-height: 22px;
+	margin-bottom: 8px;
+	padding: 6px 14px;
+}
+
+#black_friday div.three_wide h3 span {
+	color: #999;
+}
+
+#black_friday div.three_wide a.arrow_left,
+#black_friday div.three_wide a.arrow_right {
+	background: url("http://mwfb.static.zynga.com/mwfb/graphics/black_friday/arrows.gif") 9px 50% no-repeat;
+	height: 195px;
+	position: absolute;
+	width: 28px;
+}
+
+#black_friday div.three_wide a.arrow_left {
+	background-position: 9px 50%;
+	bottom: 8px; left: 1px;
+}
+
+#black_friday div.three_wide a.arrow_right {
+	background-position: -91px 50%;
+	bottom: 8px; right: 1px;
+}
+
+#black_friday div.three_wide a.arrow_left_on {	background-position: -191px 50%; }
+#black_friday div.three_wide a.arrow_right_on {	background-position: -291px 50%; }
+
+#black_friday div.three_wide a.arrow_left:hover,
+#black_friday div.three_wide a.arrow_right:hover {
+	cursor: default;
+}
+
+#black_friday div.three_wide a.arrow_left_on:hover,
+#black_friday div.three_wide a.arrow_right_on:hover {
+	background-color: #111;
+	cursor: pointer;
+}
+
+#black_friday div.two_tall a.arrow_left,
+#black_friday div.two_tall a.arrow_right {
+	height: 410px;
+}
+
+#black_friday div.three_wide .items {
+	height: 195px;
+	margin: 0 0 0 30px;
+	overflow: hidden;
+	padding: 0 1px;
+	width: 670px;
+}
+
+#black_friday div.two_tall .items {
+	background: url("http://mwfb.static.zynga.com/mwfb/graphics/black_friday/divider_dotted_horizontal.gif") 1px 50% repeat-x;
+	height: 410px;
+}
+
+#black_friday div.with_arrows .items {
+	border-right: 1px solid #303030;
+	border-left: 1px solid #303030;
+	padding: 0;
+}
+
+#black_friday div.three_wide .items li {
+	background: url("http://mwfb.static.zynga.com/mwfb/graphics/black_friday/divider_dotted_vertical.gif") 100% 0 repeat-y;
+	float: left;
+	height: 195px;
+	list-style-type: none;
+	margin-bottom: 20px;
+	overflow: hidden;
+	padding-right: 1px;
+	text-align: center;
+	width: 223px;
+}
+
+#black_friday div.three_wide .items li .item {
+	background-position: 30px 100%;
+	margin: 0 auto;
+	width: 210px;
+}
+
+#black_friday div.three_wide .items li .consumable {
+	background-position: 50% 100%;
+}
+
+#black_friday div.three_wide .items li .item dd {
+	margin-left: 125px;
+}
+
+#black_friday div.three_wide .items li p {
+	color: #999;
+	font-size: 12px;
+	margin: 6px 0 2px;
+	text-align: center;
+}
+
+#black_friday div.three_wide .items li h4 {
+	color: #ffd927;
+	font-size: 14px;
+	line-height: 16px;
+	margin: 0 0 12px;
+	text-align: center;
+}
+
+#black_friday div.three_wide .items li h4.boost {
+	margin-top: 23px;
+}
+
+#black_friday div.three_wide .items li form select {
+	display: inline; /* IE6/7 double margin bug fix */
+	float: left;
+	margin-left: 14px;
+}
+
+#black_friday div.three_wide .items li form .sexy_button {
+	display: inline; /* IE6/7 double margin bug fix */
+	float: right;
+	margin-right: 14px;
+}
+
+#black_friday div.three_wide .items li form .sexy_button input,
+#black_friday #hourly_featured .price_column .sexy_button input {
+	overflow: visible;
+}
+
+
+#black_friday #hourly_featured div div {
+	background: url("http://mwfb.static.zynga.com/mwfb/graphics/black_friday/divider_dotted_vertical.gif") 100% 0 repeat-y;
+	float: left;
+	height: 120px;
+	padding-right: 1px;
+	text-align: center;
+}
+
+#black_friday #hourly_featured div.item_column {	width: 213px; }
+#black_friday #hourly_featured div.timer_column {	width: 213px; }
+#black_friday #hourly_featured div.price_column {	width: 283px; }
+
+#black_friday #hourly_featured form div {
+	background: none;
+	height: auto;
+	padding: 0;
+	width: 100%;
+}
+#black_friday #hourly_featured div div.timer_column {	background: none; }
+#black_friday #hourly_featured_inner {			margin: 0 10px; }
+
+#black_friday #hourly_featured_inner .item {
+	background-position: 25px 100%;
+	margin: 0 auto;
+	width: 210px;
+}
+
+#black_friday #hourly_featured_inner dd {
+	margin-left: 120px;
+}
+
+#black_friday #hourly_featured_inner p {
+	color: #999;
+	font-size: 12px;
+	line-height: 16px;
+	margin: 5px 0 4px;
+	text-align: center;
+}
+
+#black_friday #hourly_featured_inner h4 {
+	color: #ccc;
+	font-size: 14px;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+#black_friday #hourly_featured .sexy_button {
+	display: inline;
+	float: none;
+}
+
+#black_friday #hourly_featured_inner .timer_column p {
+	color: #ccc;
+	font-weight: bold;
+	padding: 0 0 0 14px;
+	text-align: left;
+}
+
+#black_friday #hourly_featured_inner #bf_featured_timer {
+	color: #bd2923;
+	margin-top: 10px;
+	text-align: center;
+}
+
+#black_friday #hourly_featured_inner #bf_featured_timer span {
+	display: block;
+	font-size: 22px;
+	margin-top: 4px;
+}
+
+#black_friday .mastery_head_ancestor {
+  position:relative;
+  top:-34px;
+  left:28px;
+}
+
+#black_friday .mastery_head_ancestor_ie7 {
+  position:relative;
+  top:-34px;
+  left:-198px;
+}
+
+#black_friday .mastery_head {
+  position:absolute;
+  height:64px;
+  width:394px;
+  background-image: url("http://mwfb.static.zynga.com/mwfb/graphics/black_friday/holidaysales_rewardshead.gif");
+}
+.gift_safehouse{
+	position: relative;
+	padding-top: 35px;
+	z-index: 1;
+}
+
+.gift_safehouse_cont{
+	font-size: 14px;
+	color: white;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.safehouse_xbox{
+	display: inline; /* Fix for IE double margin bug */
+	float: left;
+	margin-top: 14px;
+	margin-left: 20px;
+}
+
+.safehouse_jacket{
+	display: inline; /* Fix for IE double margin bug */
+	float: right;
+	margin-top: 14px;
+	margin-right: 20px;
+}
+
+.gift_safehouse_header {
+	color: white;
+	font-size: 14px;
+	margin-top: 20px;
+	text-align: center;
+}
+
+.gift_safehouse_header a {
+	background: url('http://mwfb.static.zynga.com/mwfb/graphics/icon_help_16x16_01.gif') 0 50% no-repeat;
+	padding-left: 19px;
+	font-size: 14px;
+}
+
+.safehouse_preface{
+	font-size: 16px;
+	font-weight: bold;
+	width: 500px;
+}
+
+.gift_safehouse_send_gift {
+	text-align: center;
+}
+
+.gift_safehouse_link{
+	position: relative;
+	top: 120px;
+	left: 260px;
+}
+
+.gift_safehouse_requests {
+	margin-top: 15px;
+}
+
+.gift_safehouse_giftbox_cont{
+	margin-top: 0px;
+	z-index: 0;
+}
+
+.gift_safehouse_gift_display{
+	padding: 10px 4px 0;
+	float: left;
+	width: 139px;
+	height: 180px;
+	text-align: center;
+}
+
+.door_open{
+	background: url('http://mwfb.static.zynga.com/mwfb/graphics/mw_dooropen.gif') 0px 0px no-repeat;
+	height: 141px;
+	margin: 0 6px;
+	width: 127px;
+}
+
+.door_closed{
+	background: url('http://mwfb.static.zynga.com/mwfb/graphics/mw_door.gif') 0px 0px no-repeat;
+	height: 141px;
+	margin: 0 6px;
+	width: 127px;
+}
+
+.gift_safehouse_box_img{
+	display: block;
+	margin: 0 auto;
+	padding-top: 60px;
+	padding-bottom: 5px;
+}
+
+.gift_safehouse_gift_mastery {
+	background: url('http://mwfb.static.zynga.com/mwfb/graphics/holiday_giftsreceived.gif') 0px 0px no-repeat;
+	height: 100px;
+	margin: 10px 0 0 40px;
+	text-align: left;
+}
+
+.gift_safehouse_gift_mastery_cont {
+	padding: 19px 0 0 60px;
+}
+	
+.gift_safehouse_recieved_img{
+	position: relative;
+	top: 0px;
+	left: -60px;
+}
+
+.gift_safehouse_gift_timer {
+	display: inline; /* Fix for IE double margin bug */
+	float: right;
+	font-size: 16px;
+	margin: 10px 40px 0 0;
+	text-align: left;
+	width: 240px;
+}
+
+.gift_safehouse_giftbox_boxes{
+	width: 740px;
+}
+
+.gift_safehouse_mastery_wt{
+	position: relative;
+}
+
+.gift_safehouse_open_link {
+	text-align: center;
+}
+
+.gift_safehouse_gift_display .gift_safehouse_open_link a.sexy_button {
+	display: inline-block;
+	float: none;
+}
+
+.gift_safehouse_open_link .sexy_button .sexy_coin {
+	background: url("http://mwfb.static.zynga.com/mwfb/graphics/reward_coin_17x17_01.gif") 100% 50% no-repeat;
+	padding: 0 20px 0 0;
+}
+
+/* Valentines Day Love Meter */
+.meter_empty {
+	background: url(http://mwfb.static.zynga.com/mwfb/graphics/safehouse/mw_respect-safehouse_meter-empty.gif) 50% 0 no-repeat; 
+	text-align:center;
+	min-height: 20px;
+	height: 20px;
+}
+
+.negative {
+	background: url(http://mwfb.static.zynga.com/mwfb/graphics/safehouse/mw_respect-safehouse_meter-negative.gif) 50% 0 no-repeat; 
+	margin-left: auto;
+	margin-right: auto;
+	min-height: 20px;
+  height: 20px;
+}
+
+.positive {
+	background: url(http://mwfb.static.zynga.com/mwfb/graphics/safehouse/mw_respect-safehouse_meter-positive.gif) 50% 0 no-repeat; 
+	margin-left: auto;
+	margin-right: auto;
+	min-height: 20px;
+  height: 20px;
+}
+
+
+/* Choose your sizing */
+.full {
+	width: 280px;
+}
+
+/* Negative Numbers */
+.size_5 {
+  width: 14px;  
+}
+
+.size_10 {
+	width: 28px;
+}
+
+.size_15 {
+  width: 42px;
+}
+
+.size_20 {
+	width: 56px;
+}
+
+.size_25 {
+  width: 70px;  
+}
+
+.size_30 {
+	width: 84px;
+}
+
+.size_35 {
+  width: 98px;
+}
+
+.size_40 {
+	width: 112px;
+}
+
+.size_45 {
+  width: 126px; 
+}
+
+.size_50 {
+	width: 140px;
+}
+
+.size_55 {
+  width: 154px;
+}
+
+.size_60 {
+  width: 168px;  
+}
+
+.size_65 {
+  width: 182px;  
+}
+
+.size_70 {
+	width: 196px;
+}
+
+.size_75 {
+  width: 210px;  
+}
+
+.size_80 {
+	width: 224px;
+}
+
+.size_85 {
+  width: 238px;  
+}
+
+.size_90 {
+	width: 252px;
+}
+
+.size_95 {
+  width: 266px;  
+}
+
+.fill_empty {
+	width: 1px;
+}
+
+.gift_popup .sexy_love {
+  background: url("http://mwfb.static.zynga.com/mwfb/graphics/icon_love_24x21_01.gif") 100% 50% no-repeat;
+  padding-left: 23px;
+  padding-right: 3px;  
+}
+
+.transparent_class {
+  filter:alpha(opacity=50);
+  -moz-opacity:0.5;
+  -khtml-opacity: 0.5;
+  opacity: 0.5;
+}
+div.fight_results 
+{
+   padding: 5px;
+   margin: 10px 0;
+   border: 1px solid #ccc;
+   
+   position: relative;
+   background: #000;
+   
+   width: 720px;
+}
+
+div.fightres_title 
+{
+   font-size: 22px;
+   clear: both;
+   margin-bottom: 5px;
+}
+
+div.fightres_hint
+{
+   clear: both;
+   margin-bottom: 5px;
+}
+
+div.fightres_stats 
+{
+   font-weight: bold;
+   clear: none;
+   margin: 5px 0;
+   padding-bottom: 10px;
+   height: 20px;
+   width: 590px;
+   float: left;
+}
+
+      
+div.fightres_attackagain
+{
+   float: left;
+   clear: none;
+   height: 30px;
+   width: 130px;
+}
+
+div.fightres_stats div
+{
+   clear: none;
+   float: left;
+   margin: 2px 10px 2px 0;
+   padding-right: 10px;
+}
+
+   div.fightres_cash 
+   {
+      padding-left: 20px;
+      border-right: 1px solid #eee;
+   }
+      
+   div.fightres_experience 
+   {
+      background:url(http://mwfb.static.zynga.com/mwfb/graphics/icon_experience_16x16_01.gif) no-repeat 0px 0px;
+      padding-left: 20px;
+      border-right: 1px solid #eee;
+   }
+   
+   div.fightres_damage 
+   {
+      color: #eee;
+      background:url(http://mwfb.static.zynga.com/mwfb/graphics/icon_stamina_16x16_01.gif) no-repeat 0px 0px;
+      padding-left: 20px;  
+      clear: right; 
+      border-right: 1px solid #eee;
+   }
+
+   div.fightres_health 
+   {
+      color: #ec2d2d;
+      background:url(http://mwfb.static.zynga.com/mwfb/graphics/icon-health.gif) no-repeat 0px 3px;
+      padding-left: 20px;
+   }
+     
+
+div.fightres_characters 
+{
+   clear: both;
+   margin: 0px;
+   padding: 0;
+   width: 720px;
+   height: 170px;
+   border-top: 1px dotted #555;
+}
+
+   div.fightres_vs 
+   {
+      float: left;
+      clear: none;
+      width: 40px;
+      height: 170px;
+      font-weight: bold;
+      font-size: 18px;
+   }
+
+      div.fightres_vs_text 
+      {
+         font-weight: bold;
+         font-size: 20px;
+         text-align: center;
+         margin-bottom: 3px;
+      }
+      
+      div.fightres_vs_divider
+      {
+         padding: 0;
+         margin: 0;
+         float: left;
+         width: 50%;
+         height: 140px;
+         border-right: 1px dotted #555;
+      }
+      
+   div.fightres_player, div.fightres_opponent
+   {
+      float: left;
+      clear: none;
+      width: 337px;
+      height: 170px;
+   }
+   
+      div.fightres_player div
+      {
+         float: right;
+      }
+      
+      div.fightres_player div.fightres_names 
+      {
+         text-align: right;
+      }
+ 
+      div.fightres_opponent div
+      {
+         float: left;
+      } 
+
+      div.fightres_opponent div.fightres_names 
+      {
+         text-align: left;
+      }
+      
+      div.fightres_image
+      {
+         clear: none;
+         width: 50px;
+         height: 50px;
+         border: 2px solid #555;
+         margin: 5px;
+         overflow: hidden;
+      }  
+      
+      div.fightres_image img
+      {
+         clear: none;
+      }  
+
+      div.fightres_names
+      {
+         clear: none;
+         height: 55px;
+         margin: 5px;
+         width: 255px;
+         overflow: hidden;
+      }  
+
+         div.fightres_playertitle
+         {
+            clear: both;
+         }  
+   
+         div.fightres_name
+         {
+            font-weight: bold;
+            font-size: 16px;
+            clear: both;
+         }  
+   
+         div.fightres_level
+         {
+            clear: both;
+         }   
+
+      div.fightres_fightstats
+      {
+         clear: both;
+         float: none;
+         width: 330px;
+         overflow: hidden;
+      }
+      
+      div.fightres_fightstats_player
+      {
+         float: right;
+      }     
+     
+      div.fightres_fightstats_opp
+      {
+         float: left;
+      }   
+      
+      div.fightres_fightstats_opp div
+      {
+         float: left;
+      }  
+      
+      div.fightres_group_size,
+      div.fightres_group_attack,
+      div.fightres_group_defense,
+      div.fightres_skill_attack,
+      div.fightres_skill_defense
+      {
+         padding: 4px;
+         float: left;
+         font-weight: bold;
+      }  
+      
+      div.fightbar_group_stat img,
+      div.fightres_group_size img,
+      div.fightres_group_attack img,
+      div.fightres_group_defense img,
+      div.fightres_skill_attack img,
+      div.fightres_skill_defense img   
+      {
+         display: inline;
+         float: left;
+         clear: none;
+         margin-right: 4px;
+         margin-top: 2px;
+      }
+      
+      div.fightres_top3
+      {
+         clear: both;
+         position: relative;
+         width: 310px;
+      }
+      
+      div.fightres_top3 img   
+      {
+         clear: none;
+      }
+      
+      div.fightres_top3 div
+      {
+         float: left;
+      }
+      
+      div.fightres_top3_boost
+      {
+         width: 115px;
+         position: absolute;
+         top: 0;
+      }
+      
+      div.fightres_top3_main
+      {
+         width: 195px;
+         position: absolute;
+         top: 0;
+      }
+
+      div.fightres_player div.fightres_top3_boost
+      {
+         left: 0;
+      }
+      
+      div.fightres_player div.fightres_top3_main
+      {
+         left: 115px;
+      }
+      
+      div.fightres_opponent div.fightres_top3_boost
+      {
+         left: 195px;
+      }
+      
+      div.fightres_opponent div.fightres_top3_main
+      {
+         left: 0;
+      }
+
+         div.fightres_top3_title
+         {
+            width: 195px;
+            clear: none;
+            float: left;
+            font-weight: bold;
+            text-align: left;
+         }
+         
+         div.fightres_top3_items
+         {
+            clear: none;
+            width: 200px;
+            float: none;
+         }
+   
+         div.fightres_top3_item
+         {
+            width: 50px;
+            height: 50px;
+            border: 2px solid #555;
+            margin: 5px;
+            float: left;
+            clear: none;
+         } 
+         
+         div.fightres_boost_title
+         {
+            width: 115px;
+            clear: both;
+            float: left;
+            font-weight: bold;
+            text-align: left;        
+         }
+         
+         div.fightres_boost_atk
+         {
+
+         } 
+         
+         div.fightres_boost_def
+         {
+
+         } 
+                  
+         div.fightres_boost_item
+         {
+            width: 50px;
+            height: 50px;
+            border: 2px solid #555;
+            margin: 5px;
+            position: relative;  
+            clear: none;    
+         } 
+         
+
+      
+div.fightres_all_items 
+{
+   text-align: center;
+   border-top: 1px dotted #555;
+   padding: 0;
+}
+
+   div.fightres_item_link
+   {
+      clear: both;
+      font-weight: bold;
+      padding: 0;
+      margin: 5px 0;
+   }
+   
+   div#fightres_item_lists
+   {
+      display: none;
+   }
+   
+   div.fightres_item_list 
+   {
+      clear: none;
+      float: left;
+      width: 344px;
+      text-align: left;
+      margin: 5px;
+   }
+   
+   div.fightres_item_list p
+   {
+      font-size: 12px; 
+   }
+
+div.fightres_bonuses 
+{
+   padding: 10px 0;
+   clear: both;
+   height: 65px;
+   border-top: 1px dotted #555;
+}
+
+div.fightres_bonus_title 
+{
+   font-size: 22px;
+   font-weight: bold;
+   width: 85px;
+   float: left;
+   clear: none;
+}
+
+div.fightres_bonus_image 
+{
+   float: left;
+   clear: none;
+   width: 50px;
+   height: 50px;
+   overflow: hidden;
+   border: 2px solid #555;
+   margin: 5px;      
+}
+
+div.fightres_bonus_message 
+{
+   float: left;
+   clear: none;
+   margin: 15px 5px;
+   width: 520px;
+}
+
+div.fightbar
+{
+   height: 70px;
+   width: 100%;
+   border: 1px solid #555;
+   font-weight: bold;
+   background: #111;
+   margin-bottom: 10px;
+}
+
+div.fightbar_skill
+{
+   float: left;
+   width: 175px;
+   overflow: hidden;
+}
+
+div.fightbar_text
+{
+   float: none;
+   clear: both; 
+   margin: 5px; 
+}
+
+div.fightbar_skill_atk,
+div.fightbar_skill_def,
+div.fightbar_group_stat
+{
+   float: left;
+   margin: 5px;
+}
+
+div.fightbar_skill_atk
+{
+   padding-left: 18px;
+   background:url(http://mwfb.static.zynga.com/mwfb/graphics/icon-attack_04.gif) no-repeat 3px 2px;
+}
+
+div.fightbar_skill_def
+{
+   padding-left: 18px;
+   background:url(http://mwfb.static.zynga.com/mwfb/graphics/icon-defense_04.gif) no-repeat 3px 2px;
+}
+
+div.fightbar_group
+{
+   float: left;
+   width: 240px;  
+}
+
+div.fightbar_group_stat
+{
+
+}
+
+div.fightbar_top3_atk,
+div.fightbar_top3_def
+{
+   float: left;
+   width: 150px;  
+}
+
+div.fightbar_top3_items
+{
+   clear: both;
+}
+
+div.fightbar_top3_item
+{
+   float: left;
+   clear: none;
+   margin: 2px 8px;
+}
+
+span.fightbar_popup
+{
+   margin-left: 30px;
+   font-size: 12px;
+}div.zy_progress_bar_outer
+{
+   padding: 0;
+   border: 1px solid white;
+   
+   width: 120px;
+   height: 24px;
+   
+   position: relative;
+   clear: none;
+}
+
+div.zy_progress_bar_inner
+{
+   height: 24px;
+   margin: 0;
+   padding: 0;
+   background-color: #000;
+   background-repeat: repeat-x;
+   background-position: 0 0;
+   
+   position: absolute;
+   left: 0;
+   top: 0;
+   z-index: 1;
+   
+   border-width: 0 0 1px 0;
+   border-style: solid;
+   border-color: inherit;
+}
+
+div.zy_progress_bar_text
+{
+   position: absolute;
+   left: 0;
+   top: 0;
+   z-index: 5;
+   
+   width: 120px;
+   height: 12px;
+   top: 4px;
+   text-align: center;
+   font-size: 12px;
+   font-weight: bold;
+   color: #fff;
+}
+
+div.zy_progress_bar_red
+{
+   background-image: url('http://mwfb.static.zynga.com/mwfb/graphics/statusbar_red_1x30_01.gif');
+}
+
+div.zy_progress_bar_yellow
+{
+   background-image: url('http://mwfb.static.zynga.com/mwfb/graphics/statusbar_yellow_1x30_01.gif');
+}
+
+div.zy_progress_bar_green
+{
+   background-image: url('http://mwfb.static.zynga.com/mwfb/graphics/statusbar_green_1x30_01.gif');
+}
+
+div.zy_progress_bar_blue
+{
+   background-image: url('http://mwfb.static.zynga.com/mwfb/graphics/statusbar_blue_1x30_01.gif');
+}
+
+div.zy_progress_bar_orange
+{
+   background-image: url('http://mwfb.static.zynga.com/mwfb/graphics/statusbar_orange_1x30_01.gif');
+}
+
+div.zy_progress_bar_purple
+{
+   background-image: url('http://mwfb.static.zynga.com/mwfb/graphics/statusbar_purple_1x30_01.gif');
+}
+
+div.zy_progress_bar_incomplete,
+div.zy_progress_bar_incomplete div
+{
+   color: #aaa;
+   border-color: #aaa;
+}
+
+div.zy_progress_bar_complete,
+div.zy_progress_bar_complete div
+{
+   color: #ffd927;
+   border-color: #ffd927;
+}
+
+div.zy_progress_bar_squished_outer
+{
+   padding: 0;
+   border: 1px solid #555;
+   
+   width: 120px;
+   height: 10px;
+   
+   position: relative;
+   clear: none;   
+}
+
+div.zy_progress_bar_squished_inner
+{
+   height: 10px;
+   margin: 0;
+   padding: 0;
+   background-color: #000;
+   background-repeat: repeat-x;
+   background-position: 0 0;
+   
+   position: absolute;
+   left: 0;
+   top: 0;
+   z-index: 1;
+   
+   border-width: 0 0 1px 0;
+   border-style: solid;
+   border-color: inherit;
+}
+
+div.zy_progress_bar_squished_text
+{
+}
+
+div.zy_progress_bar_squished_incomplete,
+div.zy_progress_bar_squished_incomplete div,
+div.zy_progress_bar_squished_complete,
+div.zy_progress_bar_squished_complete div
+{
+   color: #555;
+   border-color: #555;
+}
+
+
+/* Racket Progress */
+
+div.zy_progress_bar_racketprog_outer
+{
+   margin: 0;
+   padding: 0;
+   border: none;
+   
+   width: 120px;
+   height: 40px;
+
+   position: absolute;
+   left: 0px;
+   top: 30px;
+   
+   background: transparent; 
+   
+   z-index: 2;
+}
+
+div.zy_progress_bar_racketprog_inner
+{
+   height: 40px;
+   margin: 0;
+   padding: 0;
+   background-color: #000;
+   background-repeat: repeat;
+   background-position: 0 0;
+   
+   position: absolute;
+   left: 0;
+   top: 0;
+   z-index: 1;
+   
+   filter:alpha(opacity=30);
+   -moz-opacity:.30;
+   opacity: 0.3; 
+   
+   border: none;
+   
+}
+
+div.zy_progress_bar_racketprog_text
+{
+   filter:alpha(opacity=100);
+   -moz-opacity:1.0;
+   opacity: 1.0; 
+   position: absolute;
+   left: 0;
+   top: 0;
+   width: 120px;
+   text-align: center;
+   z-index: 5;
+   margin-top: 2px;
+}
+
+div.zy_progress_bar_racketprog_incomplete,
+div.zy_progress_bar_racketprog_incomplete div,
+div.zy_progress_bar_racketprog_complete,
+div.zy_progress_bar_racketprog_complete div
+{
+   color: #555;
+   border: none;
+}
+
+/* faction bars */
+div.zy_progress_bar_faction_outer
+{
+   padding: 0;
+   border: 1px solid #555;
+   
+   width: 610px;
+   height: 20px;
+   
+   position: absolute;
+   left: 100px;
+   clear: none;   
+}
+
+div.zy_progress_bar_faction_inner
+{
+   height: 20px;
+   margin: 0;
+   padding: 0;
+   background-color: #000;
+   background-repeat: repeat-x;
+   background-position: 0 0;
+   
+   position: absolute;
+   left: 0;
+   top: 0;
+   z-index: 1;
+   
+   border-width: 0 0 1px 0;
+   border-style: solid;
+   border-color: inherit;
+}
+
+div.zy_progress_bar_faction_text
+{
+   text-align: center;
+   font-weight: bold;
+   
+   z-index: 5;
+   position: absolute;
+   top: 2px;
+   left: 200px;
+   width: 200px;
+}
+
+div.zy_progress_bar_faction_incomplete,
+div.zy_progress_bar_faction_incomplete div,
+div.zy_progress_bar_faction_complete,
+div.zy_progress_bar_faction_complete div
+{
+   color: #555;
+   border-color: #555;
+}div.racket_ready div.zy_progress_bar_outer,
+div.racket_ready div.zy_progress_bar_outer div
+{
+   color: #ffd927;
+   border-color: #ffd927;
+}
+
+div.racket_description
+{
+   margin: 10px;
+}
+
+div.racket_list
+{
+   width: 720px;
+   list-style-type: none;
+   list-style-position:inside;
+   padding: 0;
+   margin: 0 0 0 10px;
+   
+   color: #ccc;
+}
+
+div.racket_hood
+{
+   position: relative;
+   border-top: 1px solid #555;
+   margin: 20px 0;
+   padding: 0;
+}
+
+div.racket_hood_top
+{
+   position: relative;
+   height: 35px;
+   border-bottom: 1px dotted #555;
+   background: #1a1a1a;
+   padding: 0;
+}
+
+div.racket_hood_rackets
+{
+   position: relative;
+   height: 170px;
+   margin: 5px;
+}
+
+div.racket_hood_name
+{
+   float: left;
+   clear: none;
+
+   margin: 7px;
+   width: 400px;
+   font-weight: bold;
+   text-transform: uppercase;
+   font-size: 18px;
+   color: #fff;
+   width: 350px;
+}
+
+div.racket_hood_earner
+{
+   margin: 10px 5px 5px 5px;
+   float: left;
+   clear: none;
+   width: 400px;
+   color: #ccc;
+}
+
+img.racket_hood_earner_pic
+{
+   float: left;
+   margin: 5px;
+   padding: 0;
+   border: 2px solid #555;
+   clear: none;
+}
+
+div.racket_hood_collect_all
+{
+   position: absolute;
+   right: 3px;
+   top: 3px;
+}
+
+div.racket_slot
+{
+   position: absolute;
+   top: 0px;
+   width: 126px;
+   height: 170px;
+   
+   padding: 0;
+   
+   font-size: 12px;
+   font-weight: bold;
+   text-align: center;
+   
+   border-left: 1px dotted #555;
+}
+
+div.racket_slot div.racket_img
+{
+   margin: 8px;
+   border: 1px solid #555;
+   background: #1a1a1a;
+   width: 120px;
+   height: 100px;
+   padding: 0;
+}
+
+div.racket_slot div.racket_name
+{
+   margin: 2px 8px;
+   font-weight: bold;
+   font-size: 12px;
+   height: 16px;
+   width: 120px;
+   padding: 0;   
+   text-align: center;
+}
+
+div.racket_robbed div.racket_name
+{
+   color: #ec2d2d;
+}
+
+div.racket_img img
+{
+   padding: 0;
+   margin: 0;
+}
+
+div.racket_emptylot_text
+{
+   margin: 40px 0;
+   text-align: center;
+}
+
+div.racket_slot div.racket_btn
+{
+   margin: 0 8px;
+   width: 120px;
+}
+
+div.racket_robbed 
+{
+   color: #ec2d2d;
+}
+
+div.racket_robbed a
+{
+   display: block;
+}
+
+div.racket_empty
+{
+}
+
+div.racket_slot div.racket_empty div.racket_img
+{
+   margin: 7px;  
+   
+   vertical-align: middle;
+   text-align: center;
+   text-transform: uppercase;
+   
+   font-size: 14px;
+}
+
+div.racket_slot_pos_1 { left: 0; border-left: none; }
+div.racket_slot_pos_2 { left: 142px; }
+div.racket_slot_pos_3 { left: 284px; }
+div.racket_slot_pos_4 { left: 426px; }
+div.racket_slot_pos_5 { left: 568px; }
+
+div.racket_visible {  }
+div.racket_hidden { display: none; }
+
+div.racket_msg_outer
+{
+   position: relative;
+   margin: 2px 10px 5px 10px;
+   padding-top: 9px;
+   
+   background-color: transparent;
+   background-image: url('http://mwfb.static.zynga.com/mwfb/graphics/arrow_pointer_grey_up_18x9_01.gif');
+   background-repeat: no-repeat;
+   
+   display: none;
+}
+
+div.racket_msg_inner
+{
+   position: relative;
+   border: 2px solid #bbb;
+   padding: 5px 20px 5px 5px;
+   background: #1a1a1a;
+}
+
+a.racket_msg_close
+{
+   position: absolute;
+   top: 5px;
+   right: 5px;
+   background: transparent url('http://mwfb.static.zynga.com/mwfb/graphics/icon_remove_16x16_01.gif') no-repeat;
+   width: 16px;
+   height: 16px;
+   cursor: pointer;
+   
+   padding: 0;
+   margin: 0;
+   display: block;
+}
+
+div.racket_msg_pos_1 { background-position: 55px 0; }
+div.racket_msg_pos_2 { background-position: 198px 0; }
+div.racket_msg_pos_3 { background-position: 341px 0; }
+div.racket_msg_pos_4 { background-position: 484px 0; }
+div.racket_msg_pos_5 { background-position: 627px 0; }
+
+div.racket_collect_box
+{
+   position: relative;
+
+   margin: 10px;
+   border: 1px solid #bbb;
+   padding: 5px;
+   
+   color: #ccc;
+   background: #1a1a1a;
+   
+   display: none;
+}
+
+div.racket_collect_box_title
+{
+   font-size: 18px;
+   color: #fff;
+   font-weight: bold;
+   
+   padding: 3px 0 10px 0;
+   margin-bottom: 5px;
+   
+   border-bottom: 1px dotted #555;
+}
+
+div.racket_collect_reinvest
+{
+   position: relative;
+   font-size: 14px;
+   margin: 5px 0;
+   border-bottom: 1px dotted #555;
+   clear: both;
+   padding-bottom: 8px;
+}
+
+div.racket_collect
+{
+   position: relative;
+   height: 144px;
+   font-size: 14px;
+   margin: 5px 0;
+   border-bottom: 1px dotted #555;
+   clear: both;
+}
+
+div.racket_collect_title
+{
+   font-size: 14px;
+   margin-bottom: 5px;
+   font-weight: bold;
+   padding: 5px 0;
+}
+
+div.racket_collect_img img
+{
+   display: inline;
+}
+
+div.racket_collect_img
+{
+   float: left;
+   clear: none;
+   width: 120px;
+   height: 100px;
+   border: 1px solid #555;
+}
+
+div.racket_collect_details
+{
+   float: left;
+   clear: none;
+   width: 175px;
+   margin-left: 5px;
+   vertical-align: top;
+}
+
+.racket_collect_details dl
+{
+   display: block;
+   clear: none;
+   float: left;
+   vertical-align: top;
+   margin: 0;
+}
+
+.racket_collect_details dt
+{
+   margin-bottom: 5px;
+   font-weight: bold;
+}
+
+.racket_collect_details dd
+{
+   margin: 0 0 5px 0;
+   vertical-align: middle;
+}
+
+div.racket_collect_mastery
+{
+   float: left;
+   clear: none;
+   width: 180px;  
+}
+
+div.racket_collect_mastery_text
+{
+   margin-bottom: 5px;
+   font-weight: bold;
+}
+
+div.racket_collect_right
+{
+   position: absolute;
+   right: 0px;
+   top: 0px;
+   
+   width: 170px;
+   text-align: center;
+}
+
+div.racket_collect_again_button
+{
+   clear: both;
+}
+
+div.racket_collect_again_influence
+{
+   clear: both;
+   margin: 10px 0;
+   vertical-align: middle;
+}
+
+div.racket_collect_again_msg
+{
+   position: relative;
+   margin: 5px 0;
+   border-bottom: 1px dotted #555;
+   padding: 5px 0 12px 0;
+   display: none;
+}
+
+div.racket_collect_close
+{
+   position: relative;
+   height: 32px;
+}
+
+div.racket_expand div.racket_img
+{
+   margin: 7px;
+   
+   vertical-align: middle;
+   text-align: center;
+   text-transform: uppercase;
+   
+   border: none;
+   background: transparent;
+   
+   border: 1px solid black;
+}
+
+div.racket_expand_title
+{
+   font-size: 14px;
+   margin: 33px 0 3px 0;
+}
+
+div.racket_expand_cost
+{
+
+}
+
+div.racket_invest_box
+{
+   position: relative;
+   border: 1px solid #bbb;
+}
+
+div.racket_invest_box_title
+{
+   position: relative;
+   border-bottom: 1px solid #555;
+   padding: 4px;
+   
+   font-size: 18px;
+   color: #fff;
+   background: #111;
+   font-weight: bold;
+   
+   padding: 5px;
+   margin-bottom: 5px;
+}
+
+div.racket_invest
+{
+   float: left;
+   margin: 5px 13px 15px 13px;
+   width: 173px;
+   height: 195px;
+   border: 1px solid #555;
+   background: #000;
+}
+
+div.racket_invest div.racket_invest_name
+{
+   margin: 4px;
+   color: #fff;
+   font-weight: bold;
+   text-align: center;
+   height: 15px;
+}
+
+div.racket_invest div.racket_img
+{
+   margin: 0 25px;
+   width: 120px;
+   height: 80px;
+   overflow: hidden;
+   border-width: 1px 1px 1px 1px;
+   border-style: solid;
+   border-color: #555;
+   background: #1a1a1a;
+}
+
+div.racket_invest div.racket_mastery
+{
+   margin: 0 25px;
+}
+
+div.racket_invest div.racket_payout,
+div.racket_invest div.racket_time,
+div.racket_invest div.racket_cost
+{
+   margin: 3px;
+   font-size: 12px;
+   text-align: center;
+}
+
+div.racket_invest div.racket_btn
+{
+   margin: 8px 30px;
+   width: 110px;
+   text-align: center;
+}
+
+div.racket_invest div.racket_btn a.sexy_button
+{
+   border: 1px solid #555;
+   float: none;
+   width: 108px;
+   font-size: 12px;
+}
+
+div.racket_invest div.racket_btn a:link,
+div.racket_invest div.racket_btn a:visited
+{
+   color: #eee;
+}
+
+div.racket_invest div.racket_btn a.sexy_button span.sexy_influence
+{
+   background-position: -2px -1px;
+}
+
+div.racket_img_locked
+{
+   margin: 0px 25px;
+   width: 120px;
+   height: 100px;
+   border: 1px solid #555;
+   background: #1a1a1a url('http://mwfb.static.zynga.com/mwfb/graphics/lock.gif') no-repeat scroll center center;
+}
+
+div.racket_img_locked img
+{
+   filter:alpha(opacity=30);
+   -moz-opacity:.30;
+   opacity: 0.3; 
+}
+
+div.racket_invest_locked
+{
+   margin-top: 10px;
+   padding: 12px;
+   text-align: center;
+   font-size: 12px;
+}
+
+div.racket_invest_type
+{
+   clear: both;
+   background: #111;
+   border-top: 1px solid #bbb;
+   margin: 0;
+   padding: 10px 0 0 0;
+   height: 440px;
+}
+
+div.racket_invest_page
+{
+   margin: 0;
+   padding: 0;
+   float: left;
+   clear: none;
+   width: 685px;
+}
+
+a.racket_invest_scrollbutton
+{
+   display: block;
+   margin: 0;
+   width: 25px;
+   height: 425px;
+   float: left;
+   cursor: pointer;
+   border: 1px solid #ffd927;
+   background-color: #333;
+   background-attachment: scroll;
+   background-repeat: repeat-y;
+   background-position: top center;
+}
+
+a.racket_invest_scrollbutton_left
+{
+   background-image: url('http://mwfb.static.zynga.com/mwfb/graphics/arrow_prev_on_25x220_01.gif');
+}
+
+a.racket_invest_scrollbutton_right
+{
+   background-image: url('http://mwfb.static.zynga.com/mwfb/graphics/arrow_next_on_25x220_01.gif');
+}
+
+div.racket_invest_scrollwrapper
+{
+   display: block;
+   margin: 5px;
+   width: 25px;
+   height: 425px;
+   float: left;
+}
+
+div.racket_invest_rackets
+{
+   float: left;
+   margin: 0;
+   padding: 0;
+   width: 615px;
+}
+
+div.racket_invest_box ul.minitabs li
+{
+   border-width: 1px 1px 0 1px;
+   border-style: solid;
+}
+
+div.racket_invest_box ul.minitabs li.tab_off
+{
+   border-color: #555;
+}
+
+div.racket_invest_box ul.minitabs li.tab_on
+{
+   border-color: #bbb;
+}
+
+div.racket_collect_earner_msg
+{
+   margin: 5px;
+   float: left;
+   clear: none;
+   width: 520px;
+   color: #ccc;
+}
+
+div.racket_collect_earner_btn
+{
+   position: absolute;
+   right: 0px;
+   bottom: 5px;
+}
+
+div.racket_ready_bouncy_button
+{
+   position: absolute;
+   left: 20px;
+   top: 46px;
+   z-index: 20;
+   
+   display: none;
+   
+   background: transparent;
+   width: 51px;
+   height: 27px;
+   margin: 0;
+   padding: 0;
+}
+
+div.racket_ready_bouncy_button a,
+div.racket_ready_bouncy_button a:visited,
+div.racket_ready_bouncy_button a:hover
+{
+   text-decoration: none;
+   border: none;
+}
+
+div.racket_helpmsg_step1
+{
+   background: #a00;
+   padding: 20px;
+   width: 350px;
+   height: 50px;
+   
+   font-weight: bold;
+   font-size: 18px;
+   
+   position: absolute;
+   top: 10px;
+   left: 142px;
+}
+
+/* tutorial boxes */
+
+div.racket_help
+{
+   background: #000;
+   background-repeat: no-repeat;
+   border: 1px solid #ae4;
+   width: 200px;
+   height: 120px;
+   font-size: 14px;
+   position: absolute;
+   margin: 10px;
+   z-index: 19;
+}
+
+div.racket_help_text_1
+{
+   margin: 5px 15px;
+}
+
+div.racket_help_text_2
+{
+   margin: 5px 15px;
+   
+   color: #ae4;
+   text-transform: uppercase;
+   font-weight: bold;
+}
+
+div.racket_help_arrow_left
+{
+   width: 50px;
+   height: 63px;
+   padding: 0;
+   margin: 0;
+   
+   position: absolute;
+   left: -35px;
+   top: 18px;
+   
+   background-repeat: no-repeat;
+   background-color: transparent;
+   background-image: url('http://mwfb.static.zynga.com/mwfb/graphics/arrow_green_left_50x63_01.gif');
+   background-attachment: scroll;
+   background-position: 0px 0px;
+   z-index: 20;
+}
+
+div.racket_help_arrow_right
+{
+   width: 50px;
+   height: 63px;
+   padding: 0;
+   margin: 0;
+   
+   position: absolute;
+   right: -35px;
+   top: 18px;
+   
+   background-repeat: no-repeat;
+   background-color: transparent;
+   background-image: url('http://mwfb.static.zynga.com/mwfb/graphics/arrow_green_right_50x63_01.gif');
+   background-attachment: scroll;
+   background-position: 0px 0px;
+   z-index: 20;
+}
+
+div.racket_help_arrow_down
+{
+   width: 61px;
+   height: 46px;
+   padding: 0;
+   margin: 0;
+   
+   position: absolute;
+   left: 30px;
+   bottom: -35px;
+   
+   background-repeat: no-repeat;
+   background-color: transparent;
+   background-image: url('http://mwfb.static.zynga.com/mwfb/graphics/arrow_green_down_61x46_01.gif');
+   background-attachment: scroll;
+   background-position: 0px 0px;
+   z-index: 20;
+}
+
+/** redo~ **/
+
+div.racket2_slot
+{
+   position: absolute;
+   top: 0px;
+   width: 136px;
+   height: 140px;
+   
+   margin: 2px;
+   padding: 0;
+   
+   font-size: 12px;
+   font-weight: bold;
+   text-align: center;
+}
+
+div.racket2_slot div.racket_img
+{
+   position: absolute;
+   top: 25px;
+   left: 7px;
+   
+   border: 1px solid #555;
+   background: #1a1a1a;
+   width: 120px;
+   height: 100px;
+   padding: 0;
+   margin: 0;
+}
+
+div.racket2_slot div.racket_name
+{
+   position: absolute;
+   top: 5px;
+   left: 0px;
+   
+   font-weight: bold;
+   font-size: 12px;
+   height: 16px;
+   width: 140px;
+   padding: 0;   
+   text-align: center;
+}
+
+div.racket2_robbed div.racket_name
+{
+   color: #ec2d2d;
+}
+
+div.racket2_emptylot_text
+{
+   margin: 40px 0;
+   text-align: center;
+}
+
+div.racket2_slot div.racket_btn
+{
+   margin: 0 8px;
+   width: 120px;
+}
+
+div.racket_robbed 
+{
+   color: #ec2d2d;
+}
+
+div.racket_robbed a
+{
+   display: block;
+}
+
+div.racket2_slot.racket_ready
+{
+   border: 1px solid #ffd927;
+   color: #ffd927;
+   background: transparent url('http://mwfb.static.zynga.com/mwfb/graphics/black_bg_extended.gif') repeat-x top left;
+}
+
+div.racket2_slot.racket_empty div.racket_img
+{
+   vertical-align: middle;
+   text-align: center;
+   text-transform: uppercase;
+   
+   font-size: 18px;
+   font-weight: bold;
+   
+   border: 1px solid #555;
+   background: #000 url('http://mwfb.static.zynga.com/mwfb/graphics/mw_racket_shakedown_120x100_01.gif') no-repeat center center;
+}
+
+div.racket2_slot.racket_expand div.racket_img
+{
+   background: #000 url('http://mwfb.static.zynga.com/mwfb/graphics/mw_racket_expand_120x100_01.gif') no-repeat center center;
+}
+
+div.racket_empty_text
+{
+   margin-top: 28px;
+   color: #ffd927;
+}
+
+div.racket_imgbar
+{
+   position: absolute;
+   left: 0;
+   bottom: 0;
+   height: 14px;
+   padding: 3px 0;
+   
+   background: #ffd927;
+   color: #000;
+   
+   text-transform: uppercase;
+   width: 120px;
+   text-align: center;
+   font-weight: bold;
+   border-width: 1px 0 0 0;
+   border-color: #555;
+   border-style: solid;
+}
+
+div.racket2_hood_rackets
+{
+   position: relative;
+   height: 150px;
+   margin: 5px;
+}
+
+div.racket_collect2_img
+{
+   width: 120px;
+   height: 100px;
+   float: left;
+   padding: 0;
+   margin: 10px;
+   border: 1px solid #555;
+}
+
+div.racket_collect2_title
+{
+   width: 500px;
+   height: 20px;
+   float: left;
+   padding: 0;
+   margin: 5px;
+   
+   font-size: 18px;
+   font-weight: bold;
+}
+
+div.racket_collect2_yougained
+{
+   width: 500px;
+   height: 16px;
+   float: left;
+   padding: 0;
+   margin: 5px;
+   
+   font-size: 16px;
+   font-weight: bold;
+}
+
+div.racket_collect2_payout,
+div.racket_collect2_experience
+{
+   width: 150px;
+   height: 16px;
+   float: left;
+   padding: 0;
+   margin: 5px 0 5px 20px;
+   padding-left: 20px;
+   
+   font-size: 16px;
+   font-weight: bold;
+}
+
+div.racket_collect2_cash
+{
+   background: transparent url('http://mwfb.static.zynga.com/mwfb/graphics/icon_cash_16x16_01.gif') no-repeat top left;
+   color: #52e259;
+}
+
+div.racket_collect2_experience
+{
+   background: transparent url('http://mwfb.static.zynga.com/mwfb/graphics/icon_experience_16x16_01.gif') no-repeat top left;
+}
+
+div.racket_collect2_boost
+{
+   background: transparent url('http://mwfb.static.zynga.com/mwfb/graphics/icon_boost_14x14_01.gif') no-repeat 2px 2px;
+}
+
+div.racket_inprog_timerbg
+{
+   margin: 0;
+   padding: 0;
+   border: none;
+   
+   width: 120px;
+   height: 40px;
+
+   position: absolute;
+   left: 0px;
+   top: 30px; 
+   
+   background: #000;
+   filter:alpha(opacity=50);
+   -moz-opacity:.50;
+   opacity: 0.5;    
+}
+
+div.racket_pop_block
+{
+   float: left; 
+   width: 210px; 
+   height: 180px; 
+   
+   position: relative; 
+   margin: 0; 
+}
+
+div.racket_pop_arrow_right
+{
+   background: transparent url('http://mwfb.static.zynga.com/mwfb/graphics/arrow_next_on_17x35_01.gif') scroll no-repeat 192px 90px;
+}
+
+div.racket_pop_bullet
+{
+   color: #fff; 
+   font-weight: bold; 
+   height: 30px;
+   float: none;
+   clear: both;
+   text-align: center;
+}
+
+div.racket_pop_racket_slot
+{
+   margin: 0 45px;
+   position: relative;
+   clear: both;
+   padding: 0;
+}
+
+div.racket_pop_racket_slot div.racket_img
+{
+   position: relative;
+   margin: 0;
+   padding: 0;
+   
+   left: 0;
+}
+
+div.flash_header_wrapper
+{
+	border-top: 1px solid #999999;
+}
+#faction_1 
+{ 
+   color: #8448d7; 
+}
+
+#faction_2 
+{ 
+   color: #6b6ee1; 
+}
+
+.faction_main
+{
+   height: 70px;
+   position: relative;
+   padding: 5px 0;
+}
+
+.faction_container
+{
+   margin: 2px 0 2px 8px;
+   height: 20px;
+   position: relative;
+}
+
+.faction_left_box
+{
+   float:left;
+   width:114px;
+}
+
+.faction_logo
+{
+   float:left; 
+   height:20px; 
+   width:36px;
+}
+
+.faction_name
+{
+   float:left; 
+   font-size:16px;
+   height:20px; 
+   width:74px;
+}
+
+.faction_bar_wrapper
+{
+   position: absolute;
+   left: 100px;
+   top: 0px;
+   
+   width: 610px;
+   height: 20px;
+}
+
+.faction_report
+{
+   float:left; 
+   font-size:16px;
+   height:20px;
+}
+
+.faction_points
+{
+   float:right; 
+   height:20px;
+   margin-right:10px;
+   text-align:right; 
+   width:84px;
+}
+
+.faction_level_box
+{
+   margin-left: 8px;
+   height: 16px;
+   position: relative;
+}
+
+.faction_level_box_item
+{
+   border-left:1px solid #2e2935;
+
+   height: 12px;
+   font-size: 12px;
+   color: #555;
+   
+   position: absolute;
+   top: 2px;
+   
+   text-align: center;
+}
+
+
+.faction_progress_bar_main
+{
+   background: transparent url(http://mwfb.static.zynga.com/mwfb/graphics/statusbar_yellow.gif) repeat-x; 
+   margin: 0; 
+   padding: 0; 
+   vertical-align: middle; 
+   overflow: visible; 
+   font-size: 8px; 
+   font-weight: bold; 
+   text-align: left; 
+   color: #fff;
+}
+
+.faction_progress_bar_1
+{
+   background: transparent url(http://mwfb.static.zynga.com/mwfb/graphics/bangkok_progress_yakuza.gif) repeat-x; 
+}
+
+.faction_progress_bar_2
+{
+   background: transparent url(http://mwfb.static.zynga.com/mwfb/graphics/bangkok_progress_triad.gif) repeat-x; 
+}
+
+.faction_pop
+{
+   padding: 0px;
+}
+
+/* app css */
+
+
+#app_layout
+{
+	width: 746px;
+}
+
+div.app
+{
+	background: black;
+	color: white;
+	width: 746px;
+}
+
+.app a,
+.app a:link,
+.app a:visited
+{
+	color: #ffd927;
+	text-decoration: none;
+}
+
+.tabs .left_tabs ul li a:visited
+{
+	color: #000000 !important;
+}
+
+.tabs .left_tabs ul li a.selected:visited
+{
+	color: #ffffff !important;
+}
+
+.app a:hover
+{
+    text-decoration: underline;
+}
+.app .invite-multi .tokenizer a,
+.app .invite-multi .tokenizer a:link,
+.app .invite-multi .tokenizer a:visited
+{
+	color: #3B5998;
+}
+.app .invite-multi
+{
+	border: 1px solid #fff;
+}
+.app .invite-multi li a strong
+{
+	color: #fff !important;
+}
+.app .invite-multi li a:hover strong
+{
+	color: #000 !important;
+}
+.app .invite-multi h2, h3, label
+{
+	color: #fff !important;
+}
+.app .invite-multi div
+{
+	background: #000 none repeat scroll 0 0 !important;
+	color: #fff;
+}
+
+#lookery-ad-8845
+{
+	width: 740px;
+	height:65px;
+}
+
+#banner_row
+{
+/*	height: 54px; */
+	height: 62px;
+	background: url(http://mwfb.static.zynga.com/mwfb/graphics/MW_FB_Banner_740x62.gif);
+	text-align: right;
+	vertical-align: bottom;
+	font-size: 11px;
+}
+
+#stats_row
+{
+/*	height: 34px; */
+/*	background-color: #121621; */
+    background-color: #000;
+}
+
+#stats_table
+{
+	width: 740px;
+	height: 26px;
+	margin-top: 4px;
+	margin-bottom: 4px;
+}
+
+#stats_table td
+{
+	vertical-align:top;
+	text-align:center;
+}
+
+.title
+{
+	border-bottom: 1px solid #6c7a8f;
+}
+
+.money
+{
+	color: #00cc00;
+}
+.news
+{
+	border: 1px solid #6c7a8f;
+}
+
+ul.news
+{
+	margin: 0;
+	border: 1px solid #6c7a8f;
+}
+
+.messages {
+	background-color: #000;
+}
+
+#change_name {
+	background-color: transparent;
+}
+
+.line
+{
+	border-bottom: 1px solid #474f5d;
+}
+
+tr.selected_row
+{
+	background-color: #030;
+}
+tr.header th
+{
+	font-size: 18px;
+	border-top: 1px solid #6c7a8f; 
+	border-bottom: 1px solid #6c7a8f; 
+}
+table .header
+{
+	padding: 30px;
+
+}
+
+
+.messagesMinor {
+background-color: black;
+border:1px solid #ffae62;
+padding:5px;
+    font-size: 14px;
+}
+.messagesMinor a, .messagesMinor a:link, .messagesMinor a:visited {
+    color: #eae1bc;
+    text-decoration:underline;
+}
+
+.request_form   {
+    width: 500px;
+    margin:0 auto;
+}
+
+.unselected_list, .selected_list, .inputtext    {
+    color: white !important;
+    background-color: black;
+}
+
+.request_form_submit    {
+
+}
+
+div.request_form_wrapper input.request_form_submit {
+    margin-left: 150px;
+    width: 200px;
+}
+
+div.request_form_wrapper_interstitial input.request_form_submit {
+    float:left; 
+	margin:0px 0px 0px 100px;
+}
+
+
+.condensed_multi_friend_selector span {
+    color: white !important;
+}
+
+td, td.label
+{
+    font-size: 14px;
+    text-align: left;
+}
+
+table.job_list td
+{
+	font-size: 14px;
+}
+
+.requests
+{
+	list-style-type: none;
+	padding: 10px;
+	width: 95%;
+	max-height: 2000px;
+	overflow: auto;
+}
+
+.requests li
+{
+	text-align: center;
+	float: left;
+	overflow: hidden;
+	margin: 3px;
+	width: 80px;
+	height: 170px;
+}
+
+
+.requests li div.pic
+{
+	overflow: hidden;
+	width: 80px;
+	height: 60px;
+}
+
+ul.nice_list
+{
+	list-style-type: none;
+	padding: 0;
+}
+
+ul.nice_list li
+{
+	float: left;
+	overflow: hidden;
+	margin: 3px;
+	text-align: center;
+	font-weight: 700;
+}
+
+ul.items_list li
+{
+	width: 75px;
+	height: 95px;
+}
+
+ul.properties_list li
+{
+	width: 150px;
+	height: 90px;
+}
+
+table.stats
+{
+	width: 400px;
+}
+
+div.energy_all_prompt
+{
+	border: 1px solid #ccc;
+	background-color: #333;
+	padding: 5px;
+	width: 250px;
+	height: 70px;
+}
+
+a.fs_single_friend_selected,
+a.fs_single_friend_selected:link,
+a.fs_single_friend_selected:visited,
+a.fs_single_friend_selected:hover
+{
+   color: #000;
+}
+
+
+a.glossy_button_black,
+a.glossy_button_black:link,
+a.glossy_button_black:visited
+{
+   background: transparent url('http://mwfb.static.zynga.com/mwfb/graphics/mw_button_black_74x27_01.gif') no-repeat;
+   
+   display: block;
+   width: 74px;
+   height: 27px;
+   
+   vertical-align: middle;
+   text-align: center;
+   font-weight: bold;
+   font-size: 13px;
+   color: #eee;
+   font-family: Arial, Helvetica, sans-serif;
+   
+   margin: 5px auto;
+   padding-top: 5px;
+}
+
+a.glossy_button_silver,
+a.glossy_button_silver:link,
+a.glossy_button_silver:visited
+{
+   background: transparent url('http://mwfb.static.zynga.com/mwfb/graphics/mw_button_silver_148x27_01.gif') no-repeat;
+   
+   display: block;
+   width: 148px;
+   height: 27px;
+   
+   vertical-align: middle;
+   text-align: center;
+   font-weight: bold;
+   font-size: 13px;
+   color: #111;
+   font-family: Arial, Helvetica, sans-serif;
+   
+   margin: 5px auto;
+   padding-top: 5px;
+}
+
+a.glossy_button_black:hover,
+a.glossy_button_silver:hover
+{
+   color: #ffd927;
+   text-decoration: none;
+}
+
+div.chop_pop
+{
+   color: #fff;
+}
+/*************************
+  SN Specific Definitions
+**************************/
+
+table#index_table
+{
+	width: 735px;
+}
+
+td#index_main
+{
+	vertical-align: top;
+}
+
+div.message_buttons
+{
+	float: right;
+	display: block;
+	clear: none;
+}
+
+td.stats_left
+{
+	width: 435px;
+	vertical-align: top;
+}	</style>
+
+<body>
+<div class="playerupdate_box" style="width: 495px; margin-top: 10px;"> 
+
+        <div class="tab_box_header" style="height: 35px">
+
+            <div class="tab" style="padding-top: 8px">
+                  <div class="tab_start">
+                   	&nbsp;
+                  </div>
+
+                  <div class="tab_middle">
+                     Player Updates                  </div>
+
+                <div class="tab_end">
+					&nbsp;
+                </div>
+
+            </div>
+			<div class="tab_clear"> 
+				<a href="http://mwfb.zynga.com/mwfb/remote/html_server.php?xw_controller=index&xw_action=deletenews&xw_city=1&tmp=b87a04a9e1718c3c499a9ad203c2463c&cb=5036007541267149873" onclick="  return do_ajax('inner_page', 'remote/html_server.php?xw_controller=index&xw_action=deletenews&xw_city=1&tmp=b87a04a9e1718c3c499a9ad203c2463c&cb=5036007541267149873', 1, 1, 0, 0); return false;  " >[ Clear Updates ]</a> 
+			</div>
+
+			
+				<div id="clock_energy_pack"></div>
+        </div>
+
+         <div class="tab_box_content">
+
+         	<div class="player_updates" style=" height: 430px; margin-right: 0px; overflow-x: hidden;">
+          				<div class="update_item"><div class="update_timestamp">4 days, 15 hours ago:</div><div class="update_icon"><img src="http://mwfb.static.zynga.com/mwfb/graphics/home/icon_fight_75x75_01.gif" width="40" height="40" /></div><div class="update_pic" ><img src="http://mwfb.static.zynga.com/mwfb/graphics/MW_FB_DirIcon_75x75.jpg" style="width: 40px; height: 40px;" /></div><div class="update_txt">You were attacked by <a href="http://mwfb.zynga.com/mwfb/remote/html_server.php?xw_controller=stats&xw_action=view&xw_city=1&tmp=42f95f211b4a384a9f840ef4b8e8b6fd&cb=5036007541267149873&user=MTAwMDAwNzk2MDAxNjI3&ref=pu_fightloss" onclick="this.href='http://mwfb.zynga.com/mwfb/remote/html_server.php?xw_controller=stats&xw_action=view&xw_city=1&tmp=42f95f211b4a384a9f840ef4b8e8b6fd&cb=5036007541267149873&user=MTAwMDAwNzk2MDAxNjI3&ref=pu_fightloss&skip_req_frame=1&sf_xw_user_id=503600754&sf_xw_sig='+local_xw_sig+''" >cluedo</a>. <br />You <strong>lost</strong> the fight, taking <strong>14</strong> damage and losing <span class="bad">$716</span>. <a href="http://mwfb.zynga.com/mwfb/remote/html_server.php?xw_controller=stats&xw_action=view&xw_city=1&tmp=42f95f211b4a384a9f840ef4b8e8b6fd&cb=5036007541267149873&user=MTAwMDAwNzk2MDAxNjI3" onclick="this.href='http://mwfb.zynga.com/mwfb/remote/html_server.php?xw_controller=stats&xw_action=view&xw_city=1&tmp=42f95f211b4a384a9f840ef4b8e8b6fd&cb=5036007541267149873&user=MTAwMDAwNzk2MDAxNjI3&skip_req_frame=1&sf_xw_user_id=503600754&sf_xw_sig='+local_xw_sig+''" >Get revenge now!</a></div></div><div class="update_item"><div class="update_timestamp">4 days, 15 hours ago:</div><div class="update_icon"><img src="http://mwfb.static.zynga.com/mwfb/graphics/home/icon_fight_75x75_01.gif" width="40" height="40" /></div><div class="update_pic" ><img src="http://mwfb.static.zynga.com/mwfb/graphics/MW_FB_DirIcon_75x75.jpg" style="width: 40px; height: 40px;" /></div><div class="update_txt">You were attacked by <a href="http://mwfb.zynga.com/mwfb/remote/html_server.php?xw_controller=stats&xw_action=view&xw_city=1&tmp=42f95f211b4a384a9f840ef4b8e8b6fd&cb=5036007541267149873&user=MTAwMDAwNzk2MDAxNjI3&ref=pu_fightloss" onclick="this.href='http://mwfb.zynga.com/mwfb/remote/html_server.php?xw_controller=stats&xw_action=view&xw_city=1&tmp=42f95f211b4a384a9f840ef4b8e8b6fd&cb=5036007541267149873&user=MTAwMDAwNzk2MDAxNjI3&ref=pu_fightloss&skip_req_frame=1&sf_xw_user_id=503600754&sf_xw_sig='+local_xw_sig+''" >cluedo</a>. <br />You <strong>lost</strong> the fight, taking <strong>27</strong> damage and losing <span class="bad">$1,136</span>. <a href="http://mwfb.zynga.com/mwfb/remote/html_server.php?xw_controller=stats&xw_action=view&xw_city=1&tmp=42f95f211b4a384a9f840ef4b8e8b6fd&cb=5036007541267149873&user=MTAwMDAwNzk2MDAxNjI3" onclick="this.href='http://mwfb.zynga.com/mwfb/remote/html_server.php?xw_controller=stats&xw_action=view&xw_city=1&tmp=42f95f211b4a384a9f840ef4b8e8b6fd&cb=5036007541267149873&user=MTAwMDAwNzk2MDAxNjI3&skip_req_frame=1&sf_xw_user_id=503600754&sf_xw_sig='+local_xw_sig+''" >Get revenge now!</a></div></div><div class="update_item"><div class="update_timestamp">4 days, 15 hours ago:</div><div class="update_icon"><img src="http://mwfb.static.zynga.com/mwfb/graphics/home/icon_fight_75x75_01.gif" width="40" height="40" /></div><div class="update_pic" ><img src="http://mwfb.static.zynga.com/mwfb/graphics/MW_FB_DirIcon_75x75.jpg" style="width: 40px; height: 40px;" /></div><div class="update_txt">You were attacked by <a href="http://mwfb.zynga.com/mwfb/remote/html_server.php?xw_controller=stats&xw_action=view&xw_city=1&tmp=42f95f211b4a384a9f840ef4b8e8b6fd&cb=5036007541267149873&user=MTAwMDAwNzk2MDAxNjI3&ref=pu_fightloss" onclick="this.href='http://mwfb.zynga.com/mwfb/remote/html_server.php?xw_controller=stats&xw_action=view&xw_city=1&tmp=42f95f211b4a384a9f840ef4b8e8b6fd&cb=5036007541267149873&user=MTAwMDAwNzk2MDAxNjI3&ref=pu_fightloss&skip_req_frame=1&sf_xw_user_id=503600754&sf_xw_sig='+local_xw_sig+''" >cluedo</a>. <br />You <strong>lost</strong> the fight, taking <strong>22</strong> damage and losing <span class="bad">$1,262</span>. <a href="http://mwfb.zynga.com/mwfb/remote/html_server.php?xw_controller=stats&xw_action=view&xw_city=1&tmp=42f95f211b4a384a9f840ef4b8e8b6fd&cb=5036007541267149873&user=MTAwMDAwNzk2MDAxNjI3" onclick="this.href='http://mwfb.zynga.com/mwfb/remote/html_server.php?xw_controller=stats&xw_action=view&xw_city=1&tmp=42f95f211b4a384a9f840ef4b8e8b6fd&cb=5036007541267149873&user=MTAwMDAwNzk2MDAxNjI3&skip_req_frame=1&sf_xw_user_id=503600754&sf_xw_sig='+local_xw_sig+''" >Get revenge now!</a></div></div><div class="update_item"><div class="update_timestamp">4 days, 18 hours ago:</div><div class="update_icon"><img src="http://mwfb.static.zynga.com/mwfb/graphics/home/icon_call_for_help_75x75_01.gif" width="40" height="40" /></div><div class="update_pic" ><img src="http://profile.ak.fbcdn.net/hprofile-ak-sf2p/hs254.snc3/23133_100000838713188_7665_q.jpg" style="width: 40px; height: 40px;" /></div><div class="update_txt"><a href="http://mwfb.zynga.com/mwfb/remote/html_server.php?xw_controller=stats&xw_action=view&xw_city=1&tmp=42f95f211b4a384a9f840ef4b8e8b6fd&cb=5036007541267149873&user=MTAwMDAwODM4NzEzMTg4&ref=pu_social_hit" onclick="this.href='http://mwfb.zynga.com/mwfb/remote/html_server.php?xw_controller=stats&xw_action=view&xw_city=1&tmp=42f95f211b4a384a9f840ef4b8e8b6fd&cb=5036007541267149873&user=MTAwMDAwODM4NzEzMTg4&ref=pu_social_hit&skip_req_frame=1&sf_xw_user_id=503600754&sf_xw_sig='+local_xw_sig+''" >mastercheif</a> asked their Mafia to attack you. Fight them back now!</div></div><div class="update_item"><div class="update_timestamp">4 days, 18 hours ago:</div><div class="update_icon"><img src="http://mwfb.static.zynga.com/mwfb/graphics/home/icon_fight_75x75_01.gif" width="40" height="40" /></div><div class="update_pic" ><img src="http://profile.ak.fbcdn.net/hprofile-ak-sf2p/hs254.snc3/23133_100000838713188_7665_q.jpg" style="width: 40px; height: 40px;" /></div><div class="update_txt">You were attacked by  Street Thug <a href="http://mwfb.zynga.com/mwfb/remote/html_server.php?xw_controller=stats&xw_action=view&xw_city=1&tmp=42f95f211b4a384a9f840ef4b8e8b6fd&cb=5036007541267149873&user=MTAwMDAwODM4NzEzMTg4&ref=pu_fightwin" onclick="this.href='http://mwfb.zynga.com/mwfb/remote/html_server.php?xw_controller=stats&xw_action=view&xw_city=1&tmp=42f95f211b4a384a9f840ef4b8e8b6fd&cb=5036007541267149873&user=MTAwMDAwODM4NzEzMTg4&ref=pu_fightwin&skip_req_frame=1&sf_xw_user_id=503600754&sf_xw_sig='+local_xw_sig+''" >mastercheif</a>. <br />You <strong>won</strong> the fight, taking <strong>18</strong> damage and dealing <strong>20</strong> damage to your enemy. You gained <span class="good">2</span> experience points and <span class="good">$0</span>. <a href="http://mwfb.zynga.com/mwfb/remote/html_server.php?xw_controller=stats&xw_action=view&xw_city=1&tmp=42f95f211b4a384a9f840ef4b8e8b6fd&cb=5036007541267149873&user=MTAwMDAwODM4NzEzMTg4" onclick="this.href='http://mwfb.zynga.com/mwfb/remote/html_server.php?xw_controller=stats&xw_action=view&xw_city=1&tmp=42f95f211b4a384a9f840ef4b8e8b6fd&cb=5036007541267149873&user=MTAwMDAwODM4NzEzMTg4&skip_req_frame=1&sf_xw_user_id=503600754&sf_xw_sig='+local_xw_sig+''" >Fight back now!</a></div></div><div class="update_item"><div class="update_timestamp">4 days, 22 hours ago:</div><div class="update_icon"><img src="http://mwfb.static.zynga.com/mwfb/graphics/home/icon_fight_75x75_01.gif" width="40" height="40" /></div><div class="update_pic" ><img src="http://profile.ak.fbcdn.net/v22944/1298/116/q100000649230805_4268.jpg" style="width: 40px; height: 40px;" /></div><div class="update_txt">You were attacked by <a href="http://mwfb.zynga.com/mwfb/remote/html_server.php?xw_controller=stats&xw_action=view&xw_city=1&tmp=42f95f211b4a384a9f840ef4b8e8b6fd&cb=5036007541267149873&user=MTAwMDAwNjQ5MjMwODA1&ref=pu_fightloss" onclick="this.href='http://mwfb.zynga.com/mwfb/remote/html_server.php?xw_controller=stats&xw_action=view&xw_city=1&tmp=42f95f211b4a384a9f840ef4b8e8b6fd&cb=5036007541267149873&user=MTAwMDAwNjQ5MjMwODA1&ref=pu_fightloss&skip_req_frame=1&sf_xw_user_id=503600754&sf_xw_sig='+local_xw_sig+''" >z</a>. <br />You <strong>lost</strong> the fight, taking <strong>26</strong> damage and losing <span class="bad">$1,097</span>. <a href="http://mwfb.zynga.com/mwfb/remote/html_server.php?xw_controller=stats&xw_action=view&xw_city=1&tmp=42f95f211b4a384a9f840ef4b8e8b6fd&cb=5036007541267149873&user=MTAwMDAwNjQ5MjMwODA1" onclick="this.href='http://mwfb.zynga.com/mwfb/remote/html_server.php?xw_controller=stats&xw_action=view&xw_city=1&tmp=42f95f211b4a384a9f840ef4b8e8b6fd&cb=5036007541267149873&user=MTAwMDAwNjQ5MjMwODA1&skip_req_frame=1&sf_xw_user_id=503600754&sf_xw_sig='+local_xw_sig+''" >Get revenge now!</a></div></div><div class="update_item"><div class="update_timestamp">5 days, 6 hours ago:</div><div class="update_icon"><img src="http://mwfb.static.zynga.com/mwfb/graphics/home/icon_fight_75x75_01.gif" width="40" height="40" /></div><div class="update_pic" ><img src="http://mwfb.static.zynga.com/mwfb/graphics/MW_FB_DirIcon_75x75.jpg" style="width: 40px; height: 40px;" /></div><div class="update_txt">You were attacked by  Street Thug <a href="http://mwfb.zynga.com/mwfb/remote/html_server.php?xw_controller=stats&xw_action=view&xw_city=1&tmp=42f95f211b4a384a9f840ef4b8e8b6fd&cb=5036007541267149873&user=MTAwMDAwNzAyNjY5Mzc1&ref=pu_fightwin" onclick="this.href='http://mwfb.zynga.com/mwfb/remote/html_server.php?xw_controller=stats&xw_action=view&xw_city=1&tmp=42f95f211b4a384a9f840ef4b8e8b6fd&cb=5036007541267149873&user=MTAwMDAwNzAyNjY5Mzc1&ref=pu_fightwin&skip_req_frame=1&sf_xw_user_id=503600754&sf_xw_sig='+local_xw_sig+''" >brad</a>. <br />You <strong>won</strong> the fight, taking <strong>1</strong> damage and dealing <strong>18</strong> damage to your enemy. You gained <span class="good">2</span> experience points and <span class="good">$9,360</span>. <a href="http://mwfb.zynga.com/mwfb/remote/html_server.php?xw_controller=stats&xw_action=view&xw_city=1&tmp=42f95f211b4a384a9f840ef4b8e8b6fd&cb=5036007541267149873&user=MTAwMDAwNzAyNjY5Mzc1" onclick="this.href='http://mwfb.zynga.com/mwfb/remote/html_server.php?xw_controller=stats&xw_action=view&xw_city=1&tmp=42f95f211b4a384a9f840ef4b8e8b6fd&cb=5036007541267149873&user=MTAwMDAwNzAyNjY5Mzc1&skip_req_frame=1&sf_xw_user_id=503600754&sf_xw_sig='+local_xw_sig+''" >Fight back now!</a></div></div><div class="update_item"><div class="update_timestamp">5 days, 21 hours ago:</div><div class="update_icon"><img src="http://mwfb.static.zynga.com/mwfb/graphics/home/icon_fight_75x75_01.gif" width="40" height="40" /></div><div class="update_pic" ><img src="http://profile.ak.fbcdn.net/hprofile-ak-sf2p/hs310.ash1/23258_659959733_1522_q.jpg" style="width: 40px; height: 40px;" /></div><div class="update_txt">You were attacked by <a href="http://mwfb.zynga.com/mwfb/remote/html_server.php?xw_controller=stats&xw_action=view&xw_city=1&tmp=42f95f211b4a384a9f840ef4b8e8b6fd&cb=5036007541267149873&user=NjU5OTU5NzMz&ref=pu_fightloss" onclick="this.href='http://mwfb.zynga.com/mwfb/remote/html_server.php?xw_controller=stats&xw_action=view&xw_city=1&tmp=42f95f211b4a384a9f840ef4b8e8b6fd&cb=5036007541267149873&user=NjU5OTU5NzMz&ref=pu_fightloss&skip_req_frame=1&sf_xw_user_id=503600754&sf_xw_sig='+local_xw_sig+''" >K. Dao</a>. <br />You <strong>lost</strong> the fight, taking <strong>18</strong> damage and losing <span class="bad">$595</span>. <a href="http://mwfb.zynga.com/mwfb/remote/html_server.php?xw_controller=stats&xw_action=view&xw_city=1&tmp=42f95f211b4a384a9f840ef4b8e8b6fd&cb=5036007541267149873&user=NjU5OTU5NzMz" onclick="this.href='http://mwfb.zynga.com/mwfb/remote/html_server.php?xw_controller=stats&xw_action=view&xw_city=1&tmp=42f95f211b4a384a9f840ef4b8e8b6fd&cb=5036007541267149873&user=NjU5OTU5NzMz&skip_req_frame=1&sf_xw_user_id=503600754&sf_xw_sig='+local_xw_sig+''" >Get revenge now!</a></div></div><div class="update_item"><div class="update_timestamp">5 days, 21 hours ago:</div><div class="update_icon"><img src="http://mwfb.static.zynga.com/mwfb/graphics/home/icon_fight_75x75_01.gif" width="40" height="40" /></div><div class="update_pic" ><img src="http://profile.ak.fbcdn.net/hprofile-ak-sf2p/hs310.ash1/23258_659959733_1522_q.jpg" style="width: 40px; height: 40px;" /></div><div class="update_txt">You were attacked by <a href="http://mwfb.zynga.com/mwfb/remote/html_server.php?xw_controller=stats&xw_action=view&xw_city=1&tmp=42f95f211b4a384a9f840ef4b8e8b6fd&cb=5036007541267149873&user=NjU5OTU5NzMz&ref=pu_fightloss" onclick="this.href='http://mwfb.zynga.com/mwfb/remote/html_server.php?xw_controller=stats&xw_action=view&xw_city=1&tmp=42f95f211b4a384a9f840ef4b8e8b6fd&cb=5036007541267149873&user=NjU5OTU5NzMz&ref=pu_fightloss&skip_req_frame=1&sf_xw_user_id=503600754&sf_xw_sig='+local_xw_sig+''" >K. Dao</a>. <br />You <strong>lost</strong> the fight, taking <strong>8</strong> damage and losing <span class="bad">$431</span>. <a href="http://mwfb.zynga.com/mwfb/remote/html_server.php?xw_controller=stats&xw_action=view&xw_city=1&tmp=42f95f211b4a384a9f840ef4b8e8b6fd&cb=5036007541267149873&user=NjU5OTU5NzMz" onclick="this.href='http://mwfb.zynga.com/mwfb/remote/html_server.php?xw_controller=stats&xw_action=view&xw_city=1&tmp=42f95f211b4a384a9f840ef4b8e8b6fd&cb=5036007541267149873&user=NjU5OTU5NzMz&skip_req_frame=1&sf_xw_user_id=503600754&sf_xw_sig='+local_xw_sig+''" >Get revenge now!</a></div></div><div class="update_item"><div class="update_timestamp">5 days, 23 hours ago:</div><div class="update_icon"><img src="http://mwfb.static.zynga.com/mwfb/graphics/home/icon_fight_75x75_01.gif" width="40" height="40" /></div><div class="update_pic" ><img src="http://mwfb.static.zynga.com/mwfb/graphics/MW_FB_DirIcon_75x75.jpg" style="width: 40px; height: 40px;" /></div><div class="update_txt">You were attacked by <a href="http://mwfb.zynga.com/mwfb/remote/html_server.php?xw_controller=stats&xw_action=view&xw_city=1&tmp=42f95f211b4a384a9f840ef4b8e8b6fd&cb=5036007541267149873&user=MTAwMDAwNzMyNTg0NDA0&ref=pu_fightloss" onclick="this.href='http://mwfb.zynga.com/mwfb/remote/html_server.php?xw_controller=stats&xw_action=view&xw_city=1&tmp=42f95f211b4a384a9f840ef4b8e8b6fd&cb=5036007541267149873&user=MTAwMDAwNzMyNTg0NDA0&ref=pu_fightloss&skip_req_frame=1&sf_xw_user_id=503600754&sf_xw_sig='+local_xw_sig+''" >Nadine</a>. <br />You <strong>lost</strong> the fight, taking <strong>21</strong> damage and losing <span class="bad">$344</span>. <a href="http://mwfb.zynga.com/mwfb/remote/html_server.php?xw_controller=stats&xw_action=view&xw_city=1&tmp=42f95f211b4a384a9f840ef4b8e8b6fd&cb=5036007541267149873&user=MTAwMDAwNzMyNTg0NDA0" onclick="this.href='http://mwfb.zynga.com/mwfb/remote/html_server.php?xw_controller=stats&xw_action=view&xw_city=1&tmp=42f95f211b4a384a9f840ef4b8e8b6fd&cb=5036007541267149873&user=MTAwMDAwNzMyNTg0NDA0&skip_req_frame=1&sf_xw_user_id=503600754&sf_xw_sig='+local_xw_sig+''" >Get revenge now!</a></div></div><div class="update_item"><div class="update_timestamp">5 days, 23 hours ago:</div><div class="update_icon"><img src="http://mwfb.static.zynga.com/mwfb/graphics/home/icon_fight_75x75_01.gif" width="40" height="40" /></div><div class="update_pic" ><img src="http://mwfb.static.zynga.com/mwfb/graphics/MW_FB_DirIcon_75x75.jpg" style="width: 40px; height: 40px;" /></div><div class="update_txt">You were attacked by <a href="http://mwfb.zynga.com/mwfb/remote/html_server.php?xw_controller=stats&xw_action=view&xw_city=1&tmp=42f95f211b4a384a9f840ef4b8e8b6fd&cb=5036007541267149873&user=MTAwMDAwNzMyNTg0NDA0&ref=pu_fightloss" onclick="this.href='http://mwfb.zynga.com/mwfb/remote/html_server.php?xw_controller=stats&xw_action=view&xw_city=1&tmp=42f95f211b4a384a9f840ef4b8e8b6fd&cb=5036007541267149873&user=MTAwMDAwNzMyNTg0NDA0&ref=pu_fightloss&skip_req_frame=1&sf_xw_user_id=503600754&sf_xw_sig='+local_xw_sig+''" >Nadine</a>. <br />You <strong>lost</strong> the fight, taking <strong>13</strong> damage and losing <span class="bad">$366</span>. <a href="http://mwfb.zynga.com/mwfb/remote/html_server.php?xw_controller=stats&xw_action=view&xw_city=1&tmp=42f95f211b4a384a9f840ef4b8e8b6fd&cb=5036007541267149873&user=MTAwMDAwNzMyNTg0NDA0" onclick="this.href='http://mwfb.zynga.com/mwfb/remote/html_server.php?xw_controller=stats&xw_action=view&xw_city=1&tmp=42f95f211b4a384a9f840ef4b8e8b6fd&cb=5036007541267149873&user=MTAwMDAwNzMyNTg0NDA0&skip_req_frame=1&sf_xw_user_id=503600754&sf_xw_sig='+local_xw_sig+''" >Get revenge now!</a></div></div><div class="update_item"><div class="update_timestamp">2 weeks ago:</div><div class="update_icon"><img src="http://mwfb.static.zynga.com/mwfb/graphics/home/icon_fight_75x75_01.gif" width="40" height="40" /></div><div class="update_pic" ><img src="http://profile.ak.fbcdn.net/v229/1225/29/q1500058038_1428.jpg" style="width: 40px; height: 40px;" /></div><div class="update_txt">You were attacked by <a href="http://mwfb.zynga.com/mwfb/remote/html_server.php?xw_controller=stats&xw_action=view&xw_city=1&tmp=42f95f211b4a384a9f840ef4b8e8b6fd&cb=5036007541267149873&user=MTUwMDA1ODAzOA%3D%3D&ref=pu_fightloss" onclick="this.href='http://mwfb.zynga.com/mwfb/remote/html_server.php?xw_controller=stats&xw_action=view&xw_city=1&tmp=42f95f211b4a384a9f840ef4b8e8b6fd&cb=5036007541267149873&user=MTUwMDA1ODAzOA%3D%3D&ref=pu_fightloss&skip_req_frame=1&sf_xw_user_id=503600754&sf_xw_sig='+local_xw_sig+''" >swampthing</a>. <br />You <strong>lost</strong> the fight, taking <strong>23</strong> damage and losing <span class="bad">$389</span>. <a href="http://mwfb.zynga.com/mwfb/remote/html_server.php?xw_controller=stats&xw_action=view&xw_city=1&tmp=42f95f211b4a384a9f840ef4b8e8b6fd&cb=5036007541267149873&user=MTUwMDA1ODAzOA%3D%3D" onclick="this.href='http://mwfb.zynga.com/mwfb/remote/html_server.php?xw_controller=stats&xw_action=view&xw_city=1&tmp=42f95f211b4a384a9f840ef4b8e8b6fd&cb=5036007541267149873&user=MTUwMDA1ODAzOA%3D%3D&skip_req_frame=1&sf_xw_user_id=503600754&sf_xw_sig='+local_xw_sig+''" >Get revenge now!</a></div></div><div class="update_item"><div class="update_timestamp">2 weeks ago:</div><div class="update_icon"><img src="http://mwfb.static.zynga.com/mwfb/graphics/home/icon_fight_75x75_01.gif" width="40" height="40" /></div><div class="update_pic" ><img src="http://profile.ak.fbcdn.net/v229/1225/29/q1500058038_1428.jpg" style="width: 40px; height: 40px;" /></div><div class="update_txt">You were attacked by <a href="http://mwfb.zynga.com/mwfb/remote/html_server.php?xw_controller=stats&xw_action=view&xw_city=1&tmp=42f95f211b4a384a9f840ef4b8e8b6fd&cb=5036007541267149873&user=MTUwMDA1ODAzOA%3D%3D&ref=pu_fightloss" onclick="this.href='http://mwfb.zynga.com/mwfb/remote/html_server.php?xw_controller=stats&xw_action=view&xw_city=1&tmp=42f95f211b4a384a9f840ef4b8e8b6fd&cb=5036007541267149873&user=MTUwMDA1ODAzOA%3D%3D&ref=pu_fightloss&skip_req_frame=1&sf_xw_user_id=503600754&sf_xw_sig='+local_xw_sig+''" >swampthing</a>. <br />You <strong>lost</strong> the fight, taking <strong>17</strong> damage and losing <span class="bad">$801</span>. <a href="http://mwfb.zynga.com/mwfb/remote/html_server.php?xw_controller=stats&xw_action=view&xw_city=1&tmp=42f95f211b4a384a9f840ef4b8e8b6fd&cb=5036007541267149873&user=MTUwMDA1ODAzOA%3D%3D" onclick="this.href='http://mwfb.zynga.com/mwfb/remote/html_server.php?xw_controller=stats&xw_action=view&xw_city=1&tmp=42f95f211b4a384a9f840ef4b8e8b6fd&cb=5036007541267149873&user=MTUwMDA1ODAzOA%3D%3D&skip_req_frame=1&sf_xw_user_id=503600754&sf_xw_sig='+local_xw_sig+''" >Get revenge now!</a></div></div><div class="update_item"><div class="update_timestamp">2 weeks ago:</div><div class="update_icon"><img src="http://mwfb.static.zynga.com/mwfb/graphics/home/icon_fight_75x75_01.gif" width="40" height="40" /></div><div class="update_pic" ><img src="http://profile.ak.fbcdn.net/v229/1225/29/q1500058038_1428.jpg" style="width: 40px; height: 40px;" /></div><div class="update_txt">You were attacked by <a href="http://mwfb.zynga.com/mwfb/remote/html_server.php?xw_controller=stats&xw_action=view&xw_city=1&tmp=42f95f211b4a384a9f840ef4b8e8b6fd&cb=5036007541267149873&user=MTUwMDA1ODAzOA%3D%3D&ref=pu_fightloss" onclick="this.href='http://mwfb.zynga.com/mwfb/remote/html_server.php?xw_controller=stats&xw_action=view&xw_city=1&tmp=42f95f211b4a384a9f840ef4b8e8b6fd&cb=5036007541267149873&user=MTUwMDA1ODAzOA%3D%3D&ref=pu_fightloss&skip_req_frame=1&sf_xw_user_id=503600754&sf_xw_sig='+local_xw_sig+''" >swampthing</a>. <br />You <strong>lost</strong> the fight, taking <strong>17</strong> damage and losing <span class="bad">$809</span>. <a href="http://mwfb.zynga.com/mwfb/remote/html_server.php?xw_controller=stats&xw_action=view&xw_city=1&tmp=42f95f211b4a384a9f840ef4b8e8b6fd&cb=5036007541267149873&user=MTUwMDA1ODAzOA%3D%3D" onclick="this.href='http://mwfb.zynga.com/mwfb/remote/html_server.php?xw_controller=stats&xw_action=view&xw_city=1&tmp=42f95f211b4a384a9f840ef4b8e8b6fd&cb=5036007541267149873&user=MTUwMDA1ODAzOA%3D%3D&skip_req_frame=1&sf_xw_user_id=503600754&sf_xw_sig='+local_xw_sig+''" >Get revenge now!</a></div></div>			            </div>
+
+        </div>
+	</div>
+
+</body>
+</html>

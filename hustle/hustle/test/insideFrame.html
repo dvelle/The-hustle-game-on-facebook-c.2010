@@ -1,0 +1,30 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml"> <head></head> 
+<body> 
+<script src="http://static.ak.connect.facebook.com/js/api_lib/v0.4/FeatureLoader.js.php" type="text/javascript"> </script> 
+
+   <div id="friendSelectForm" iframeHeight="1000px" iframeWidth="1000px" style="width: 1000px; height: 1000px;"
+                        fbml="<fb:fbml><fb:request-form style="width:436px; height:370px;" action="http://www.google.com/" method="GET" invite="false" type="Test Friend" content="I'd like to add you as a friend on Test: <fb:req-choice url='http://www.google.com/' label='Go!' />"><fb:multi-friend-selector showborder="false" actiontext="Invite your friends to Test" rows="3" bypass="cancel"/></fb:request-form></fb:fbml>"
+
+    </div>
+
+    <script type="text/javascript">
+    
+        function facebook_post()
+        {
+            FB_RequireFeatures(["XFBML"], function()
+            {
+                FB.Facebook.init("{2b154bd6f13c0d2e91ee4619514aeaf9}", "xd_receiver.htm");
+
+                FB.Connect.requireSession( function () {                        
+                    var friendSelectForm = document.getElementById("friendSelectForm");
+                    var serverFbml=new FB.XFBML.ServerFbml(friendSelectForm);
+                    FB.XFBML.Host.addElement(serverFbml);
+                });
+            });
+            
+        }
+        facebook_post();
+    </script>
+
+</body>
+</html>

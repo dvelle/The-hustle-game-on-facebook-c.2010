@@ -1,0 +1,79 @@
+-- phpMyAdmin SQL Dump
+-- version 2.6.1
+-- http://www.phpmyadmin.net
+-- 
+-- Host: localhost
+-- Generation Time: Feb 05, 2008 at 10:33 AM
+-- Server version: 4.1.9
+-- PHP Version: 4.3.10
+-- 
+-- Database: `ajaxpaging`
+-- 
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `tblstates`
+-- 
+
+CREATE TABLE `tblstates` (
+  `id` int(11) NOT NULL auto_increment,
+  `State` text NOT NULL,
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=51 ;
+
+-- 
+-- Dumping data for table `tblstates`
+-- 
+
+INSERT INTO `tblstates` VALUES (1, 'Alabama');
+INSERT INTO `tblstates` VALUES (2, 'Alaska');
+INSERT INTO `tblstates` VALUES (3, 'Arizona');
+INSERT INTO `tblstates` VALUES (4, 'Arkansas');
+INSERT INTO `tblstates` VALUES (5, 'California');
+INSERT INTO `tblstates` VALUES (6, 'Colorado');
+INSERT INTO `tblstates` VALUES (7, 'Connecticut');
+INSERT INTO `tblstates` VALUES (8, 'Delaware');
+INSERT INTO `tblstates` VALUES (9, 'Florida');
+INSERT INTO `tblstates` VALUES (10, 'Georgia');
+INSERT INTO `tblstates` VALUES (11, 'Hawaii');
+INSERT INTO `tblstates` VALUES (12, 'Idaho');
+INSERT INTO `tblstates` VALUES (13, 'Illinois');
+INSERT INTO `tblstates` VALUES (14, 'Indiana');
+INSERT INTO `tblstates` VALUES (15, 'Iowa');
+INSERT INTO `tblstates` VALUES (16, 'Kansas');
+INSERT INTO `tblstates` VALUES (17, 'Kentucky');
+INSERT INTO `tblstates` VALUES (18, 'Louisiana');
+INSERT INTO `tblstates` VALUES (19, 'Maine');
+INSERT INTO `tblstates` VALUES (20, 'Maryland');
+INSERT INTO `tblstates` VALUES (21, 'Massachusetts');
+INSERT INTO `tblstates` VALUES (22, 'Michigan');
+INSERT INTO `tblstates` VALUES (23, 'Minnesota');
+INSERT INTO `tblstates` VALUES (24, 'Mississippi');
+INSERT INTO `tblstates` VALUES (25, 'Missouri');
+INSERT INTO `tblstates` VALUES (26, 'Montana');
+INSERT INTO `tblstates` VALUES (27, 'Nebraska');
+INSERT INTO `tblstates` VALUES (28, 'Nevada');
+INSERT INTO `tblstates` VALUES (29, 'New Hampshire');
+INSERT INTO `tblstates` VALUES (30, 'New Jersey');
+INSERT INTO `tblstates` VALUES (31, 'New Mexico');
+INSERT INTO `tblstates` VALUES (32, 'New York');
+INSERT INTO `tblstates` VALUES (33, 'North Carolina');
+INSERT INTO `tblstates` VALUES (34, 'North Dakota');
+INSERT INTO `tblstates` VALUES (35, 'Ohio');
+INSERT INTO `tblstates` VALUES (36, 'Oklahoma');
+INSERT INTO `tblstates` VALUES (37, 'Oregon');
+INSERT INTO `tblstates` VALUES (38, 'Pennsylvania');
+INSERT INTO `tblstates` VALUES (39, 'Rhode Island ');
+INSERT INTO `tblstates` VALUES (40, 'South Carolina');
+INSERT INTO `tblstates` VALUES (41, 'South Dakota');
+INSERT INTO `tblstates` VALUES (42, 'Tennessee');
+INSERT INTO `tblstates` VALUES (43, 'Texas');
+INSERT INTO `tblstates` VALUES (44, 'Utah');
+INSERT INTO `tblstates` VALUES (45, 'Vermont');
+INSERT INTO `tblstates` VALUES (46, 'Virginia');
+INSERT INTO `tblstates` VALUES (47, 'Washington');
+INSERT INTO `tblstates` VALUES (48, 'West Virginia');
+INSERT INTO `tblstates` VALUES (49, 'Wisconsin');
+INSERT INTO `tblstates` VALUES (50, 'Wyoming');
+        

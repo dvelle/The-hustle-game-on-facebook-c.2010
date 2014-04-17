@@ -1,0 +1,30 @@
+<table cellpadding="4" cellspacing="5">
+<tr>
+  <td align="left">
+	<script src="http://static.ak.connect.facebook.com/js/api_lib/v0.4/FeatureLoader.js.php/en_US" type="text/javascript"></script> 
+   <script>
+   FB.ensureInit( function(){ FB.Connect.ifUserConnected(user_login,require);});
+   </script>
+      
+    
+<script>
+		function user_login()
+		{
+			var user_box=document.getElementById('user');
+			document.getElementById('user').style.display='none';
+			var user_pic=document.getElementById('facepic');
+			user_box.innerHTML="<fb:name useyou='false' uid='loggedinuser'></fb:name>";
+			user_pic.innerHTML="<fb:profile-pic uid='loggedinuser' facebook-logo='false'/>";
+			FB.XFBML.Host.parseDomTree();
+			
+			setTimeout("var userdata=document.getElementById('user').innerHTML;var userpic=document.getElementById('facepic').innerHTML;xajax_RegNewUser('facebook',userdata,0,userpic);", 3000);
+			setTimeout("window.location ='{$redirect}';", 4000);		
+			
+			
+		}
+</script>
+
+<script type="text/javascript"> FB.init("70889d19a25921c40e4622b1a09f1921", "xd_receiver.htm"); </script> 
+    </td>
+</tr>
+</table>

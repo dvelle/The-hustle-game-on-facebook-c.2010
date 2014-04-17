@@ -1,0 +1,120 @@
+===================================
+DOWNLOAD PAGE: http://www.12daysoffun.com/hustle/test/page.php?dl-28525142
+
+INVALID: We cannot verify your purchase
+
+POST DATA
+test_ipn: 1
+payment_type: instant
+payment_date: 07:02:28 May 25, 2010 PDT
+payment_status: Completed
+address_status: confirmed
+payer_status: verified
+first_name: John
+last_name: Smith
+payer_email: buyer@paypalsandbox.com
+payer_id: TESTBUYERID01
+address_name: John Smith
+address_country: United States
+address_country_code: US
+address_zip: 95131
+address_state: CA
+address_city: San Jose
+address_street: 123, any street
+business: seller@paypalsandbox.com
+receiver_email: seller@paypalsandbox.com
+receiver_id: TESTSELLERID1
+residence_country: US
+item_name: something
+item_number: jermongreen
+quantity: 1
+shipping: 3.04
+tax: 2.02
+mc_currency: USD
+mc_fee: 0.44
+mc_gross: 0.99
+mc_gross_1: 9.34
+txn_type: web_accept
+txn_id: 28525142
+notify_version: 2.1
+custom: xyz123
+charset: windows-1252
+verify_sign: Al5WrjJiEDA8KQg0JLJMOLqvZGyJAlwEyKtvOzEHaZP.EKsGTF23BGHb
+===================================
+DOWNLOAD PAGE: 
+
+INVALID: We cannot verify your purchase
+
+POST DATA
+===================================
+DOWNLOAD PAGE: 
+
+===================================
+DOWNLOAD PAGE: 
+
+INVALID: We cannot verify your purchase
+
+POST DATA
+INVALID: We cannot verify your purchase
+
+POST DATA
+===================================
+DOWNLOAD PAGE: 
+
+===================================
+DOWNLOAD PAGE: 
+
+===================================
+DOWNLOAD PAGE: 
+
+===================================
+DOWNLOAD PAGE: 
+
+===================================
+DOWNLOAD PAGE: 
+
+===================================
+DOWNLOAD PAGE: 
+
+===================================
+DOWNLOAD PAGE: 
+
+INVALID: We cannot verify your purchase
+
+POST DATA
+test_ipn: 1
+payment_type: instant
+payment_date: 07:02:28 May 25, 2010 PDT
+payment_status: Completed
+address_status: confirmed
+payer_status: verified
+first_name: John
+last_name: Smith
+payer_email: buyer@paypalsandbox.com
+payer_id: TESTBUYERID01
+address_name: John Smith
+address_country: United States
+address_country_code: US
+address_zip: 95131
+address_state: CA
+address_city: San Jose
+address_street: 123, any street
+business: seller@paypalsandbox.com
+receiver_email: seller@paypalsandbox.com
+receiver_id: TESTSELLERID1
+residence_country: US
+item_name: something
+item_number: jermongreen
+quantity: 1
+shipping: 3.04
+tax: 2.02
+mc_currency: USD
+mc_fee: 0.44
+mc_gross: 0.99
+mc_gross_1: 9.34
+txn_type: web_accept
+txn_id: 28525142
+notify_version: 2.1
+custom: xyz123
+charset: windows-1252
+verify_sign: AtmYTzaXYypZ7cM4q3Gjwg3v0XJSAdGbRWgbQjnUKTMUpHqquzoJcFiB

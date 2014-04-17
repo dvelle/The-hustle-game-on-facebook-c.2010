@@ -1,0 +1,8 @@
+#####################################
+# Change Log
+#####################################
+Version		Notes
+0.1		Initial release. This release include the bare bone of whats needed to get everything working.
+		There is no formatting. There is a navigation panel that will show 7 numbers (if they exist)
+		at a time, 3 before and 3 after the current number. It will also display the 3 pictures for
+		easier navigation. Lastly it has a counter that starts when the page is loaded.

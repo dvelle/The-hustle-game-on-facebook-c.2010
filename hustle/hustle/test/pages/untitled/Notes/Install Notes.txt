@@ -1,0 +1,14 @@
+#####################################
+# Install Notes
+#####################################
+To use this demo, you simply need to 
+1. Create a database.
+2. Run the contents in tblLayout to create the table (run in phpMyAdmin or equivilant)
+	If you do not have a tool to run the sql code then you can create the table
+	manually.
+3. Edit the settings file to match your root mysql password. Enter in the database
+	name, and if your table name is different (if you didnt run the code in tblLayout).
+4. Upload the files to your server or test area, Have fun and learn.
+
+Notes:
+You can change RPP in the setting to change the amount of results there are per page.
