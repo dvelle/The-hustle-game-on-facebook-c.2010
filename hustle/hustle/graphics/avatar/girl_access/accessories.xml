@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<objects>
+<!--Menu Item-->
+<menu_name>0</menu_name>
+<image>blank.png</image>
+<thumb>t0.png</thumb>
+
+<!--Menu Item-->
+<menu_name>13</menu_name>
+<image>13.png</image>
+<thumb>t13.png</thumb>
+
+<!--Menu Item-->
+<menu_name>14</menu_name>
+<image>14.png</image>
+<thumb>t14.png</thumb>
+
+
+</objects>

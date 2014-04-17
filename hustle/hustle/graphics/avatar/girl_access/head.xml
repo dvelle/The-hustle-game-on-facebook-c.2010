@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<objects>
+<!--Menu Item-->
+<menu_name>0</menu_name>
+<image>blank.png</image>
+<thumb>t0.png</thumb>
+
+<!--Menu Item-->
+<menu_name>23</menu_name>
+<image>23.png</image>
+<thumb>t23.png</thumb>
+
+<!--Menu Item-->
+<menu_name>24</menu_name>
+<image>24.png</image>
+<thumb>t24.png</thumb>
+
+<!--Menu Item-->
+<menu_name>25</menu_name>
+<image>25.png</image>
+<thumb>t25.png</thumb>
+
+<!--Menu Item-->
+<menu_name>26</menu_name>
+<image>26.png</image>
+<thumb>t26.png</thumb>
+
+</objects>

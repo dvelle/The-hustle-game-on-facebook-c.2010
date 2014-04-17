@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<objects>
+<!--Menu Item-->
+<menu_name>0</menu_name>
+<image>blank.png</image>
+<thumb>t0.png</thumb>
+
+<!--Menu Item-->
+<menu_name>15</menu_name>
+<image>15.png</image>
+<thumb>t15.png</thumb>
+
+<!--Menu Item-->
+<menu_name>16</menu_name>
+<image>16.png</image>
+<thumb>t16.png</thumb>
+
+<!--Menu Item-->
+<menu_name>17</menu_name>
+<image>17.png</image>
+<thumb>t17.png</thumb>
+
+<!--Menu Item-->
+<menu_name>18</menu_name>
+<image>18.png</image>
+<thumb>t18.png</thumb>
+
+<!--Menu Item-->
+<menu_name>19</menu_name>
+<image>19.png</image>
+<thumb>t19.png</thumb>
+
+<!--Menu Item-->
+<menu_name>20</menu_name>
+<image>20.png</image>
+<thumb>t20.png</thumb>
+
+<!--Menu Item-->
+<menu_name>21</menu_name>
+<image>21.png</image>
+<thumb>t21.png</thumb>
+
+<!--Menu Item-->
+<menu_name>22</menu_name>
+<image>22.png</image>
+<thumb>t22.png</thumb>
+
+</objects>

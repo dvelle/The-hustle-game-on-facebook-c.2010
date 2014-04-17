@@ -1,0 +1,2505 @@
+html,body,div,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,pre,form,p,blockquote,fieldset,input,hr {margin:0; padding:0;}
+h1,h2,h3,h4,h5,h6,pre,code,address,caption,cite,code,em,strong,th {font-size:1em; font-weight:normal; font-style:normal;}
+ul,ol {list-style:none;}
+fieldset,img,hr {border:none;}
+caption,th {text-align:left;}
+table {border-collapse:collapse; border-spacing:0;}
+td {vertical-align:top;}
+
+img {
+	border: none;
+}
+#header {
+	width: 750px;
+	margin-right: auto;
+	margin-left: auto;
+	height: 98px;
+	background-image: url(../file/graphics/hustle_bk_2.jpg);
+	padding-bottom: 0.01em;
+	background-repeat: no-repeat;
+}
+#header #external {
+	height: 38px;
+}
+#header #cash_cp {
+	height: 20px;
+	text-align: right;
+	padding-top: 5px;
+}
+#header #level {
+	height: 14px;
+	font-size: 0.9em;
+	text-align: right;
+}
+#header #energy {
+	height: 15px;
+}
+#header #external #instructions {
+	width: 214px;
+	float: right;
+}
+#header #external #instructions #redirects {
+	font-size: 0.7em;
+	color: #FC0;
+	padding-top: 5px;
+	font-weight: bold;
+}
+#header #external #instructions #redirects #privacypolicy {
+	width: 100px;
+	display: inline;
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-right-color: #999;
+	border-left-color: #CCC;
+	padding-right: 2px;
+}
+#header #external #instructions #redirects #support {
+	width: 50px;
+	display: inline;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #999;
+	padding-right: 2px;
+}
+#header #external #instructions #redirects #terms {
+	width: 30px;
+	display: inline;
+	padding-right: 2px;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #999;
+}
+#header #external #instructions #redirects #forums {
+	width: 45px;
+	display: inline;
+}
+#header #cash_cp #cp_stat {
+	color: #009;
+	width: 208px;
+	float: right;
+	text-align: center;
+	font-size: .79em;
+}
+#header #cash_cp #cash_stat {
+	color: #060;
+	width: 130px;
+	font-size: .79em;
+	float: right;
+	text-align: center;
+}
+#header #level #level_number_stat {
+	width: 15px;
+	color: #FFF;
+	text-align: center;
+	float:right;
+	margin-right:150px;
+	font-size: 0.65em;
+	font-weight: bold;
+	overflow: hidden;
+}
+#wrapper #header #level #clock_energy {
+	width: 62px;
+	font-size: 0.61em;
+	color: #FFF;
+	margin-left: 475px;
+	font-weight: bold;
+}
+#wrapper #header #level #clock_health {
+	font-size: 0.61em;
+	color: #FFF;
+	font-weight: bold;
+}
+#header #energy #nav_bar {
+	width: 275px;
+	margin-left: 120px;
+}
+#header #energy #nav_bar #store_butt {
+	width: 72px;
+	float: right;
+	margin-left:5px;
+	margin-right:3px;
+}
+
+#header #energy #nav_bar #store_section #manage_butt {
+	width: 52px;
+	float: right;
+	margin-right:10px;
+}
+#header #energy #nav_bar #profile_butt {	
+	width: 52px;
+	float: left;
+}
+#header #energy #nav_bar #home_butt {
+	width: 52px;
+	float: right;
+	margin-right:5px;
+}
+#header #energy #energy_stat {
+	color: #FFF;
+	width: 131px;
+	font-size: 0.76em;
+	float: right;
+	text-align: center;
+}
+#header #energy #level_label {
+	font-size: 0.76em;
+	color: #FFF;
+	width: 95px;
+	float: right;
+	text-align: center;
+}
+#header #energy #c_rank {
+	width: 110px;
+	color: #FFF;
+	font-size: .76em;
+	float: right;
+}
+body {
+	
+	margin-right: auto;
+	margin-left: auto; 
+	text-align:center;
+	background:#FFF;
+}
+		
+#wrapper {
+	width:750px; 
+	margin-right: auto;
+	margin-left: auto; 
+}
+			
+#body {
+	clear:both; 
+	margin:0;
+}
+				
+#body .body {
+	width:750px;
+	margin:0;
+}			
+.loading {
+	background: url(images/ajax-loader.gif) no-repeat center center;
+	height:100px;
+	display:none;
+}
+#wrapper #body .body #content #inner_page {
+	background: url(../file/graphics/hustle_bk_bottom.jpg) no-repeat;
+	height: 402px;
+	width: 750px;
+	margin-right: auto;
+	margin-left: 1px;
+}
+#inner_page2 {
+	width: 750px;
+	margin-right: auto;
+	margin-left: auto;
+	background-image: url(../file/graphics/longer_bk.jpg);
+	height: 712px;
+}
+#inner_page2 #store_page #consumables {
+	font-weight: bold;
+	color: #FFF;
+	font-size: 0.8em;
+	width: 725px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#inner_page2 #store_page #bundles {
+	font-weight: bold;
+	color: #FFF;
+	font-size: 0.8em;
+	width: 725px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#inner_page2 #store_page #paypal {
+	font-size: 0.9em;
+	width: 725px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#inner_page2 #store_page {
+	padding-top: 25px;
+}
+#inner_page2 #store_page #consumables table tr td #ncn_image {
+}
+#inner_page2 #store_page #store_header table tr td table tr td #header_label {
+	border-bottom-width: thin;
+	border-bottom-color: #03C;
+}
+#inner_page2 #store_page #space_block {
+	height: 10px;
+}
+#inner_page2 #store_page #store_header table tr td table tr td #header_label tr td {
+	color: #F00;
+	font-weight: bold;
+}
+#inner_page2 #store_page #store_header table tr td table tr td table tr td {
+	font-size: 14px;
+	color: #FFF;
+}
+.payterms {
+	color: #00F;
+	font-weight: bold;
+}
+#inner_page2 #store_page #paypal #form1 table tr td table tr td table tr td {
+	color: #FFF;
+}
+#practice_button {
+	position:absolute;
+	width:200px;
+	height:171px;
+	z-index:3;
+	left: 199px;
+	top: 328px;
+}
+#mission {
+	height: 712px;
+}
+#fight_button {
+	position:absolute;
+	width:200px;
+	height:115px;
+	z-index:1;
+	left: 168px;
+	top: 279px;
+}
+#inv_muscle_2 {
+	position:absolute;
+	width:169px;
+	height:106px;
+	z-index:4;
+	left: 5px;
+	top: 397px;
+}
+#inventory_button {
+	position:absolute;
+	width:148px;
+	height:69px;
+	z-index:5;
+	left: 162px;
+	top: 434px;
+}
+#rroffice {
+	position:absolute;
+	width:110px;
+	height:97px;
+	z-index:6;
+	left: 594px;
+	top: 403px;
+}
+#cheatmall {
+	position:absolute;
+	width:88px;
+	height:58px;
+	z-index:7;
+	left: 671px;
+	top: 450px;
+}
+#stats {
+	position:absolute;
+	width:187px;
+	height:74px;
+	z-index:8;
+	left: 12px;
+	top: 19px;
+}
+#apDiv1 {
+	position:absolute;
+	width:273px;
+	height:206px;
+	z-index:2;
+	left: 198px;
+	top: 302px;
+}
+#coliseum {
+	position:absolute;
+	width:561px;
+	height:241px;
+	z-index:1;
+	left: 198px;
+	top: 261px;
+}
+#apDiv3 {
+	position:absolute;
+	width:130px;
+	height:115px;
+	z-index:4;
+	left: 169px;
+	top: 383px;
+}
+#apDiv4 {
+	position:absolute;
+	width:160px;
+	height:158px;
+	z-index:3;
+	left: 10px;
+	top: 350px;
+}
+#crews {
+	position:absolute;
+	width:200px;
+	height:63px;
+	z-index:9;
+	left: 444px;
+	top: 438px;
+}
+#apDiv5 {
+	position:absolute;
+	width:200px;
+	height:115px;
+	z-index:8;
+	left: 443px;
+	top: 379px;
+}
+#apDiv6 {
+	position:absolute;
+	width:107px;
+	height:145px;
+	z-index:5;
+	left: 575px;
+	top: 363px;
+}
+#apDiv7 {
+	position:absolute;
+	width:90px;
+	height:71px;
+	z-index:7;
+	left: 657px;
+	top: 426px;
+}
+#footer {
+	background-image: url(graphics/hustle_bk_3.png);
+	background-repeat: no-repeat;
+	height: 97px;
+}
+#billboard {
+	position:absolute;
+	width:200px;
+	height:115px;
+	z-index:0;
+	left: 58px;
+	top: 298px;
+}
+#apDiv8 {
+	position:absolute;
+	width:200px;
+	height:115px;
+	z-index:10;
+	top: 100px;
+}
+#earners
+ {
+	width: 200px;
+	height: 90px;
+	margin-right: auto;
+	margin-left: auto;
+	vertical-align:top;
+}
+
+#low_display {
+	height: 88px;
+	width: 72px;
+	background-repeat: no-repeat;
+	float: right;
+}
+
+
+#low_display #header {
+	background-color:#000;
+	color: #FFF;
+	height: 23px;
+	width: 72px;
+	background-image: url(http://www.12daysoffun.com/hustle/graphics/lowearner_header.png);
+}
+#low_display #drain {
+	height: 51px;
+	width: 72px;
+}
+#low_display #footer {
+	width: 72px;
+	color: #F00;
+	background-color: #000;
+	font-size: 0.67em;
+	height: 16px;
+	font-weight: bold;
+	text-align:center;
+}
+#top_display {
+	width: 72px;
+	background-repeat: no-repeat;
+}
+
+
+#top_display #header {
+	background-color:#000;
+	color: #FFF;
+	height: 23px;
+	width: 72px;
+	background-image: url(http://www.12daysoffun.com/hustle/graphics/topearner_header.png);
+}
+#top_display #cash_cow {
+	height: 51px;
+	width: 72px;
+}
+#top_display #footer {
+	width: 72px;
+	color:#0C0;
+	background-color: #000;
+	font-size: 0.67em;
+	height: 16px;
+	font-weight: bold;
+	text-align:center;
+}
+#hidden {
+}
+-->arcade
+#countrydivcontainer{
+	border:1px solid gray; 
+	width:715px; 
+	height:280px; 
+	margin-bottom: 1em; 
+	padding: 10px;
+	background-image:url(../graphics/gray_bk_bot.png)
+}
+.tabcontentiframe{
+height: 280px !important;
+}
+-->scores
+#inner_page2 #leaders #title {
+	color: #00F;
+	padding-left: 5px;
+	font-weight: bold;
+}
+#inner_page2 #leaders table tr td .board_header {
+	font-size: 18px;
+	font-weight: bold;
+}
+#inner_page2 #leaders table tr td .board_headerw {
+	color: #FFF;
+	font-size: 18px;
+	font-weight: bolder;
+}
+#inner_page2 #leaders table tr td table tr td #top10_c {
+	overflow: scroll;
+	height: 150px;
+}
+#inner_page2 #leaders table tr td table tr td #bot10_c {
+	overflow: scroll;
+	height: 150px;
+}
+#inner_page2 #leaders table tr td table tr td #top10_p {
+	overflow: scroll;
+	height: 150px;
+}
+#inner_page2 #leaders table tr td table tr td #bot10_p {
+	overflow: scroll;
+	height: 150px;
+}
+#inner_page2 #leaders table tr td table tr td #top10_g {
+	overflow: scroll;
+	height: 150px;
+}
+#inner_page2 #leaders table tr td table tr td #bot10_g {
+	overflow: scroll;
+	height: 150px;
+}
+-->manage
+#inner_page2 #manage_pg table tr td table tr td table tr td #manage_header {
+	color: #FFF;
+	font-size: 16px;
+	width: 170px;
+	font-weight: bold;
+}
+#inner_page2 #manage_pg table tr td table tr td table tr td #manage_header2 {
+	font-size: 16px;
+	font-weight: bold;
+	color: #FFF;
+}
+#inner_page2 #manage_pg table tr td table tr td table tr td .minner_text {
+	font-size: 14px;
+	color: #FFF;
+	width: 206px;
+}
+#inner_page2 #manage_pg table tr td table tr td table tr td .minner_text3 {
+	font-size: 14px;
+	color: #FFF;
+}
+#inner_page2 #manage_pg table tr td table tr td table tr td #yrank_stat {
+	font-size: 13px;
+	color: #CCC;
+	font-weight: bold;
+}
+#inner_page2 #manage_pg table tr td table tr td table tr td #yorank_stat {
+	font-size: 13px;
+	color: #999;
+	font-weight: bold;
+}
+#inner_page2 #manage_pg table tr td table tr td table tr td #fire_shake {
+	height: 167px;
+	overflow: scroll;
+}
+#inner_page2 #manage_pg table tr td table tr td table tr td form #quitter {
+	overflow: scroll;
+	height: 146px;
+}
+#inner_page2 #manage_pg table tr td table tr td table tr td #manage_header3 {
+}
+#inner_page2 #manage_pg table tr td table tr td table tr td form #coffers {
+	height: 160px;
+	overflow: scroll;
+}
+#inner_page2 #manage_pg table tr td table tr td table tr td form #new_offers {
+}
+
+-->profile
+.achievement_updates {
+	height: 183px;
+	margin-left: 10px;
+	margin-right: 10px;
+	overflow:auto;
+}
+.tab_box_header {
+	height:27px; 
+	overflow:hidden;
+}
+.tab {
+	float: left;
+}
+
+.tab_box_header .tab_start {
+	width: 6px;
+	height: 27px;
+	float: left;
+	background-image: url(http://12daysoffun.com/hustle/graphics/tab_left_6x27_01.gif);
+}
+
+.tab_box_header .tab_middle {
+	float: left;
+	height: 27px;
+	width:auto;
+	padding-left:5px;
+	padding-right:10px;
+	padding-top: 2px;
+	background-image: url(http://12daysoffun.com/hustle/graphics/tab_middle_1x27_01.gif);
+}
+.tab_box_header .tab_middle a:link, .tab_middle a:visited{
+	color:#FFFFFF;  
+	font-size:16px;
+	text-decoration: none;
+}
+.tab_box_header .tab_middle a:hover{
+	text-decoration: underline;
+}
+
+.tab_box_header .tab_end {
+	width: 13px;
+	height:27px;
+	float: left;
+	background-image: url(http://www.12daysoffun.com/hustle/graphics/tab_right_13x27_01.gif);
+}
+
+.tab_box_header .tab_help {
+	float: left; 
+	height: 27px;
+	padding-left:10px;
+	padding-top:5px;
+	color: #ccc; 
+	font-size:12px; 	
+}
+
+.tab_help a:link, .tab_help a:visited{
+	font-size:10px; 
+	color:#FFD927; 
+	text-decoration: none;
+}
+.tab_help a:hover{
+	text-decoration: underline;
+}
+
+.tab_box_header .send_all_box {
+	float: right;  
+	width:auto;	
+}
+.send_all_box a:link, .send_all_box a:visited {
+	text-decoration: none; 
+	font-size:12px;
+	color: #FFD927;
+}
+.send_all_box a:hover {
+	text-decoration: underline; 
+}
+.send_all_box a img{
+	text-decoration: none;
+	vertical-align: middle; 
+	border: none;
+}
+
+.tab_clear {
+	float: left;
+	width: auto;
+	padding-top: 5px;
+	font-size: 12px;
+}
+
+.tab_box_header .tab_recruit {
+	float: left;  
+	width:auto;	
+	padding-top: 3px;
+	padding-left: 10px;
+}
+.tab_recruit a:link, .tab_recruit a:visited {
+	text-decoration: none; 
+	font-size:12px;
+	color: #FFD927;
+}
+.tab_recruit a:hover {
+	text-decoration: underline; 
+}
+.tab_recruit a img{
+	text-decoration: none;
+	vertical-align: middle; 
+	border: none;
+}
+
+.tab_box_content {
+	background-color:#111111; 
+	border:solid 1px #666666; 
+	overflow: hidden;
+}
+
+.achievementupdate_box {
+	width: 300px;
+	float: left;
+	overflow: hidden;
+}
+
+.achievementprofile_box {
+	width: 200px;
+	margin-left:10px;
+	float:left;
+}
+
+.achievement_updates {
+	height: 230px;
+	margin-left: 10px;
+	margin-right: 10px;
+	overflow:scroll;
+	font-size: 10px;
+	color: #FFF;
+}
+.achievementupdate_box {
+	width: 500px;
+	float: left;
+	overflow: hidden;
+}
+.tab {	float: left;
+}
+.tab_box_content {
+	background-color:#111111;
+	border:solid 1px #666666;
+}
+.tab_box_header {	height:27px; 
+	overflow:hidden;
+}
+.tab_clear {	float: left;
+	width: auto;
+	padding-top: 5px;
+	font-size: 12px;
+}
+-->assets A
+#inner_page2 #next_pg {
+	width: 720px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#inner_page2 #assets_page1 {
+}
+#inner_page2 #assets_page1 #space_block {
+	height: 6px;
+}
+#maint_fee {
+	color: #F00;
+}
+td .asset_clr {
+	color: #000;
+	font-size:small;
+}
+#neg_value_color {
+	color: #F00;
+}
+#inner_page2 #store_page #inventoryA {
+	width: 725px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#inner_page2 #assets_page1 #inventoryA #invntyA_item {
+}
+#inner_page2 #assets_page1 #inventoryA #invntyA_item table tr td table tr td table tr td .stats_div {
+	color: #FFF;
+	font-size:smaller;
+}
+#inner_page2 #assets_page1 #binvnty_header table tr td table tr td #totalupkeep {
+	color: #000;
+}
+#inner_page2 #assets_page1 #binvnty_header table tr td table tr td .header_color {
+	color: #FFF;
+}
+table tr td table tr td #totalupkeep #upkeep_val {
+	color: #F00;
+}
+#inner_page2 #assets_page1 #inventoryA #invntyA_item table tr td table tr td table tr td table tr td .value_color {
+	color: #030;
+}
+#inner_page2 #assets_page1 #inventoryA #invntyA_item table tr td table tr td table tr td #item_name {
+	color: #FFF;
+	font-size:smaller;
+}
+.cp_value_color {
+	color: #FF0;
+}
+-->inventory
+#inner_page2 #next_pg {
+	width: 720px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#inner_page2 #inty_page {
+}
+#inner_page2 #inty_page #space_block {
+	height: 4px;
+}
+#inner_page2 #store_page #inventoryA {
+	font-size: 0.6em;
+	width: 725px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#inner_page2 #inty_page #inventoryA #invntyA_item {
+	font-size: .7em;
+}
+#inner_page2 #inty_page #inventoryA #invntyA_item table tr td table tr td table tr td .stats_div {
+	color: #FFF;
+}
+#inner_page2 #inty_page #binvnty_header table tr td table tr td #totalupkeep {
+	font-size: 14px;
+	color: #000;
+}
+#inner_page2 #inty_page #binvnty_header table tr td table tr td .header_color {
+	font-weight: bolder;
+	color: #FFF;
+}
+table tr td table tr td #totalupkeep #upkeep_val {
+	color: #F00;
+}
+#inner_page2 #inty_page #inventoryA #invntyA_item table tr td table tr td table tr td table tr td .value_color {
+	color: #030;
+	font-weight: bolder;
+}
+#inner_page2 #inty_page #inventoryA #invntyA_item table tr td table tr td table tr td #item_name {
+	font-size: 14px;
+	font-weight: bolder;
+	color: #FFF;
+}
+-->Recruit
+img {
+	border: none;
+}
+
+#basics {
+	width: 750px;
+	margin-right: auto;
+	margin-left: auto;
+	background-color:#000;
+	height: 600px;
+}
+#train{
+	width: 750px;
+	margin-right: auto;
+	margin-left: auto;
+	background-image: url(../file/graphics/full_subway.jpg);
+	height: 404px;
+}
+#tracks{
+	width: 750px;
+	margin-right: auto;
+	margin-left: auto;
+	background-image: url(../file/graphics/empty_subway.jpg);
+	height: 404px;
+}
+#banks {
+	width: 750px;
+	margin-right: auto;
+	margin-left: auto;
+	background-image: url(../file/graphics/hustle_bank_bottom.jpg);
+	height: 404px;
+}
+#rooks #recruiter table tr td #mark_header #subhead {
+	font-size: 12px;
+	font-weight: bold;
+	color: #F00;
+	padding-right: 0px;
+	padding-left: 0px;
+}
+
+-->
+#rooks{
+	height: 405px;
+}
+#rooks #recruiter #crew_app table tr #marksec #mark_header .subhead1 {
+	font-size: 12px;
+	font-weight: bold;
+	color: #F00;
+	padding-right: 90px;
+	padding-left: 0px;
+}
+#rooks #recruiter #crew_app table tr #marksec .recruitheader {
+	font-size: 16px;
+	font-weight: bolder;
+	color: #FFF;
+}
+#rooks #recruiter #crew_app table tr td #bet {
+	width: 175px;
+	background-image: url(../graphics/store_bk_bot.png);
+	margin-right: auto;
+	margin-left: auto;
+}
+#rooks #recruiter #crew_app table tr td #fightrules {
+	font-size: 12px;
+	font-weight: bold;
+}
+#rooks #recruiter table tr td #mark_header #sublevel {
+	font-size: 12px;
+	font-weight: bold;
+	color: #F00;
+	padding-right: 0px;
+	padding-left: 0px;
+}
+#rooks #recruiter table tr td #mark_header #subrank {
+	font-size: 12px;
+	font-weight: bold;
+	color: #F00;
+	padding-right: 58px;
+	padding-left: 66px;
+}
+#rooks #recruiter #crew_app table tr td #mark_body table tr #variable_row {
+	width: 138px;
+	font-size: 12px;
+}
+#rooks #recruiter #crew_app table tr td #mark_body table tr #vrow2 {
+	font-size: 12px;
+	width: 53px;
+}
+#rooks #recruiter #crew_app table tr td #mark_body table tr #vrow1 {
+	width: 120px;
+	font-size: 12px;
+}
+#rooks #recruiter #crew_app table tr td #mark_body {
+	overflow: scroll;
+	height: 300px;
+	width: 350px;
+	background-image: url(../graphics/store_bk_bot.png);
+	color: #FFF;
+}
+#rooks #recruiter #crew_app table tr #gamesec2 #field {
+	height: 300px;
+	background-image: url(../graphics/store_bk_bot.png);
+	overflow: scroll;
+	margin-right: 8px;
+	margin-left: 8px;
+	width: 155px;
+}
+#rooks #recruiter #crew_app table tr td .ftheader {
+	font-size: 15px;
+	color: #000;
+	font-weight: bolder;
+}
+
+.hope{
+	font-size:12px;
+}
+#ucool_max_note {
+	font-size: 9px;
+	font-weight: lighter;
+}
+-->
+#fight_page {
+	width: 750px;
+	margin-right: auto;
+	margin-left: auto;
+	background-image: url(../file/graphics/hustle_bk_bottom.jpg);
+	height: 434px;
+	background-repeat:no-repeat;
+}
+#fight_page #fighthud table tr td #mark_header #subhead {
+	font-size: 12px;
+	font-weight: bold;
+	color: #F00;
+	padding-right: 23px;
+	padding-left: 8px;
+}
+
+-->
+#fight_page #fighthud #fight_form table tr td #bet {
+	width: 175px;
+	background-image: url(../graphics/store_bk_bot.png);
+}
+#fight_page #fighthud #fight_form table tr td #fightrules {
+	font-size: 12px;
+	font-weight: bold;
+}
+#fight_page #fighthud table tr td #mark_header #sublevel {
+	font-size: 12px;
+	font-weight: bold;
+	color: #F00;
+	padding-right: 8px;
+	padding-left: 50px;
+}
+#fight_page #fighthud table tr td #mark_header #subrank {
+	font-size: 12px;
+	font-weight: bold;
+	color: #F00;
+	padding-right: 33px;
+	padding-left: 62px;
+}
+#fight_page #fighthud #fight_form table tr td #mark_body table tr #variable_row {
+	width: 138px;
+	font-size: 12px;
+}
+#fight_page #fighthud #fight_form table tr td #mark_body table tr #vrow2 {
+	font-size: 12px;
+	width: 53px;
+}
+#fight_page #fighthud #fight_form table tr td #mark_body table tr #vrow1 {
+	width: 120px;
+	font-size: 12px;
+}
+#body_mark {
+	overflow: scroll;
+	height: 300px;
+	width: 353px;
+	background-image: url(../graphics/store_bk_bot.png);
+	color: #FFF;
+}
+#fight_page #fighthud #fight_form table tr #gamesec2 #arena {
+	height: 270px;
+	background-image: url(../graphics/store_bk_bot.png);
+	overflow: scroll;
+	margin-right: 8px;
+	margin-left: 8px;
+	width: 155px;
+}
+#fight_page #fighthud #fight_form table tr td .ftheader {
+	font-size: 15px;
+	color: #000;
+	font-weight: bolder;
+}
+-->
+
+#newsdesk {
+height: 215px;
+width: 360px;
+background-color:#CCC;
+}
+#tradingpost {
+height: 215px;
+width: 360px;
+background-color:#CCC;
+}
+#apb_report {
+height: 215px;
+width: 360px;
+background-color:#CCC;
+}   
+    -->
+#invnt_2 {
+	width: 750px;
+	margin-right: auto;
+	margin-left: auto;
+	background-image: url(../file/graphics/hustle_bk_bottom.jpg);
+	height: 404px;
+}
+#invnt_2 #inty_page2 {
+}
+#invnt_2 #inty_page2 #space_block {
+	height: 4px;
+}
+#invnt_2 #store_page #inventoryA {
+	font-size: 0.9em;
+	width: 725px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#invnt_2 #inty_page2 #inventoryA #invntyA_item {
+	font-size: .7em;
+}
+#invnt_2 #inty_page2 #inventoryA #invntyA_item table tr td table tr td table tr td .stats_div {
+	color: #FFF;
+}
+#invnt_2 #inty_page2 #binvnty_header table tr td table tr td #totalupkeep {
+	font-size: 14px;
+	color: #000;
+}
+#invnt_2 #inty_page2 #binvnty_header table tr td table tr td .header_color {
+	font-weight: bolder;
+	color: #FFF;
+}
+table tr td table tr td #totalupkeep #upkeep_val {
+	color: #F00;
+}
+#invnt_2 #inty_page2 #inventoryA #invntyA_item table tr td table tr td table tr td table tr td .value_color {
+	color: #030;
+	font-weight: bolder;
+}
+#invnt_2 #inty_page2 #inventoryA #invntyA_item table tr td table tr td table tr td #item_name {
+	font-size: 14px;
+	font-weight: bolder;
+	color: #FFF;
+}
+#invnt_2 #next_pg {
+	width: 720px;
+	margin-right: auto;
+	margin-left: auto;
+	visibility: hidden;
+}
+-->	
+#muscle_h {
+	width: 750px;
+	margin-right: auto;
+	margin-left: auto;
+	background-image: url(../file/graphics/longer_bk.jpg);
+	height: 712px;
+}
+#muscle_h #next_pg {
+	width: 720px;
+	margin-right: auto;
+	margin-left: auto;
+	visibility: hidden;
+}
+#muscle_h #muscle_pg {
+}
+#muscle_h #muscle_pg #space_block {
+	height: 4px;
+}
+#maint_fee {
+	color: #F00;
+	font-weight: bold;
+}
+td .asset_clr {
+	font-size: 14px;
+	font-weight: bold;
+	color: #000;
+}
+#muscle_h #store_page #inventoryA {
+	font-size: 0.9em;
+	width: 725px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#muscle_h #muscle_pg #inventoryA #invntyA_item {
+	font-size: .7em;
+}
+#muscle_h #muscle_pg #inventoryA #invntyA_item table tr td table tr td table tr td .stats_div {
+	color: #FFF;
+}
+#muscle_h #muscle_pg #binvnty_header table tr td table tr td #totalupkeep {
+	font-size: 14px;
+	font-weight: bolder;
+	color: #000;
+}
+#muscle_h #muscle_pg #binvnty_header table tr td table tr td .header_color {
+	font-weight: bolder;
+	color: #FFF;
+}
+table tr td table tr td #totalupkeep #upkeep_val {
+	color: #F00;
+}
+#muscle_h #muscle_pg #inventoryA #invntyA_item table tr td table tr td table tr td table tr td .value_color {
+	color: #030;
+	font-weight: bolder;
+}
+#muscle_h #muscle_pg #inventoryA #invntyA_item table tr td table tr td table tr td #item_name {
+	font-size: 14px;
+	font-weight: bolder;
+	color: #FFF;
+}
+-->
+#boss {
+	width: 750px;
+	margin-right: auto;
+	margin-left: auto;
+	background-image: url(../file/graphics/longer_bk.jpg);
+	height: 712px;
+}
+#boss #next_pg {
+	width: 720px;
+	margin-right: auto;
+	margin-left: auto;
+	visibility: hidden;
+}
+#boss #bm {
+}
+#boss #bm #space_block {
+	height: 3px;
+}
+#maint_fee {
+	color: #F00;
+	font-weight: bold;
+}
+td .asset_clr {
+	font-size: 14px;
+	font-weight: bold;
+	color: #000;
+}
+#boss #store_page #inventoryA {
+	font-size: 0.9em;
+	width: 725px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#boss #bm #inventoryA #invntyA_item {
+	font-size: .7em;
+}
+#boss #bm #inventoryA #invntyA_item table tr td table tr td table tr td .stats_div {
+	color: #FFF;
+}
+#boss #bm #binvnty_header table tr td table tr td #totalupkeep {
+	font-size: 14px;
+	font-weight: bolder;
+	color: #000;
+}
+#boss #bm #binvnty_header table tr td table tr td .header_color {
+	font-weight: bolder;
+	color: #FFF;
+}
+table tr td table tr td #totalupkeep #upkeep_val {
+	color: #F00;
+}
+#boss #bm #inventoryA #invntyA_item table tr td table tr td table tr td table tr td .value_color {
+	color: #030;
+	font-weight: bolder;
+}
+#boss #bm #inventoryA #invntyA_item table tr td table tr td table tr td #item_name {
+	font-size: 14px;
+	font-weight: bolder;
+	color: #FFF;
+}
+-->
+#gifts {
+	width: 750px;
+	margin-right: auto;
+	margin-left: auto;
+	background-image: url(../file/graphics/hustle_bk_bottom.jpg);
+	height: 404px;
+}
+-->
+.container_bar {
+	background-color: #000;
+	border-top: 1px solid #999999;
+	border-bottom: 1px solid #fff;
+	border-right: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+	height: 20px;
+	margin-left:100px;
+	margin-top: 5px;
+	padding:0px;
+	float: left;
+	overflow: hidden;
+	width: 200px;
+	}
+#tour_bar {
+	background: url(http://12daysoffun.com/hustle/graphics/tut_bar_bg.gif) top repeat-x; 
+	/* background-color: #FFD927; */
+	float: left;
+	overflow: hidden;
+	text-align: left;
+}
+#startp_bar {
+	background: url(http://12daysoffun.com/hustle/graphics/tut_bar_bg.gif) top repeat-x; 
+	/* background-color: #FFD927; */
+	float: left;
+	overflow: hidden;
+	text-align: left;
+}
+#rob_bar {
+	background: url(http://12daysoffun.com/hustle/graphics/tut_bar_bg.gif) top repeat-x; 
+	/* background-color: #FFD927; */
+	float: left;
+	overflow: hidden;
+	text-align: left;
+}
+#archus_bar {
+	background: url(http://12daysoffun.com/hustle/graphics/tut_bar_bg.gif) top repeat-x; 
+	/* background-color: #FFD927; */
+	float: left;
+	overflow: hidden;
+	text-align: left;
+}
+#chhus_bar {
+	background: url(http://12daysoffun.com/hustle/graphics/tut_bar_bg.gif) top repeat-x; 
+	/* background-color: #FFD927; */
+	float: left;
+	overflow: hidden;
+	text-align: left;
+}
+#bank_bar {
+	background: url(http://12daysoffun.com/hustle/graphics/tut_bar_bg.gif) top repeat-x; 
+	/* background-color: #FFD927; */
+	float: left;
+	overflow: hidden;
+	text-align: left;
+}
+#invest_bar {
+	background: url(http://12daysoffun.com/hustle/graphics/tut_bar_bg.gif) top repeat-x; 
+	/* background-color: #FFD927; */
+	float: left;
+	overflow: hidden;
+	text-align: left;
+}
+#attack_bar {
+	background: url(http://12daysoffun.com/hustle/graphics/tut_bar_bg.gif) top repeat-x; 
+	/* background-color: #FFD927; */
+	float: left;
+	overflow: hidden;
+	text-align: left;
+}
+#profile_sect {
+	width: 750px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#mirror {
+	width: 750px;
+	margin-right: auto;
+	margin-left: auto;
+	background-image: url(../file/graphics/long_bk.jpg);
+}
+#Stats_tab table tr #stats_upper_header {
+	color: #FFF;
+	border-bottom-width: thin;
+	border-bottom-style: solid;
+	border-bottom-color: #FFF;
+	height: 34px;
+}
+#Stats_tab #stats_table {
+	font-size: 13px;
+	color: #CCC;
+	height: 208px;
+}
+#finances_tab table tr #fin_u_header {
+	color: #FFF;
+	border-bottom-width: thin;
+	border-bottom-style: solid;
+	border-bottom-color: #FFF;
+}
+#finances_tab #finance_table {
+	font-size: 13px;
+	color: #CCC;
+}
+#weapons_tab table tr #weapon_header {
+	color: #FFF;
+	border-bottom-width: thin;
+	border-bottom-style: solid;
+	border-bottom-color: #FFF;
+}
+
+#muscle_tab table tr #muscle_header {
+	color: #333;
+	border-bottom-width: thin;
+	border-bottom-style: solid;
+	border-bottom-color: #333;
+}
+#finances_tab table tr #assets_header {
+	color: #333;
+	border-bottom-width: thin;
+	border-bottom-style: solid;
+	border-bottom-color: #333;
+}
+#Stats_tab {
+	padding-bottom: 24px;
+}
+#weapons_tab #weapons_hud {
+	overflow: scroll;
+	height: 150px;
+}
+
+#spacer {
+	height: 95px;
+}
+#muscle_tab #muscle_hud {
+	overflow: scroll;
+	height: 151px;
+}
+#finances_tab #assets_hud {
+	overflow: scroll;
+	height: 151px;
+}
+-->
+</style>
+<style type="text/css">
+<!--
+.achievement_updates {
+	height: 183px;
+	margin-left: 10px;
+	margin-right: 10px;
+	overflow:auto;
+}
+.tab_box_header {
+	height:27px; 
+	overflow:hidden;
+}
+.tab {
+	float: left;
+}
+
+.tab_box_header .tab_start {
+	width: 6px;
+	height: 27px;
+	float: left;
+	background-image: url(http://12daysoffun.com/hustle/graphics/tab_left_6x27_01.gif);
+}
+
+.tab_box_header .tab_middle {
+	float: left;
+	height: 27px;
+	width:auto;
+	padding-left:5px;
+	padding-right:10px;
+	padding-top: 2px;
+	background-image: url(http://12daysoffun.com/hustle/graphics/tab_middle_1x27_01.gif);
+}
+.tab_box_header .tab_middle a:link, .tab_middle a:visited{
+	color:#FFFFFF;  
+	font-size:16px;
+	text-decoration: none;
+}
+.tab_box_header .tab_middle a:hover{
+	text-decoration: underline;
+}
+
+.tab_box_header .tab_end {
+	width: 13px;
+	height:27px;
+	float: left;
+	background-image: url(http://www.12daysoffun.com/hustle/graphics/tab_right_13x27_01.gif);
+}
+
+.tab_box_header .tab_help {
+	float: left; 
+	height: 27px;
+	padding-left:10px;
+	padding-top:5px;
+	color: #ccc; 
+	font-size:12px; 	
+}
+
+.tab_help a:link, .tab_help a:visited{
+	font-size:10px; 
+	color:#FFD927; 
+	text-decoration: none;
+}
+.tab_help a:hover{
+	text-decoration: underline;
+}
+
+.tab_box_header .send_all_box {
+	float: right;  
+	width:auto;	
+}
+.send_all_box a:link, .send_all_box a:visited {
+	text-decoration: none; 
+	font-size:12px;
+	color: #FFD927;
+}
+.send_all_box a:hover {
+	text-decoration: underline; 
+}
+.send_all_box a img{
+	text-decoration: none;
+	vertical-align: middle; 
+	border: none;
+}
+
+.tab_clear {
+	float: left;
+	width: auto;
+	padding-top: 5px;
+	font-size: 12px;
+}
+
+.tab_box_header .tab_recruit {
+	float: left;  
+	width:auto;	
+	padding-top: 3px;
+	padding-left: 10px;
+}
+.tab_recruit a:link, .tab_recruit a:visited {
+	text-decoration: none; 
+	font-size:12px;
+	color: #FFD927;
+}
+.tab_recruit a:hover {
+	text-decoration: underline; 
+}
+.tab_recruit a img{
+	text-decoration: none;
+	vertical-align: middle; 
+	border: none;
+}
+
+.tab_box_content {
+	background-color:#111111; 
+	border:solid 1px #666666; 
+	overflow: hidden;
+}
+
+.achievementupdate_box {
+	width: 300px;
+	float: left;
+	overflow-x: hidden;
+}
+
+.achievementprofile_box {
+	width: 200px;
+	margin-left:10px;
+	float:left;
+}
+
+.achievement_updates {
+	height: 230px;
+	margin-left: 10px;
+	margin-right: 10px;
+	overflow:scroll;
+	font-size: 10px;
+	color: #FFF;
+}
+.achievementupdate_box {
+	width: 500px;
+	float: left;
+	overflow-x: hidden;
+}
+.tab {	float: left;
+}
+.tab_box_content {
+	background-color:#111111;
+	border:solid 1px #666666;
+}
+.tab_box_header {	height:27px; 
+	overflow:hidden;
+}
+.tab_clear {	float: left;
+	width: auto;
+	padding-top: 5px;
+	font-size: 12px;
+}
+-->
+-->
+#estate1 {
+	width: 750px;
+	margin-right: auto;
+	margin-left: auto;
+	background-image: url(../file/graphics/long_bk.jpg);
+	height: 712px;
+}
+#estate1 #next_pg {
+	width: 720px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#estate1 #assets_page1 #space_block {
+	height: 6px;
+}
+#maint_fee {
+	color: #F00;
+	font-weight: bold;
+}
+td .asset_clr {
+	font-size: 14px;
+	font-weight: bold;
+	color: #000;
+}
+#neg_value_color {
+	font-weight: bolder;
+	color: #F00;
+}
+#estate1 #store_page #inventoryA {
+	font-size: 0.9em;
+	width: 725px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#estate1 #assets_page1 #inventoryA #invntyA_item {
+	font-size: .7em;
+}
+#estate1 #assets_page1 #inventoryA #invntyA_item table tr td table tr td table tr td .stats_div {
+	color: #FFF;
+}
+#estate1 #assets_page1 #binvnty_header table tr td table tr td #totalupkeep {
+	font-size: 14px;
+	font-weight: bolder;
+	color: #000;
+}
+#estate1 #assets_page1 #binvnty_header table tr td table tr td .header_color {
+	font-weight: bolder;
+	color: #FFF;
+}
+table tr td table tr td #totalupkeep #upkeep_val {
+	color: #F00;
+}
+#estate1 #assets_page1 #inventoryA #invntyA_item table tr td table tr td table tr td table tr td .value_color {
+	color: #030;
+	font-weight: bolder;
+}
+#estate1 #assets_page1 #inventoryA #invntyA_item table tr td table tr td table tr td #item_name {
+	font-size: 14px;
+	font-weight: bolder;
+	color: #FFF;
+}
+.cp_value_color {
+	color: #FF0;
+	font-weight: bold;
+}
+-->
+#king {
+	width: 750px;
+	margin-right: auto;
+	margin-left: auto;
+	background-image: url(../file/graphics/hustle_bk_bottom.jpg);
+	height: 404px;
+}
+#king #next_pg {
+	width: 720px;
+	margin-right: auto;
+	margin-left: auto;
+	visibility: hidden;
+}
+#king #bassets_pg {
+}
+#king #bassets_pg #space_block {
+	height: 4px;
+}
+#maint_fee {
+	color: #F00;
+	font-weight: bold;
+}
+td .asset_clr {
+	font-size: 14px;
+	font-weight: bold;
+	color: #000;
+}
+#neg_value_color {
+	font-weight: bolder;
+	color: #F00;
+}
+#king #store_page #inventoryA {
+	font-size: 0.9em;
+	width: 725px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#king #bassets_pg #inventoryA #invntyA_item {
+	font-size: .7em;
+}
+#king #bassets_pg #inventoryA #invntyA_item table tr td table tr td table tr td .stats_div {
+	color: #FFF;
+}
+#king #bassets_pg #binvnty_header table tr td table tr td #totalupkeep {
+	font-size: 14px;
+	font-weight: bolder;
+	color: #000;
+}
+#king #bassets_pg #binvnty_header table tr td table tr td .header_color {
+	font-weight: bolder;
+	color: #FFF;
+}
+table tr td table tr td #totalupkeep #upkeep_val {
+	color: #F00;
+}
+#king #bassets_pg #inventoryA #invntyA_item table tr td table tr td table tr td table tr td .value_color {
+	color: #030;
+	font-weight: bolder;
+}
+#king #bassets_pg #inventoryA #invntyA_item table tr td table tr td table tr td #item_name {
+	font-size: 14px;
+	font-weight: bolder;
+	color: #FFF;
+}
+.cp_value_color {
+	color: #FF0;
+	font-weight: bold;
+}
+-->
+-->
+#boards {
+	width: 750px;
+	margin-right: auto;
+	margin-left: auto;
+	background-image: url(..file/graphics/long_bk.jpg);
+	height: 712px;
+}
+#boards #leaders #title {
+	color: #00F;
+	padding-left: 5px;
+	font-weight: bold;
+}
+#boards #leaders table tr td .board_header {
+	font-size: 18px;
+	font-weight: bold;
+}
+#boards #leaders table tr td .board_headerw {
+	color: #FFF;
+	font-size: 18px;
+	font-weight: bolder;
+}
+#boards #leaders table tr td table tr td #top10_c {
+	overflow: scroll;
+	height: 150px;
+}
+#boards #leaders table tr td table tr td #bot10_c {
+	overflow: scroll;
+	height: 150px;
+}
+#boards #leaders table tr td table tr td #top10_p {
+	overflow: scroll;
+	height: 150px;
+}
+#boards #leaders table tr td table tr td #bot10_p {
+	overflow: scroll;
+	height: 150px;
+}
+#boards #leaders table tr td table tr td #top10_g {
+	overflow: scroll;
+	height: 150px;
+}
+#boards #leaders table tr td table tr td #bot10_g {
+	overflow: scroll;
+	height: 150px;
+}
+-->
+#mall {
+	width: 750px;
+	margin-right: auto;
+	margin-left: auto;
+	background-image: url(..file/graphics/long_bk.jpg);
+	height: 712px;
+}
+#mall #store_page #consumables {
+	font-weight: bold;
+	color: #FFF;
+	font-size: 0.8em;
+	width: 725px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#mall #store_page #bundles {
+	font-weight: bold;
+	color: #FFF;
+	font-size: 0.8em;
+	width: 725px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#mall #store_page #paypal {
+	font-size: 0.9em;
+	width: 725px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#mall #store_page {
+	padding-top: 25px;
+}
+#mall #store_page #consumables table tr td #ncn_image {
+}
+#mall #store_page #store_header table tr td table tr td #header_label {
+	border-bottom-width: thin;
+	border-bottom-color: #03C;
+}
+#mall #store_page #space_block {
+	height: 10px;
+}
+#mall #store_page #store_header table tr td table tr td #header_label tr td {
+	color: #F00;
+	font-weight: bold;
+}
+#mall #store_page #store_header table tr td table tr td table tr td {
+	font-size: 14px;
+	color: #FFF;
+}
+.payterms {
+	color: #00F;
+	font-weight: bold;
+}
+#mall #store_page #paypal #form1 table tr td table tr td table tr td {
+	color: #FFF;
+}
+-->
+-->
+#manager {
+	width: 750px;
+	margin-right: auto;
+	margin-left: auto;
+	background-image: url(../file/graphics/shorter_bk_bottom.jpg);
+	height: 480px;
+	background-repeat: no-repeat;
+}
+#manager #manage_pg table tr td table tr td table tr td #manage_header {
+	color: #FFF;
+	font-size: 16px;
+	width: 170px;
+	font-weight: bold;
+}
+#manager #manage_pg table tr td table tr td table tr td #manage_header2 {
+	font-size: 16px;
+	font-weight: bold;
+	color: #FFF;
+}
+#manager #manage_pg table tr td table tr td table tr td .minner_text {
+	font-size: 14px;
+	color: #FFF;
+	width: 206px;
+}
+#manager #manage_pg table tr td table tr td table tr td .minner_text3 {
+	font-size: 14px;
+	color: #FFF;
+}
+#manager #manage_pg table tr td table tr td table tr td #yrank_stat {
+	font-size: 13px;
+	color: #CCC;
+	font-weight: bold;
+}
+#manager #manage_pg table tr td table tr td table tr td #yorank_stat {
+	font-size: 13px;
+	color: #999;
+	font-weight: bold;
+}
+#manager #manage_pg table tr td table tr td table tr td #fire_shake {
+	height: 167px;
+	overflow: auto;
+}
+#manager #manage_pg table tr td table tr td table tr td form #quitter {
+	overflow: auto;
+	height: 146px;
+}
+#manager #manage_pg table tr td table tr td table tr td #manage_header3 {
+}
+#manager #manage_pg table tr td table tr td table tr td form #coffers {
+	height: 160px;
+	overflow: auto;
+}
+#manager #manage_pg table tr td table tr td table tr td form #new_offers {
+	margin-bottom: 23px;
+}
+-->
+#heist {
+	width: 750px;
+	margin-right: auto;
+	margin-left: auto;
+	background-image: url(../file/graphics/hustle_bk_bottom.jpg);
+	height: 404px;
+}
+#heist #hithud table tr td #target_header #subhead {
+	font-size: 12px;
+	font-weight: bold;
+	color: #F00;
+	padding-right: 23px;
+	padding-left: 8px;
+}
+#heist #hithud #hit_form table tr td #bet {
+	width: 175px;
+	background-image: url(../graphics/store_bk_bot.png);
+}
+#heist #hithud #hit_form table tr td #hitrules {
+	font-size: 12px;
+	font-weight: bold;
+}
+#heist #hithud table tr td #target_header #sublevel {
+	font-size: 12px;
+	font-weight: bold;
+	color: #F00;
+	padding-right: 8px;
+	padding-left: 50px;
+}
+#heist #hithud table tr td #target_header #subrank {
+	font-size: 12px;
+	font-weight: bold;
+	color: #F00;
+	padding-right: 33px;
+	padding-left: 62px;
+}
+#heist #hithud #hit_form table tr td #target_body table tr #variable_row {
+	width: 138px;
+	font-size: 12px;
+}
+#heist #hithud #hit_form table tr td #target_body table tr #vrow2 {
+	font-size: 12px;
+	width: 53px;
+}
+#heist #hithud #hit_form table tr td #target_body table tr #vrow1 {
+	width: 120px;
+	font-size: 12px;
+}
+#heist #hithud #hit_form table tr td #target_body {
+	overflow: scroll;
+	height: 300px;
+	width: 353px;
+	background-image: url(../graphics/store_bk_bot.png);
+	color: #FFF;
+}
+#heist #hithud #hit_form table tr #gamesec2 #field {
+	height: 300px;
+	background-image: url(../graphics/store_bk_bot.png);
+	overflow: scroll;
+	margin-right: 8px;
+	margin-left: 8px;
+	width: 155px;
+}
+#heist #hithud #hit_form table tr td .ftheader {
+	font-size: 15px;
+	color: #000;
+	font-weight: bolder;
+}
+-->
+#playingtip { 
+    display:none; 
+    background:url(http://static.flowplayer.org/tools/img/tooltip/black_arrow_big.png);
+    padding:40px 30px 10px 30px; 
+    width:310px; 
+    font-size:11px; 
+    color:#fff;
+}
+#playingtip2 { 
+    display:none; 
+    background:url(http://static.flowplayer.org/tools/img/tooltip/black_arrow_big.png);
+    padding:40px 30px 10px 30px; 
+    width:310px; 
+    font-size:11px; 
+    color:#fff;
+}
+#playingtip3 { 
+    display:none; 
+    background:url(http://static.flowplayer.org/tools/img/tooltip/black_arrow_big.png);
+    padding:40px 30px 10px 30px; 
+    width:310px; 
+    font-size:11px; 
+    color:#fff;
+}
+#playingtip4 { 
+    display:none; 
+    background:url(http://static.flowplayer.org/tools/img/tooltip/black_arrow_big.png);
+    padding:40px 30px 10px 30px; 
+    width:310px; 
+    font-size:11px; 
+    color:#fff;
+}
+#playingtip5 { 
+    display:none; 
+    background:url(http://static.flowplayer.org/tools/img/tooltip/black_arrow_big.png);
+    padding:40px 30px 10px 30px; 
+    width:310px; 
+    font-size:11px; 
+    color:#fff;
+}
+#playingtip6 { 
+    display:none; 
+    background:url(http://static.flowplayer.org/tools/img/tooltip/black_arrow_big.png);
+    padding:40px 30px 10px 30px; 
+    width:310px; 
+    font-size:11px; 
+    color:#fff;
+}
+#playingtip7 { 
+    display:none; 
+    background:url(http://static.flowplayer.org/tools/img/tooltip/black_arrow_big.png);
+    padding:40px 30px 10px 30px; 
+
+    width:310px; 
+    font-size:11px; 
+    color:#fff;
+}
+#playingtip8 { 
+    display:none; 
+    background:url(http://static.flowplayer.org/tools/img/tooltip/black_arrow_big.png);
+    padding:40px 30px 10px 30px; 
+    width:310px; 
+    font-size:11px; 
+    color:#fff;
+}
+#playingtip9 { 
+    display:none; 
+    background:url(http://static.flowplayer.org/tools/img/tooltip/black_arrow_big.png);
+    padding:40px 30px 10px 30px; 
+    width:310px; 
+    font-size:11px; 
+    color:#fff;
+}
+-->hit
+#hit_results { 
+ 
+    /* overlay is hidden before loading */ 
+    display:none; 
+ 
+    /* standard decorations */ 
+    width:125px;
+	font-size:14px;
+ 
+    /* for modern browsers use semi-transparent color on the border. nice! */ 
+    /*border:10px solid rgba(82, 82, 82, 0.698); */
+ 
+    /* hot CSS3 features for mozilla and webkit-based browsers (rounded borders) */ 
+    -moz-border-radius:8px; 
+    -webkit-border-radius:8px; 
+} 
+ 
+#hit_results div { 
+    padding:10px; 
+    border:1px solid #3B5998; 
+    background-color:#fff; 
+    font-family:"lucida grande",tahoma,verdana,arial,sans-serif 
+} 
+ 
+#hit_results h2 { 
+    margin:-11px; 
+    margin-bottom:0px; 
+    color:#fff; 
+    background-color:#6D84B4; 
+    padding:5px 10px; 
+    border:1px solid #3B5998; 
+    font-size:20px; 
+}
+#apDiv2 {
+	position:absolute;
+	width:200px;
+	height:115px;
+	z-index:101;
+	left: 676px;
+	top: 114px;
+}
+#pointer {
+	position:absolute;
+	width:92px;
+	height:33px;
+	z-index:101;
+	left: 643px;
+	top: 306px;
+}
+#escalade {
+	position:absolute;
+	width:93px;
+	height:51px;
+	z-index:102;
+	left: 102px;
+	top: 437px;
+}
+#cops {
+	position:absolute;
+	width:93px;
+	height:47px;
+	z-index:4;
+	left: 277px;
+	top: 429px;
+}
+#lotto_blimp {
+	position:absolute;
+	width:200px;
+	height:94px;
+	z-index:98;
+	left: 400px;
+	top: 152px;
+}
+#lotto_pot {
+	position:absolute;
+	width:154px;
+	height:24px;
+	z-index:1;
+	left: 76px;
+	top: 36px;
+}
+#market_button {
+	position:absolute;
+	width:35px;
+	height:213px;
+	z-index:1;
+	left: 724px;
+	top: 279px;
+}
+#apDiv9 {
+	position:absolute;
+	width:151px;
+	height:56px;
+	z-index:104;
+	left: 529px;
+	top: 247px;
+}
+-->DOWNTOWN
+
+#bridge {
+	position:absolute;
+	width:128px;
+	height:52px;
+	z-index:1;
+	left: 203px;
+	top: 341px;
+}
+#casino {
+	position:absolute;
+	width:182px;
+	height:114px;
+	z-index:1;
+	left: 110px;
+	top: 339px;
+}
+#black_market {
+	position:absolute;
+	width:128px;
+	height:54px;
+	z-index:3;
+	left: 4px;
+	top: 450px;
+}
+#nightclub {
+	position:absolute;
+	width:182px;
+	height:114px;
+	z-index:2;
+	left: 470px;
+	top: 397px;
+}
+#bm_title {
+	position:absolute;
+	width:128px;
+	height:54px;
+	z-index:2;
+	left: 4px;
+	top: 423px;
+}
+#nc_title {
+	position:absolute;
+	width:182px;
+	height:114px;
+	z-index:1;
+	left: 470px;
+	top: 380px;
+}
+-->Casino
+#casino_back {
+	width: 750px;
+	margin-right: auto;
+	margin-left: auto;
+	background-image: url(../file/graphics/hustle_bk_bottom.jpg);
+	height: 404px;
+}
+#express {
+	position:absolute;
+	width:92px;
+	height:57px;
+	z-index:7;
+	left: 663px;
+	top: 432px;
+}
+#music_box {
+	position:absolute;
+	width:31px;
+	height:20px;
+	z-index:100;
+	left: 6px;
+	top: 56px;
+}
+#music_box2 {
+	position:absolute;
+	width:31px;
+	height:20px;
+	z-index:100;
+	left: 6px;
+	top: 56px;
+}
+#false_fb_foreg {
+	width:754px;
+	height:115px;
+	z-index:160;
+	background-color:#FFF;
+}
+
+#agency_init {
+	position:absolute;
+	width:61px;
+	height:41px;
+	z-index:2;
+	left: 650px;
+	top: 444px;
+}
+#level_bar_container {
+	position:absolute;
+	width:179px;
+	height:11px;
+	z-index:1;
+	left: 236px;
+	top: 52px;
+	background-color: #000;
+	margin-top: 5px;
+	padding:0px;
+	float: left;
+	overflow: hidden;
+}
+#level_bar {
+	background: url(http://12daysoffun.com/hustle/graphics/xp_bar_bg.gif) top repeat-x; 
+	/* background-color: #FFD927; */
+	float: left;
+	overflow: hidden;
+	text-align: left;
+}
+#health_container {
+	position:absolute;
+	width:102px;
+	height:22px;
+	z-index:1;
+	left: 291px;
+	top: 39px;
+}
+#bonus_bar_container {
+	position:absolute;
+	width:179px;
+	height:11px;
+	z-index:1;
+	left: 236px;
+	top: 19px;
+	background-color: #000;
+	margin-top: 5px;
+	padding:0px;
+	float: left;
+	overflow: hidden;
+}
+#bonus_bar {
+	background: url(http://12daysoffun.com/hustle/graphics/red_bar_bg.gif) top repeat-x; 
+	/* background-color: #FFD927; */
+	float: left;
+	overflow: hidden;
+	text-align: left;
+}
+#bonus_container {
+	position:absolute;
+	width:58px;
+	height:15px;
+	z-index:1;
+	left: 236px;
+	top: 10px;
+}
+ #uptown_title {
+	position:absolute;
+	width:88px;
+	height:82px;
+	z-index:1;
+	left: 374px;
+	top: 234px;
+}
+#uptown_button {
+	position:absolute;
+	width:75px;
+	height:88px;
+	z-index:1;
+	left: 434px;
+	top: 232px;
+}
+#topbottoms {
+	position:absolute;
+	width:200px;
+	height:115px;
+	z-index:10;
+	top: 400px;
+}
+#coast {
+	position:absolute;
+	width:695px;
+	height:52px;
+	z-index:2;
+	left: 87px;
+	top: 463px;
+}
+#chopshop {
+	position:absolute;
+	width:200px;
+	height:115px;
+	z-index:1;
+	left: 541px;
+	top: 358px;
+}
+#junkyard {
+	position:absolute;
+	width:200px;
+	height:115px;
+	z-index:3;
+	left: -6px;
+	top: 392px;
+}
+#marina {
+	position:absolute;
+	width:149px;
+	height:115px;
+	z-index:3;
+	left: 290px;
+	top: 406px;
+}
+#boats {
+	position:absolute;
+	width:149px;
+	height:115px;
+	z-index:1;
+	left: 414px;
+	top: 443px;
+}
+#diner {
+	position:absolute;
+	width:149px;
+	height:115px;
+	z-index:3;
+	left: 150px;
+	top: 406px;
+}
+#taxi_cab {
+	position:absolute;
+	width:62px;
+	height:18px;
+	z-index:1;
+	left: 130px;
+	top: 75px;
+}
+#cabbie{
+	background-image:url(../file/graphics/cabbie.jpg);
+	background-repeat: no-repeat;
+}
+#bank_building {
+	position:absolute;
+	width:108px;
+	height:115px;
+	z-index:1;
+	left: 25px;
+	top: 255px;
+}
+#holdings {
+	position:absolute;
+	width:108px;
+	height:115px;
+	z-index:1;
+	left: 25px;
+	top: 230px;
+}
+#hallofame {
+	position:absolute;
+	width:101px;
+	height:70px;
+	z-index:1;
+	left: 647px;
+	top: 251px;
+}
+#famouspeople {
+	position:absolute;
+	width:101px;
+	height:70px;
+	z-index:1;
+	left: 630px;
+	top: 215px;
+}
+#clinic {
+	position:absolute;
+	width:160px;
+	height:31px;
+	z-index:1;
+	left: 209px;
+	top: 341px;
+}
+#healthem{
+	position:absolute;
+	width:160px;
+	height:31px;
+	z-index:1;
+	left: 209px;
+	top: 301px;
+}
+#topplayer {
+	position:absolute;
+	width:70px;
+	height:73px;
+	z-index:1;
+	left: 124px;
+	top: 225px;
+}
+<!--
+#init_pbar {
+	position:absolute;
+	width:454px;
+	height:30px;
+	z-index:1;
+	left: 330px;
+	top: 204px;
+	background-color: #000;
+	border-top: 1px solid #999999;
+	border-bottom: 1px solid #fff;
+	border-right: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+	margin-top: 5px;
+	padding:0px;
+	float: left;
+	overflow: hidden;
+			   width: 200px;
+}
+#topwords {
+	position:absolute;
+	width:454px;
+	height:37px;
+	z-index:2;
+	left: 196px;
+	top: 214px;
+}
+#init_tleft {
+	position:absolute;
+	width:202px;
+	height:37px;
+	z-index:1;
+	left: 146px;
+	top: 246px;
+}
+#init_goal {
+	position:absolute;
+	width:135px;
+	height:37px;
+	z-index:1;
+	left: 563px;
+	top: 246px;
+}
+#area_title {
+	position:absolute;
+	width:242px;
+	height:23px;
+	z-index:3;
+	left: 220px;
+	top: 405px;
+	color:#FFF;
+}
+#robbery_title {
+	position:absolute;
+	width:242px;
+	height:23px;
+	z-index:3;
+	left: 229px;
+	top: 525px;
+	color:#FFF;
+}
+#archus_title {
+	position:absolute;
+	width:242px;
+	height:23px;
+	z-index:3;
+	left: 220px;
+	top: 644px;
+	color:#FFF;
+}
+#chhus_title {
+	position:absolute;
+	width:242px;
+	height:23px;
+	z-index:3;
+	left: 220px;
+	top: 766px;
+	color:#FFF;
+}
+#att_title {
+	position:absolute;
+	width:242px;
+	height:23px;
+	z-index:3;
+	left: 220px;
+	top: 886px;
+	color:#FFF;
+}
+#myinv_title {
+	position:absolute;
+	width:242px;
+	height:23px;
+	z-index:3;
+	left: 229px;
+	top: 1007px;
+	color:#FFF;
+}
+#myacct_title {
+	position:absolute;
+	width:242px;
+	height:23px;
+	z-index:3;
+	left: 220px;
+	top: 1129px;
+	color:#FFF;
+}
+-->
+#newsy{
+	background-image: url(../file/graphics/slong_bk.jpg);
+	background-repeat:no-repeat;
+	height:500px
+}
+/******* Public Shouting *******/
+.shout_clear{
+	clear: both;
+	height: 0;
+	visibility: hidden;
+	display: block;
+}
+a{
+	text-decoration: none;
+}
+strong{
+	font-weight: 700;
+}
+/******* MENU *******/
+#shout_container{
+	margin: 1em auto;
+	width: 355px;
+}
+#shout_container ul{
+	list-style: none;
+	list-style-position: outside;
+}
+#shout_container ul.menu li{
+	float: left;
+	margin-right: 5px;
+	margin-bottom: -1px;
+}
+#shout_container ul.menu li{
+	font-weight: 700;
+	display: block;
+	padding: 5px 10px 5px 10px;
+	background: #fff;
+	border: 1px solid #d0ccc9;
+	border-width: 1px 1px 0 1px;
+	position: relative;
+	color: #5f95ef;
+	cursor: pointer;
+}
+/******* /MENU *******/
+/******* CONTENT *******/
+.shout_content{
+	margin: 0pt auto;
+	background: #efefef;
+	background: #fff;
+	border: 1px solid #d0ccc9;
+	text-align: left;
+	padding: 10px;
+	padding-bottom: 20px;
+	font-size: 11px;
+}
+.shout_content h1{
+	line-height: 1em;
+	vertical-align: middle;
+	height: 48px;
+	padding: 10px 10px 10px 52px;
+	font-size: 20px;
+	background: transparent url(../shoutbox/css/images/bubble.jpg) no-repeat scroll left top;
+}
+.date{
+	font-weight: normal;
+	font-size: 9px;
+	color: #aeaeae;
+}
+/******* /CONTENT *******/
+/******* LOADING *******/
+#shout_loading{
+	text-align: center;
+}
+/******* /LOADING *******/
