@@ -1,0 +1,20 @@
+<level bg="night" cannonX="51.7" cannonY="330.35">
+	<item type="undefined" x="undefined" y="undefined" points="" />
+	<item type="ring" x="532.5" y="600" numAltoids="35" rotation="0" points="" />
+	<item type="tin" x="478.5" y="332" type="tin" x="478.5" y="332" color="rasberry" numAltoids="5" rotation="0" points="" points="" />
+	<item type="tin" x="479.5" y="292" type="tin" x="479.5" y="292" color="passion" numAltoids="5" rotation="0" points="" points="" />
+	<item type="tin" x="217.5" y="198" type="tin" x="217.5" y="198" color="apple" numAltoids="5" rotation="0" points="" points="" />
+	<item type="tin" x="479.5" y="250" type="tin" x="479.5" y="250" color="tangerine" numAltoids="5" rotation="0" points="" points="" />
+	<item type="tin" x="392.5" y="97" type="tin" x="392.5" y="107" color="rasberry" numAltoids="5" rotation="0" points="" points="" />
+	<item type="tin" x="571.5" y="84" type="tin" x="572.5" y="100" color="mango" numAltoids="5" rotation="0" points="" points="" />
+	<item type="tin" x="492.5" y="81" type="tin" x="492.5" y="99" color="passion" numAltoids="5" rotation="0" points="" points="" />
+	<item type="tin" x="295.5" y="139" type="tin" x="295.5" y="139" color="tangerine" numAltoids="5" rotation="0" points="" points="" />
+	<item type="goal" x="488.5" y="380" type="goal" x="488.5" y="382" rotation="0" points="" points="" />
+	<item type="building" x="874.5" y="380" hasRoof="true" type="building" x="874.5" y="382" symbolName="building1" stackHeight="45" bottomHeight="45" stackCount="5" rotation="0" points="" points="" />
+	<item type="building" x="739.5" y="380" hasRoof="true" type="building" x="739.5" y="383" symbolName="building2" stackHeight="45" bottomHeight="45" stackCount="6" rotation="0" points="" points="" />
+	<item type="building" x="602.5" y="380" hasRoof="true" type="building" x="602.5" y="383" symbolName="building3" stackHeight="45" bottomHeight="45" stackCount="3" rotation="0" points="" points="" />
+	<item type="building" x="234.5" y="380" hasRoof="true" type="building" x="234.5" y="381" symbolName="building1" stackHeight="45" bottomHeight="45" stackCount="1" rotation="0" points="" points="" />
+	<item type="building" x="374.5" y="380" hasRoof="false" type="building" x="374.5" y="382" symbolName="building2" stackHeight="45" bottomHeight="45" stackCount="2" rotation="0" points="" points="" />
+	<item type="bumper" x="397.5" y="248" type="bumper" x="397.5" y="248" negation="false" clipRotation="23" rotation="0" points="" points="" />
+	<item type="bumper" x="674.5" y="99" type="bumper" x="674.5" y="99" negation="true" clipRotation="261" baseRotation="268" rotation="0" points="" points="" />
+</level>

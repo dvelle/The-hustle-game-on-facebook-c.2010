@@ -1,0 +1,1 @@
+&scoreVar=_parent._parent.myStatistic.score&blah=1

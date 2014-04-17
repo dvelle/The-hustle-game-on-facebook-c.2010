@@ -1,0 +1,26 @@
+<MagicMatch_Web>
+	<FullVersionURL>http://gamecenter.orange.nl/game.htm?code=110524983</FullVersionURL>
+	<SubmitScorePeriod>10</SubmitScorePeriod>
+	<ZoneEnabled>Off</ZoneEnabled>
+	<SendDLToZone>Off</SendDLToZone>
+	<Continuous>Off</Continuous>
+	<GISServer>HSSServer.Somewhere-in-the.Universe</GISServer>
+	<PromoteDownload>On</PromoteDownload>
+	<Levels>
+		<Level form="1" timer_speed = "2000"></Level>
+		<Level form="2" timer_speed = "1650"></Level>
+		<Level form="3" timer_speed = "1500"></Level>
+		<Level form="1" timer_speed = "1250"></Level>
+		<Level form="2" timer_speed = "1100"></Level>
+		<Level form="3" timer_speed = "950"></Level>
+		<Level form="1" timer_speed = "800"></Level>
+		<Level form="2" timer_speed = "700"></Level>
+		<Level form="3" timer_speed = "600"></Level>
+		<Level form="1" timer_speed = "550"></Level>
+		<Level form="2" timer_speed = "450"></Level>
+		<Level form="3" timer_speed = "400"></Level>
+		<Level form="1" timer_speed = "350" loop="1"></Level>
+		<Level form="2" timer_speed = "300"></Level>
+		<Level form="3" timer_speed = "250"></Level>
+	</Levels>
+</MagicMatch_Web>

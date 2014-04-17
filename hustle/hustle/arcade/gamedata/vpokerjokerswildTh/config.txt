@@ -1,0 +1,1 @@
+endURL=arcade/gamedata/vpokerjokerswildTh/gending_arkadium.swf

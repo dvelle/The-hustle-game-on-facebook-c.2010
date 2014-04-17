@@ -1,0 +1,14 @@
+<data>
+<API>0</API>
+<SetCheat>0</SetCheat>
+<ScoreBroadcastTime>10000</ScoreBroadcastTime>
+<DownloadURL>http://www.arcadetown.com/puzzleexpress/download.asp</DownloadURL>
+<DownloadWindowType>_blank</DownloadWindowType>
+<GameOverUpsell>1</GameOverUpsell>
+<GameOverUpsellDownload>1</GameOverUpsellDownload>
+<NewGameDownload>1</NewGameDownload>
+<LevelUpsellFrequency>2</LevelUpsellFrequency>
+<LevelCompleteDownload>1</LevelCompleteDownload>
+<RotatePiece>1</RotatePiece>
+<PictureMaxNumber>16</PictureMaxNumber>
+</data>

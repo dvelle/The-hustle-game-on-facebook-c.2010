@@ -1,0 +1,17 @@
+<level bg="night" cannonX="55" cannonY="329">
+	<item type="undefined" x="undefined" y="undefined" points="" />
+	<item type="house" x="262.5" y="380" rotation="0" points="" />
+	<item type="building" x="538.5" y="380" hasRoof="false" symbolName="building3" stackHeight="45" bottomHeight="45" stackCount="1" rotation="0" points="" />
+	<item type="ring" x="466.5" y="689" type="ring" x="531.5" y="664" numAltoids="35" rotation="0" points="" points="" />
+	<item type="tin" x="226.5" y="155" type="tin" x="231.5" y="117" color="apple" numAltoids="5" rotation="0" points="" points="" />
+	<item type="tin" x="296.5" y="116" type="tin" x="304.5" y="95" color="mango" numAltoids="5" rotation="0" points="" points="" />
+	<item type="tin" x="366.5" y="121" type="tin" x="369.5" y="81" color="passion" numAltoids="5" rotation="0" points="" points="" />
+	<item type="tin" x="425.5" y="146" type="tin" x="432.5" y="93" color="tangerine" numAltoids="5" rotation="0" points="" points="" />
+	<item type="tin" x="492.5" y="181" type="tin" x="489.5" y="126" color="rasberry" numAltoids="5" rotation="0" points="" points="" />
+	<item type="goal" x="536.5" y="295" type="goal" x="459.5" y="249" rotation="0" points="" points="" />
+	<item type="building" x="809.5" y="380" type="building" x="809.5" y="383" hasRoof="true" symbolName="building2" stackHeight="45" bottomHeight="45" stackCount="6" rotation="0" points="" points="" />
+	<item type="building" x="391.5" y="380" type="building" x="327.5" y="383" hasRoof="true" symbolName="building2" stackHeight="45" bottomHeight="45" stackCount="2" rotation="0" points="" points="" />
+	<item type="building" x="674.5" y="380" type="building" x="674.5" y="384" hasRoof="true" symbolName="building3" stackHeight="45" bottomHeight="45" stackCount="4" rotation="0" points="" points="" />
+	<item type="car" x="182.5" y="382" type="car" x="183.5" y="383" rotation="0" points="" points="" />
+	<item type="tin" x="522.5" y="233" type="tin" x="468.5" y="181" color="tangerine" numAltoids="5" rotation="0" points="" points="" />
+</level>

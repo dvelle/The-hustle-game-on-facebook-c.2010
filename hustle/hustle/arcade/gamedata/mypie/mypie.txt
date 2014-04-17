@@ -1,0 +1,1 @@
+&scoreVar=_root.gscore.text&blah=1

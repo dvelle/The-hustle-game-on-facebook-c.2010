@@ -1,0 +1,1 @@
+&scoreVar=_root.Player.Gold&blah=1

@@ -1,0 +1,12 @@
+[10-Aug-2006 13:35:21] PHP Warning:  fopen(awf.swf): failed to open stream: Permission denied in /home/gamingh/public_html/forum/sources/lib/tar.php on line 379
+[10-Aug-2006 13:35:21] PHP Warning:  fopen(bg_sound.swf): failed to open stream: Permission denied in /home/gamingh/public_html/forum/sources/lib/tar.php on line 379
+[10-Aug-2006 13:35:21] PHP Warning:  fopen(help_cn.swf): failed to open stream: Permission denied in /home/gamingh/public_html/forum/sources/lib/tar.php on line 379
+[10-Aug-2006 13:35:21] PHP Warning:  fopen(help_en.swf): failed to open stream: Permission denied in /home/gamingh/public_html/forum/sources/lib/tar.php on line 379
+[10-Aug-2006 13:35:21] PHP Warning:  fopen(hs_sound.swf): failed to open stream: Permission denied in /home/gamingh/public_html/forum/sources/lib/tar.php on line 379
+[10-Aug-2006 13:35:21] PHP Warning:  fopen(level.swf): failed to open stream: Permission denied in /home/gamingh/public_html/forum/sources/lib/tar.php on line 379
+[10-Aug-2006 13:37:10] PHP Warning:  fopen(awf.swf): failed to open stream: Permission denied in /home/gamingh/public_html/forum/sources/lib/tar.php on line 379
+[10-Aug-2006 13:37:10] PHP Warning:  fopen(bg_sound.swf): failed to open stream: Permission denied in /home/gamingh/public_html/forum/sources/lib/tar.php on line 379
+[10-Aug-2006 13:37:10] PHP Warning:  fopen(help_cn.swf): failed to open stream: Permission denied in /home/gamingh/public_html/forum/sources/lib/tar.php on line 379
+[10-Aug-2006 13:37:10] PHP Warning:  fopen(help_en.swf): failed to open stream: Permission denied in /home/gamingh/public_html/forum/sources/lib/tar.php on line 379
+[10-Aug-2006 13:37:10] PHP Warning:  fopen(hs_sound.swf): failed to open stream: Permission denied in /home/gamingh/public_html/forum/sources/lib/tar.php on line 379
+[10-Aug-2006 13:37:10] PHP Warning:  fopen(level.swf): failed to open stream: Permission denied in /home/gamingh/public_html/forum/sources/lib/tar.php on line 379

@@ -1,0 +1,22 @@
+<Level nr="3" time="200" start_x="8" start_y="8">
+	<Fence id="0"/>
+	<Floor id="0"/>
+	<Cranes>
+		<Crane id="0" x="4" y="6" dir="n" palletId0="2" palletQuant0="1" palletId1="1" palletQuant1="2" palletId2="0" palletQuant2="3"/>
+	</Cranes>
+	<Pallets>
+		<Pallet id="0" x="3" y="4"/>
+		<Pallet id="1" x="3" y="5"/>
+		<Pallet id="2" x="4" y="5"/>
+		<Pallet id="1" x="1" y="8"/>
+		<Pallet id="0" x="4" y="8"/>
+		<Pallet id="0" x="5" y="8"/>
+	</Pallets>
+	<Obstacles>
+		<Obstacle id="5" x="0" y="0"/>
+		<Obstacle id="24" x="6" y="0"/>
+		<Obstacle id="13" x="8" y="1"/>
+		<Obstacle id="17" x="3" y="3"/>
+		<Obstacle id="32" x="8" y="4"/>
+	</Obstacles>
+</Level>

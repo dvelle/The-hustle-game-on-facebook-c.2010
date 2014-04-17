@@ -1,0 +1,2 @@
+[28-Feb-2006 02:53:54] PHP Warning:  fopen(index.html): failed to open stream: Permission denied in /home/gamingh/public_html/forum/sources/lib/tar.php on line 379
+[28-Feb-2006 02:53:54] PHP Warning:  fopen(schnippstertheme.swf): failed to open stream: Permission denied in /home/gamingh/public_html/forum/sources/lib/tar.php on line 379

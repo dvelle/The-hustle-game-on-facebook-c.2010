@@ -1,0 +1,20 @@
+<level bg="night" cannonX="57" cannonY="239">
+	<item type="undefined" x="undefined" y="undefined" points="" />
+	<item type="tin" x="324.5" y="73" color="tangerine" numAltoids="5" rotation="0" points="" />
+	<item type="tin" x="381.5" y="63" color="mango" numAltoids="5" rotation="0" points="" />
+	<item type="tin" x="432.5" y="59" color="passion" numAltoids="5" rotation="0" points="" />
+	<item type="tin" x="501.5" y="73" color="apple" numAltoids="5" rotation="0" points="" />
+	<item type="tin" x="542.5" y="94" color="rasberry" numAltoids="5" rotation="0" points="" />
+	<item type="tin" x="412.5" y="201" color="passion" numAltoids="5" rotation="0" points="" />
+	<item type="tin" x="414.5" y="257" color="apple" numAltoids="5" rotation="0" points="" />
+	<item type="tin" x="415.5" y="316" color="mango" numAltoids="5" rotation="0" points="" />
+	<item type="building" x="685.5" y="380" hasRoof="true" type="building" x="685.5" y="381" symbolName="building2" stackHeight="45" bottomHeight="45" stackCount="6" rotation="0" points="" points="" />
+	<item type="goal" x="417.5" y="380" type="goal" x="417.5" y="382" rotation="0" points="" points="" />
+	<item type="building" x="549.5" y="380" hasRoof="true" type="building" x="549.5" y="381" symbolName="building3" stackHeight="45" bottomHeight="45" stackCount="3" rotation="0" points="" points="" />
+	<item type="building" x="294.5" y="380" hasRoof="false" type="building" x="294.5" y="381" symbolName="building2" stackHeight="45" bottomHeight="45" stackCount="4" rotation="0" points="" points="" />
+	<item type="building" x="819.5" y="380" hasRoof="true" type="building" x="819.5" y="381" symbolName="building1" stackHeight="45" bottomHeight="45" stackCount="5" rotation="0" points="" points="" />
+	<item type="building" x="57.5" y="380" hasRoof="true" type="building" x="57.5" y="381" symbolName="building3" stackHeight="45" bottomHeight="45" stackCount="1" rotation="0" points="" points="" />
+	<item type="bumper" x="335.5" y="157" type="bumper" x="335.5" y="157" negation="false" clipRotation="43" baseRotation="0" rotation="0" points="" points="" />
+	<item type="bumper" x="620.5" y="139" type="bumper" x="620.5" y="140" negation="true" clipRotation="299" baseRotation="270" rotation="0" points="" points="" />
+	<item type="ring" x="469.5" y="593" type="ring" x="469.5" y="593" numAltoids="35" rotation="0" points="" points="" />
+</level>

@@ -1,0 +1,1 @@
+&scoreVar=_root.CG.best&blah=1

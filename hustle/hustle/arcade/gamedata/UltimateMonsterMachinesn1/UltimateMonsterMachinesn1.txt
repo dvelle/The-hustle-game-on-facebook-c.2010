@@ -1,0 +1,1 @@
+&scoreVar=_global.C.Score&blah=1

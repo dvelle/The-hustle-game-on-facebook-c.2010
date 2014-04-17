@@ -1,0 +1,1 @@
+&scoreVar=_root.myscore&blah=1

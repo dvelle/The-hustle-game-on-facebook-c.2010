@@ -1,0 +1,1 @@
+&scoreVar=_root.punteggio&blah=1

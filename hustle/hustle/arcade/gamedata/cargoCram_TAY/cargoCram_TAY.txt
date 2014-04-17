@@ -1,0 +1,2 @@
+&scoreVar=_parent.score_dis.text&blah=1
+

@@ -1,0 +1,2 @@
+&scoreVar=_parent.mcController.points&blah=1
+&scoreVar=_root.score&blah=1

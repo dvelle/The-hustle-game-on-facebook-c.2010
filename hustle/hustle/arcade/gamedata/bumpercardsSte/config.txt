@@ -1,0 +1,1 @@
+endURL=arcade/gamedata/bumpercardsSte/gameend_greatday.swf&downloadURL=

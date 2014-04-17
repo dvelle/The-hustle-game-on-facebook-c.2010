@@ -1,0 +1,71 @@
+<Level><Header /><Hero x='6' y='7' /><Enemies>
+<Enemy x='1' y='5' avatar='enemy1'>
+	<path>
+		<way x="1" y="5"/>			
+		<way x="1" y="4"/>		
+		<way x="2" y="4"/>	
+		<way x="3" y="4"/>
+		<way x="3" y="5"/>		
+		<way x="3" y="6"/>				
+		<way x="3" y="7"/>
+		<way x="2" y="7"/>
+		<way x="1" y="7"/>
+		<way x="1" y="6"/>
+	</path>
+</Enemy>
+<Enemy x='5' y='0' avatar='enemy2'>
+	<path>
+		<way x="5" y="0"/>			
+		<way x="4" y="0"/>		
+		<way x="4" y="1"/>	
+		<way x="4" y="2"/>
+		<way x="3" y="2"/>		
+		<way x="4" y="2"/>				
+		<way x="5" y="2"/>
+		<way x="4" y="2"/>
+		<way x="4" y="3"/>
+		<way x="4" y="4"/>
+		<way x="4" y="3"/>
+		<way x="4" y="2"/>		
+		<way x="3" y="2"/>				
+		<way x="4" y="2"/>
+		<way x="5" y="2"/>
+		<way x="4" y="2"/>
+		<way x="4" y="1"/>
+		<way x="4" y="0"/>
+		<way x="5" y="0"/>
+	</path>
+</Enemy>
+<Enemy x='9' y='4' avatar='Mesby'>
+	<path>
+		<way x="9" y="4"/>			
+		<way x="9" y="3"/>		
+		<way x="9" y="2"/>	
+		<way x="8" y="2"/>
+		<way x="9" y="2"/>		
+		<way x="9" y="1"/>				
+		<way x="9" y="0"/>
+		<way x="10" y="0"/>
+		<way x="9" y="0"/>
+		<way x="9" y="1"/>
+		<way x="9" y="2"/>
+		<way x="8" y="2"/>
+		<way x="9" y="2"/>
+		<way x="9" y="3"/>
+		<way x="9" y="4"/>
+	</path>
+</Enemy>
+<Enemy x='12' y='6' avatar='Carey'>
+	<path>
+		<way x="12" y="6"/>			
+		<way x="12" y="5"/>		
+		<way x="12" y="4"/>	
+		<way x="11" y="4"/>
+		<way x="10" y="4"/>		
+		<way x="11" y="4"/>				
+		<way x="12" y="4"/>
+		<way x="12" y="5"/>
+		<way x="12" y="6"/>
+	</path>
+</Enemy>
+</Enemies><Items><Item x='12' y='1' type='elevator right' walkable='true' collectible='false'  /><Item x='0' y='3' type='key' walkable='true' collectible='true'  /><Item x='0' y='4' type='coin' walkable='true' collectible='true'  /><Item x='0' y='5' type='meaty pizza slice' walkable='true' collectible='true'  /><Item x='0' y='6' type='coin' walkable='true' collectible='true'  /><Item x='0' y='7' type='cherry alone' walkable='false' collectible='false'  /><Item x='0' y='2' type='rail left' walkable='false' collectible='false'  /><Item x='1' y='2' type='rail top right corner' walkable='false' collectible='false'  /><Item x='1' y='3' type='rail bottom left corner' walkable='false' collectible='false'  /><Item x='2' y='3' type='rail mid horizontal' walkable='false' collectible='false'  /><Item x='3' y='3' type='rail right' walkable='false' collectible='false'  /><Item x='2' y='5' type='walnut endtop' walkable='false' collectible='false'  /><Item x='2' y='6' type='walnut endbottom' walkable='false' collectible='false'  /><Item x='2' y='0' type='cherry alone' walkable='false' collectible='false'  /><Item x='5' y='3' type='rail top' walkable='false' collectible='false'  /><Item x='5' y='4' type='rail bottom left corner' walkable='false' collectible='false'  /><Item x='6' y='4' type='rail top right corner' walkable='false' collectible='false'  /><Item x='6' y='5' type='rail bottom' walkable='false' collectible='false'  /><Item x='4' y='6' type='rail top' walkable='false' collectible='false'  /><Item x='4' y='7' type='rail bottom left corner' walkable='false' collectible='false'  /><Item x='5' y='7' type='rail right' walkable='false' collectible='false'  /><Item x='5' y='1' type='walnut alone' walkable='false' collectible='false'  /><Item x='6' y='1' type='rail left' walkable='false' collectible='false'  /><Item x='7' y='1' type='rail right' walkable='false' collectible='false'  /><Item x='8' y='1' type='walnut alone' walkable='false' collectible='false'  /><Item x='10' y='1' type='rail top' walkable='false' collectible='false'  /><Item x='10' y='2' type='rail bottom left corner' walkable='false' collectible='false'  /><Item x='11' y='2' type='rail mid horizontal' walkable='false' collectible='false'  /><Item x='12' y='2' type='rail right' walkable='false' collectible='false'  /><Item x='7' y='3' type='walnut endleft' walkable='false' collectible='false'  /><Item x='8' y='3' type='walnut endright' walkable='false' collectible='false'  /><Item x='9' y='5' type='rail top' walkable='false' collectible='false'  /><Item x='9' y='6' type='rail bottom right corner' walkable='false' collectible='false'  /><Item x='8' y='6' type='rail mid horizontal' walkable='false' collectible='false'  /><Item x='7' y='6' type='rail left' walkable='false' collectible='false'  /><Item x='11' y='5' type='cherry alone' walkable='false' collectible='false'  /><Item x='11' y='6' type='walnut alone' walkable='false' collectible='false'  /><Item x='11' y='7' type='cherry alone' walkable='false' collectible='false'  /><Item x='3' y='0' type='walnut alone' walkable='false' collectible='false'  /><Item x='3' y='1' type='cherry alone' walkable='false' collectible='false'  /><Item x='12' y='7' type='pizza box' walkable='true' collectible='true'  /><Item x='1' y='7' type='balloons' walkable='true' collectible='true'  /><Item x='0' y='0' type='boom box' walkable='true' collectible='true'  /><Item x='6' y='0' type='meaty pizza slice' walkable='true' collectible='true'  /><Item x='7' y='7' type='strawberry' walkable='true' collectible='true'  /><Item x='9' y='7' type='smoothie' walkable='true' collectible='true'  /><Item x='5' y='5' type='juice box' walkable='true' collectible='true'  /><Item x='4' y='4' type='banana' walkable='true' collectible='true'  /><Item x='1' y='1' type='banana' walkable='true' collectible='true'  /><Item x='3' y='7' type='veggie pizza slice' walkable='true' collectible='true'  /><Item x='2' y='2' type='veggie pizza slice' walkable='true' collectible='true'  /><Item x='11' y='3' type='veggie pizza slice' walkable='true' collectible='true'  /><Item x='9' y='0' type='cherry' walkable='true' collectible='true'  /><Item x='7' y='2' type='smoothie' walkable='true' collectible='true'  /><Item x='10' y='0' type='juice box' walkable='true' collectible='true'  /><Item x='11' y='1' type='coin' walkable='true' collectible='true'  /><Item x='12' y='3' type='coin' walkable='true' collectible='true'  /><Item x='8' y='7' type='coin' walkable='true' collectible='true'  /><Item x='10' y='7' type='coin' walkable='true' collectible='true'  /><Item x='7' y='4' type='coin' walkable='true' collectible='true'  /><Item x='8' y='4' type='cherry' walkable='true' collectible='true'  /><Item x='7' y='5' type='coin' walkable='true' collectible='true'  /><Item x='8' y='5' type='coin' walkable='true' collectible='true'  /><Item x='3' y='5' type='pepperoni pizza slice' walkable='true' collectible='true'  /><Item x='9' y='2' type='pepperoni pizza slice' walkable='true' collectible='true'  /><Item x='12' y='0' type='cheese pizza slice' walkable='true' collectible='true'  /><Item x='5' y='6' type='cheese pizza slice' walkable='true' collectible='true'  /><Item x='4' y='1' type='coin' walkable='true' collectible='true'  /><Item x='4' y='2' type='coin' walkable='true' collectible='true'  /><Item x='5' y='2' type='coin' walkable='true' collectible='true'  /><Item x='2' y='1' type='coin' walkable='true' collectible='true'  /><Item x='0' y='1' type='coin' walkable='true' collectible='true'  /><Item x='1' y='0' type='coin' walkable='true' collectible='true'  /><Item x='7' y='0' type='coin' walkable='true' collectible='true'  /><Item x='8' y='0' type='coin' walkable='true' collectible='true'  /><Item x='2' y='4' type='coin' walkable='true' collectible='true'  /><Item x='12' y='5' type='coin' walkable='true' collectible='true'  /><Item x='10' y='5' type='coin' walkable='true' collectible='true'  /><Item x='10' y='4' type='coin' walkable='true' collectible='true'  /><Item x='6' y='3' type='coin' walkable='true' collectible='true'  /><Item x='4' y='5' type='coin' walkable='true' collectible='true'  /><Item x='8' y='2' type='coin' walkable='true' collectible='true'  /><Item x='10' y='3' type='coin' walkable='true' collectible='true'  /><Item x='3' y='6' type='coin' walkable='true' collectible='true'  /><Item x='1' y='4' type='coin' walkable='true' collectible='true'  /><Item x='6' y='6' type='coin' walkable='true' collectible='true'  /><Item x='10' y='6' type='pepperoni pizza slice' walkable='true' collectible='true'  /><Item x='6' y='2' type='cheese pizza slice' walkable='true' collectible='true'  /><Item x='12' y='4' type='coin' walkable='true' collectible='true'  /><Item x='4' y='3' type='coin' walkable='true' collectible='true'  /><Item x='2' y='7' type='coin' walkable='true' collectible='true'  /><Item x='9' y='1' type='coin' walkable='true' collectible='true'  /></Items><Portals></Portals></Level>

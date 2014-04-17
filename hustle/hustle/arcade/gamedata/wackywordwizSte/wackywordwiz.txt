@@ -1,0 +1,296 @@
+
+&num_choices_per_question=4&
+
+&question0_text=What company first used the phrase "Good to the last drop"?&
+&question0_answer=0&
+&question0_choice0=Coca Cola&
+&question0_choice1=Maxwell House&
+&question0_choice2=Procter and Gamble&
+&question0_choice3=Pepsi Co.&
+
+&question1_text=On average, how many sesame seeds are there on a McDonald's Big Mac bun?&
+&question1_answer=1&
+&question1_choice0=227&
+&question1_choice1=178&
+&question1_choice2=1047&
+&question1_choice3=286&
+
+&question2_text=What percent of all e-mail sent is spam?&
+&question2_answer=3&
+&question2_choice0=90%&
+&question2_choice1=80%&
+&question2_choice2=70%&
+&question2_choice3=60%&
+
+&question3_text=Where does the phrase "checkmate" come from?&
+&question3_answer=3&
+&question3_choice0=Australian: means "I win, give me a check, mate!"&
+&question3_choice1=British: means "check your game pieces--it's over"&
+&question3_choice2=French: means "you are experiencing total defeat"&
+&question3_choice3=Persian: means "the king is dead"&
+
+&question4_text=What is Alliumphobia?&
+&question4_answer=0&
+&question4_choice0=Fear of garlic&
+&question4_choice1=Fear of fear&
+&question4_choice2=Fear of your own shadow&
+&question4_choice3=Fear of vitamins&
+
+&question5_text=What is Gymnophobia?&
+&question5_answer=0&
+&question5_choice0=Fear of nudity&
+&question5_choice1=Fear of headaches&
+&question5_choice2=Fear of exercise&
+&question5_choice3=Fear of physical education&
+
+&question6_text=What is Chionophobia?&
+&question6_answer=2&
+&question6_choice0=Fear of Chia Pets&
+&question6_choice1=Fear of China&
+&question6_choice2=Fear of snow&
+&question6_choice3=Fear of holidays&
+
+&question7_text=What is Automysophobia?&
+&question7_answer=1&
+&question7_choice0=Fear of driving&
+&question7_choice1=Fear of being dirty&
+&question7_choice2=Fear of automatic things&
+&question7_choice3=Fear of buses&
+
+&question8_text=What is Merinthophobia?&
+&question8_answer=3&
+&question8_choice0=Fear of smiling&
+&question8_choice1=Fear of drooling&
+&question8_choice2=Fear of cough drops&
+&question8_choice3=Fear of being tied up&
+
+&question9_text=What television show was the first to show a toilet?&
+&question9_answer=0&
+&question9_choice0=Leave It To Beaver&
+&question9_choice1=The Love Boat&
+&question9_choice2=I Dream Of Jeannie&
+&question9_choice3=Happy Days&
+
+&question10_text=The highest point in Pennsylvania is lower than the lowest point in what state?&
+&question10_answer=3&
+&question10_choice0=California&
+&question10_choice1=Alaska&
+&question10_choice2=Nevada&
+&question10_choice3=Colorado&
+
+&question11_text=What is in every episode of Seinfeld?&
+&question11_answer=2&
+&question11_choice0=a picture of Seinfeld's real mom&
+&question11_choice1=a shot of someone watching t.v.&
+&question11_choice2=Superman&
+&question11_choice3=an old joke told or shown in a new way&
+
+&question12_text=One what holiday are the most collect calls placed?&
+&question12_answer=1&
+&question12_choice0=Mother's Day&
+&question12_choice1=Father's Day&
+&question12_choice2=Christmas&
+&question12_choice3=New Years Day&
+
+&question13_text=What nation consumes more Coca Cola per Capita than any other nation?&
+&question13_answer=0&
+&question13_choice0=Iceland&
+&question13_choice1=America&
+&question13_choice2=Brazils&
+&question13_choice3=Mexico&
+
+&question14_text=How old was the youngest Pope when he took office?&
+&question14_answer=2&
+&question14_choice0=14 years old&
+&question14_choice1=22 years old&
+&question14_choice2=11 years old&
+&question14_choice3=27 years old&
+
+&question15_text=What is the only kind of food that does not spoil?&
+&question15_answer=1&
+&question15_choice0=beans&
+&question15_choice1=honey&
+&question15_choice2=olive oil&
+&question15_choice3=garlic&
+
+&question15_text=Who was the only President to remain a bachelor?&
+&question15_answer=3&
+&question15_choice0=Millard Fillmore&
+&question15_choice1=Zachary Taylor&
+&question15_choice2=Chester Arthur&
+&question15_choice3=James Buchanon&
+
+&question16_text=What percentage Americans eat at McDonalds daily?&
+&question16_answer=2&
+&question16_choice0=1.5%&
+&question16_choice1=3.3%&
+&question16_choice2=7%&
+&question16_choice3=9%&
+
+&question17_text=What is the average life span of a major league baseball?&
+&question17_answer=0&
+&question17_choice0=7 pitches&
+&question17_choice1=9 pitches%&
+&question17_choice2=16 pitches&
+&question17_choice3=18 pitches&
+
+&question18_text=What is the ratio of Harvard students who graduate with honors?&
+&question18_answer=1&
+&question18_choice0=5 out of 5&
+&question18_choice1=4 out of 5&
+&question18_choice2=3 out of 5&
+&question18_choice3=2 out of 5&
+
+&question19_text=What ratio of all potatoes sold are French fried?&
+&question19_answer=3&
+&question19_choice0=4 out of 5&
+&question19_choice1=3 out of 5&
+&question19_choice2=2 out of 3&
+&question19_choice3=1 out of 3&
+
+&question20_text=What ratio of all ice cream sold is Vanilla?&
+&question20_answer=3&
+&question20_choice0=4 out of 5&
+&question20_choice1=3 out of 5&
+&question20_choice2=2 out of 3&
+&question20_choice3=1 out of 3&
+
+&question21_text=What percentage of Americans have visited Disneyland or Disney World?&
+&question21_answer=2&
+&question21_choice0=35%&
+&question21_choice1=55%&
+&question21_choice2=70%&
+&question21_choice3=80%&
+
+&question22_text=What percentage of Americans women say they would marry the same man?&
+&question22_answer=1&
+&question22_choice0=35%&
+&question22_choice1=50%&
+&question22_choice2=65%&
+&question22_choice3=70%&
+
+&question23_text=What percentage of Americans men say they would marry the same woman?&
+&question23_answer=3&
+&question23_choice0=35%&
+&question23_choice1=50%&
+&question23_choice2=65%&
+&question23_choice3=80%&
+
+&question23_text=What city has the highest per capita viewership of T.V. evangelists?&
+&question23_answer=0&
+&question23_choice0=Washington D.C.&
+&question23_choice1=Phoenix&
+&question23_choice2=Memphis&
+&question23_choice3=Los Angeles&
+
+&question24_text=What state has the highest percentage of people who walk to work?&
+&question24_answer=2&
+&question24_choice0=New York&
+&question24_choice1=New Jersey&
+&question24_choice2=Alaska&
+&question24_choice3=Nevada&
+
+&question25_text=What city has the most Rolls Royce's per capita?&
+&question25_answer=1&
+&question25_choice0=Beverly Hills&
+&question25_choice1=Hong Kong&
+&question25_choice2=Paris&
+&question25_choice3=London&
+
+&question26_text=How many letters are in the Hawaiian alphabet?&
+&question26_answer=3&
+&question26_choice0=34&
+&question26_choice1=22&
+&question26_choice2=20&
+&question26_choice3=12&
+
+&question27_text=What was the original color of Coca Cola?&
+&question27_answer=0&
+&question27_choice0=green&
+&question27_choice1=clear&
+&question27_choice2=brown&
+&question27_choice3=yellow&
+
+&question28_text=How long does it take the average person to fall asleep?&
+&question28_answer=2&
+&question28_choice0=4.5 minutes&
+&question28_choice1=6 minutes&
+&question28_choice2=7 minutes&
+&question28_choice3=13.5 minutes&
+
+&question29_text=Almonds are a member of what family?&
+&question29_answer=3&
+&question29_choice0=avacado&
+&question29_choice1=cherry&
+&question29_choice2=walnut&
+&question29_choice3=peach&
+
+&question30_text=Al Capone's business card claimed he was what kind of dealer?&
+&question30_answer=1&
+&question30_choice0=baseball bats&
+&question30_choice1=Used Furniture&
+&question30_choice2=antiques&
+&question30_choice3=olive oil&
+
+&question31_text=What state has more churches per capita than any other state?&
+&question31_answer=0&
+&question31_choice0=Mississippi&
+&question31_choice1=Texas&
+&question31_choice2=Georgia&
+&question31_choice3=Hawaii&
+
+&question32_text=What state has more churches per capita than any other state?&
+&question32_answer=0&
+&question32_choice0=Mississippi&
+&question32_choice1=Texas&
+&question32_choice2=Georgia&
+&question32_choice3=Hawaii&
+
+&question33_text=What is the biggest selling Christmas single of all time?&
+&question33_answer=3&
+&question33_choice0=Bing Crosby's White Christmas&
+&question33_choice1=Grandma Got Run Over By AS Reindeer&
+&question33_choice2=Jingle Bell Rock&
+&question33_choice3=A Charlie Brown Christmas&
+
+&question34_text=What is, by far, the most popular color for a toothbrush?&
+&question34_answer=1&
+&question34_choice0=red&
+&question34_choice1=blue&
+&question34_choice2=green&
+&question34_choice3=white&
+
+&question35_text=What states do not grow Christmas trees?&
+&question35_answer=3&
+&question35_choice0=Hawaii, Arizona, and New Mexico&
+&question35_choice1=Hawaii and Utah&
+&question35_choice2=Hawaii and Alaska&
+&question35_choice3=All 50 states grow Xmas trees&
+
+&question36_text=What book is most often stolen from public libraries?&
+&question36_answer=2&
+&question36_choice0=the Bible&
+&question36_choice1=Teh Catcher in the Rye&
+&question36_choice2=Guinness Book of Records&
+&question36_choice3=Moby Dick&
+
+&question37_text=How many gallons of water does the average person drink in a liftime?&
+&question37_answer=0&
+&question37_choice0=20,000 gallons&
+&question37_choice1=30,000 gallons&
+&question37_choice2=40,000 gallons&
+&question37_choice3=50,000 gallons&
+
+&question38_text=How many bones does the human head contain?&
+&question38_answer=1&
+&question38_choice0=18&
+&question38_choice1=22&
+&question38_choice2=24&
+&question38_choice3=9&
+
+&question39_text=What state produces 90% of America's toothpick supply?&
+&question39_answer=3&
+&question39_choice0=Virginia&
+&question39_choice1=California&
+&question39_choice2=Oregon&
+&question39_choice3=Maine&

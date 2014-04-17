@@ -1,0 +1,46 @@
+&inst1=You guide the character through an interactive series of action and logic based puzzles.
+
+To succeed your objectives are to:
+ - Watch the scenes for valuable clues.
+ - Collect inventory items to overcome obstacles.
+ - Collect bonuses.
+ - Light the fire - symbol of sport games.
+
+To help you along to your quest, the game is divided into three major components:
+MAIN MENU, MAIN GAME SCREEN, STATUS BAR.&
+&inst2=GAME MAIN MENU
+
+The following functions are available. Some before and some during the game.
+
+INTRODUCTION: Takes you to the game’s intro story.
+INSTRUCTIONS: Shows the instructions for the game.
+QUIT GAME: Allows you to quit the game.
+SAVE GAME: Saves the game at any time.
+RESUME GAME: Return to the current game.
+GAME CONTROLS: Shows you game controls page.
+HALL OF FAME: Shows seven best result.&
+&inst3=MAIN GAME SCREEN
+
+The following keyboard commands are key to your success:
+
+ARROW KEYS: Walk in the appropriate direction.
+SPACE: Jump in the current direction.
+ENTER, MOUSE: This "Action Key" allows you to interact with the interactive elements closest to the character's current position and use picked items.&
+&inst4=INVENTORY BOTTOM BAR - 1/3
+
+The following items can be viewed through the game:
+
+INVENTORY SQUARES: Located in the left of the bottom bar. When game stars you have 4 unoccupied squares. After you pick an object it appears in the next empty square. The currently active inventory object is highlighted with yellow blinking border. Exchange selected object with the other one by pressing "1,2,3,4 or 5" key or by clicking on it.&
+&inst5=INVENTORY BOTTOM BAR - 2/3
+
+LIFE GAUGE: Located in the center of the bottom bar measures the character's current health level and the number of lives left. If it falls to zero, the game is over.
+
+SCORE AREA: Located to the right of the life gauge, indicates the current score.
+
+SFX: This slider allows you to set the sound volume.
+
+&
+&inst6=INVENTORY BOTTOM BAR - 3/3
+
+HELP: Located in the right corner of the bottom bar returns to the game main menu at any time during the episode.&
+&inst_counter=6&

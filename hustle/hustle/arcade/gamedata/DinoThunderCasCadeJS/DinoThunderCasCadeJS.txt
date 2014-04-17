@@ -1,0 +1,1 @@
+&scoreVar=oScore.activeScore&blah=1

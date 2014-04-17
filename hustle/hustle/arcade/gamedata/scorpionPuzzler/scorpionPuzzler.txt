@@ -1,0 +1,53 @@
+&txt_start=Start Game&
+&txt_tips=Tips&
+&txt_next=next round&
+&txt_how=How to play&
+&txt_easy=Easy&
+&txt_hard=Hard&
+&txt_level=Level&
+&txt_ranking=Rankings:&
+&txt_ranking1=Easy:
+Under 2000 points = Page
+2000 - 3000 points = Squire
+Over 3000 points = Knight
+
+Hard:
+Under 3000 points = Page
+3000 - 4500 points = Squire
+4500 - 5500 points = Knight
+Over 5500 points = Champion knight&
+&txt_ranktitle1=CHAMPION KNIGHT&
+&txt_ranktitle2=KNIGHT&
+&txt_ranktitle3=SQUIRE&
+&txt_ranktitle4=PAGE&
+&txt_introtext=Danju must use his powerful mind to outwit the puzzle that keeps him from entering the grounds of the Citadel.
+
+Help him bring the Knights closer to find the Heart of the magical Shield of Ages!&
+&txt_ready=Klar?&
+&txt_go=GO&
+&txt_evalu=Congratulations!&
+&txt_evalu2=You got&
+&txt_evalu3=and that gives you the rank of a&
+&txt_evalu4=You have to train more to become a Champion Knight&
+&txt_point=point&
+&txt_gameover=Game Over&
+&txt_lives=lives&
+&txt_completed=Complete&
+&txt_energy=energy&
+&txt_load=Loading Game&
+&txt_interface=Loading Interface&
+&txt_yes=ja&
+&txt_no=nej&
+&txt_right=right&
+&txt_wrong=wrong&
+&txt_quit=Send score&
+&txt_dev=Developed by:&
+&txt_rank=Rank:&
+&txt_score=Score:&
+&txt_again=Play again&
+&txt_help1=You control the game with your mouse.&
+&txt_help2=Turn the blocks by clicking on them.&
+&txt_help3=Rotate two blocks. If they match, you get a pair. If they don't match, you lose a few points.Once you've turned over all blocks, you win the level.&
+&txt_help4=Avoid the scorpions! They will sting you!&
+&txt_help5=Flip the blocks as fast as you can, then you'll get more points.&
+&languageLoaded=1&

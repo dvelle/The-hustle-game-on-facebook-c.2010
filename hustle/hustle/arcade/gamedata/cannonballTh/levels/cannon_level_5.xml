@@ -1,0 +1,15 @@
+<level bg="night" cannonX="55" cannonY="329">
+	<item type="undefined" x="undefined" y="undefined" points="" />
+	<item type="ring" x="569.5" y="562" numAltoids="35" rotation="0" points="" />
+	<item type="house" x="204.5" y="380" rotation="0" points="" />
+	<item type="tin" x="278.5" y="93" color="apple" numAltoids="5" rotation="0" points="" />
+	<item type="tin" x="352.5" y="45" color="mango" numAltoids="5" rotation="0" points="" />
+	<item type="tin" x="433.5" y="20" color="passion" numAltoids="5" rotation="0" points="" />
+	<item type="tin" x="506.5" y="24" color="tangerine" numAltoids="5" rotation="0" points="" />
+	<item type="tin" x="606.5" y="53" color="rasberry" numAltoids="5" rotation="0" points="" />
+	<item type="goal" x="645.5" y="160" rotation="0" points="" />
+	<item type="building" x="783.5" y="380" hasRoof="true" symbolName="building1" stackHeight="45" bottomHeight="45" stackCount="6" rotation="0" points="" />
+	<item type="building" x="343.5" y="380" hasRoof="true" symbolName="building1" stackHeight="45" bottomHeight="45" stackCount="2" rotation="0" points="" />
+	<item type="building" x="494.5" y="380" hasRoof="true" symbolName="building2" stackHeight="45" bottomHeight="45" stackCount="2" rotation="0" points="" />
+	<item type="building" x="641.5" y="380" hasRoof="false" symbolName="building3" stackHeight="45" bottomHeight="45" stackCount="4" rotation="0" points="" />
+</level>

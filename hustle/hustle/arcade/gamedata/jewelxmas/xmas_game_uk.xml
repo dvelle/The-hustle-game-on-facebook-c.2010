@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<lang id="title" text="Santas Sack" />
+<lang id="txt1" text="Play game" />
+<lang id="txt2" text="Highscore" />
+<lang id="txt3" text="How to play" />
+<lang id="txt4" text="While practising flying his sleigh, Santa accidentally dropped the sack with all his Christmas tree decorations. &#10;&#10;Help Santa recover all the decorations and save his Christmas." />
+<lang id="txt5" text="New level" />
+<lang id="txt6" text="How to play" />
+<lang id="txt7" text="Collect lines of 3, by swapping decorations around. You can only swap around pairs of decorations that are next to or on top of each other. &#10;&#10;While you play, keep an eye on the red bar. If you don't get all the decorations by the time it runs out, the Christmas tree won't get decorated." />
+<lang id="txt8" text="Frontpage" />
+<lang id="txt9" text="Points" />
+<lang id="txt10" text="Level" />
+<lang id="txt11" text="Exit game" />
+<lang id="txt12" text="High score of the week" />
+<lang id="txt13" text="Rank" />
+<lang id="txt14" text="Name" />
+<lang id="txt15" text="The high score function is currently unavailable" />
+<lang id="txt16" text="Game over" />
+<lang id="txt17" text="Congratulations, you've got a new high score!" />
+<lang id="txt18" text="Submit score" />
+<lang id="txt19" text="Shaking the sack" />
+<lang id="txt20" text="Refreshing high scores" />
+<lang id="txt21" text="Sorry, no high score this time." />
+<lang id="txt22" text="Your score:" />
+<lang id="txt23" text="Needed score:" />
+<lang id="txt24" text="New game" />
+<lang id="txt25" text="Submitting score" />
+<lang id="txt26" text="Back" />
+<lang id="txt27" text="Oops, please enter your name" />
+<lang id="txt28" text="There was a problem storing your high score in the database." />
+<lang id="txt29" text="Your high score was succesfully saved." />
+<lang id="high1" text="Santa's Tree High Score" />

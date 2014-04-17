@@ -1,0 +1,70 @@
+<cubislevel
+	version="1.0"
+	seed="0"
+	time="80"
+	cubestogo="75"
+	starcubestogo="75"
+>
+	<description>
+		
+	</description>
+	<initialcubes>
+		<cube type="immovable" color="-5" index="0" />
+		<cube type="normal" color="0" index="3" />
+		<cube type="immovable" color="-5" index="6" />
+		<cube type="dual" color="2" color2="1" index="11" orientation="1"/>
+		<cube type="normal" color="0" index="12" />
+		<cube type="dual" color="2" color2="1" index="13" orientation="1"/>
+		<cube type="normal" color="0" index="14" />
+		<cube type="dual" color="2" color2="1" index="15" orientation="1"/>
+		<cube type="normal" color="0" index="21" />
+		<cube type="dual" color="2" color2="1" index="22" orientation="1"/>
+		<cube type="normal" color="0" index="23" />
+		<cube type="dual" color="2" color2="1" index="24" orientation="1"/>
+		<cube type="normal" color="0" index="25" />
+		<cube type="normal" color="0" index="30" />
+		<cube type="dual" color="2" color2="1" index="31" orientation="1"/>
+		<cube type="normal" color="0" index="32" />
+		<cube type="dual" color="2" color2="1" index="33" orientation="1"/>
+		<cube type="normal" color="0" index="34" />
+		<cube type="dual" color="2" color2="1" index="35" orientation="1"/>
+		<cube type="normal" color="0" index="36" />
+		<cube type="normal" color="0" index="41" />
+		<cube type="dual" color="2" color2="1" index="42" orientation="1"/>
+		<cube type="normal" color="0" index="43" />
+		<cube type="dual" color="2" color2="1" index="44" orientation="1"/>
+		<cube type="normal" color="0" index="45" />
+		<cube type="dual" color="2" color2="1" index="51" orientation="1"/>
+		<cube type="normal" color="0" index="52" />
+		<cube type="dual" color="2" color2="1" index="53" orientation="1"/>
+		<cube type="normal" color="0" index="54" />
+		<cube type="dual" color="2" color2="1" index="55" orientation="1"/>
+		<cube type="immovable" color="-5" index="60" />
+		<cube type="normal" color="0" index="63" />
+		<cube type="immovable" color="-5" index="66" />
+		<cube type="normal" color="3" index="100" />
+		<cube type="normal" color="3" index="106" />
+		<cube type="normal" color="3" index="160" />
+		<cube type="normal" color="3" index="166" />
+		<cube type="star" color="3" index="200" />
+		<cube type="star" color="3" index="206" />
+		<cube type="star" color="3" index="260" />
+		<cube type="star" color="3" index="266" />
+	</initialcubes>
+	<cubequeue>
+		<random>
+			<cube type="normal" color="0" index="100" />
+			<cube type="normal" color="1" index="100" />
+			<cube type="normal" color="2" index="100" />
+			<cube type="wedge" color="0" index="100" />
+			<cube type="wedge" color="1" index="100" />
+			<cube type="wedge" color="2" index="10" />
+			<cube type="wedge" color="3" index="100" />
+			<cube type="osmosis" color="3" index="100" />
+			<cube type="laser" index="100" />
+			<cube type="bomb" index="100" />
+		</random>
+		<fixed>
+		</fixed>
+	</cubequeue>
+</cubislevel>

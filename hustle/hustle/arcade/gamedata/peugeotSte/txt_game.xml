@@ -1,0 +1,36 @@
+<txt>
+	<scene_url>
+		<title name=""/>
+	</scene_url>
+	<scene_rules>
+		<title name="Parking Perfection" />
+		<title name="Controls" />
+		<title name="Brake Hard" />		
+		<title name="PLAY" />
+	</scene_rules>
+	<scene_level>
+		<title name="You must park your car FRONT FIRST into the highlighted space." />
+		<title name="You must REVERSE your car into the highlighted space." />
+		<title name="You must park your car into the highlighted space." />		
+		<title name="You must park your car into the highlighted space. Mind the dog!" />
+		<title name="You must park your car into the highlighted space." />
+		<title name="You have" />
+		<title name="seconds to complete this level.." />
+	</scene_level>
+	<scene_main>
+		<title name="Parked perfectly!" />
+		<title name="Game Over! You ran out of time!" />
+		<title name="Game Over ! You hit another car!" />		
+		<title name="Game Over! You hit the dog!" />
+		<title name="You must park your car into the highlighted space." />
+		<title name="You have" />
+		<title name="seconds to complete this level.." />
+		<title name="this" />
+	</scene_main>
+	<scene_submit>
+		<title name="Parked perfectly!" />
+		<title name="GAME OVER" />
+		<title name="SCORE:" />		
+		<title name="PLAY AGAIN" />
+		</scene_submit>
+		</txt>

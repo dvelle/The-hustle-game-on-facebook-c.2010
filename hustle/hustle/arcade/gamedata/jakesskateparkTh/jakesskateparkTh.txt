@@ -1,0 +1,1 @@
+&scoreVar=_global.mcRoot.nTotalScore&blah=1

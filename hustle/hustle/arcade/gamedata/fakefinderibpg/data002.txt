@@ -1,0 +1,9 @@
+&pic_o=vasari_o.jpg&
+&pic_f=vasari_f.jpg&
+&regionsOnPic=5&
+&region0=219,15,19.7,13.35,-11&
+&region1=10,93,20,16,0&
+&region2=66,15,15,12,0&
+&region3=96,125,14,12,38.2&
+&region4=104,259,15.2,19.75,13.4&
+&eof=1&

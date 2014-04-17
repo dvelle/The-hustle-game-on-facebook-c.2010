@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Questions asked for the planet Neptune quiz.
+XML built by Dan Griffiths using questions supplied by the BBC team -->
+
+<content>
+	<questioncount>1</questioncount>
+	<optioncount>3</optioncount>
+	<questionorder>random</questionorder> <!-- options are 'random' or 'sequential' -->
+	<answerorder>random</answerorder>
+	<questionitem>
+		<questiontext>Neptune is named after the god of what?</questiontext>
+		<answer>
+			<text>The sea</text>
+			<iscorrect>yes</iscorrect>
+		</answer>
+		<answer>
+			<text>The wind</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+		<answer>
+			<text>The arts</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+	</questionitem>
+	<questionitem>
+		<questiontext>How long is Neptune's year?</questiontext>
+		<answer>
+			<text>60,202 Earth days</text>
+			<iscorrect>yes</iscorrect>
+		</answer>
+		<answer>
+			<text>70,202 Earth days</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+		<answer>
+			<text>75,202 Earth days</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+	</questionitem>
+	<questionitem>
+		<questiontext>What is Neptune's surface temperature?</questiontext>
+		<answer>
+			<text>Minus 220 C</text>
+			<iscorrect>yes</iscorrect>
+		</answer>
+		<answer>
+			<text>Minus 270 C</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+		<answer>
+			<text>Minus 300 C</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+	</questionitem>
+	<questionitem>
+		<questiontext>How long does Neptune's day last?</questiontext>
+		<answer>
+			<text>16 Earth hours 7 minutes</text>
+			<iscorrect>yes</iscorrect>
+		</answer>
+		<answer>
+			<text>24 Earth hours 7 minutes</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+		<answer>
+			<text>30 Earth hours 7 minutes</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+	</questionitem>
+	<questionitem>
+		<questiontext>How wide is Neptune?</questiontext>
+		<answer>
+			<text>49,532 km</text>
+			<iscorrect>yes</iscorrect>
+		</answer>
+		<answer>
+			<text>29,532 km</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+		<answer>
+			<text>39,532 km</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+	</questionitem>
+	<questionitem>
+		<questiontext>How many moons does Neptune have?</questiontext>
+		<answer>
+			<text>11</text>
+			<iscorrect>yes</iscorrect>
+		</answer>
+		<answer>
+			<text>5</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+		<answer>
+			<text>18</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+	</questionitem>
+	<questionitem>
+		<questiontext>What is The Scooter?</questiontext>
+		<answer>
+			<text>A giant cloud on Neptune</text>
+			<iscorrect>yes</iscorrect>
+		</answer>
+		<answer>
+			<text>Neptune's biggest moon</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+		<answer>
+			<text>A floating island on Neptune</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+	</questionitem>
+	<questionitem>
+		<questiontext>What gas is Neptune mostly made of?</questiontext>
+		<answer>
+			<text>Hydrogen</text>
+			<iscorrect>yes</iscorrect>
+		</answer>
+		<answer>
+			<text>Helium</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+		<answer>
+			<text>Xenon</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+	</questionitem>
+	<questionitem>
+		<questiontext>What colour is Neptune?</questiontext>
+		<answer>
+			<text>Bright blue</text>
+			<iscorrect>yes</iscorrect>
+		</answer>
+		<answer>
+			<text>Deep red</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+		<answer>
+			<text>It changes between blue and red</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+	</questionitem>
+	<questionitem>
+		<questiontext>Which of these is not one of Neptune's moons?</questiontext>
+		<answer>
+			<text>Leopold</text>
+			<iscorrect>yes</iscorrect>
+		</answer>
+		<answer>
+			<text>Thalassa</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+		<answer>
+			<text>Despina</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+	</questionitem>
+</content>

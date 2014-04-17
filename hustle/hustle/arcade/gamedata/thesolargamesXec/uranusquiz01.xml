@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Questions asked for the planet Uranus quiz.
+XML built by Dan Griffiths using questions supplied by the BBC team -->
+
+<content>
+	<questioncount>1</questioncount>
+	<optioncount>3</optioncount>
+	<questionorder>random</questionorder> <!-- options are 'random' or 'sequential' -->
+	<answerorder>random</answerorder>
+	<questionitem>
+		<questiontext>Uranus is named after the god of what?</questiontext>
+		<answer>
+			<text>The sky</text>
+			<iscorrect>yes</iscorrect>
+		</answer>
+		<answer>
+			<text>The underworld</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+		<answer>
+			<text>Fish</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+	</questionitem>
+	<questionitem>
+		<questiontext>How long is Uranus' year?</questiontext>
+		<answer>
+			<text>30,707 Earth days</text>
+			<iscorrect>yes</iscorrect>
+		</answer>
+		<answer>
+			<text>3,707 Earth days</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+		<answer>
+			<text>307,707 Earth days</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+	</questionitem>
+	<questionitem>
+		<questiontext>What is Uranus' surface temperature?</questiontext>
+		<answer>
+			<text>Minus 214 C</text>
+			<iscorrect>yes</iscorrect>
+		</answer>
+		<answer>
+			<text>Minus 114 C</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+		<answer>
+			<text>Minus 14 C</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+	</questionitem>
+	<questionitem>
+		<questiontext>How long does Uranus' day last?</questiontext>
+		<answer>
+			<text>17 Earth hours 12 minutes</text>
+			<iscorrect>yes</iscorrect>
+		</answer>
+		<answer>
+			<text>17 Earth days 12 hours</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+		<answer>
+			<text>7 Earth days 12 hours</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+	</questionitem>
+	<questionitem>
+		<questiontext>How wide is Uranus?</questiontext>
+		<answer>
+			<text>51,118 km</text>
+			<iscorrect>yes</iscorrect>
+		</answer>
+		<answer>
+			<text>151,118 km</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+		<answer>
+			<text>41,118 km</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+	</questionitem>
+	<questionitem>
+		<questiontext>How many moons does Uranus have?</questiontext>
+		<answer>
+			<text>21</text>
+			<iscorrect>yes</iscorrect>
+		</answer>
+		<answer>
+			<text>12</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+		<answer>
+			<text>32</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+	</questionitem>
+	<questionitem>
+		<questiontext>What is special about how Uranus spins?</questiontext>
+		<answer>
+			<text>It spins on its side</text>
+			<iscorrect>yes</iscorrect>
+		</answer>
+		<answer>
+			<text>It doesn't spin</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+		<answer>
+			<text>Its top spins opposite to its bottom</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+	</questionitem>
+	<questionitem>
+		<questiontext>What colour is Uranus?</questiontext>
+		<answer>
+			<text>Blue</text>
+			<iscorrect>yes</iscorrect>
+		</answer>
+		<answer>
+			<text>Pink</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+		<answer>
+			<text>Green</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+	</questionitem>
+	<questionitem>
+		<questiontext>When was Uranus discovered?</questiontext>
+		<answer>
+			<text>1781</text>
+			<iscorrect>yes</iscorrect>
+		</answer>
+		<answer>
+			<text>1812</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+		<answer>
+			<text>1462</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+	</questionitem>
+	<questionitem>
+		<questiontext>What is the only space ship to visit Uranus?</questiontext>
+		<answer>
+			<text>Voyager 2</text>
+			<iscorrect>yes</iscorrect>
+		</answer>
+		<answer>
+			<text>Beagle 2</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+		<answer>
+			<text>Ulysses</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+	</questionitem>
+</content>

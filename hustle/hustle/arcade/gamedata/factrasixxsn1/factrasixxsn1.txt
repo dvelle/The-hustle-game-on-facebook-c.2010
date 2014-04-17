@@ -1,0 +1,2 @@
+&scoreVar=_root.count&blah=1
+

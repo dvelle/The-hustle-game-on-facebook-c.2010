@@ -1,0 +1,23 @@
+<!--
+New Attributes added to shell.
+
+src7: Loads file optimized for flash 7
+src66: Loads file optimized for flash 6.65 on pc and 6.67 on mac.
+src: Loads default file.
+-->
+
+<root _frameRate="31" _width="600" _height="370">
+	<module type="object" required="1" baseLevel="2500">
+		<comm src="arcade/gamedata/bobsledGC/comm.swf" />
+	</module>
+	
+	<loader baseLevel="400" required="1">
+		<loader name="mainLoader" required="1" src="arcade/gamedata/bobsledGC/loader.swf" />
+	</loader>
+	
+	<content baseLevel="50">
+		<content name="bobsledgame" required="1" src="arcade/gamedata/bobsledGC/game.swf"
+			src7="arcade/gamedata/bobsledGC/game_7.swf" 
+			src66="arcade/gamedata/bobsledGC/game_66.swf" level="500" />
+	</content>
+</root>

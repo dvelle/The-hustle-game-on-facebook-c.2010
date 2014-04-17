@@ -1,0 +1,1046 @@
+﻿<?xml version="1.0" encoding="UTF-8"?><swf>
+<pageDefinition templateUrl="XXXXXXX.swf" language="eng">
+</pageDefinition>
+<pageContent id="uniroyal">
+<page id="standards">
+<buttons>
+<mainNavigation id="mainNavigation">
+<button id="mainLoginBtn" maxChars="12">
+<![CDATA[Log in]]>
+</button>
+<button id="mainGameBtn" maxChars="19">
+<![CDATA[Start the race]]>
+</button>
+<button id="mainInstructionBtn" maxChars="11">
+<![CDATA[                Briefing]]>
+</button>
+<button id="mainRecommendBtn" maxChars="12">
+<![CDATA[Recommend]]>
+</button>
+<button id="mainHighScoreBtn" maxChars="19">
+<![CDATA[Best times]]>
+</button>
+<button id="mainSupportBtn" maxChars="11">
+<![CDATA[Support]]>
+</button>
+</mainNavigation>
+<button id="mainStopBtn" maxChars="4">
+<![CDATA[stop]]>
+</button>
+<button id="loginBtn" maxChars="8">
+<![CDATA[LOG IN]]>
+</button>
+<button id="registerBtn" maxChars="9">
+<![CDATA[REGISTER]]>
+</button>
+<button id="okBtn" maxChars="5">
+<![CDATA[OKAY!]]>
+</button>
+<button id="participationBtn" maxChars="20">
+<![CDATA[<u>Conditions of play</u>]]>
+</button>
+<button id="sendBtn" maxChars="8">
+<![CDATA[SEND]]>
+</button>
+<button id="cancelBtn" maxChars="8">
+<![CDATA[CANCEL]]>
+</button>
+<button id="againBtn" maxChars="8">
+<![CDATA[AGAIN]]>
+</button>
+</buttons>
+<texts>
+<text id="sendLogin" maxChars="50">
+<![CDATA[Your registration is being checked.]]>
+</text>
+<text id="successSignOn" maxChars="49">
+<![CDATA[You are registered as]]>
+</text>
+<text id="userError" maxChars="50">
+<![CDATA[Sorry, you haven't filled all fields in properly.]]>
+</text>
+<text id="sendRegister" maxChars="50">
+<![CDATA[Your registration is being transferred.]]>
+</text>
+<text id="successRegister" maxChars="50">
+<![CDATA[Your registration was successful!]]>
+</text>
+<text id="serverError" maxChars="100">
+<![CDATA[No connection to the Uniroyal Fun Cup Server could be made.<BR><BR> Try checking your Internet connection.]]>
+</text>
+<text id="send" maxChars="50">
+<![CDATA[Your data is being transferred.]]>
+</text>
+<text id="success" maxChars="50">
+<![CDATA[Data transfer successful!]]>
+</text>
+<text id="name" maxChars="12">
+<![CDATA[Name]]>
+</text>
+<text id="email" maxChars="12">
+<![CDATA[E-mail]]>
+</text>
+<text id="nameError" maxChars="50">
+<![CDATA[This name is already in use. Please enter another.]]>
+</text>
+<text id="emailError" maxChars="50">
+<![CDATA[An account with this address is already in use.]]>
+</text>
+<text id="wrongAccount" maxChars="50">
+<![CDATA[This account is unavailable. Check your details.]]>
+</text>
+</texts>
+<countryList id="countryList">
+<country id="AFG" isFix="true">
+<![CDATA[Afghanistan]]>
+</country>
+<country id="AIA" isFix="true">
+<![CDATA[Anguilla]]>
+</country>
+<country id="ALB" isFix="true">
+<![CDATA[Albania]]>
+</country>
+<country id="ALG" isFix="true">
+<![CDATA[Algeria]]>
+</country>
+<country id="AND" isFix="true">
+<![CDATA[Andorra]]>
+</country>
+<country id="ANG" isFix="true">
+<![CDATA[Angola]]>
+</country>
+<country id="ANT" isFix="true">
+<![CDATA[Netherlands Antilles]]>
+</country>
+<country id="ARG" isFix="true">
+<![CDATA[Argentina]]>
+</country>
+<country id="ARM" isFix="true">
+<![CDATA[Armenia]]>
+</country>
+<country id="ARU" isFix="true">
+<![CDATA[Aruba]]>
+</country>
+<country id="ASA" isFix="true">
+<![CDATA[American Samoa]]>
+</country>
+<country id="ATG" isFix="true">
+<![CDATA[Antigua and Barbuda]]>
+</country>
+<country id="AUS" isFix="true">
+<![CDATA[Australia]]>
+</country>
+<country id="AUT" isFix="true">
+<![CDATA[Austria]]>
+</country>
+<country id="AZE" isFix="true">
+<![CDATA[Azerbaijan]]>
+</country>
+<country id="BAH" isFix="true">
+<![CDATA[Bahamas]]>
+</country>
+<country id="BAN" isFix="true">
+<![CDATA[Bangladesh]]>
+</country>
+<country id="BDI" isFix="true">
+<![CDATA[Burundi]]>
+</country>
+<country id="BEL" isFix="true">
+<![CDATA[Belgium]]>
+</country>
+<country id="BEN" isFix="true">
+<![CDATA[Benin]]>
+</country>
+<country id="BER" isFix="true">
+<![CDATA[Bermuda]]>
+</country>
+<country id="BFA" isFix="true">
+<![CDATA[Burkina Faso]]>
+</country>
+<country id="BHR" isFix="true">
+<![CDATA[Bahrain]]>
+</country>
+<country id="BHU" isFix="true">
+<![CDATA[Bhutan]]>
+</country>
+<country id="BIH" isFix="true">
+<![CDATA[Bosnia-Herzegovina]]>
+</country>
+<country id="BLR" isFix="true">
+<![CDATA[Belarus]]>
+</country>
+<country id="BLZ" isFix="true">
+<![CDATA[Belize]]>
+</country>
+<country id="BOL" isFix="true">
+<![CDATA[Bolivia]]>
+</country>
+<country id="BOT" isFix="true">
+<![CDATA[Botswana]]>
+</country>
+<country id="BRA" isFix="true">
+<![CDATA[Brazil]]>
+</country>
+<country id="BRB" isFix="true">
+<![CDATA[Barbados]]>
+</country>
+<country id="BRU" isFix="true">
+<![CDATA[Brunei Darussalam]]>
+</country>
+<country id="BUL" isFix="true">
+<![CDATA[Bulgaria]]>
+</country>
+<country id="CAM" isFix="true">
+<![CDATA[Cambodia]]>
+</country>
+<country id="CAN" isFix="true">
+<![CDATA[Canada]]>
+</country>
+<country id="CAY" isFix="true">
+<![CDATA[Cayman Islands]]>
+</country>
+<country id="CGO" isFix="true">
+<![CDATA[Congo]]>
+</country>
+<country id="CHA" isFix="true">
+<![CDATA[Chad]]>
+</country>
+<country id="CHI" isFix="true">
+<![CDATA[Chile]]>
+</country>
+<country id="CHN" isFix="true">
+<![CDATA[China PR]]>
+</country>
+<country id="CIV" isFix="true">
+<![CDATA[Côte d]]>
+</country>
+<country id="CMR" isFix="true">
+<![CDATA[Cameroon]]>
+</country>
+<country id="COD" isFix="true">
+<![CDATA[Congo DR]]>
+</country>
+<country id="COK" isFix="true">
+<![CDATA[Cook Islands]]>
+</country>
+<country id="COL" isFix="true">
+<![CDATA[Colombia]]>
+</country>
+<country id="CPV" isFix="true">
+<![CDATA[Cape Verde Islands]]>
+</country>
+<country id="CRC" isFix="true">
+<![CDATA[Costa Rica]]>
+</country>
+<country id="CRO" isFix="true">
+<![CDATA[Croatia]]>
+</country>
+<country id="CTA" isFix="true">
+<![CDATA[Central African Republic]]>
+</country>
+<country id="CUB" isFix="true">
+<![CDATA[Cuba]]>
+</country>
+<country id="CYP" isFix="true">
+<![CDATA[Cyprus]]>
+</country>
+<country id="CZE" isFix="true">
+<![CDATA[Czech Republic]]>
+</country>
+<country id="DEN" isFix="true">
+<![CDATA[Denmark]]>
+</country>
+<country id="DJI" isFix="true">
+<![CDATA[Djibouti]]>
+</country>
+<country id="DMA" isFix="true">
+<![CDATA[Dominica]]>
+</country>
+<country id="DOM" isFix="true">
+<![CDATA[Dominican Republic]]>
+</country>
+<country id="ECU" isFix="true">
+<![CDATA[Ecuador]]>
+</country>
+<country id="EGY" isFix="true">
+<![CDATA[Egypt]]>
+</country>
+<country id="ENG" isFix="true">
+<![CDATA[England]]>
+</country>
+<country id="EQG" isFix="true">
+<![CDATA[Equatorial Guinea]]>
+</country>
+<country id="ERI" isFix="true">
+<![CDATA[Eritrea]]>
+</country>
+<country id="ESP" isFix="true">
+<![CDATA[Spain]]>
+</country>
+<country id="EST" isFix="true">
+<![CDATA[Estonia]]>
+</country>
+<country id="ETH" isFix="true">
+<![CDATA[Ethiopia]]>
+</country>
+<country id="FIJ" isFix="true">
+<![CDATA[Fiji]]>
+</country>
+<country id="FIN" isFix="true">
+<![CDATA[Finland]]>
+</country>
+<country id="FRA" isFix="true">
+<![CDATA[France]]>
+</country>
+<country id="FRO" isFix="true">
+<![CDATA[Faroe Islands]]>
+</country>
+<country id="GAB" isFix="true">
+<![CDATA[Gabon]]>
+</country>
+<country id="GAM" isFix="true">
+<![CDATA[Gambia]]>
+</country>
+<country id="GEO" isFix="true">
+<![CDATA[Georgia]]>
+</country>
+<country id="GER" isFix="true">
+<![CDATA[Germany]]>
+</country>
+<country id="GHA" isFix="true">
+<![CDATA[Ghana]]>
+</country>
+<country id="GNB" isFix="true">
+<![CDATA[Guinea-Bissau]]>
+</country>
+<country id="GRE" isFix="true">
+<![CDATA[Greece]]>
+</country>
+<country id="GRN" isFix="true">
+<![CDATA[Grenada]]>
+</country>
+<country id="GUA" isFix="true">
+<![CDATA[Guatemala]]>
+</country>
+<country id="GUI" isFix="true">
+<![CDATA[Guinea]]>
+</country>
+<country id="GUM" isFix="true">
+<![CDATA[Guam]]>
+</country>
+<country id="GUY" isFix="true">
+<![CDATA[Guyana]]>
+</country>
+<country id="HAI" isFix="true">
+<![CDATA[Haiti]]>
+</country>
+<country id="HKG" isFix="true">
+<![CDATA[Hong Kong]]>
+</country>
+<country id="HON" isFix="true">
+<![CDATA[Honduras]]>
+</country>
+<country id="HUN" isFix="true">
+<![CDATA[Hungary]]>
+</country>
+<country id="IDN" isFix="true">
+<![CDATA[Indonesia]]>
+</country>
+<country id="IND" isFix="true">
+<![CDATA[India]]>
+</country>
+<country id="IRL" isFix="true">
+<![CDATA[Republic of Ireland]]>
+</country>
+<country id="IRN" isFix="true">
+<![CDATA[Iran]]>
+</country>
+<country id="IRQ" isFix="true">
+<![CDATA[Iraq]]>
+</country>
+<country id="ISL" isFix="true">
+<![CDATA[Iceland]]>
+</country>
+<country id="ISR" isFix="true">
+<![CDATA[Israel]]>
+</country>
+<country id="ITA" isFix="true">
+<![CDATA[Italy]]>
+</country>
+<country id="JAM" isFix="true">
+<![CDATA[Jamaica]]>
+</country>
+<country id="JOR" isFix="true">
+<![CDATA[Jordan]]>
+</country>
+<country id="JPN" isFix="true">
+<![CDATA[Japan]]>
+</country>
+<country id="KAZ" isFix="true">
+<![CDATA[Kazakhstan]]>
+</country>
+<country id="KEN" isFix="true">
+<![CDATA[Kenya]]>
+</country>
+<country id="KGZ" isFix="true">
+<![CDATA[Kyrgyzstan]]>
+</country>
+<country id="KOR" isFix="true">
+<![CDATA[Korea Republic]]>
+</country>
+<country id="KSA" isFix="true">
+<![CDATA[Saudi Arabia]]>
+</country>
+<country id="KUW" isFix="true">
+<![CDATA[Kuwait]]>
+</country>
+<country id="LAO" isFix="true">
+<![CDATA[Laos]]>
+</country>
+<country id="LBR" isFix="true">
+<![CDATA[Liberia]]>
+</country>
+<country id="LBY" isFix="true">
+<![CDATA[Libya]]>
+</country>
+<country id="LCA" isFix="true">
+<![CDATA[St. Lucia]]>
+</country>
+<country id="LES" isFix="true">
+<![CDATA[Lesotho]]>
+</country>
+<country id="LIB" isFix="true">
+<![CDATA[Lebanon]]>
+</country>
+<country id="LIE" isFix="true">
+<![CDATA[Liechtenstein]]>
+</country>
+<country id="LTU" isFix="true">
+<![CDATA[Lithuania]]>
+</country>
+<country id="LUX" isFix="true">
+<![CDATA[Luxembourg]]>
+</country>
+<country id="LVA" isFix="true">
+<![CDATA[Latvia]]>
+</country>
+<country id="MAC" isFix="true">
+<![CDATA[Macao]]>
+</country>
+<country id="MAD" isFix="true">
+<![CDATA[Madagascar]]>
+</country>
+<country id="MAR" isFix="true">
+<![CDATA[Morocco]]>
+</country>
+<country id="MAS" isFix="true">
+<![CDATA[Malaysia]]>
+</country>
+<country id="MDA" isFix="true">
+<![CDATA[Moldova]]>
+</country>
+<country id="MDV" isFix="true">
+<![CDATA[Maldives]]>
+</country>
+<country id="MEX" isFix="true">
+<![CDATA[Mexico]]>
+</country>
+<country id="MGL" isFix="true">
+<![CDATA[Mongolia]]>
+</country>
+<country id="MKD" isFix="true">
+<![CDATA[FYR Macedonia]]>
+</country>
+<country id="MLI" isFix="true">
+<![CDATA[Mali]]>
+</country>
+<country id="MLT" isFix="true">
+<![CDATA[Malta]]>
+</country>
+<country id="MOZ" isFix="true">
+<![CDATA[Mozambique]]>
+</country>
+<country id="MRI" isFix="true">
+<![CDATA[Mauritius]]>
+</country>
+<country id="MSR" isFix="true">
+<![CDATA[Montserrat]]>
+</country>
+<country id="MTN" isFix="true">
+<![CDATA[Mauritania]]>
+</country>
+<country id="MWI" isFix="true">
+<![CDATA[Malawi]]>
+</country>
+<country id="MYA" isFix="true">
+<![CDATA[Myanmar]]>
+</country>
+<country id="NAM" isFix="true">
+<![CDATA[Namibia]]>
+</country>
+<country id="NCA" isFix="true">
+<![CDATA[Nicaragua]]>
+</country>
+<country id="NCL" isFix="true">
+<![CDATA[New Caledonia]]>
+</country>
+<country id="NED" isFix="true">
+<![CDATA[Netherlands]]>
+</country>
+<country id="NEP" isFix="true">
+<![CDATA[Nepal]]>
+</country>
+<country id="NGA" isFix="true">
+<![CDATA[Nigeria]]>
+</country>
+<country id="NIG" isFix="true">
+<![CDATA[Niger]]>
+</country>
+<country id="NIR" isFix="true">
+<![CDATA[Northern Ireland]]>
+</country>
+<country id="NOR" isFix="true">
+<![CDATA[Norway]]>
+</country>
+<country id="NZL" isFix="true">
+<![CDATA[New Zealand]]>
+</country>
+<country id="OMA" isFix="true">
+<![CDATA[Oman]]>
+</country>
+<country id="PAK" isFix="true">
+<![CDATA[Pakistan]]>
+</country>
+<country id="PAL" isFix="true">
+<![CDATA[Palestine]]>
+</country>
+<country id="PAN" isFix="true">
+<![CDATA[Panama]]>
+</country>
+<country id="PAR" isFix="true">
+<![CDATA[Paraguay]]>
+</country>
+<country id="PER" isFix="true">
+<![CDATA[Peru]]>
+</country>
+<country id="PHI" isFix="true">
+<![CDATA[Philippines]]>
+</country>
+<country id="PNG" isFix="true">
+<![CDATA[Papua New Guinea]]>
+</country>
+<country id="POL" isFix="true">
+<![CDATA[Poland]]>
+</country>
+<country id="POR" isFix="true">
+<![CDATA[Portugal]]>
+</country>
+<country id="PRK" isFix="true">
+<![CDATA[Korea DPR]]>
+</country>
+<country id="PUR" isFix="true">
+<![CDATA[Puerto Rico]]>
+</country>
+<country id="QAT" isFix="true">
+<![CDATA[Qatar]]>
+</country>
+<country id="ROM" isFix="true">
+<![CDATA[Romania]]>
+</country>
+<country id="RSA" isFix="true">
+<![CDATA[South Africa]]>
+</country>
+<country id="RUS" isFix="true">
+<![CDATA[Russia]]>
+</country>
+<country id="RWA" isFix="true">
+<![CDATA[Rwanda]]>
+</country>
+<country id="SAM" isFix="true">
+<![CDATA[Samoa]]>
+</country>
+<country id="SCG" isFix="true">
+<![CDATA[Serbia and Montenegro]]>
+</country>
+<country id="SCO" isFix="true">
+<![CDATA[Scotland]]>
+</country>
+<country id="SEN" isFix="true">
+<![CDATA[Senegal]]>
+</country>
+<country id="SEY" isFix="true">
+<![CDATA[Seychelles]]>
+</country>
+<country id="SIN" isFix="true">
+<![CDATA[Singapore]]>
+</country>
+<country id="SKN" isFix="true">
+<![CDATA[St. Kitts and Nevis]]>
+</country>
+<country id="SLE" isFix="true">
+<![CDATA[Sierra Leone]]>
+</country>
+<country id="SLV" isFix="true">
+<![CDATA[El Salvador]]>
+</country>
+<country id="SMR" isFix="true">
+<![CDATA[San Marino]]>
+</country>
+<country id="SOL" isFix="true">
+<![CDATA[Solomon Islands]]>
+</country>
+<country id="SOM" isFix="true">
+<![CDATA[Somalia]]>
+</country>
+<country id="SRI" isFix="true">
+<![CDATA[Sri Lanka]]>
+</country>
+<country id="STP" isFix="true">
+<![CDATA[São Tomé e Príncipe]]>
+</country>
+<country id="SUD" isFix="true">
+<![CDATA[Sudan]]>
+</country>
+<country id="SUI" isFix="true">
+<![CDATA[Switzerland]]>
+</country>
+<country id="SUR" isFix="true">
+<![CDATA[Surinam]]>
+</country>
+<country id="SVK" isFix="true">
+<![CDATA[Slovakia]]>
+</country>
+<country id="SVN" isFix="true">
+<![CDATA[Slovenia]]>
+</country>
+<country id="SWE" isFix="true">
+<![CDATA[Sweden]]>
+</country>
+<country id="SWZ" isFix="true">
+<![CDATA[Swaziland]]>
+</country>
+<country id="SYR" isFix="true">
+<![CDATA[Syria]]>
+</country>
+<country id="TAH" isFix="true">
+<![CDATA[Tahiti]]>
+</country>
+<country id="TAN" isFix="true">
+<![CDATA[Tanzania]]>
+</country>
+<country id="TCA" isFix="true">
+<![CDATA[Turks and Caicos Islands]]>
+</country>
+<country id="TGA" isFix="true">
+<![CDATA[Tonga]]>
+</country>
+<country id="THA" isFix="true">
+<![CDATA[Thailand]]>
+</country>
+<country id="TJK" isFix="true">
+<![CDATA[Tajikistan]]>
+</country>
+<country id="TKM" isFix="true">
+<![CDATA[Turkmenistan]]>
+</country>
+<country id="TOG" isFix="true">
+<![CDATA[Togo]]>
+</country>
+<country id="TPE" isFix="true">
+<![CDATA[Chinese Taipei]]>
+</country>
+<country id="TRI" isFix="true">
+<![CDATA[Trinidad and Tobago]]>
+</country>
+<country id="TUN" isFix="true">
+<![CDATA[Tunisia]]>
+</country>
+<country id="TUR" isFix="true">
+<![CDATA[Turkey]]>
+</country>
+<country id="UAE" isFix="true">
+<![CDATA[United Arab Emirates]]>
+</country>
+<country id="UGA" isFix="true">
+<![CDATA[Uganda]]>
+</country>
+<country id="UKR" isFix="true">
+<![CDATA[Ukraine]]>
+</country>
+<country id="URU" isFix="true">
+<![CDATA[Uruguay]]>
+</country>
+<country id="USA" isFix="true">
+<![CDATA[USA]]>
+</country>
+<country id="UZB" isFix="true">
+<![CDATA[Uzbekistan]]>
+</country>
+<country id="VAN" isFix="true">
+<![CDATA[Vanuatu]]>
+</country>
+<country id="VEN" isFix="true">
+<![CDATA[Venezuela]]>
+</country>
+<country id="VGB" isFix="true">
+<![CDATA[British Virgin Islands]]>
+</country>
+<country id="VIE" isFix="true">
+<![CDATA[Vietnam]]>
+</country>
+<country id="VIN" isFix="true">
+<![CDATA[St. Vincent and the Grenadines]]>
+</country>
+<country id="VIR" isFix="true">
+<![CDATA[US Virgin Islands]]>
+</country>
+<country id="WAL" isFix="true">
+<![CDATA[Wales]]>
+</country>
+<country id="YEM" isFix="true">
+<![CDATA[Yemen]]>
+</country>
+<country id="ZAM" isFix="true">
+<![CDATA[Zambia]]>
+</country>
+<country id="ZIM" isFix="true">
+<![CDATA[Zimbabwe]]>
+</country>
+</countryList>
+<carBrandList id="carBrandList">
+<carType isFix="true">
+<![CDATA[Alfa Romeo]]>
+</carType>
+<carType isFix="true">
+<![CDATA[Aston Martin]]>
+</carType>
+<carType isFix="true">
+<![CDATA[Audi]]>
+</carType>
+<carType isFix="true">
+<![CDATA[Bentley]]>
+</carType>
+<carType isFix="true">
+<![CDATA[BMW]]>
+</carType>
+<carType isFix="true">
+<![CDATA[Bugatti]]>
+</carType>
+<carType isFix="true">
+<![CDATA[Buik]]>
+</carType>
+<carType isFix="true">
+<![CDATA[Caddilac]]>
+</carType>
+<carType isFix="true">
+<![CDATA[Chevrolet]]>
+</carType>
+<carType isFix="true">
+<![CDATA[Chrysler]]>
+</carType>
+<carType isFix="true">
+<![CDATA[Citroen]]>
+</carType>
+<carType isFix="true">
+<![CDATA[Daewoo]]>
+</carType>
+<carType isFix="true">
+<![CDATA[Daihatsu]]>
+</carType>
+<carType isFix="true">
+<![CDATA[Dodge]]>
+</carType>
+<carType isFix="true">
+<![CDATA[Ferrari]]>
+</carType>
+<carType isFix="true">
+<![CDATA[Fiat]]>
+</carType>
+<carType isFix="true">
+<![CDATA[Ford]]>
+</carType>
+<carType isFix="true">
+<![CDATA[Honda]]>
+</carType>
+<carType isFix="true">
+<![CDATA[Hyundai]]>
+</carType>
+<carType isFix="true">
+<![CDATA[Isuzu]]>
+</carType>
+<carType isFix="true">
+<![CDATA[Jaguar]]>
+</carType>
+<carType isFix="true">
+<![CDATA[Jeep]]>
+</carType>
+<carType isFix="true">
+<![CDATA[Kia]]>
+</carType>
+<carType isFix="true">
+<![CDATA[Lada]]>
+</carType>
+<carType isFix="true">
+<![CDATA[Lancia]]>
+</carType>
+<carType isFix="true">
+<![CDATA[Land Rover]]>
+</carType>
+<carType isFix="true">
+<![CDATA[Lexus]]>
+</carType>
+<carType isFix="true">
+<![CDATA[Maserati]]>
+</carType>
+<carType isFix="true">
+<![CDATA[Maybach]]>
+</carType>
+<carType isFix="true">
+<![CDATA[Mazda]]>
+</carType>
+<carType isFix="true">
+<![CDATA[Mercedes Benz]]>
+</carType>
+<carType isFix="true">
+<![CDATA[MG]]>
+</carType>
+<carType isFix="true">
+<![CDATA[Mini]]>
+</carType>
+<carType isFix="true">
+<![CDATA[Mitsubishi]]>
+</carType>
+<carType isFix="true">
+<![CDATA[Nissan]]>
+</carType>
+<carType isFix="true">
+<![CDATA[Opel]]>
+</carType>
+<carType isFix="true">
+<![CDATA[Peugeot]]>
+</carType>
+<carType isFix="true">
+<![CDATA[Pontiac]]>
+</carType>
+<carType isFix="true">
+<![CDATA[Porsche]]>
+</carType>
+<carType isFix="true">
+<![CDATA[Proton]]>
+</carType>
+<carType isFix="true">
+<![CDATA[Renault]]>
+</carType>
+<carType isFix="true">
+<![CDATA[Rover]]>
+</carType>
+<carType isFix="true">
+<![CDATA[Saab]]>
+</carType>
+<carType isFix="true">
+<![CDATA[Seat]]>
+</carType>
+<carType isFix="true">
+<![CDATA[Skoda]]>
+</carType>
+<carType isFix="true">
+<![CDATA[Smart]]>
+</carType>
+<carType isFix="true">
+<![CDATA[Ssang Yong]]>
+</carType>
+<carType isFix="true">
+<![CDATA[Subaru]]>
+</carType>
+<carType isFix="true">
+<![CDATA[Suzuki]]>
+</carType>
+<carType isFix="true">
+<![CDATA[Toyota]]>
+</carType>
+<carType isFix="true">
+<![CDATA[Volkswagen]]>
+</carType>
+<carType isFix="true">
+<![CDATA[Volvo]]>
+</carType>
+<carType isFix="true">
+<![CDATA[andere Marke]]>
+</carType>
+<carType isFix="true">
+<![CDATA[kein Auto]]>
+</carType>
+</carBrandList>
+</page>
+<page id="register">
+<text id="registerHeadline" maxChars="15">
+<![CDATA[Log in]]>
+</text>
+<text id="registerIntro" maxChars="120">
+<![CDATA[You've already registered? Then log in here so your times can be added to the champions' table.]]>
+</text>
+<text id="register" maxChars="50">
+<![CDATA[If you want to re-register, please click here:]]>
+</text>
+<text id="otherUser" maxChars="52">
+<![CDATA[If you are another user, please click here:]]>
+</text>
+<text id="introSignOn" maxChars="63">
+<![CDATA[To record your best times, we need you to register.]]>
+</text>
+<text id="brand" maxChars="12">
+<![CDATA[Make of car]]>
+</text>
+<text id="pleaseChoose" maxChars="12">
+<![CDATA[Select]]>
+</text>
+<text id="textInput" maxChars="20">
+<![CDATA[Please enter]]>
+</text>
+<text id="birthday" maxChars="12">
+<![CDATA[Year born]]>
+</text>
+<text id="land" maxChars="12">
+<![CDATA[Country]]>
+</text>
+<text id="accept" maxChars="20">
+<![CDATA[Yes, I accept the]]>
+</text>
+<text id="newsletter" maxChars="44">
+<![CDATA[Yes, I'd like to receive the Newsletter.]]>
+</text>
+</page>
+<page id="instruction">
+<text id="instructionHeadline" maxChars="15">
+<![CDATA[Briefing]]>
+</text>
+<text id="instructionPage1head" maxChars="34">
+<![CDATA[The aim of the game]]>
+</text>
+<text id="instructionPage1body" maxChars="450">
+<![CDATA[There is only one aim to get you into the champions' table, and that is: winning!<BR><BR>It's just like the 'real' Uniroyal Fun Cup when you're on the racetrack - you've got to beat your competitors to get the best time. But watch out - just setting off and putting your foot down could land you straight in the gravel ditch! <BR><BR>Are your engines revved up? Then give it some!]]>
+</text>
+<text id="instructionPage2head" maxChars="34">
+<![CDATA[Steering]]>
+</text>
+<text id="instructionPage2body" maxChars="402">
+<![CDATA[You steer the game with the cursor keys.<BR><BR>You move your racing car forward faster with the 'up' key, steer right and left with the 'right' and 'left' keys, and you brake or go into reverse with the 'down' key.<BR><BR>Remember - your racing car has some serious power under the bonnet - watch that you don't skid!<br />]]>
+</text>
+<text id="instructionPage3head" maxChars="34">
+<![CDATA[The circuit]]>
+</text>
+<text id="instructionPage3body" maxChars="326">
+<![CDATA[The race will take place on a real racetrack, proving a challenge to your top driving skills. Chicanes, gravel patches and curbs are all lying in store.<BR><BR>The different road surfaces all react realistically ? they will slow you down or make you skid. So try to stay on the track!<br />]]>
+</text>
+<text id="instructionPage4head" maxChars="34">
+<![CDATA[The cockpit]]>
+</text>
+<text id="instructionPage4track" maxChars="17">
+<![CDATA[Circuit overview]]>
+</text>
+<text id="instructionPage4time" maxChars="17">
+<![CDATA[Lap times]]>
+</text>
+<text id="instructionPage4start" maxChars="17">
+<![CDATA[Starting lights]]>
+</text>
+<text id="instructionPage4speed" maxChars="17">
+<![CDATA[Speed]]>
+</text>
+<text id="instructionPage5head" maxChars="34">
+<![CDATA[Finishing the race]]>
+</text>
+<text id="instructionPage5body" maxChars="280">
+<![CDATA[The race is over after three laps.<BR><BR>After you've crossed the finish line, your position and lap times will appear.<BR><BR>The total time is crucial for making the champions' table - the faster, the better.<BR>]]>
+</text>
+</page>
+<page id="highscore">
+<text id="highscoreHeadline" maxChars="15">
+<![CDATA[Best times]]>
+</text>
+<text id="highscoreLoad" maxChars="50">
+<![CDATA[Loading best times.]]>
+</text>
+<text id="highScoreRank" maxChars="7">
+<![CDATA[Pos.]]>
+</text>
+<text id="highScoreTime" maxChars="10">
+<![CDATA[Time]]>
+</text>
+<text id="highScoreYourRank" maxChars="12">
+<![CDATA[Your pos.]]>
+</text>
+<text id="highScorePage" maxChars="6">
+<![CDATA[Page]]>
+</text>
+<text id="highScorePageOf" maxChars="3">
+<![CDATA[of]]>
+</text>
+</page>
+<page id="recommend">
+<text id="recommendHeadline" maxChars="15">
+<![CDATA[Recommend]]>
+</text>
+<text id="recommendIntro" maxChars="66">
+<![CDATA[You can recommend the Uniroyal Fun Cup Game to your friends here.]]>
+</text>
+<text id="recommendHelp1" maxChars="49">
+<![CDATA[Enter your name and e-mail address here:]]>
+</text>
+<text id="recommendHelp2" maxChars="131">
+<![CDATA[Enter up to three names and e-mail addresses of friends here who you'd like to recommend the game to.]]>
+</text>
+<text id="recommendMailSubject">
+<![CDATA[XXX challenges you to a race.]]>
+</text>
+<text id="recommendMailText">
+<![CDATA[Hi YYY!<BR><BR>Got what it takes to be a racing driver? XXX challenges you to a Uniroyal Fun Cup online qualification to find out. <BR>Burn a new record time onto the tarmac and speed into pole position. With a bit of <BR>luck you'll soon be in the cockpit of a real racing car, taking part in the Uniroyal Fun Cup!<BR><BR>Take me to the online qualification: link<BR><BR>The Uniroyal Fun Cup team wishes you good luck!]]>
+</text>
+</page>
+<page id="support">
+<text id="supportHeadline" maxChars="15">
+<![CDATA[Support]]>
+</text>
+<text id="supportIntro" maxChars="82">
+<![CDATA[If you have any questions about this game, send a mail to <BR><FONT COLOR="#FF0000"><u><a href="mailto:support2@wmteam.de?subject=Uniroyal Fun Cup - Support E-Mail">support@wmteam.de</a></u></FONT> or use this form:]]>
+</text>
+<text id="message" maxChars="12">
+<![CDATA[Message]]>
+</text>
+<text id="supportMailSubject">
+<![CDATA[Uniroyal Fun Cup support mail!<BR><BR>]]>
+</text>
+<text id="supportMailText">
+<![CDATA[User XXX could use some support. This is the message:<BR><BR>]]>
+</text>
+</page>
+<page id="finish">
+<text id="finishHeadline" maxChars="15">
+<![CDATA[Finish]]>
+</text>
+<text id="loginFinishIntro" maxChars="117">
+<![CDATA[You need an account to record your lap times. If you have an account or want to re-register, please click here:]]>
+</text>
+<text id="registerFinish" maxChars="79">
+<![CDATA[To continue playing without registering, please click here:]]>
+</text>
+<text id="improved" maxChars="140">
+<![CDATA[You've achieved a personal record! Your new best time has been entered in the champion's table.]]>
+</text>
+<text id="notImproved" maxChars="140">
+<![CDATA[Submit Score in Milliseconds]]>
+</text>
+<text id="bestlist" maxChars="50">
+<![CDATA[Submit Score in Milliseconds]]>
+</text>
+</page>
+<page id="game">
+<text id="gameHeadline" maxChars="15">
+<![CDATA[Start the race]]>
+</text>
+<text id="continue" maxChars="59">
+<![CDATA[Submit Score in Milliseconds]]>
+</text>
+</page>
+</pageContent>
+</swf>

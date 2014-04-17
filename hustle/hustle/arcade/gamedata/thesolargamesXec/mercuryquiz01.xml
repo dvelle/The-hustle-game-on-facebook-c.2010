@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Questions asked for the planet Mercury quiz.
+XML built by Dan Griffiths using questions supplied by the BBC team -->
+
+<content>
+	<questioncount>1</questioncount>
+	<optioncount>3</optioncount>
+	<questionorder>random</questionorder> <!-- options are 'random' or 'sequential' -->
+	<answerorder>random</answerorder>
+	<questionitem>
+		<questiontext>Mercury is named after the god of what?</questiontext>
+		<answer>
+			<text>Trade</text>
+			<iscorrect>yes</iscorrect>
+		</answer>
+		<answer>
+			<text>War</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+		<answer>
+			<text>Love</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+	</questionitem>
+	<questionitem>
+		<questiontext>How long is Mercury's year?</questiontext>
+		<answer>
+			<text>88 Earth days</text>
+			<iscorrect>yes</iscorrect>
+		</answer>
+		<answer>
+			<text>44 Earth days</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+		<answer>
+			<text>66 Earth days</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+	</questionitem>
+	<questionitem>
+		<questiontext>What is Mercury's surface temperature?</questiontext>
+		<answer>
+			<text>Between minus 170 C and 350 C</text>
+			<iscorrect>yes</iscorrect>
+		</answer>
+		<answer>
+			<text>Between 350 C and 850 C</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+		<answer>
+			<text>Between 850 C and 1200 C</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+	</questionitem>
+	<questionitem>
+		<questiontext>How long does Mercury's day last?</questiontext>
+		<answer>
+			<text>59 Earth days</text>
+			<iscorrect>yes</iscorrect>
+		</answer>
+		<answer>
+			<text>59 Earth hours</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+		<answer>
+			<text>5.9 Earth hours</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+	</questionitem>
+	<questionitem>
+		<questiontext>How wide is Mercury?</questiontext>
+		<answer>
+			<text>4,880 km</text>
+			<iscorrect>yes</iscorrect>
+		</answer>
+		<answer>
+			<text>480 km</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+		<answer>
+			<text>48,800 km</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+	</questionitem>
+	<questionitem>
+		<questiontext>How many moons does Mercury have?</questiontext>
+		<answer>
+			<text>None</text>
+			<iscorrect>yes</iscorrect>
+		</answer>
+		<answer>
+			<text>One</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+		<answer>
+			<text>Three</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+	</questionitem>
+	<questionitem>
+		<questiontext>Mercury was given two names by the ancient Greeks. What were they?</questiontext>
+		<answer>
+			<text>Apollo and Hermes</text>
+			<iscorrect>yes</iscorrect>
+		</answer>
+		<answer>
+			<text>Aeneas and Trajan</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+		<answer>
+			<text>Chas and Dave</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+	</questionitem>
+	<questionitem>
+		<questiontext>What is Mercury's core made of?</questiontext>
+		<answer>
+			<text>Iron</text>
+			<iscorrect>yes</iscorrect>
+		</answer>
+		<answer>
+			<text>Nickel</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+		<answer>
+			<text>Diamond</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+	</questionitem>
+	<questionitem>
+		<questiontext>Which spaceship visited Mercury in 1974 and 1975?</questiontext>
+		<answer>
+			<text>Mariner 10</text>
+			<iscorrect>yes</iscorrect>
+		</answer>
+		<answer>
+			<text>Apollo 13</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+		<answer>
+			<text>Beagle 2</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+	</questionitem>
+	<questionitem>
+		<questiontext>What is Mercury's atmosphere made up of?</questiontext>
+		<answer>
+			<text>Just about nothing</text>
+			<iscorrect>yes</iscorrect>
+		</answer>
+		<answer>
+			<text>Oxygen</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+		<answer>
+			<text>Nitrogen</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+	</questionitem>
+</content>

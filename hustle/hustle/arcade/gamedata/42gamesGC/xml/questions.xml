@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ss>
+	<question correct="1">
+		<qtext><![CDATA[What is the name of Arthur's fellow hitchhiker?]]></qtext>
+		<answer><![CDATA[Ford Granada]]></answer>
+		<answer><![CDATA[Ford Prefect]]></answer>
+		<answer><![CDATA[Mercedes Prefect]]></answer>
+	</question>
+	<question correct="1">
+		<qtext><![CDATA[Which fish can be inserted in to your ear to aid language translation?]]></qtext>
+		<answer><![CDATA[Bagel]]></answer>
+		<answer><![CDATA[Babel]]></answer>
+		<answer><![CDATA[Basel]]></answer>
+	</question>
+	<question correct="2">
+		<qtext><![CDATA[Name 'the most massively useful thing an intergalactic traveller can have'?]]></qtext>
+		<answer><![CDATA[Beach mat]]></answer>
+		<answer><![CDATA[Blanket]]></answer>
+		<answer><![CDATA[Towel]]></answer>
+	</question>
+		<question correct="0">
+		<qtext><![CDATA[Whose poetry is the third worst in the Universe?]]></qtext>
+		<answer><![CDATA[Vogon]]></answer>
+		<answer><![CDATA[Dentrassi]]></answer>
+		<answer><![CDATA[Marvin]]></answer>
+	</question>
+	<question correct="2">
+		<qtext><![CDATA[Name the second space ship that picks up Ford and Arthur?]]></qtext>
+		<answer><![CDATA[The Vogon Constructor Fleet]]></answer>
+		<answer><![CDATA[Golden Hind]]></answer>
+		<answer><![CDATA[Heart of Gold]]></answer>
+	</question>
+	<question correct="0">
+		<qtext><![CDATA[What is the name of the Paranoid Android?]]></qtext>
+		<answer><![CDATA[Marvin]]></answer>
+		<answer><![CDATA[Martin]]></answer>
+		<answer><![CDATA[Marlin]]></answer>
+	</question>
+	<question correct="1">
+		<qtext><![CDATA[Name the author of The Hitchhiker's Guide to the Galaxy?]]></qtext>
+		<answer><![CDATA[Roald Dahl]]></answer>
+		<answer><![CDATA[Douglas Adams]]></answer>
+		<answer><![CDATA[Adam Douglas]]></answer>
+	</question>
+	<question correct="2">
+		<qtext><![CDATA[What is the answer to life, the universe, everything according to Deep Thought?]]></qtext>
+		<answer><![CDATA[Forty-one]]></answer>
+		<answer><![CDATA[Twenty-three]]></answer>
+		<answer><![CDATA[Forty-two]]></answer>
+	</question>
+	<question correct="0">
+		<qtext><![CDATA[What is the most improbable planet that ever existed?]]></qtext>
+		<answer><![CDATA[Magrathea]]></answer>
+		<answer><![CDATA[Mars]]></answer>
+		<answer><![CDATA[Rahm]]></answer>
+	</question>
+	<question correct="0">
+		<qtext><![CDATA[Who is Tricia McMillian better known as?]]></qtext>
+		<answer><![CDATA[Trillian]]></answer>
+		<answer><![CDATA[Billion]]></answer>
+		<answer><![CDATA[Zillion]]></answer>
+	</question>
+		<question correct="1">
+		<qtext><![CDATA[What is unusual about Zaphod Beeblebrox?]]></qtext>
+		<answer><![CDATA[He's got two left feet]]></answer>
+		<answer><![CDATA[He's got two heads]]></answer>
+		<answer><![CDATA[He's got three noses]]></answer>
+	</question>
+		<question correct="1">
+		<qtext><![CDATA[What is Deep Thought?]]></qtext>
+		<answer><![CDATA[A vegetable]]></answer>
+		<answer><![CDATA[Second greatest computer in the Universe]]></answer>
+		<answer><![CDATA[A Vogon]]></answer>
+	</question>
+		<question correct="2">
+		<qtext><![CDATA[Where does Zaphod take Arthur for lunch?]]></qtext>
+		<answer><![CDATA[The Cafe at Regent's Park]]></answer>
+		<answer><![CDATA[The Pub on the High Street]]></answer>
+		<answer><![CDATA[The Restaurant at the End of the Universe]]></answer>
+	</question>
+		<question correct="0">
+		<qtext><![CDATA[What are Benjy and Frankie?]]></qtext>
+		<answer><![CDATA[Mice]]></answer>
+		<answer><![CDATA[Gerbils]]></answer>
+		<answer><![CDATA[Giant rabbits]]></answer>
+	</question>
+</ss>
+
+
+
+
+       
+

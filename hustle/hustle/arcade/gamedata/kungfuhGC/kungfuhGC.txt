@@ -1,0 +1,1 @@
+&scoreVar=com.KidFighting.FightTrigger.score&blah=1

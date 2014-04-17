@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Questions asked for the planet Jupiter quiz.
+XML built by Dan Griffiths using questions supplied by the BBC team -->
+
+<content>
+	<questioncount>1</questioncount>
+	<optioncount>3</optioncount>
+	<questionorder>random</questionorder> <!-- options are 'random' or 'sequential' -->
+	<answerorder>random</answerorder>
+	<questionitem>
+		<questiontext>Jupiter was named after the god of what?</questiontext>
+		<answer>
+			<text>Light</text>
+			<iscorrect>yes</iscorrect>
+		</answer>
+		<answer>
+			<text>Travel</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+		<answer>
+			<text>Water</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+	</questionitem>
+	<questionitem>
+		<questiontext>How long is Jupiter's year?</questiontext>
+		<answer>
+			<text>4,332.6 Earth days</text>
+			<iscorrect>yes</iscorrect>
+		</answer>
+		<answer>
+			<text>433.2 Earth days</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+		<answer>
+			<text>43 Earth days</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+	</questionitem>
+	<questionitem>
+		<questiontext>What is Jupiter's surface temperature?</questiontext>
+		<answer>
+			<text>Minus 123 C</text>
+			<iscorrect>yes</iscorrect>
+		</answer>
+		<answer>
+			<text>Minus 223 C</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+		<answer>
+			<text>123 C</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+	</questionitem>
+	<questionitem>
+		<questiontext>How long does Jupiter's day last?</questiontext>
+		<answer>
+			<text>10 hours 40 minutes</text>
+			<iscorrect>yes</iscorrect>
+		</answer>
+		<answer>
+			<text>10 Earth days four hours</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+		<answer>
+			<text>140 Earth days</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+	</questionitem>
+	<questionitem>
+		<questiontext>How wide is Jupiter?</questiontext>
+		<answer>
+			<text>142,984 km</text>
+			<iscorrect>yes</iscorrect>
+		</answer>
+		<answer>
+			<text>242,876 km</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+		<answer>
+			<text>102,456 km</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+	</questionitem>
+	<questionitem>
+		<questiontext>How many moons does Jupiter have?</questiontext>
+		<answer>
+			<text>More than 38</text>
+			<iscorrect>yes</iscorrect>
+		</answer>
+		<answer>
+			<text>More than 138</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+		<answer>
+			<text>More than 68</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+	</questionitem>
+	<questionitem>
+		<questiontext>How many times bigger than Earth is Jupiter's red spot?</questiontext>
+		<answer>
+			<text>Three</text>
+			<iscorrect>yes</iscorrect>
+		</answer>
+		<answer>
+			<text>Eight</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+		<answer>
+			<text>Fourteen</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+	</questionitem>
+	<questionitem>
+		<questiontext>What is Jupiter's core made of?</questiontext>
+		<answer>
+			<text>Iron and rock</text>
+			<iscorrect>yes</iscorrect>
+		</answer>
+		<answer>
+			<text>Fire and water</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+		<answer>
+			<text>Chalk and ice</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+	</questionitem>
+	<questionitem>
+		<questiontext>Which spaceship has not been to Jupiter?</questiontext>
+		<answer>
+			<text>Pioneer 3</text>
+			<iscorrect>yes</iscorrect>
+		</answer>
+		<answer>
+			<text>Ulysses</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+		<answer>
+			<text>Galileo</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+	</questionitem>
+	<questionitem>
+		<questiontext>What is Jupiter's red spot?</questiontext>
+		<answer>
+			<text>A giant storm</text>
+			<iscorrect>yes</iscorrect>
+		</answer>
+		<answer>
+			<text>An ocean</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+		<answer>
+			<text>A crater</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+	</questionitem>
+</content>

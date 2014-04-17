@@ -1,0 +1,1 @@
+endURL=arcade/gamedata/followmeTh/gending_arkadium.swf

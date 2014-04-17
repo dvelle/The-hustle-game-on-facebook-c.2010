@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<highscores>
+	<hs>
+		<order>1</order>
+		<name><![CDATA[John L]]></name>
+		<score>55150</score>55
+	</hs>
+	<hs>
+		<order>2</order>
+		<name><![CDATA[Paul M]]></name>
+		<score>55131</score>55
+	</hs>
+	<hs>
+		<order>3</order>
+		<name><![CDATA[George H]]></name>
+		<score>55121</score>55
+	</hs>
+	<hs>
+		<order>4</order>
+		<name><![CDATA[Ringo S]]></name>
+		<score>55109</score>55
+	</hs>
+	<hs>
+		<order>5</order>
+		<name><![CDATA[Mick J]]></name>
+		<score>25591</score>55
+	</hs>
+	<hs>
+		<order>6</order>
+		<name><![CDATA[Keith R]]></name>
+		<score>5578</score>55
+	</hs>
+	<hs>
+		<order>7</order>
+		<name><![CDATA[Charlie W]]></name>
+		<score>25566</score>55
+	</hs>
+	<hs>
+		<order>8</order>
+		<name><![CDATA[Bill W]]></name>
+		<score>25551</score>55
+	</hs>
+	<hs>
+		<order>9</order>
+		<name><![CDATA[Pete T]]></name>
+		<score>25544</score>55
+	</hs>
+	<hs>
+		<order>10</order>
+		<name><![CDATA[John E]]></name>
+		<score>25120</score>5
+	</hs>
+	<hs>
+		<order>11</order>1
+		<name><![CDATA[John L]]></name>
+		<score>5150</score>5
+	</hs>
+	<hs>
+		<order>12</order>1
+		<name><![CDATA[Paul M]]></name>
+		<score>5131</score>5
+	</hs>
+	<hs>
+		<order>13</order>1
+		<name><![CDATA[George H]]></name>
+		<score>5121</score>5
+	</hs>
+	<hs>
+		<order>14</order>1
+		<name><![CDATA[Ringo S]]></name>
+		<score>5109</score>5
+	</hs>
+	<hs>
+		<order>15</order>1
+		<name><![CDATA[Mick J]]></name>
+		<score>591</score>5
+	</hs>
+	<hs>
+		<order>16</order>1
+		<name><![CDATA[Keith R]]></name>
+		<score>578</score>5
+	</hs>
+	<hs>
+		<order>17</order>1
+		<name><![CDATA[Charlie W]]></name>
+		<score>566</score>5
+	</hs>
+	<hs>
+		<order>18</order>1
+		<name><![CDATA[Bill W]]></name>
+		<score>551</score>5
+	</hs>
+	<hs>
+		<order>19</order>1
+		<name><![CDATA[Pete T]]></name>
+		<score>544</score>5
+	</hs>
+	<hs>
+		<order>20</order>
+		<name><![CDATA[John E]]></name>
+		<score>212</score>
+	</hs>
+	<hs>
+		<order>21</order>2
+		<name><![CDATA[John L]]></name>
+		<score>150</score>
+	</hs>
+	<hs>
+		<order>22</order>2
+		<name><![CDATA[Paul M]]></name>
+		<score>131</score>
+	</hs>
+	<hs>
+		<order>23</order>2
+		<name><![CDATA[George H]]></name>
+		<score>121</score>
+	</hs>
+	<hs>
+		<order>24</order>2
+		<name><![CDATA[Ringo S]]></name>
+		<score>109</score>
+	</hs>
+	<hs>
+		<order>25</order>2
+		<name><![CDATA[Mick J]]></name>
+		<score>91</score>
+	</hs>
+	<hs>
+		<order>26</order>2
+		<name><![CDATA[Keith R]]></name>
+		<score>78</score>
+	</hs>
+	<hs>
+		<order>27</order>2
+		<name><![CDATA[Charlie W]]></name>
+		<score>66</score>
+	</hs>
+	<hs>
+		<order>28</order>2
+		<name><![CDATA[Bill W]]></name>
+		<score>51</score>
+	</hs>
+	<hs>
+		<order>29</order>2
+		<name><![CDATA[Pete T]]></name>
+		<score>44</score>
+	</hs>
+	<hs>
+		<order>30</order>
+		<name><![CDATA[John E]]></name>
+		<score>12</score>
+	</hs>
+</highscores>

@@ -1,0 +1,1 @@
+&scoreVar=_root.scoreMC.score&blah=1

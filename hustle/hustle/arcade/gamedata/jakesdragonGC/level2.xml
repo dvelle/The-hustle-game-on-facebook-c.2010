@@ -1,0 +1,30 @@
+<board>
+  <tile d='0' x='12' y='14' face='48' />
+  <tile d='0' x='14' y='14' face='25' />
+  <tile d='0' x='16' y='14' face='68' />
+  <tile d='0' x='13' y='12' face='30' />
+  <tile d='0' x='18' y='14' face='22' />
+  <tile d='0' x='15' y='12' face='70' />
+  <tile d='0' x='10' y='9' face='50' />
+  <tile d='0' x='12' y='10' face='31' />
+  <tile d='0' x='20' y='14' face='21' />
+  <tile d='0' x='17' y='12' face='49' />
+  <tile d='0' x='12' y='8' face='34' />
+  <tile d='0' x='19' y='12' face='46' />
+  <tile d='0' x='14' y='9' face='29' />
+  <tile d='0' x='16' y='10' face='42' />
+  <tile d='0' x='16' y='8' face='25' />
+  <tile d='0' x='18' y='9' face='29' />
+  <tile d='0' x='13' y='6' face='46' />
+  <tile d='0' x='20' y='10' face='34' />
+  <tile d='0' x='15' y='6' face='49' />
+  <tile d='0' x='12' y='4' face='21' />
+  <tile d='0' x='20' y='8' face='31' />
+  <tile d='0' x='22' y='9' face='50' />
+  <tile d='0' x='17' y='6' face='70' />
+  <tile d='0' x='14' y='4' face='42' />
+  <tile d='0' x='19' y='6' face='30' />
+  <tile d='0' x='16' y='4' face='68' />
+  <tile d='0' x='18' y='4' face='22' />
+  <tile d='0' x='20' y='4' face='48' />
+</board>

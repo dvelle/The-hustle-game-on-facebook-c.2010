@@ -1,0 +1,28 @@
+<cubisgame
+	version="1.0"
+	author="Steve Meretzky"
+	install-id=""
+	defaultpuzzlemode="0"
+	defaultcrazymode="0"
+>
+	<level file="THE_KEY.xml" />
+	<level file="PEACE.xml" />
+	<level file="EASY_AS_PIE.xml" />
+	<level file="INTRODUCING_THE_DUAL_CUBE.xml" />
+	<level file="V_FOR_VICTORY.xml" />
+	<level file="IGLOO.xml" />
+	<level file="INTRODUCING_THE_BOMB.xml" />
+	<level file="WHEEL_MOUSE.xml" />
+	<level file="SPLENDIFEROUS.xml" />
+	<level file="MISTER_BILL.xml" />
+	<level file="EASY_AS_PI.xml" />
+	<level file="TIJUANA.xml" />
+	<level file="MISS_CUBIS.xml" />
+	<level file="RIP_RAP.xml" />
+	<level file="BLOCK_75.xml" />
+	<level file="ONE_OF_EACH.xml" />
+	<level file="CACTUS.xml" />
+	<level file="SIMPLETON.xml" />
+	<level file="QUICKSAND.xml" />
+	<level file="WORLD_IN_YOUR_HAND.xml" />
+</cubisgame>

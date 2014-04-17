@@ -1,0 +1,1 @@
+&scoreVar=_root.scorez&blah=1

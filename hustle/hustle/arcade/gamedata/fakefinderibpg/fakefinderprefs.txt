@@ -1,0 +1,13 @@
+&timePerFake=25&
+&penaltyTime=25&
+&markerStyle=1&
+&markerThickness=4&
+&markerColor=0xCCFF00&
+&markerOpacity=75&
+&markerDistance=5&
+&markerMask=0&
+&markerShaddow=0&
+&shaddowOpacity=40&
+&shaddowDistance=3.5&
+&picpairsInFolder=15&
+&eof=1&

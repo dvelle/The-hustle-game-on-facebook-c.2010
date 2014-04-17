@@ -1,0 +1,83 @@
+
+//edit the difficulty settings for the game below
+
+//breakdown of settings
+//bug colours - number different colour bugs, max is 6
+//minimum_bug_sequence - the minimum number of the same bugs in a chain
+//max_bug_sequence - the maximum number of the same bugs in a chain
+//sparkneeded - the number of sparks needed to finish the level
+//chanceofrainbow - chance of a rainbow bug appearing. eg for 100 chance is 1 in 100
+//chanceofpowerup - chance of a powerup appearing
+
+//level 1 settings
+
+&bug_colours1=4&
+&minimum_bug_sequence1=2&
+&max_bug_sequence1=4&
+&chance_of_change1=6&
+&sparksneeded1=40&
+
+
+//level 2 settings
+
+&chanceofrainbow2=20&
+&bug_colours2=5&
+&minimum_bug_sequence2=2&
+&max_bug_sequence2=5&
+&chance_of_change2=5&
+&sparksneeded2=60&
+
+
+//level 3 settings
+
+&chanceofpowerup3=30&
+&chanceofrainbow3=30&
+&bug_colours3=4&
+&minimum_bug_sequence3=2&
+&max_bug_sequence3=6&
+&chance_of_change3=6&
+&sparksneeded3=80&
+
+
+//level 4 setttings
+
+&chanceofpowerup4=30&
+&chanceofrainbow4=40&
+&bug_colours4=4&
+&minimum_bug_sequence4=2&
+&max_bug_sequence4=5&
+&chance_of_change4=5&
+&sparksneeded4=120&
+
+
+//level 5 settings
+
+&chanceofpowerup5=30&
+&chanceofrainbow5=40&
+&bug_colours5=4&
+&minimum_bug_sequence5=1&
+&max_bug_sequence5=6&
+&chance_of_change5=15&
+&sparksneeded5=160&
+
+
+//level loop settings
+
+//these values will be added to the level 5 values each new level
+
+&moresparks=20&   //increase number of sparks needed by x
+
+//these big changes can happen as often as you decide, eg every 2 levels / 3 levels, etc
+
+&incevery=3&      //change the following every x levels....
+
+&reduceminseq=1&  //reduce min bug sequence by x
+&reducemaxseq=0&  //reduce max bug sequence by x
+
+//the number of bug colours will also increase up to its maximum every time this event occurs
+
+
+
+//confirm all these vars have loaded
+
+&customvarsloaded=true&

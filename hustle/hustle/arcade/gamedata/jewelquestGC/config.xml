@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<game name="Jewel Quest" upsell_link="http://somewhere.com/" upsell_window="" hint_time="10" points_start="1" points_increase="1" points_limit="10" points_gold="50" points_bonus_start="250" points_timer_bonus="100" points_bonus_max="3000">
+	<setting>
+		<event name="import_additional_upsell" value="false" upsell_shift="0,-32">
+			<import import_url="" import_location="34,321"/>
+		</event>
+		<event name="upsell_playagain" value="1" upsell_playagain_download="0">
+		</event>
+		<event name="upsell_continue" value="0" upsell_continue_download="0">
+		</event>
+		<event name="zone_api" value="0">
+		</event>
+		<event name="score_broadcast" value="4500">
+		</event>
+		
+	</setting>
+</game>

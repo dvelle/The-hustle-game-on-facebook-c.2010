@@ -1,0 +1,115 @@
+<?xml version="1.0"?>
+<!--tips file for BlackJack game-->
+<!--http://www.DISarea.com-->
+<!-- rules - the Rules displayed at the beggining at the game -->
+<!-- default - default tip for obvious situations -->
+<!-- insurance - tip for the insurance -->
+<!-- stand - stand message. is Double-or-Stand situations -->
+<tips rules="We are playing  &lt;B&gt;Las Vegas rules&lt;/B&gt;. Endless shoe.  No double after split. No split on split. The following hints are based on mathematical probability." 
+	tdefault = "You have to &lt;B&gt;HIT&lt;/B&gt;." 
+	insurance = "&lt;B&gt;Never&lt;/B&gt; take insurance." 
+	stand = "I think you should &lt;B&gt;STAND&lt;/B&gt;." >
+	<!-- TIP HT = Hit, ST = Stand, SP = Split, DH = Double or Hit, DS = Double or Stand -->
+	<!-- skipped combinations use the precedent tip  -->
+	<!-- hard -->
+	<hard>
+		<hand player="8" dealer="2" tip="HT">You should always &lt;B&gt;HIT&lt;/B&gt; on 8 or lower.</hand>
+		
+		<hand player="9" dealer="2" tip="HT">I suggest you &lt;B&gt;HIT&lt;/B&gt;.</hand>
+		<hand player="9" dealer="3" tip="DH">The dealer has a weak hand (3-6 here). You should go for a &lt;B&gt;DOUBLE&lt;/B&gt;.</hand>
+		<hand player="9" dealer="7" tip="HT">You probably want to &lt;B&gt;HIT&lt;/B&gt;.</hand>
+		
+		<hand player="10" dealer="2" tip="DH">Always &lt;B&gt;DOUBLE&lt;/B&gt; on 10 unless the dealer is showing a 10 or an Ace.</hand>
+		<hand player="10" dealer="10" tip="HT">Don't double when the dealer's also showing a 10. Instead I think you should &lt;B&gt;HIT&lt;/B&gt;.</hand>
+		
+		<hand player="11" dealer="2" tip="DH">Always &lt;B&gt;DOUBLE&lt;/B&gt; on 11 unless the dealer is showing an Ace.</hand>
+		<hand player="11" dealer="11" tip="HT">You should &lt;B&gt;HIT&lt;/B&gt; here intead of double, as the dealer also has 11.</hand>
+		
+		<hand player="12" dealer="2" tip="HT">Always &lt;B&gt;HIT&lt;/B&gt; on 12 unless the dealer has 4-6.</hand>
+		<hand player="12" dealer="4" tip="ST">The dealer has a weak hand (4-6 here). I think you are best off &lt;B&gt;STANDING&lt;/B&gt;.</hand>
+		<hand player="12" dealer="7" tip="HT">You really should &lt;B&gt;HIT&lt;/B&gt; on 12 when the dealer's showing 7 or more.</hand>
+		
+		<hand player="13" dealer="2" tip="ST">The dealer has a weak hand (2-6 here). You should &lt;B&gt;STAND&lt;/B&gt;.</hand>
+		<hand player="13" dealer="7" tip="HT">Always &lt;B&gt;HIT&lt;/B&gt; on 13 if the dealer's showing a 7 or higher.</hand>
+		
+		<hand player="14" dealer="2" tip="ST">The dealer has a weak hand . You'll be better off in the long run if you &lt;B&gt;STAND&lt;/B&gt;.</hand>
+		<hand player="14" dealer="7" tip="HT">Always &lt;B&gt;HIT&lt;/B&gt; on 14 when the dealer is showing 7 or higher.</hand>
+		
+		<hand player="15" dealer="2" tip="ST">The dealer has a weak hand. You should &lt;B&gt;STAND&lt;/B&gt;.</hand>
+		<hand player="15" dealer="7" tip="HT">Always &lt;B&gt;HIT&lt;/B&gt; on 15 when the dealer's showing 7 or more.</hand>
+		
+		<hand player="16" dealer="2" tip="ST">The dealer has a weak hand (2-6 here). You should probably &lt;B&gt;STAND&lt;/B&gt;.</hand>
+		<hand player="16" dealer="7" tip="HT">Always &lt;B&gt;HIT&lt;/B&gt; on 16 when the dealer is showing a 7 or higher.</hand>
+		
+		<hand player="17" dealer="2" tip="ST">You should always &lt;B&gt;STAND&lt;/B&gt; on hard 17 and higher.</hand>
+		
+	</hard>
+	<!-- soft -->
+	<soft>
+		<!-- player hand Ace+n -->
+		<hand player="2" dealer="2" tip="HT">You should &lt;B&gt;HIT&lt;/B&gt;.</hand>
+		<hand player="2" dealer="5" tip="DH">You should &lt;B&gt;DOUBLE&lt;/B&gt;.</hand>
+		<hand player="2" dealer="7" tip="HT">You should &lt;B&gt;HIT&lt;/B&gt;.</hand>
+		
+		<hand player="3" dealer="2" tip="HT">You should &lt;B&gt;HIT&lt;/B&gt;.</hand>
+		<hand player="3" dealer="5" tip="DH">You should &lt;B&gt;DOUBLE&lt;/B&gt;.</hand>
+		<hand player="3" dealer="7" tip="HT">You should &lt;B&gt;HIT&lt;/B&gt;.</hand>
+
+		<hand player="4" dealer="2" tip="HT">You should &lt;B&gt;HIT&lt;/B&gt;.</hand>
+		<hand player="4" dealer="4" tip="DH">You should &lt;B&gt;DOUBLE&lt;/B&gt;.</hand>
+		<hand player="4" dealer="7" tip="HT">You should &lt;B&gt;HIT&lt;/B&gt;.</hand>
+		
+		<hand player="5" dealer="2" tip="HT">You should &lt;B&gt;HIT&lt;/B&gt;.</hand>
+		<hand player="5" dealer="4" tip="DH">You should &lt;B&gt;DOUBLE&lt;/B&gt;.</hand>
+		<hand player="5" dealer="7" tip="HT">You should &lt;B&gt;HIT&lt;/B&gt;.</hand>
+
+		<hand player="6" dealer="2" tip="HT">You should &lt;B&gt;HIT&lt;/B&gt;.</hand>
+		<hand player="6" dealer="3" tip="DH">You should &lt;B&gt;DOUBLE&lt;/B&gt;.</hand>
+		<hand player="6" dealer="7" tip="HT">You should &lt;B&gt;HIT&lt;/B&gt;.</hand>
+		
+		<hand player="7" dealer="2" tip="ST">You should &lt;B&gt;STAND&lt;/B&gt;.</hand>
+		<hand player="7" dealer="3" tip="DH">You should &lt;B&gt;DOUBLE&lt;/B&gt;.</hand>
+		<hand player="7" dealer="7" tip="ST">You should &lt;B&gt;STAND&lt;/B&gt;.</hand>
+		<hand player="7" dealer="9" tip="HT">Most players would stand on a soft 18. However the odds suggest that you should &lt;B&gt;HIT&lt;/B&gt;here.</hand>
+		
+		<hand player="8" dealer="2" tip="ST">  Always &lt;B&gt;STAND&lt;/B&gt; on soft 19.</hand>
+		
+		<hand player="9" dealer="2" tip="ST"> Always &lt;B&gt;STAND&lt;/B&gt; on soft 20.</hand>
+		
+	</soft>
+	<!-- pairs -->
+	<pairs>
+		<!-- player hand paires -->
+		<hand player="2" dealer="2" tip="HT">You should &lt;B&gt;HIT&lt;/B&gt;.</hand>
+		<hand player="2" dealer="4" tip="SP">You should &lt;B&gt;SPLIT&lt;/B&gt;.</hand>
+		<hand player="2" dealer="8" tip="HT">You should &lt;B&gt;HIT&lt;/B&gt;.</hand>
+		
+		<hand player="3" dealer="2" tip="HT">You should &lt;B&gt;HIT&lt;/B&gt;.</hand>
+		<hand player="3" dealer="4" tip="SP">You should &lt;B&gt;SPLIT&lt;/B&gt;.</hand>
+		<hand player="3" dealer="8" tip="HT">You should &lt;B&gt;HIT&lt;/B&gt;.</hand>
+		
+		<hand player="4" dealer="2" tip="HT">Always &lt;B&gt;HIT&lt;/B&gt; on a pair of 4's.</hand>
+		
+		<hand player="5" dealer="2" tip="DH">Never split 5's. You should &lt;B&gt;DOUBLE&lt;/B&gt; here.</hand>
+		<hand player="5" dealer="10" tip="HT">Don't double or split when the dealer's showing a 10. You should play safe and &lt;B&gt;HIT&lt;/B&gt;.</hand>
+				
+		<hand player="6" dealer="2" tip="HT">You should &lt;B&gt;HIT&lt;/B&gt;.</hand>
+		<hand player="6" dealer="3" tip="SP">You should &lt;B&gt;SPLIT&lt;/B&gt;.</hand>
+		<hand player="6" dealer="7" tip="HT">You should &lt;B&gt;HIT&lt;/B&gt;.</hand>
+		
+		<hand player="7" dealer="2" tip="SP">You should &lt;B&gt;SPLIT&lt;/B&gt;.</hand>
+		<hand player="7" dealer="8" tip="HT">You should &lt;B&gt;HIT&lt;/B&gt;.</hand>
+		
+		<hand player="8" dealer="2" tip="SP">Always &lt;B&gt;SPLIT&lt;/B&gt; the 8's!</hand>
+		
+		<hand player="9" dealer="2" tip="SP">You should &lt;B&gt;SPLIT&lt;/B&gt; those puppies.</hand>
+		<hand player="9" dealer="7" tip="ST">You'll be better off if you always &lt;B&gt;STAND&lt;/B&gt;.</hand>
+		<hand player="9" dealer="8" tip="SP">You should &lt;B&gt;SPLIT&lt;/B&gt;the 9's.</hand>
+		<hand player="9" dealer="10" tip="ST">You should &lt;B&gt;STAND&lt;/B&gt;.</hand>
+		
+		<hand player="10" dealer="2" tip="ST">Always &lt;B&gt;STAND&lt;/B&gt; on a pair of 10's.</hand>
+		
+		<hand player="11" dealer="2" tip="SP">Always &lt;B&gt;SPLIT&lt;/B&gt; the Aces.</hand>
+	
+	</pairs>
+</tips>

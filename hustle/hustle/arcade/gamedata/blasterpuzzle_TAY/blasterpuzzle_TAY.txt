@@ -1,0 +1,2 @@
+&scoreVar=_parent.giScore&blah=1
+

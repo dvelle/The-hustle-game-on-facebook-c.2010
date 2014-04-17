@@ -1,0 +1,24 @@
+<level bg="night" cannonX="55" cannonY="104">
+	<item type="undefined" x="undefined" y="undefined" points="" />
+	<item type="tin" x="387.5" y="263" color="passion" numAltoids="5" rotation="0" points="" />
+	<item type="car" x="268.5" y="382" rotation="0" points="" />
+	<item type="building" x="825.5" y="380" hasRoof="false" type="building" x="827.5" y="379" symbolName="building3" stackHeight="45" bottomHeight="45" stackCount="1" rotation="0" points="" points="" />
+	<item type="building" x="180.5" y="380" hasRoof="true" type="building" x="201.5" y="379" symbolName="building2" stackHeight="45" bottomHeight="45" stackCount="1" rotation="0" points="" points="" />
+	<item type="ring" x="475.5" y="731" numAltoids="35" type="ring" x="475.5" y="742" rotation="0" points="" points="" />
+	<item type="ring" x="601.5" y="685" numAltoids="35" type="ring" x="601.5" y="716" rotation="0" points="" points="" />
+	<item type="goal" x="802.5" y="290" type="goal" x="802.5" y="290" rotation="0" points="" points="" />
+	<item type="house" x="700.5" y="380" type="house" x="701.5" y="378" rotation="0" points="" points="" />
+	<item type="car" x="621.5" y="382" type="car" x="620.5" y="380" rotation="0" points="" points="" />
+	<item type="house" x="538.5" y="380" type="house" x="538.5" y="378" rotation="0" points="" points="" />
+	<item type="car" x="452.5" y="382" type="car" x="453.5" y="381" rotation="0" points="" points="" />
+	<item type="bumper" x="348.5" y="380" type="bumper" x="348.5" y="378" negation="false" clipRotation="22" rotation="0" points="" points="" />
+	<item type="building" x="39.5" y="380" hasRoof="false" type="building" x="64.5" y="378" symbolName="building1" stackHeight="45" bottomHeight="45" stackCount="4" rotation="0" points="" points="" />
+	<item type="tin" x="295.5" y="254" type="tin" x="286.5" y="218" color="rasberry" numAltoids="5" rotation="0" points="" points="" />
+	<item type="tin" x="325.5" y="291" type="tin" x="344.5" y="281" color="tangerine" numAltoids="5" rotation="0" points="" points="" />
+	<item type="tin" x="430.5" y="228" type="tin" x="427.5" y="236" color="apple" numAltoids="5" rotation="0" points="" points="" />
+	<item type="tin" x="508.5" y="191" type="tin" x="509.5" y="206" color="mango" numAltoids="5" rotation="0" points="" points="" />
+	<item type="tin" x="565.5" y="167" type="tin" x="565.5" y="188" color="passion" numAltoids="5" rotation="0" points="" points="" />
+	<item type="tin" x="636.5" y="145" type="tin" x="636.5" y="183" color="tangerine" numAltoids="5" rotation="0" points="" points="" />
+	<item type="tin" x="703.5" y="160" type="tin" x="706.5" y="190" color="rasberry" numAltoids="5" rotation="0" points="" points="" />
+	<item type="tin" x="759.5" y="193" type="tin" x="763.5" y="227" color="apple" numAltoids="5" rotation="0" points="" points="" />
+</level>

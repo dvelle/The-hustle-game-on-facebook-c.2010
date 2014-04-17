@@ -1,0 +1,9 @@
+&pic_o=master_of_Flemalle_o.jpg&
+&pic_f=master_of_Flemalle_f.jpg&
+&regionsOnPic=5&
+&region0=130,259,17,20,46.8&
+&region1=162,274,10.4,14.7,-21.6&
+&region2=252,151,-12,17,-8.7&
+&region3=165,47,23.9,17.25,25.5&
+&region4=7,75,10,21,0&
+&eof=1&

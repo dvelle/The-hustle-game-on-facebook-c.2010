@@ -1,0 +1,1 @@
+&scoreVar=_level0.balanceMashine_mc._balance&blah=1

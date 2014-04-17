@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="UTF-16"?>
+<questions>
+	<question>
+		<ask>Wo wurde das erste Stück Brot gefunden?</ask>
+		<answer is="true">Schweiz</answer>
+		<answer>Italien</answer>
+		<answer>Deutschland</answer>
+		<help>http://www.enviam-welt.de/welt/energie_und_wissen/energie_geschichte/801.html</help>
+	</question>
+	<question>
+		<ask>Seit wann wird Erdöl zur Energiegewinnung genutzt?</ask>
+		<answer>1650</answer>
+		<answer>1750</answer>
+		<answer is="true">1850</answer>
+		<help>http://www.enviam-welt.de/welt/energie_und_wissen/energie_geschichte/801.html</help>
+	</question>
+	<question>
+		<ask>Woraus war der Kohlefaden der ersten ‘modernen’ Glühlampe?</ask>
+		<answer>afrikanischen Ton</answer>
+		<answer is="true">japanischen Bambus</answer>
+		<answer>indischen Harz</answer>
+		<help>http://www.enviam-welt.de/welt/energie_und_wissen/energie_geschichte/803.html</help>
+	</question>
+	<question>
+		<ask>Wer konstruierte die erste elektrische Straßenbahn?</ask>
+		<answer>Alexander Graham Bell</answer>
+		<answer>Thomas Alva Edison</answer>
+		<answer is="true">Werner von Siemens</answer>
+		<help>http://www.enviam-welt.de/welt/energie_und_wissen/energie_geschichte/803.html</help>
+	</question>
+	<question>
+		<ask>Was löst das Nordlicht aus?</ask>
+		<answer>Abendwind</answer>
+		<answer is="true">Sonnenwind</answer>
+		<answer>Nordwind</answer>
+		<help>http://www.enviam-welt.de/welt/energie_und_wissen/energie_quellen/149.html</help>
+	</question>
+	<question>
+		<ask>Woraus besteht Erdgas überwiegend?</ask>
+		<answer>Sauerstoff</answer>
+		<answer>Kohlenstoff</answer>
+		<answer is="true">Methan</answer>
+		<help>http://www.enviam-welt.de/welt/energie_und_wissen/energie_quellen/193.html</help>
+	</question>
+	<question>
+		<ask>Mit welcher Geschwindigkeit bewegen sich Blitze?</ask>
+		<answer is="true">10.000 Kilometern pro Sekunde</answer>
+		<answer>10.000 Kilometern pro Minute</answer>
+		<answer>10.000 Kilometern pro Stunde</answer>
+		<help>http://www.enviam-welt.de/welt/energie_und_wissen/energie_quellen/245.html</help>
+	</question>
+	<question>
+		<ask>Wie bezeichnet man einen Wind mit Windstärke 7?</ask>
+		<answer is="true">steifer Wind</answer>
+		<answer>strenger Wind</answer>
+		<answer>stürmischer Wind</answer>
+		<help>http://www.enviam-welt.de/welt/energie_und_wissen/energie_quellen/237.html</help>
+	</question>
+	<question>
+		<ask>Aus wie viel Gramm Steinkohle kann eine Kilowattstunde Strom gewonnen werden?</ask>
+		<answer>30 Gramm</answer>
+		<answer is="true">300 Gramm</answer>
+		<answer>3000 Gramm</answer>
+		<help>http://www.enviam-welt.de/welt/energie_und_wissen/energie_erzeugung/428.html</help>
+	</question>
+	<question>
+		<ask>Wo steht das größte deutsche Speicherwasserkraftwerk?</ask>
+		<answer is="true">Walchsee</answer>
+		<answer>Chiemsee</answer>
+		<answer>Bodensee</answer>
+		<help>http://www.enviam-welt.de/welt/energie_und_wissen/energie_erzeugung/324.html</help>
+	</question>
+	<question>
+		<ask>Wie nennt man die Stromgewinnung aus Sonnenenergie?</ask>
+		<answer>Videovoltaik</answer>
+		<answer>Filmvoltaik</answer>
+		<answer is="true">Photovoltaik</answer>
+		<help>http://www.enviam-welt.de/welt/energie_und_wissen/energie_erzeugung/392.html</help>
+	</question>
+	<question>
+		<ask>Wie viel Biomasse wird auf der Erde jährlich gebildet?</ask>
+		<answer>50 Milliarden Tonnen</answer>
+		<answer>100 Milliarden Tonnen</answer>
+		<answer is="true">150 Milliarden Tonnen</answer>
+		<help>http://www.enviam-welt.de/welt/energie_und_wissen/energie_erzeugung/464.html</help>
+	</question>
+	<question>
+		<ask>Wie hoch ist der elektrische Wirkungsgrad einer Brennstoffzelle?</ask>
+		<answer>45 Prozent</answer>
+		<answer is="true">55 Prozent</answer>
+		<answer>65 Prozent</answer>
+		<help>http://www.enviam-welt.de/welt/energie_und_wissen/energie_erzeugung/471.html</help>
+	</question>
+	<question>
+		<ask>Welches Abfallprodukt entsteht beim Betrieb von Brennstoffzellen?</ask>
+		<answer is="true">reines Wasser</answer>
+		<answer>Kohlendioxid</answer>
+		<answer>Wasserstoff</answer>
+		<help>http://www.enviam-welt.de/welt/energie_und_wissen/energie_transport/index.html</help>
+	</question>
+	<question>
+		<ask>Wie viele Spannungsebenen gibt es?</ask>
+		<answer>2</answer>
+		<answer>3</answer>
+		<answer is="true">4</answer>
+		<help>http://www.enviam-welt.de/welt/energie_und_wissen/energie_transport/777.html</help>
+	</question>
+	<question>
+		<ask>Wie viele Umspannwerke besitzt enviaM?</ask>
+		<answer>110</answer>
+		<answer is="true">220</answer>
+		<answer>330</answer>
+		<help>http://www.enviam-welt.de/welt/energie_und_wissen/energie_transport/777.html</help>
+	</question>
+	<question>
+		<ask>Wie hoch ist Niederspannung?</ask>
+		<answer>0,2 Kilovolt</answer>
+		<answer>0,3 Kilovolt</answer>
+		<answer is="true">0,4 Kilovolt</answer>
+		<help>http://www.enviam-welt.de/welt/energie_und_wissen/energie_transport/781.html</help>
+	</question>
+	<question>
+		<ask>Welche Kundengruppe ist der größte Energieverbraucher in Deutschland?</ask>
+		<answer>Handel und Gewerbe</answer>
+		<answer is="true">die Industrie</answer>
+		<answer>Haushalte</answer>
+		<help>http://www.enviam-welt.de/welt/energie_und_wissen/energie_statistik/797.html</help>
+	</question>
+	<question>
+		<ask>Wie hoch war der Anteil erneuerbarer Energien im Jahr 2002 in Deutschland?</ask>
+		<answer is="true">9 Prozent</answer>
+		<answer>19 Prozent</answer>
+		<answer>29 Prozent</answer>
+		<help>http://www.enviam-welt.de/welt/energie_und_wissen/energie_statistik/798.html</help>
+	</question>
+	<question>
+		<ask>Bis wann sollen die Strom- und Gasmärkte in der EU frei zugänglich sein?</ask>
+		<answer is="true">2007</answer>
+		<answer>2008</answer>
+		<answer>2009</answer>
+		<help>http://www.enviam-welt.de/welt/energie_und_wissen/energie_wirtschaft/787.html</help>
+	</question>
+</questions>

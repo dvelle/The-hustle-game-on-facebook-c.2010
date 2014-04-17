@@ -1,0 +1,2774 @@
+﻿<?xml version="1.0"?>
+<!-- timeClock : temps appliqués à l'horloge de l'interface (minutes)-->
+<!-- timeFreeze: temps appliqués au freeze time bonus (secondes)-->
+<!-- timeBonus: points gagné pour chaque seconde économisée -->
+<game timeClock="4,4,4,4,5" timeFreeze="7,6,6,5,4" timeBonus="5,10,15,20,25" speedPlayer="4" speedSkate="6">
+	<!-- ENVIRONNEMENT 1 : The Neighborhood  -->
+	<environment tileY="9" tileX="11">
+		<!-- Screen 1  -->
+		<screen env="The Neighborhood" playerStartY="3" playerStartX="10">
+			<!-- Cars  -->
+			<itemsMobiles>
+				<!-- Day 1  -->
+				<config goBus="DOWN, 450, 350">
+					<item moveDir="RIGHT" speed="4" waitStart="2"/>
+				</config>
+				<!-- Day 2 -->
+				<config goBus="DOWN, 450, 350">
+					<item moveDir="RIGHT" speed="4" waitStart="4"/>
+				</config>
+				<!-- Day 3  -->
+				<config goBus="LEFT, 175, 130">
+					<item moveDir="RIGHT" speed="4" waitStart="2"/>
+					<item moveDir="LEFT" speed="4" waitStart="4"/>
+				</config>
+				<!-- Day 4  -->
+				<config goBus="LEFT, 175, 130">
+					<item moveDir="RIGHT" speed="4" waitStart="2"/>
+					<item moveDir="LEFT" speed="6" waitStart="3"/>
+				</config>
+				<!-- Day 5  -->
+				<config goBus="LEFT, 175, 130">
+					<item moveDir="RIGHT" speed="5" waitStart="1"/>
+					<item moveDir="LEFT" speed="6" waitStart="3"/>
+				</config>
+			</itemsMobiles>
+			<!-- Grid Definition  -->
+			<grid>
+				<row access="none"/>
+				<row access="none"/>
+				<row out="1" access="all" cTypeAll=""/>
+				<row out="1" access="all" cTypeAll=""/>
+				<row out="1" access="all" cTypeAll=""/>
+				<!-- Row 6  -->
+				<row access="all">
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType="grass" cellSpeed="2"/>
+				</row>
+				<!-- Row 7  -->
+				<row access="2,3,4,5,6,7,8,9,10,11">
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType="grass" cellSpeed="2"/>
+				</row>
+				<!-- Row 8  -->
+				<row access="all">
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType="grass" cellSpeed="2"/>
+				</row>
+				<!-- Row 9  -->
+				<row out="8,9,10" access="all" outTo="4">
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType="grass" cellSpeed="2"/>
+				</row>
+			</grid>
+			<!-- Items Bonus  -->
+			<itemsBonus>
+				<!-- Day 1  -->
+				<config>
+					<item cellY="5" cellX="9" bType="skate"/>
+					<item cellY="8" cellX="6" bType="timefreezy_grass"/>
+					<item cellY="6" cellX="5" bType="skyPiece_grass" timeDrop="1"/>
+					<item cellY="8" cellX="9" bType="skyPiece_grass" timeDrop="2"/>
+					<item cellY="4" cellX="5" bType="skyPiece_road" timeDrop="3"/>
+				</config>
+				<!-- Day 2  -->
+				<config>
+					<item cellY="8" cellX="3" bType="timefreezy_grass"/>
+					<item cellY="6" cellX="5" bType="skyPiece_grass" timeDrop="3"/>
+					<item cellY="8" cellX="9" bType="skyPiece_grass" timeDrop="1"/>
+					<item cellY="4" cellX="5" bType="skyPiece_road" timeDrop="2"/>
+				</config>
+				<!-- Day 3  -->
+				<config>
+					<item cellY="6" cellX="9" bType="skate"/>
+					<item cellY="6" cellX="5" bType="skyPiece_grass" timeDrop="4"/>
+					<item cellY="8" cellX="9" bType="skyPiece_grass" timeDrop="2"/>
+					<item cellY="4" cellX="5" bType="skyPiece_road" timeDrop="3"/>
+					<item cellY="4" cellX="3" bType="skyPiece_road" timeDrop="1"/>
+				</config>
+				<!-- Day 4  -->
+				<config>
+					<item cellY="7" cellX="7" bType="timefreezy_grass"/>
+					<item cellY="6" cellX="6" bType="skyPiece_grass" timeDrop="1"/>
+					<item cellY="8" cellX="9" bType="skyPiece_grass" timeDrop="2"/>
+					<item cellY="4" cellX="5" bType="skyPiece_road" timeDrop="3"/>
+					<item cellY="4" cellX="3" bType="skyPiece_road" timeDrop="4"/>
+				</config>
+				<!-- Day 5  -->
+				<config>
+					<item cellY="6" cellX="9" bType="skate"/>
+					<item cellY="6" cellX="4" bType="skyPiece_grass" timeDrop="1"/>
+					<item cellY="8" cellX="9" bType="skyPiece_grass" timeDrop="4"/>
+					<item cellY="4" cellX="5" bType="skyPiece_road" timeDrop="3"/>
+					<item cellY="4" cellX="3" bType="skyPiece_road" timeDrop="4"/>
+					<item cellY="8" cellX="7" bType="skyPiece_grass" timeDrop="2"/>
+				</config>
+			</itemsBonus>
+			<!-- Shortcut  -->
+			<shortcut>
+				<!-- Day 1  -->
+				<config>
+					<item frame="1" sNom="item21"/>
+					<item frame="1" sNom="item22"/>
+					<item frame="1" sNom="item40"/>
+					<item frame="1" sNom="item41"/>
+				</config>
+				<!-- Day 2  -->
+				<config>
+					<item frame="1" sNom="item21"/>
+					<item frame="1" sNom="item22"/>
+					<item frame="1" sNom="item40"/>
+					<item frame="1" sNom="item41"/>
+				</config>
+				<!-- Day 3  -->
+				<config>
+					<item frame="2" sNom="item21"/>
+					<item frame="2" sNom="item22"/>
+					<item frame="2" sNom="item40"/>
+					<item frame="3" sNom="item41"/>
+				</config>
+				<!-- Day 4  -->
+				<config>
+					<item frame="2" sNom="item21"/>
+					<item frame="2" sNom="item22"/>
+					<item frame="2" sNom="item40"/>
+					<item frame="3" sNom="item41"/>
+				</config>
+				<!-- Day 5  -->
+				<config>
+					<item frame="2" sNom="item21"/>
+					<item frame="2" sNom="item22"/>
+					<item frame="2" sNom="item40"/>
+					<item frame="3" sNom="item41"/>
+				</config>
+			</shortcut>
+		</screen>
+		<!-- Screen 2  -->
+		<screen playerStartY="4" playerStartX="11" manHoleY="4" manHoleX="8" goBus="DOWN">
+			<!-- Cars  -->
+			<itemsMobiles>
+				<!-- Day 1  -->
+				<config>
+					<item moveDir="RIGHT" speed="4" waitStart="4"/>
+				</config>
+				<!-- Day 2  -->
+				<config>
+					<item moveDir="RIGHT" speed="4" waitStart="2"/>
+				</config>
+				<!-- Day 3  -->
+				<config>
+					<item moveDir="RIGHT" speed="4" waitStart="2"/>
+					<item moveDir="LEFT" speed="4" waitStart="3"/>
+				</config>
+				<!-- Day 4  -->
+				<config>
+					<item moveDir="RIGHT" speed="4" waitStart="1"/>
+					<item moveDir="LEFT" speed="6" waitStart="3"/>
+				</config>
+				<!-- Day 5  -->
+				<config>
+					<item moveDir="RIGHT" speed="5" waitStart="1"/>
+					<item moveDir="LEFT" speed="6" waitStart="0"/>
+				</config>
+			</itemsMobiles>
+			<grid>
+				<row access="none"/>
+				<row access="none"/>
+				<row access="all" cTypeAll=""/>
+				<row access="all" cTypeAll=""/>
+				<row access="all" cTypeAll=""/>
+				<!-- Row 6  -->
+				<row access="2,3,4,5,6,7,8,9,10,11">
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+				</row>
+				<!-- Row 7  -->
+				<row access="2,3,4,5,6,7,8">
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+				</row>	
+				<!-- Row 8  -->
+				<row access="2,3,4,5,6,7,8">
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="gravel" cellSpeed="3"/>
+				</row>
+				<!-- Row 9  -->
+				<row out="3,4,5,6,7" access="2,3,4,5,6,7,8" outTo="3">
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="gravel" cellSpeed="3"/>
+				</row>
+			</grid>
+			<!-- Items Bonus  -->
+			<itemsBonus>
+
+				<!-- Day 1  -->
+				<config>
+					<item cellY="6" cellX="9" bType="skyPiece_grass" timeDrop="2"/>
+					<item cellY="4" cellX="1" bType="skyPiece_road" timeDrop="3"/>
+					<item cellY="8" cellX="4" bType="skyPiece_road" timeDrop="1"/>
+				</config>
+
+				<!-- Day 2  -->
+				<config>
+					<item cellY="8" cellX="7" bType="timefreezy_grass"/>
+					<item cellY="6" cellX="9" bType="skyPiece_grass" timeDrop="1"/>
+					<item cellY="4" cellX="1" bType="skyPiece_road" timeDrop="2"/>
+					<item cellY="8" cellX="4" bType="skyPiece_road" timeDrop="3"/>
+				</config>
+
+				<!-- Day 3  -->
+				<config>
+					<item cellY="6" cellX="9" bType="skyPiece_grass" timeDrop="4"/>
+					<item cellY="4" cellX="1" bType="skyPiece_road" timeDrop="3"/>
+					<item cellY="8" cellX="4" bType="skyPiece_road" timeDrop="1"/>
+					<item cellY="8" cellX="7" bType="skyPiece_grass" timeDrop="2"/>
+				</config>
+
+				<!-- Day 4  -->
+				<config>
+					<item cellY="6" cellX="9" bType="skyPiece_grass" timeDrop="2"/>
+					<item cellY="4" cellX="1" bType="skyPiece_road" timeDrop="1"/>
+					<item cellY="8" cellX="4" bType="skyPiece_road" timeDrop="3"/>
+					<item cellY="8" cellX="7" bType="skyPiece_grass" timeDrop="4"/>
+				</config>
+				
+				<!-- Day 5  -->
+				<config>
+					<item cellY="6" cellX="9" bType="skyPiece_grass" timeDrop="3"/>
+					<item cellY="4" cellX="1" bType="skyPiece_road" timeDrop="2"/>
+					<item cellY="8" cellX="4" bType="skyPiece_road" timeDrop="1"/>
+					<item cellY="8" cellX="7" bType="skyPiece_grass" timeDrop="4"/>
+					<item cellY="7" cellX="2" bType="skyPiece_grass" timeDrop="4"/>
+				</config>
+			</itemsBonus>		
+		</screen>
+		
+		<!-- Screen 3  -->
+		<screen playerStartY="1" playerStartX="7" goBus="RIGHT">
+			<itemsMobiles>
+				<!-- Day 1  -->
+				<config>
+					<item moveDir="RIGHT" speed="3" waitStart="1"/>
+					<item moveDir="LEFT" speed="5" waitStart="7"/>
+				</config>
+				<!-- Day 2  -->
+				<config>
+					<item moveDir="RIGHT" speed="3" waitStart="3"/>
+					<item moveDir="LEFT" speed="5" waitStart="7"/>
+				</config>
+				<!-- Day 3  -->
+				<config>
+					<item moveDir="RIGHT" speed="3" waitStart="1"/>
+					<item moveDir="LEFT" speed="3" waitStart="3"/>
+					<item moveDir="LEFT" speed="5" waitStart="7"/>
+				</config>
+				<!-- Day 4  -->
+				<config>
+					<item moveDir="RIGHT" speed="4" waitStart="1"/>
+					<item moveDir="LEFT" speed="3" waitStart="3"/>
+					<item moveDir="LEFT" speed="6" waitStart="8"/>
+				</config>
+				<!-- Day 5  -->
+				<config>
+					<item moveDir="RIGHT" speed="5" waitStart="1"/>
+					<item moveDir="LEFT" speed="3" waitStart="3"/>
+					<item moveDir="LEFT" speed="6" waitStart="2"/>
+				</config>
+			</itemsMobiles>
+			<grid>
+				<!-- Row 1  -->
+				<row access="3,4,5,6,7,8">
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="gravel" cellSpeed="3"/>
+				</row>
+				<!-- Row 2  -->
+				<row access="2,3,4,5,6,7,8,9,10,11">
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="grass" cellSpeed="2"/>
+				</row>	
+				<!-- Row 3  -->
+				<row access="2,3,4,5,6,7,8,9,10,11">
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="grass" cellSpeed="2"/>
+				</row>
+				<!-- Row 4  -->
+				<row access="2,3,4,5,6,7,8,9,10,11">
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+				</row>
+				<!-- Row 5  -->
+				<row access="1,2,3,4,5,6,7,8,9,10,11">
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+				</row>
+				<row out="11" access="all" outTo="4" cTypeAll=""/>
+				<row out="11" access="all" outTo="4" cTypeAll=""/>
+				<row out="11" access="all" outTo="4" cTypeAll=""/>
+				<!-- Row 9  -->
+				<row access="2,3,4,5,6">
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType="grass" cellSpeed="2"/>
+				</row>
+			</grid>
+			
+			<!-- Items Bonus  -->
+			<itemsBonus>
+				<!-- Day 1  -->
+				<config>
+					<item cellY="3" cellX="11" bType="timefreezy_grass"/>
+					<item cellY="5" cellX="4" bType="skyPiece_road" timeDrop="1"/>
+					<item cellY="7" cellX="9" bType="skyPiece_road" timeDrop="3"/>
+					<item cellY="5" cellX="11" bType="skyPiece_grass" timeDrop="2"/>
+				</config>
+				<!-- Day 2  -->
+				<config>
+					<item cellY="7" cellX="1" bType="timefreezy_road"/>
+					<item cellY="5" cellX="4" bType="skyPiece_road" timeDrop="2"/>
+					<item cellY="7" cellX="9" bType="skyPiece_road" timeDrop="1"/>
+					<item cellY="5" cellX="11" bType="skyPiece_grass" timeDrop="3"/>
+				</config>
+				<!-- Day 3  -->
+				<config>
+					<item cellY="5" cellX="4" bType="skyPiece_road" timeDrop="1"/>
+					<item cellY="7" cellX="9" bType="skyPiece_road" timeDrop="2"/>
+					<item cellY="5" cellX="11" bType="skyPiece_grass" timeDrop="4"/>
+					<item cellY="7" cellX="1" bType="skyPiece_road" timeDrop="3"/>
+				</config>
+				<!-- Day 4  -->
+				<config>
+					<item cellY="6" cellX="3" bType="skate"/>
+					<item cellY="5" cellX="4" bType="skyPiece_road" timeDrop="2"/>
+					<item cellY="7" cellX="9" bType="skyPiece_road" timeDrop="1"/>
+					<item cellY="5" cellX="11" bType="skyPiece_grass" timeDrop="4"/>
+					<item cellY="7" cellX="1" bType="skyPiece_road" timeDrop="3"/>
+				</config>
+				<!-- Day 5  -->
+				<config>
+					<item cellY="5" cellX="4" bType="skyPiece_road" timeDrop="1"/>
+					<item cellY="7" cellX="9" bType="skyPiece_road" timeDrop="2"/>
+					<item cellY="5" cellX="11" bType="skyPiece_grass" timeDrop="4"/>
+					<item cellY="7" cellX="1" bType="skyPiece_road" timeDrop="3"/>
+					<item cellY="3" cellX="7" bType="skyPiece_grass" timeDrop="2"/>
+				</config>
+			</itemsBonus>
+		</screen>
+		<!-- Screen 4  -->
+		<screen playerStartY="7" playerStartX="1" manHoleY="3" manHoleX="9" shortCutY="1" shortCutX="9" goBus="DOWN">
+			<itemsMobiles>
+				<!-- Day 1  -->
+				<config>
+					<item moveDir="LEFT" speed="2" waitStart="3"/>
+				</config>
+				<!-- Day 2  -->
+				<config>
+					<item moveDir="LEFT" speed="5" waitStart="2"/>
+					<item moveDir="LEFT" speed="2" waitStart="3"/>
+				</config>
+				<!-- Day 3  -->
+				<config>
+					<item moveDir="LEFT" speed="5" waitStart="2"/>
+					<item moveDir="LEFT" speed="2" waitStart="3"/>
+				</config>
+				<!-- Day 4  -->
+				<config>
+					<item moveDir="LEFT" speed="5" waitStart="4"/>
+					<item moveDir="LEFT" speed="4" waitStart="0"/>
+				</config>
+				<!-- Day 5  -->
+				<config>
+					<item moveDir="LEFT" speed="5" waitStart="4"/>
+					<item moveDir="LEFT" speed="4" waitStart="0"/>
+				</config>
+			</itemsMobiles>
+			<grid>
+				<!-- Row 1  -->
+				<row access="7,8,9,10">
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+				</row>
+				<!-- Row 2  -->
+				<row access="7,8,9,10">
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+				</row>	
+				<!-- Row 3  -->
+				<row access="7,8,9,10">
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+				</row>
+				<!-- Row 4  -->
+				<row access="7,8,9,10">
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+				</row>
+				<!-- Row 5  -->
+				<row access="all">
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>				
+					<cell cType="grass" cellSpeed="2"/>
+				</row>
+				<row access="all" cTypeAll=""/>
+				<row access="all" cTypeAll=""/>
+				<row access="all" cTypeAll=""/>
+				<!-- Row 9  -->
+				<row out="8,9,10" access="6,7,8,9,10,11">
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType="grass" cellSpeed="2"/>
+				</row>
+			</grid>
+			<!-- Items Bonus  -->
+			<itemsBonus>
+				<!-- Day 1  -->
+				<config>
+					<item cellY="5" cellX="9" bType="skate"/>
+					<item cellY="5" cellX="4" bType="skyPiece_grass" timeDrop="1"/>
+					<item cellY="8" cellX="11" bType="skyPiece_road" timeDrop="2"/>
+					<item cellY="9" cellX="6" bType="skyPiece_grass" timeDrop="3"/>
+				</config>
+				<!-- Day 2  -->
+				<config>
+					<item cellY="5" cellX="4" bType="skyPiece_grass" timeDrop="3"/>
+					<item cellY="8" cellX="11" bType="skyPiece_road" timeDrop="2"/>
+					<item cellY="9" cellX="6" bType="skyPiece_grass" timeDrop="1"/>
+				</config>
+				<!-- Day 3  -->
+				<config>
+					<item cellY="4" cellX="9" bType="timefreezy_road"/>
+					<item cellY="5" cellX="4" bType="skyPiece_grass" timeDrop="2"/>
+					<item cellY="8" cellX="11" bType="skyPiece_road" timeDrop="4"/>
+					<item cellY="9" cellX="6" bType="skyPiece_grass" timeDrop="3"/>
+					<item cellY="5" cellX="5" bType="skyPiece_grass" timeDrop="1"/>
+				</config>
+				<!-- Day 4  -->
+				<config>
+					<item cellY="2" cellX="7" bType="timefreezy_grass"/>
+					<item cellY="5" cellX="4" bType="skyPiece_grass" timeDrop="1"/>
+					<item cellY="8" cellX="11" bType="skyPiece_road" timeDrop="2"/>
+					<item cellY="9" cellX="6" bType="skyPiece_grass" timeDrop="3"/>
+					<item cellY="5" cellX="5" bType="skyPiece_grass" timeDrop="4"/>
+				</config>
+				<!-- Day 5  -->
+				<config>
+					<item cellY="5" cellX="4" bType="skyPiece_grass" timeDrop="1"/>
+					<item cellY="8" cellX="11" bType="skyPiece_road" timeDrop="3"/>
+					<item cellY="9" cellX="6" bType="skyPiece_grass" timeDrop="2"/>
+					<item cellY="5" cellX="5" bType="skyPiece_grass" timeDrop="2"/>
+					<item cellY="5" cellX="6" bType="skyPiece_grass" timeDrop="4"/>
+				</config>
+			</itemsBonus>
+			<!-- Shortcut  -->
+			<shortcut>
+				<!-- Day 1  -->
+				<config>
+					<item frame="1" sNom="item18"/>
+					<item frame="1" sNom="item19"/>
+				</config>
+				<!-- Day 2  -->
+				<config>
+					<item frame="1" sNom="item18"/>
+					<item frame="1" sNom="item19"/>
+				</config>
+				<!-- Day 3  -->
+				<config>
+					<item frame="2" sNom="item18"/>
+					<item frame="2" sNom="item19"/>
+				</config>
+				<!-- Day 4  -->
+				<config>
+					<item frame="2" sNom="item18"/>
+					<item frame="2" sNom="item19"/>
+				</config>
+				<!-- Day 5  -->
+				<config>
+					<item frame="2" sNom="item18"/>
+					<item frame="2" sNom="item19"/>
+				</config>
+			</shortcut>
+		</screen>
+	</environment>
+	<!-- ENVIRONNEMENT 2 : The Boulevard  -->
+	<environment tileY="9" tileX="11">
+		<!-- Screen 1  -->
+		<screen playerStartY="1" playerStartX="9" goBus="LEFT">
+			<itemsMobiles>
+				<!-- Day 1  -->
+				<config>
+					<!-- to LEFT  -->
+					<item moveDir="LEFT" speed="5" waitStart="0"/>
+					<item moveDir="LEFT" speed="4" waitStart="1"/>
+					<item moveDir="LEFT" speed="6" waitStart="5"/>
+					<!-- to RIGHT -->
+					<item moveDir="RIGHT" speed="6" waitStart="5"/>
+					<item moveDir="RIGHT" speed="5" waitStart="7"/>				
+					<item moveDir="RIGHT" speed="6" waitStart="10"/>			
+				</config>
+				<!-- Day 2  -->
+				<config>
+					<!-- to LEFT  -->
+					<item moveDir="LEFT" speed="3" waitStart="1"/>
+					<item moveDir="LEFT" speed="3" waitStart="2"/>
+					<item moveDir="LEFT" speed="5" waitStart="8"/>
+					<!-- to RIGHT -->
+					<item moveDir="RIGHT" speed="4" waitStart="0"/>
+					<item moveDir="RIGHT" speed="5" waitStart="7"/>
+					<item moveDir="RIGHT" speed="6" waitStart="10"/>
+					<!-- to LEFT  -->
+					<item moveDir="LEFT" speed="5" waitStart="7"/>
+				</config>
+				<!-- Day 3  -->
+				<config>
+					<!-- to LEFT  -->
+					<item moveDir="LEFT" speed="4" waitStart="1"/>
+					<item moveDir="LEFT" speed="4" waitStart="2"/>
+					<item moveDir="LEFT" speed="6" waitStart="8"/>
+					<!-- to RIGHT -->
+					<item moveDir="RIGHT" speed="4" waitStart="0"/>
+					<item moveDir="RIGHT" speed="4" waitStart="1"/>
+					<item moveDir="RIGHT" speed="3" waitStart="2"/>
+					<!-- to LEFT  -->
+					<item moveDir="LEFT" speed="5" waitStart="7"/>
+					<item moveDir="LEFT" speed="6" waitStart="5"/>
+				</config>
+				<!-- Day 4  -->
+				<config>
+					<!-- to LEFT  -->
+					<item moveDir="LEFT" speed="4" waitStart="0"/>
+					<item moveDir="LEFT" speed="3" waitStart="1"/>
+					<item moveDir="LEFT" speed="3" waitStart="2"/>
+					<!-- to RIGHT -->
+					<item moveDir="RIGHT" speed="4" waitStart="0"/>
+					<item moveDir="RIGHT" speed="4" waitStart="1"/>
+					<item moveDir="RIGHT" speed="3" waitStart="2"/>
+					<!-- to LEFT  -->
+					<item moveDir="LEFT" speed="4" waitStart="1"/>
+					<item moveDir="LEFT" speed="6" waitStart="7"/>
+					<item moveDir="LEFT" speed="5" waitStart="8"/>
+					<!-- to RIGHT -->
+					<item moveDir="RIGHT" speed="6" waitStart="5"/>
+					
+				</config>
+				<!-- Day 5  -->
+				<config>
+					<!-- to LEFT  -->
+					<item moveDir="LEFT" speed="4" waitStart="0"/>
+					<item moveDir="LEFT" speed="3" waitStart="1"/>
+					<item moveDir="LEFT" speed="3" waitStart="2"/>
+					<!-- to RIGHT -->
+					<item moveDir="RIGHT" speed="4" waitStart="0"/>
+					<item moveDir="RIGHT" speed="4" waitStart="1"/>
+					<item moveDir="RIGHT" speed="3" waitStart="2"/>
+					<!-- to LEFT  -->
+					<item moveDir="LEFT" speed="4" waitStart="1"/>
+					<item moveDir="LEFT" speed="6" waitStart="7"/>
+					<item moveDir="LEFT" speed="4" waitStart="7"/>
+					<!-- to RIGHT -->
+					<item moveDir="RIGHT" speed="6" waitStart="5"/>
+					<item moveDir="RIGHT" speed="5" waitStart="7"/>
+					<item moveDir="RIGHT" speed="6" waitStart="10"/>
+				</config>
+			</itemsMobiles>
+			<grid>
+				<row access="7,8,9,10">
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+				</row>
+				<row out="1" access="all" cTypeAll=""/>
+				<row out="1" access="all" cTypeAll=""/>
+				<row out="1" access="all" cTypeAll=""/>
+				<row out="1" access="all" cTypeAll=""/>
+				<row out="1" access="all" cTypeAll=""/>
+				<row out="1" access="all" cTypeAll=""/>
+				<row out="1" access="all" cTypeAll=""/>
+				<row out="1" access="all" cTypeAll=""/>
+			</grid>
+			<!-- Items Bonus  -->
+			<itemsBonus>
+				<!-- Day 1  -->
+				<config>
+					<item cellY="9" cellX="11" bType="skate"/>
+					<item cellY="3" cellX="4" bType="skyPiece_grass" timeDrop="1"/>
+					<item cellY="5" cellX="8" bType="skyPiece_road" timeDrop="2"/>
+					<item cellY="7" cellX="4" bType="skyPiece_road" timeDrop="3"/>
+				</config>
+				<!-- Day 2  -->
+				<config>
+					<item cellY="3" cellX="4" bType="skyPiece_grass" timeDrop="4"/>
+					<item cellY="7" cellX="4" bType="skyPiece_road" timeDrop="2"/>
+				</config>
+				<!-- Day 3  -->
+				<config>
+					<item cellY="5" cellX="8" bType="skyPiece_road" timeDrop="3"/>
+					<item cellY="7" cellX="4" bType="skyPiece_road" timeDrop="2"/>
+					<item cellY="6" cellX="10" bType="skyPiece_road" timeDrop="4"/>
+				</config>
+				<!-- Day 4  -->
+				<config>
+					<item cellY="3" cellX="4" bType="skyPiece_grass" timeDrop="1"/>
+					<item cellY="6" cellX="10" bType="skyPiece_road" timeDrop="4"/>
+				</config>
+				<!-- Day 5  -->
+				<config>
+					<item cellY="8" cellX="9" bType="skate"/>
+					<item cellY="6" cellX="10" bType="skyPiece_road" timeDrop="4"/>
+					<item cellY="3" cellX="9" bType="skyPiece_grass" timeDrop="3"/>
+				</config>
+			</itemsBonus>
+		</screen>
+		<!-- Screen 2  -->
+		<screen playerStartY="5" playerStartX="11" goBus="DOWN">
+			<itemsMobiles>
+				<!-- Day 1  -->
+				<config>
+					<!-- to LEFT  -->
+					<item moveDir="LEFT" speed="4" waitStart="1"/>
+					<item moveDir="LEFT" speed="6" waitStart="5"/>
+					<item moveDir="LEFT" speed="5" waitStart="7"/>
+					<!-- to RIGHT -->
+					<item moveDir="RIGHT" speed="4" waitStart="1"/>
+					<item moveDir="RIGHT" speed="3" waitStart="2"/>
+					<item moveDir="RIGHT" speed="6" waitStart="10"/>
+
+				</config>
+				<!-- Day 2  -->
+				<config>
+					<!-- to LEFT  -->
+					<item moveDir="LEFT" speed="4" waitStart="0"/>
+					<item moveDir="LEFT" speed="4" waitStart="1"/>
+					<item moveDir="LEFT" speed="6" waitStart="6"/>
+					<!-- to RIGHT -->
+					<item moveDir="RIGHT" speed="4" waitStart="0"/>
+					<item moveDir="RIGHT" speed="4" waitStart="1"/>
+					<item moveDir="RIGHT" speed="3" waitStart="2"/>
+					<!-- to LEFT  -->
+					<item moveDir="LEFT" speed="5" waitStart="7"/>
+					<item moveDir="LEFT" speed="6" waitStart="9"/>
+				</config>
+				<!-- Day 3  -->
+				<config>
+					<!-- to LEFT  -->
+					<item moveDir="LEFT" speed="4" waitStart="0"/>
+					<item moveDir="LEFT" speed="3" waitStart="1"/>
+					<item moveDir="LEFT" speed="3" waitStart="2"/>
+					<!-- to RIGHT -->
+					<item moveDir="RIGHT" speed="4" waitStart="0"/>
+					<item moveDir="RIGHT" speed="4" waitStart="1"/>
+					<item moveDir="RIGHT" speed="3" waitStart="2"/>
+					<!-- to LEFT  -->
+					<item moveDir="LEFT" speed="4" waitStart="1"/>
+					<item moveDir="LEFT" speed="6" waitStart="5"/>
+				</config>
+				<!-- Day 4  -->
+				<config>
+					<!-- to LEFT  -->
+					<item moveDir="LEFT" speed="4" waitStart="0"/>
+					<item moveDir="LEFT" speed="3" waitStart="1"/>
+					<item moveDir="LEFT" speed="4" waitStart="5"/>
+					<!-- to RIGHT -->
+					<item moveDir="RIGHT" speed="4" waitStart="0"/>
+					<item moveDir="RIGHT" speed="3" waitStart="2"/>
+					<item moveDir="RIGHT" speed="6" waitStart="10"/>
+					<!-- to LEFT  -->
+					<item moveDir="LEFT" speed="6" waitStart="5"/>
+					<item moveDir="LEFT" speed="5" waitStart="7"/>
+					<item moveDir="LEFT" speed="5" waitStart="8"/>
+				</config>
+				<!-- Day 5  -->
+				<config>
+					<!-- to LEFT  -->
+					<item moveDir="LEFT" speed="4" waitStart="0"/>
+					<item moveDir="LEFT" speed="3" waitStart="1"/>
+					<item moveDir="LEFT" speed="3" waitStart="2"/>
+					<!-- to RIGHT -->
+					<item moveDir="RIGHT" speed="4" waitStart="0"/>
+					<item moveDir="RIGHT" speed="4" waitStart="1"/>
+					<item moveDir="RIGHT" speed="3" waitStart="2"/>
+					<!-- to LEFT  -->
+					<item moveDir="LEFT" speed="4" waitStart="1"/>
+					<item moveDir="LEFT" speed="6" waitStart="5"/>
+					<item moveDir="LEFT" speed="5" waitStart="7"/>
+					<!-- to RIGHT -->
+					<item moveDir="RIGHT" speed="6" waitStart="5"/>
+					<item moveDir="RIGHT" speed="5" waitStart="7"/>
+					<item moveDir="RIGHT" speed="6" waitStart="9"/>
+				</config>
+			</itemsMobiles>
+			<grid>
+				<row access="3,4,5,6">
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType="grass" cellSpeed="2"/>
+				</row>
+				<row access="all" cTypeAll=""/>
+				<row access="all" cTypeAll=""/>
+				<row access="all" cTypeAll=""/>
+				<row access="all" cTypeAll=""/>
+				<row access="all" cTypeAll=""/>
+				<row access="all" cTypeAll=""/>
+				<row access="all" cTypeAll=""/>
+				<row out="3,4,5" access="all" cTypeAll=""/>
+			</grid>
+			<!-- Items Bonus  -->
+			<itemsBonus>
+				<!-- Day 1  -->
+				<config>
+					<item cellY="4" cellX="8" bType="skyPiece_road" timeDrop="3"/>
+					<item cellY="4" cellX="9" bType="skyPiece_road" timeDrop="2"/>
+				</config>
+				<!-- Day 2  -->
+				<config>
+					<item cellY="6" cellX="10" bType="skate"/>
+					<item cellY="4" cellX="8" bType="skyPiece_road" timeDrop="2"/>
+
+					<item cellY="4" cellX="10" bType="skyPiece_road" timeDrop="3"/>
+				</config>
+				<!-- Day 3  -->
+				<config>
+					<item cellY="4" cellX="8" bType="skyPiece_road" timeDrop="2"/>
+					<item cellY="4" cellX="9" bType="skyPiece_road" timeDrop="3"/>
+				</config>
+				<!-- Day 4  -->
+				<config>
+					<item cellY="5" cellX="1" bType="skate"/>
+					<item cellY="4" cellX="10" bType="skyPiece_road" timeDrop="3"/>
+				</config>
+				<!-- Day 5  -->
+				<config>
+					<item cellY="8" cellX="7" bType="skyPiece_grass" timeDrop="4"/>
+				</config>
+			</itemsBonus>
+		</screen>
+		<!-- Screen 3  -->
+		<screen playerStartY="1" playerStartX="4" manHoleY="1" manHoleX="4" goBus="RIGHT">
+			<itemsMobiles>
+				<!-- Day 1  -->
+				<config>
+					<!-- to LEFT  -->
+					<item moveDir="LEFT" speed="4" waitStart="0"/>
+					<item moveDir="LEFT" speed="3" waitStart="1"/>
+					<item moveDir="LEFT" speed="3" waitStart="2"/>
+					<!-- to RIGHT -->
+					<item moveDir="RIGHT" speed="3" waitStart="2"/>
+					<item moveDir="RIGHT" speed="6" waitStart="10"/>
+					<item moveDir="RIGHT" speed="3" waitStart="4"/>			
+				</config>
+				<!-- Day 2  -->
+				<config>
+					<!-- to LEFT  -->
+					<item moveDir="LEFT" speed="4" waitStart="1"/>
+					<item moveDir="LEFT" speed="6" waitStart="5"/>
+					<item moveDir="LEFT" speed="5" waitStart="7"/>
+					<!-- to RIGHT -->
+					<item moveDir="RIGHT" speed="4" waitStart="0"/>
+					<item moveDir="RIGHT" speed="5" waitStart="7"/>
+					<item moveDir="RIGHT" speed="6" waitStart="9"/>
+				</config>
+				<!-- Day 3  -->
+				<config>
+					<!-- to LEFT  -->
+					<item moveDir="LEFT" speed="4" waitStart="0"/>
+					<item moveDir="LEFT" speed="3" waitStart="1"/>
+					<item moveDir="LEFT" speed="3" waitStart="2"/>
+					<!-- to RIGHT -->
+					<item moveDir="RIGHT" speed="4" waitStart="0"/>
+					<item moveDir="RIGHT" speed="4" waitStart="1"/>
+					<item moveDir="RIGHT" speed="4" waitStart="2"/>
+					<!-- to LEFT  -->
+					<item moveDir="LEFT" speed="6" waitStart="5"/>
+					<item moveDir="LEFT" speed="5" waitStart="7"/>
+				</config>
+				<!-- Day 4  -->
+				<config>
+					<!-- to LEFT  -->
+					<item moveDir="LEFT" speed="4" waitStart="0"/>
+					<item moveDir="LEFT" speed="3" waitStart="1"/>
+					<item moveDir="LEFT" speed="3" waitStart="2"/>
+					<!-- to RIGHT -->
+					<item moveDir="RIGHT" speed="4" waitStart="0"/>
+					<item moveDir="RIGHT" speed="4" waitStart="1"/>
+					<item moveDir="RIGHT" speed="3" waitStart="2"/>
+					<!-- to LEFT  -->
+					<item moveDir="LEFT" speed="4" waitStart="1"/>
+					<item moveDir="LEFT" speed="5" waitStart="7"/>
+					<item moveDir="LEFT" speed="6" waitStart="9"/>
+					<!-- to RIGHT -->
+					<item moveDir="RIGHT" speed="6" waitStart="5"/>
+					
+				</config>
+				<!-- Day 5  -->
+				<config>
+					<!-- to LEFT  -->
+					<item moveDir="LEFT" speed="4" waitStart="0"/>
+					<item moveDir="LEFT" speed="3" waitStart="1"/>
+					<item moveDir="LEFT" speed="3" waitStart="2"/>
+					<!-- to RIGHT -->
+					<item moveDir="RIGHT" speed="4" waitStart="0"/>
+					<item moveDir="RIGHT" speed="4" waitStart="1"/>
+					<item moveDir="RIGHT" speed="3" waitStart="2"/>
+					<!-- to LEFT  -->
+					<item moveDir="LEFT" speed="4" waitStart="1"/>
+					<item moveDir="LEFT" speed="6" waitStart="5"/>
+					<item moveDir="LEFT" speed="5" waitStart="7"/>
+					<!-- to RIGHT -->
+					<item moveDir="RIGHT" speed="6" waitStart="5"/>
+					<item moveDir="RIGHT" speed="5" waitStart="7"/>
+					<item moveDir="RIGHT" speed="6" waitStart="9"/>					
+				</config>
+			</itemsMobiles>
+			<grid>
+				<!-- Row 1  -->
+				<row access="2,3,4,5">
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+				</row>
+				<row out="11" access="all" cTypeAll=""/>
+				<row out="11" access="all" cTypeAll=""/>
+				<row out="11" access="all" cTypeAll=""/>
+				<row out="11" access="all" cTypeAll=""/>
+				<row out="11" access="all" cTypeAll=""/>
+				<row out="11" access="all" cTypeAll=""/>
+				<row out="11" access="all" cTypeAll=""/>
+				<row out="11" access="all" cTypeAll=""/>
+			</grid>
+			<!-- Items Bonus  -->
+			<itemsBonus>
+				<!-- Day 1  -->
+				<config>
+					<item cellY="3" cellX="4" bType="skyPiece_road" timeDrop="1"/>
+					<item cellY="3" cellX="9" bType="skyPiece_road" timeDrop="3"/>
+				</config>
+				<!-- Day 2  -->
+				<config>
+					<item cellY="3" cellX="4" bType="skyPiece_road" timeDrop="2"/>
+					<item cellY="7" cellX="5" bType="skyPiece_road" timeDrop="4"/>
+				</config>
+				<!-- Day 3  -->
+				<config>
+					<item cellY="7" cellX="5" bType="skyPiece_road" timeDrop="4"/>
+				</config>
+				<!-- Day 4  -->
+				<config>
+					<item cellY="3" cellX="4" bType="skyPiece_road" timeDrop="4"/>
+				</config>
+				<!-- Day 5  -->
+				<config>
+					<item cellY="8" cellX="8" bType="skyPiece_road" timeDrop="3"/>
+				</config>
+			</itemsBonus>
+		</screen>
+		<!-- Screen 4  -->
+		<screen playerStartY="5" playerStartX="1" goBus="DOWN">
+			<itemsMobiles>
+				<!-- Day 1  -->
+				<config>
+					<!-- to LEFT  -->
+					<item moveDir="LEFT" speed="4" waitStart="0"/>
+					<item moveDir="LEFT" speed="4" waitStart="1"/>
+					<item moveDir="LEFT" speed="3" waitStart="2"/>
+					<!-- to RIGHT -->
+					<item moveDir="RIGHT" speed="4" waitStart="0"/>
+				</config>
+				<!-- Day 2  -->
+				<config>
+					<!-- to LEFT  -->
+					<item moveDir="LEFT" speed="4" waitStart="0"/>
+					<item moveDir="LEFT" speed="4" waitStart="1"/>
+					<item moveDir="LEFT" speed="6" waitStart="5"/>
+					<!-- to RIGHT -->
+					<item moveDir="RIGHT" speed="3" waitStart="2"/>
+					<item moveDir="RIGHT" speed="6" waitStart="10"/>
+					<item moveDir="RIGHT" speed="6" waitStart="11"/>
+				</config>
+				<!-- Day 3  -->
+				<config>
+					<!-- to LEFT  -->
+					<item moveDir="LEFT" speed="4" waitStart="0"/>
+					<item moveDir="LEFT" speed="3" waitStart="1"/>
+					<item moveDir="LEFT" speed="3" waitStart="2"/>
+					<!-- to RIGHT -->
+					<item moveDir="RIGHT" speed="4" waitStart="0"/>
+					<item moveDir="RIGHT" speed="4" waitStart="1"/>
+					<item moveDir="RIGHT" speed="3" waitStart="2"/>
+					<!-- to LEFT  -->
+					<item moveDir="LEFT" speed="4" waitStart="1"/>
+					<item moveDir="LEFT" speed="6" waitStart="7"/>
+				</config>
+				<!-- Day 4  -->
+				<config>
+					<!-- to LEFT  -->
+					<item moveDir="LEFT" speed="4" waitStart="0"/>
+					<item moveDir="LEFT" speed="3" waitStart="1"/>
+					<item moveDir="LEFT" speed="3" waitStart="3"/>
+					<!-- to RIGHT -->
+					<item moveDir="RIGHT" speed="4" waitStart="0"/>
+					<item moveDir="RIGHT" speed="4" waitStart="1"/>
+					<item moveDir="RIGHT" speed="3" waitStart="2"/>
+					<!-- to LEFT  -->
+					<item moveDir="LEFT" speed="6" waitStart="5"/>
+					<item moveDir="LEFT" speed="5" waitStart="7"/>
+					<item moveDir="LEFT" speed="6" waitStart="9"/>
+					<!-- to RIGHT -->
+					<item moveDir="RIGHT" speed="6" waitStart="5"/>
+					<item moveDir="RIGHT" speed="5" waitStart="7"/>
+				</config>
+				<!-- Day 5  -->
+				<config>
+					<!-- to LEFT  -->
+					<item moveDir="LEFT" speed="4" waitStart="0"/>
+					<item moveDir="LEFT" speed="3" waitStart="1"/>
+					<item moveDir="LEFT" speed="3" waitStart="2"/>
+					<!-- to RIGHT -->
+					<item moveDir="RIGHT" speed="4" waitStart="0"/>
+					<item moveDir="RIGHT" speed="4" waitStart="1"/>
+					<item moveDir="RIGHT" speed="3" waitStart="2"/>
+					<!-- to LEFT  -->
+					<item moveDir="LEFT" speed="4" waitStart="1"/>
+					<item moveDir="LEFT" speed="6" waitStart="8"/>
+					<item moveDir="LEFT" speed="5" waitStart="9"/>
+					<!-- to RIGHT -->
+					<item moveDir="RIGHT" speed="6" waitStart="5"/>
+					<item moveDir="RIGHT" speed="5" waitStart="7"/>
+					<item moveDir="RIGHT" speed="6" waitStart="9"/>
+				</config>
+			</itemsMobiles>
+			<grid>
+				<!-- Row 1  -->
+				<row access="none"/>
+				<row access="all" cTypeAll=""/>
+				<row access="all" cTypeAll=""/>
+				<row access="all" cTypeAll=""/>
+				<row access="all" cTypeAll=""/>
+				<row access="all" cTypeAll=""/>
+				<row access="all" cTypeAll=""/>
+				<row access="all" cTypeAll=""/>
+				<row out="8,9,10" access="all" cTypeAll=""/>
+			</grid>
+			<!-- Items Bonus  -->
+			<itemsBonus>
+				<!-- Day 1  -->
+				<config>
+					<item cellY="3" cellX="7" bType="skate"/>
+					<item cellY="4" cellX="4" bType="skyPiece_road" timeDrop="4"/>
+					<item cellY="7" cellX="2" bType="skyPiece_road" timeDrop="2"/>
+				</config>
+				<!-- Day 2  -->
+				<config>
+					<item cellY="3" cellX="3" bType="timefreezy_road"/>
+					<item cellY="4" cellX="4" bType="skyPiece_road" timeDrop="3"/>
+					<item cellY="8" cellX="9" bType="skyPiece_road" timeDrop="2"/>
+				</config>
+				<!-- Day 3  -->
+				<config>
+					<item cellY="7" cellX="2" bType="skyPiece_road" timeDrop="4"/>
+					<item cellY="8" cellX="9" bType="skyPiece_road" timeDrop="2"/>
+				</config>
+				<!-- Day 4  -->
+				<config>
+					<item cellY="3" cellX="3" bType="skate"/>
+					<item cellY="7" cellX="2" bType="skyPiece_road" timeDrop="4"/>
+				</config>
+				<!-- Day 5  -->
+				<config>
+					<item cellY="8" cellX="8" bType="skyPiece_road" timeDrop="3"/>
+				</config>
+			</itemsBonus>
+		</screen>
+	</environment>
+	<!-- ENVIRONNEMENT 3 : Park  -->
+	<environment tileY="9" tileX="11">
+		<!-- Screen 1  -->
+		<screen playerStartY="1" playerStartX="9" goBus="DOWN">
+			<itemsMobiles/>
+			<grid>
+				<!-- Row 1  -->
+				<row access="6,7,8,9,10">
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+				</row>
+				<!-- Row 2  -->
+				<row access="3,4,5,6,7,8,9,10">
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+				</row>
+				<!-- Row 3  -->
+				<row access="all">
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+				</row>
+				<!-- Row 4  -->
+				<row out= "1" access="all">
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+				</row>
+				<!-- Row 5  -->
+				<row out= "1" access="all">
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+				</row>
+				<!-- Row 6  -->
+				<row out= "1" access="1,2,3,4,5,6,7,8,9,10">
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+				</row>
+				<!-- Row 7  -->
+				<row out= "1" access="1,2,3,4,5,6,7,8,9,10">
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+				</row>
+				<!-- Row 8  -->
+				<row access="1,2,3,4,5,6,7,8,9,10">
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+				</row>
+				<!-- Row 9  -->
+				<row out="4,5,8,9,10" access="4,5,8,9,10" outTo="4">
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+				</row>
+			</grid>
+			<!-- Items Bonus  -->
+			<itemsBonus>
+				<!-- Day 1  -->
+				<config>
+					<item cellY="3" cellX="5" bType="timefreezy_grass"/>
+					<item cellY="4" cellX="10" bType="skyPiece_road" timeDrop="3"/>
+					<item cellY="6" cellX="3" bType="skyPiece_grass" timeDrop="2"/>
+					<item cellY="3" cellX="3" bType="skyPiece_grass" timeDrop="1"/>
+				</config>
+				<!-- Day 2  -->
+				<config>
+					<item cellY="4" cellX="10" bType="skyPiece_road" timeDrop="1"/>
+					<item cellY="6" cellX="3" bType="skyPiece_grass" timeDrop="3"/>
+					<item cellY="3" cellX="3" bType="skyPiece_grass" timeDrop="2"/>
+				</config>
+				<!-- Day 3  -->
+				<config>
+					<item cellY="8" cellX="10" bType="timefreezy_road"/>
+					<item cellY="4" cellX="10" bType="skyPiece_road" timeDrop="2"/>
+					<item cellY="6" cellX="3" bType="skyPiece_grass" timeDrop="1"/>
+					<item cellY="3" cellX="3" bType="skyPiece_grass" timeDrop="3"/>
+					<item cellY="7" cellX="9" bType="skyPiece_road" timeDrop="2"/>
+				</config>
+				<!-- Day 4  -->
+				<config>
+					<item cellY="4" cellX="10" bType="skyPiece_road" timeDrop="2"/>
+					<item cellY="6" cellX="3" bType="skyPiece_grass" timeDrop="4"/>
+					<item cellY="3" cellX="3" bType="skyPiece_grass" timeDrop="1"/>
+					<item cellY="7" cellX="9" bType="skyPiece_road" timeDrop="3"/>
+				</config>
+				<!-- Day 5  -->
+				<config>
+					<item cellY="4" cellX="10" bType="skyPiece_road" timeDrop="2"/>
+					<item cellY="6" cellX="3" bType="skyPiece_grass" timeDrop="3"/>
+					<item cellY="3" cellX="3" bType="skyPiece_grass" timeDrop="4"/>
+					<item cellY="7" cellX="9" bType="skyPiece_road" timeDrop="2"/>
+					<item cellY="6" cellX="6" bType="skyPiece_grass" timeDrop="1"/>
+				</config>
+			</itemsBonus>
+			<!-- Shortcut  -->
+			<shortcut>
+				<!-- Day 1  -->
+				<config>
+					<item frame="PasLa" sNom="item14"/>
+				</config>
+				<!-- Day 2  -->
+				<config>
+			
+				</config>
+				<!-- Day 3  -->
+				<config>
+					
+				</config>
+				<!-- Day 4  -->
+				<config>
+					
+				</config>
+				<!-- Day 5  -->
+				<config>
+					
+				</config>
+			</shortcut>
+		</screen>
+		<!-- Screen 2  -->
+		<screen playerStartY="6" playerStartX="11" goBus="none">
+			<itemsMobiles/>
+			<grid>
+				<!-- Row 1  -->
+				<row access="2,3,4" cTypeAll=""/>
+				<!-- Row 2  -->
+				<row access="1,2,3,4,5,6,7,8,9,10">
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+				</row>
+				<!-- Row 3  -->
+				<row access="all">
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+				</row>
+				<!-- Row 4  -->
+				<row access="all">
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+				</row>
+				<!-- Row 5  -->
+				<row access="all">
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="gravel" cellSpeed="3"/>
+				</row>
+				<!-- Row 6  -->
+				<row access="all">
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="gravel" cellSpeed="3"/>
+				</row>
+				<!-- Row 7  -->
+				<row access="all">
+					<cell cType="grass" cellSpeed="2"/>					
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="gravel" cellSpeed="3"/>					
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+				</row>
+				<!-- Row 8  -->
+				<row access="all">
+					<cell cType="grass" cellSpeed="2"/>					
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="gravel" cellSpeed="3"/>					
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+				</row>
+				<!-- Row 9  -->
+				<row out= "3,4,5,6,7,8,9,10" access="3,4,5,6,7,8,9,10">
+					<cell cType="grass" cellSpeed="2"/>					
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="gravel" cellSpeed="3"/>					
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+				</row>
+			</grid>
+			<!-- Items Bonus  -->
+			<itemsBonus>
+				<!-- Day 1  -->
+				<config>
+					<item cellY="2" cellX="3" bType="skyPiece_road" timeDrop="2"/>
+					<item cellY="3" cellX="7" bType="skyPiece_grass" timeDrop="3"/>
+					<item cellY="7" cellX="4" bType="skyPiece_grass" timeDrop="1"/>
+				</config>
+				<!-- Day 2  -->
+				<config>
+					<item cellY="9" cellX="5" bType="timefreezy_grass"/>
+					<item cellY="2" cellX="3" bType="skyPiece_road" timeDrop="4"/>
+					<item cellY="3" cellX="7" bType="skyPiece_grass" timeDrop="2"/>
+					<item cellY="7" cellX="4" bType="skyPiece_grass" timeDrop="1"/>
+				</config>
+				<!-- Day 3  -->
+				<config>
+					<item cellY="2" cellX="3" bType="skyPiece_road" timeDrop="2"/>
+					<item cellY="3" cellX="7" bType="skyPiece_grass" timeDrop="1"/>
+					<item cellY="7" cellX="4" bType="skyPiece_grass" timeDrop="3"/>
+					<item cellY="7" cellX="11" bType="skyPiece_road" timeDrop="4"/>
+				</config>
+				<!-- Day 4  -->
+				<config>
+					<item cellY="2" cellX="3" bType="skyPiece_road" timeDrop="4"/>
+					<item cellY="4" cellX="7" bType="skyPiece_grass" timeDrop="3"/>
+					<item cellY="7" cellX="4" bType="skyPiece_grass" timeDrop="1"/>
+					<item cellY="7" cellX="11" bType="skyPiece_road" timeDrop="2"/>
+				</config>
+				<!-- Day 5  -->
+				<config>
+					<item cellY="2" cellX="3" bType="timefreezy_road"/>
+					<item cellY="5" cellX="7" bType="skyPiece_grass" timeDrop="1"/>
+					<item cellY="7" cellX="4" bType="skyPiece_grass" timeDrop="3"/>
+					<item cellY="7" cellX="11" bType="skyPiece_road" timeDrop="4"/>
+					<item cellY="6" cellX="6" bType="skyPiece_grass" timeDrop="5"/>
+				</config>
+			</itemsBonus>
+		</screen>
+		<!-- Screen 3  -->
+		<screen playerStartY="1" playerStartX="7" goBus="none">
+			<itemsMobiles/>
+			<grid>
+				<!-- Row 1  -->
+				<row access="2,3,4,5,6,7,8,9,10">
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+				</row>
+				<!-- Row 2  -->
+				<row access="all">
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+				</row>
+				<!-- Row 3  -->
+				<row out="11" access="all">
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+				</row>
+				<!-- Row 4  -->
+				<row out="11" access="all">
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="gravel" cellSpeed="3"/>
+				</row>
+				<!-- Row 5  -->
+				<row out="11" access="all">
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="gravel" cellSpeed="3"/>
+				</row>
+				<!-- Row 6  -->
+				<row out="11" access="all">
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+				</row>
+				<!-- Row 7  -->
+				<row access="1,2,3,4,5,6,7,8">
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="gravel" cellSpeed="3"/>
+				</row>
+				<!-- Row 8  -->
+				<row access="1,2,3,4,5,6,7,8">
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="gravel" cellSpeed="3"/>
+				</row>
+				<!-- Row 9  -->
+				<row access="1,2,3,4">
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+				</row>
+			</grid>
+			<!-- Items Bonus  -->
+			<itemsBonus>
+				<!-- Day 1  -->
+				<config>
+					<item cellY="4" cellX="3" bType="skyPiece_grass" timeDrop="2"/>
+					<item cellY="3" cellX="4" bType="skyPiece_grass" timeDrop="3"/>
+					<item cellY="7" cellX="7" bType="skyPiece_grass" timeDrop="1"/>
+				</config>
+				<!-- Day 2  -->
+				<config>
+					<item cellY="4" cellX="3" bType="skyPiece_grass" timeDrop="1"/>
+					<item cellY="3" cellX="4" bType="skyPiece_grass" timeDrop="3"/>
+					<item cellY="7" cellX="7" bType="skyPiece_grass" timeDrop="4"/>
+				</config>
+				<!-- Day 3  -->
+				<config>
+					<item cellY="4" cellX="3" bType="skyPiece_grass" timeDrop="2"/>
+					<item cellY="3" cellX="4" bType="skyPiece_grass" timeDrop="4"/>
+					<item cellY="7" cellX="7" bType="skyPiece_grass" timeDrop="1"/>
+					<item cellY="1" cellX="1" bType="skyPiece_grass" timeDrop="3"/>
+				</config>
+				<!-- Day 4  -->
+				<config>
+					<item cellY="4" cellX="3" bType="skyPiece_grass" timeDrop="4"/>
+					<item cellY="3" cellX="4" bType="skyPiece_grass" timeDrop="3"/>
+					<item cellY="7" cellX="7" bType="skyPiece_grass" timeDrop="2"/>
+					<item cellY="1" cellX="1" bType="skyPiece_grass" timeDrop="1"/>
+				</config>
+				<!-- Day 5  -->
+				<config>
+					<item cellY="4" cellX="3" bType="skyPiece_grass" timeDrop="4"/>
+					<item cellY="3" cellX="4" bType="skyPiece_grass" timeDrop="2"/>
+					<item cellY="7" cellX="7" bType="skyPiece_grass" timeDrop="3"/>
+					<item cellY="1" cellX="1" bType="skyPiece_grass" timeDrop="1"/>
+					<item cellY="2" cellX="5" bType="skyPiece_grass" timeDrop="4"/>
+				</config>
+			</itemsBonus>
+		</screen>
+		<!-- Screen 4  -->
+		<screen playerStartY="7" playerStartX="1" manHoleY="2" manHoleX="9" shortCutY="1" shortCutX="8" goBus="DOWN">			
+			<itemsMobiles/>
+			<grid>
+				<!-- Row 1  -->
+				<row access="2,3,4,5,6,7,8,9,10">
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+				</row>
+				<!-- Row 2  -->
+				<row access="1,2,3,4,5,6,7,8,9,10">
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+				</row>
+				<!-- Row 3  -->
+				<row access="1,2,3,4,5,6,7,8,9,10">
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+				</row>
+				<!-- Row 4  -->
+				<row access="1,2,3,4,5,6,7,8,9,10">
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="gravel" cellSpeed="3"/>					
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+				</row>
+				<!-- Row 5  -->
+				<row access="all">
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="gravel" cellSpeed="3"/>					
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+				</row>
+				<!-- Row 6  -->
+				<row access="4,5,6,7,8,9,10,11">
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="gravel" cellSpeed="3"/>					
+					<cell cType="gravel" cellSpeed="3"/>					
+					<cell cType="gravel" cellSpeed="3"/>					
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+				</row>
+				<!-- Row 7  -->
+				<row access="4,5,6,7,8,9,10,11">
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="gravel" cellSpeed="3"/>					
+					<cell cType="gravel" cellSpeed="3"/>					
+					<cell cType="gravel" cellSpeed="3"/>					
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+				</row>
+				<!-- Row 8  -->
+				<row access="4,5,6,7,8,9,10">
+					<cell cType="grass" cellSpeed="2"/>					
+					<cell cType="grass" cellSpeed="2"/>					
+					<cell cType="grass" cellSpeed="2"/>					
+					<cell cType="grass" cellSpeed="2"/>					
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+				</row>
+				<!-- Row 9  -->
+				<row out= "8,9,10" access="8,9,10" cTypeAll=""/>					
+			</grid>
+			<!-- Items Bonus  -->
+			<itemsBonus>
+				<!-- Day 1  -->
+				<config>
+					<item cellY="2" cellX="10" bType="timefreezy_road"/>
+					<item cellY="7" cellX="5" bType="skyPiece_grass" timeDrop="2"/>
+					<item cellY="2" cellX="5" bType="skyPiece_grass" timeDrop="3"/>
+					<item cellY="6" cellX="7" bType="skyPiece_grass" timeDrop="6"/>
+				</config>
+				<!-- Day 2  -->
+				<config>
+					<item cellY="1" cellX="10" bType="timefreezy_road"/>
+					<item cellY="7" cellX="5" bType="skyPiece_grass" timeDrop="2"/>
+					<item cellY="2" cellX="5" bType="skyPiece_grass" timeDrop="3"/>
+					<item cellY="6" cellX="7" bType="skyPiece_grass" timeDrop="5"/>
+				</config>
+				<!-- Day 3  -->
+				<config>
+					<item cellY="1" cellX="10" bType="skate"/>
+					<item cellY="7" cellX="5" bType="skyPiece_grass" timeDrop="2"/>
+					<item cellY="2" cellX="5" bType="skyPiece_grass" timeDrop="3"/>
+					<item cellY="6" cellX="7" bType="skyPiece_grass" timeDrop="5"/>
+					<item cellY="7" cellX="9" bType="skyPiece_road" timeDrop="6"/>
+				</config>
+				<!-- Day 4  -->
+				<config>
+					<item cellY="1" cellX="10" bType="skate"/>
+					<item cellY="7" cellX="5" bType="skyPiece_grass" timeDrop="2"/>
+					<item cellY="2" cellX="5" bType="skyPiece_grass" timeDrop="3"/>
+					<item cellY="6" cellX="7" bType="skyPiece_grass" timeDrop="4"/>
+					<item cellY="7" cellX="9" bType="skyPiece_road" timeDrop="1"/>
+				</config>
+				<!-- Day 5  -->
+				<config>
+					<item cellY="1" cellX="10" bType="timefreezy_road"/>
+					<item cellY="7" cellX="5" bType="skyPiece_grass" timeDrop="4"/>
+					<item cellY="2" cellX="5" bType="skyPiece_grass" timeDrop="2"/>
+					<item cellY="6" cellX="7" bType="skyPiece_grass" timeDrop="3"/>
+					<item cellY="7" cellX="9" bType="skyPiece_road" timeDrop="1"/>
+					<item cellY="3" cellX="2" bType="skyPiece_grass" timeDrop="5"/>
+				</config>
+			</itemsBonus>
+		</screen>
+	</environment>
+	<!-- ENVIRONNEMENT 4 : TownHall  -->
+	<environment tileY="9" tileX="11">
+		<!-- Screen 1  -->
+		<screen playerStartY="1" playerStartX="8" goBus="LEFT">
+			<!-- Cars  -->
+			<itemsMobiles>
+				<!-- Day 1  -->
+				<config>
+					<item moveDir="LEFT" speed="4" waitStart="2"/>
+				</config>
+				<!-- Day 2  -->
+				<config>
+					<item moveDir="LEFT" speed="4" waitStart="2"/>
+					<item moveDir="LEFT" speed="6" waitStart="6"/>
+				</config>
+				<!-- Day 3  -->
+				<config>
+					<item moveDir="LEFT" speed="4" waitStart="0"/>
+					<item moveDir="LEFT" speed="6" waitStart="4"/>
+				</config>
+				<!-- Day 4  -->
+				<config>
+					<item moveDir="LEFT" speed="4" waitStart="0"/>
+					<item moveDir="LEFT" speed="5" waitStart="4"/>
+					<item moveDir="RIGHT" speed="6" waitStart="5"/>
+				</config>
+				<!-- Day 5  -->
+				<config>
+					<item moveDir="LEFT" speed="5" waitStart="1"/>
+					<item moveDir="LEFT" speed="5" waitStart="4"/>
+					<item moveDir="RIGHT" speed="6" waitStart="5"/>
+				</config>
+			</itemsMobiles>
+			<grid>
+				<!-- Row 1  -->
+				<row access="8,9,10" cTypeAll=""/>
+				<!-- Row 2  -->
+				<row access="4,5,8,9,10">
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+				</row>	
+				<!-- Row 3  -->
+				<row access="1,2,4,5,8,9,10">
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+				</row>	
+				<!-- Row 4  -->
+				<row access="1,2,4,5,8,9,10">
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+				</row>
+				<row out="1" access="all" cTypeAll=""/>
+				<row out="1" access="all" cTypeAll=""/>
+				<row out="1" access="all" cTypeAll=""/>
+				<row access="none"/>
+				<row access="none"/>
+			</grid>
+			<!-- Items Bonus  -->
+			<itemsBonus>
+				<!-- Day 1  -->
+				<config>
+					<item cellY="2" cellX="9" bType="skate"/>
+					<item cellY="3" cellX="5" bType="timefreezy_grass"/>
+					<item cellY="7" cellX="4" bType="skyPiece_grass" timeDrop="2"/>
+					<item cellY="4" cellX="5" bType="skyPiece_grass" timeDrop="3"/>
+					<item cellY="7" cellX="7" bType="skyPiece_grass" timeDrop="1"/>
+				</config>
+				<!-- Day 2  -->
+				<config>
+					<item cellY="3" cellX="5" bType="timefreezy_grass"/>
+					<item cellY="7" cellX="4" bType="skyPiece_grass" timeDrop="1"/>
+					<item cellY="4" cellX="5" bType="skyPiece_grass" timeDrop="3"/>
+					<item cellY="7" cellX="7" bType="skyPiece_grass" timeDrop="2"/>
+				</config>
+				<!-- Day 3  -->
+				<config>
+					<item cellY="2" cellX="9" bType="skate"/>
+					<item cellY="7" cellX="4" bType="skyPiece_grass" timeDrop="2"/>
+					<item cellY="3" cellX="5" bType="skyPiece_grass" timeDrop="3"/>
+					<item cellY="7" cellX="7" bType="skyPiece_grass" timeDrop="1"/>
+					<item cellY="7" cellX="9" bType="skyPiece_road" timeDrop="4"/>
+				</config>
+				<!-- Day 4  -->
+				<config>
+					<item cellY="2" cellX="9" bType="skate"/>
+					<item cellY="7" cellX="4" bType="skyPiece_grass" timeDrop="4"/>
+					<item cellY="3" cellX="5" bType="skyPiece_grass" timeDrop="1"/>
+					<item cellY="7" cellX="7" bType="skyPiece_grass" timeDrop="3"/>
+					<item cellY="7" cellX="9" bType="skyPiece_road" timeDrop="2"/>
+				</config>
+				<!-- Day 5  -->
+				<config>
+					<item cellY="3" cellX="5" bType="timefreezy_road"/>
+					<item cellY="7" cellX="4" bType="skyPiece_grass" timeDrop="2"/>
+					<item cellY="4" cellX="5" bType="skyPiece_grass" timeDrop="3"/>
+					<item cellY="7" cellX="7" bType="skyPiece_grass" timeDrop="1"/>
+					<item cellY="7" cellX="9" bType="skyPiece_road" timeDrop="4"/>
+					<item cellY="5" cellX="10" bType="skyPiece_road" timeDrop="3"/>
+				</config>
+			</itemsBonus>
+			<!-- Shortcut  -->
+			<shortcut>
+				<!-- Day 1  -->
+				<config>
+					<item frame="PasLa" sNom="item10"/>
+				</config>
+				<!-- Day 2  -->
+				<config>
+					
+				</config>
+				<!-- Day 3  -->
+				<config>
+					
+				</config>
+				<!-- Day 4  -->
+				<config>
+					
+				</config>
+				<!-- Day 5  -->
+				<config>
+					
+				</config>
+			</shortcut>
+		</screen>
+		<!-- Screen 2  -->
+		<screen playerStartY="4" playerStartX="11" manHoleY="6" manHoleX="8" goBus="DOWN">
+			<!-- Cars  -->
+			<itemsMobiles>
+				<!-- Day 1  -->
+				<config>
+					<item moveDir="RIGHT" speed="4" waitStart="2"/>
+				</config>
+				<!-- Day 2  -->
+				<config>
+					<item moveDir="RIGHT" speed="4" waitStart="2"/>
+					<item moveDir="RIGHT" speed="6" waitStart="4"/>
+				</config>
+				<!-- Day 3  -->
+				<config>
+					<item moveDir="RIGHT" speed="5" waitStart="0"/>
+					<item moveDir="RIGHT" speed="6" waitStart="4"/>
+				</config>
+				<!-- Day 4  -->
+				<config>
+					<item moveDir="RIGHT" speed="4" waitStart="2"/>
+					<item moveDir="RIGHT" speed="6" waitStart="5"/>
+					<item moveDir="LEFT" speed="6" waitStart="0"/>
+				</config>
+				<!-- Day 5  -->
+				<config>
+					<item moveDir="RIGHT" speed="5" waitStart="1"/>
+					<item moveDir="RIGHT" speed="6" waitStart="3"/>
+					<item moveDir="LEFT" speed="6" waitStart="0"/>
+				</config>
+			</itemsMobiles>
+			<grid>
+				<row access="3,4,5" cTypeAll=""/>
+				<row access="3,4,5" cTypeAll=""/>
+				<row access="3,4,5" cTypeAll=""/>
+				<row access="3,4,5" cTypeAll=""/>
+				<row access="all" cTypeAll=""/>
+				<row access="all" cTypeAll=""/>
+				<row access="all" cTypeAll=""/>
+				<!-- Row 8  -->
+				<row access="3,4,5,6,7,8,9,10,11">
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+				</row>
+				<!-- Row 9  -->
+				<row out="3,4,5,6,7,8,9,10,11" access="3,4,5,6,7,8,9,10,11">
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+				</row>
+			</grid>
+			<!-- Items Bonus  -->
+			<itemsBonus>
+				<!-- Day 1  -->
+				<config>
+					<item cellY="6" cellX="3" bType="skyPiece_road" timeDrop="3"/>
+					<item cellY="6" cellX="7" bType="skyPiece_road" timeDrop="2"/>
+					<item cellY="5" cellX="1" bType="skyPiece_grass" timeDrop="1"/>
+				</config>
+				<!-- Day 2  -->
+				<config>
+					<item cellY="2" cellX="4" bType="timefreezy_grass"/>
+					<item cellY="6" cellX="3" bType="skyPiece_road" timeDrop="1"/>
+					<item cellY="6" cellX="7" bType="skyPiece_road" timeDrop="2"/>
+					<item cellY="5" cellX="1" bType="skyPiece_grass" timeDrop="4"/>
+				</config>
+				<!-- Day 3  -->
+				<config>
+					<item cellY="6" cellX="3" bType="skyPiece_road" timeDrop="2"/>
+					<item cellY="6" cellX="7" bType="skyPiece_road" timeDrop="5"/>
+					<item cellY="5" cellX="1" bType="skyPiece_grass" timeDrop="1"/>
+					<item cellY="7" cellX="8" bType="skyPiece_road" timeDrop="2"/>
+				</config>
+				<!-- Day 4  -->
+				<config>
+					<item cellY="6" cellX="3" bType="skyPiece_road" timeDrop="1"/>
+					<item cellY="6" cellX="7" bType="skyPiece_road" timeDrop="4"/>
+					<item cellY="5" cellX="1" bType="skyPiece_grass" timeDrop="2"/>
+					<item cellY="7" cellX="8" bType="skyPiece_road" timeDrop="3"/>
+				</config>
+				<!-- Day 5  -->
+				<config>
+					<item cellY="5" cellX="1" bType="skyPiece_road" timeDrop="1"/>
+					<item cellY="7" cellX="1" bType="skyPiece_road" timeDrop="4"/>
+					<item cellY="8" cellX="9" bType="skyPiece_grass" timeDrop="3"/>
+					<item cellY="6" cellX="6" bType="skyPiece_road" timeDrop="2"/>
+					<item cellY="5" cellX="10" bType="skyPiece_road" timeDrop="4"/>
+				</config>
+			</itemsBonus>
+		</screen>
+		<!-- Screen 3  -->
+		<screen playerStartY="1" playerStartX="7" shortCutY="1" shortCutX="7">
+			<!-- Cars  -->
+			<itemsMobiles>
+				<!-- Day 1  -->
+				<config goBus="DOWN, 145, 360">
+					<item moveDir="DOWN" speed="4" waitStart="2"/>
+				</config>
+				<!-- Day 2  -->
+				<config goBus="DOWN, 145, 360">
+					<item moveDir="DOWN" speed="4" waitStart="2"/>
+					<item moveDir="UP" speed="6" waitStart="4"/>
+				</config>
+				<!-- Day 3  -->
+				<config goBus="DOWN, 145, 360">
+					<item moveDir="DOWN" speed="4" waitStart="0"/>
+					<item moveDir="UP" speed="6" waitStart="4"/>
+				</config>
+				<!-- Day 4  -->
+				<config goBus="DOWN, 145, 360">
+					<item moveDir="DOWN" speed="4" waitStart="2"/>
+					<item moveDir="UP" speed="6" waitStart="3"/>
+					<item moveDir="DOWN" speed="6" waitStart="0"/>
+				</config>
+				<!-- Day 5  -->
+				<config goBus="RIGHT, 430, 280">
+					<item moveDir="DOWN" speed="5" waitStart="1"/>
+					<item moveDir="UP" speed="6" waitStart="3"/>
+					<item moveDir="DOWN" speed="6" waitStart="0"/>
+					<item moveDir="UP" speed="6" waitStart="0"/>
+				</config>
+			</itemsMobiles>
+			<grid>
+				<!-- Row 1  -->
+				<row access="3,4,5,6,7,8,9,10,11">
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="gravel" cellSpeed="3"/>
+				</row>
+				<!-- Row 2  -->
+				<row access="3,4,5,6,7,8,9,10,11">
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="gravel" cellSpeed="3"/>
+				</row>
+				<!-- Row 3  -->
+				<row access="3,4,5,6,7,8,9,10,11">
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+				</row>
+				<!-- Row 4  -->
+				<row access="all">
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+				</row>
+				<!-- Row 5  -->
+				<row out="11" access="all">
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+				</row>
+				<!-- Row 6  -->
+				<row out="11" access="all">
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+				</row>
+				<!-- Row 7  -->
+				<row out="11" access="all">
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+				</row>				
+				<!-- Row 8  -->
+				<row access="1,2,3,4,5">
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+				</row>
+				<!-- Row 9  -->
+				<row out="3,4,5" access="1,2,3,4,5" outTo="2-5">
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+				</row>
+			</grid>
+			<!-- Items Bonus  -->
+			<itemsBonus>
+				<!-- Day 1  -->
+				<config>
+					<item cellY="4" cellX="8" bType="timefreezy_grass"/>
+					<item cellY="6" cellX="7" bType="skyPiece_road" timeDrop="2"/>
+					<item cellY="6" cellX="8" bType="skyPiece_road" timeDrop="3"/>
+					<item cellY="6" cellX="9" bType="skyPiece_road" timeDrop="4"/>
+				</config>
+				<!-- Day 2  -->
+				<config>
+					<item cellY="3" cellX="9" bType="timefreezy_grass"/>
+					<item cellY="6" cellX="7" bType="skyPiece_road" timeDrop="1"/>
+					<item cellY="6" cellX="8" bType="skyPiece_road" timeDrop="4"/>
+					<item cellY="6" cellX="9" bType="skyPiece_road" timeDrop="3"/>
+				</config>
+				<!-- Day 3  -->
+				<config>
+					<item cellY="6" cellX="7" bType="skyPiece_road" timeDrop="2"/>
+					<item cellY="6" cellX="8" bType="skyPiece_road" timeDrop="3"/>
+					<item cellY="6" cellX="9" bType="skyPiece_road" timeDrop="1"/>
+					<item cellY="6" cellX="6" bType="skyPiece_road" timeDrop="4"/>
+				</config>
+				<!-- Day 4  -->
+				<config>
+					<item cellY="9" cellX="4" bType="timefreezy_road"/>
+					<item cellY="6" cellX="7" bType="skyPiece_road" timeDrop="2"/>
+					<item cellY="6" cellX="8" bType="skyPiece_road" timeDrop="3"/>
+					<item cellY="6" cellX="9" bType="skyPiece_road" timeDrop="3"/>
+					<item cellY="6" cellX="6" bType="skyPiece_grass" timeDrop="4"/>
+				</config>
+				<!-- Day 5  -->
+				<config>
+					<item cellY="6" cellX="7" bType="skyPiece_road" timeDrop="2"/>
+					<item cellY="6" cellX="8" bType="skyPiece_road" timeDrop="3"/>
+					<item cellY="6" cellX="9" bType="skyPiece_road" timeDrop="4"/>
+					<item cellY="6" cellX="6" bType="skyPiece_grass" timeDrop="4"/>
+					<item cellY="4" cellX="2" bType="skyPiece_grass" timeDrop="3"/>
+				</config>
+			</itemsBonus>
+			<!-- Shortcut  -->
+			<shortcut>
+				<!-- Day 1  -->
+				<config>
+					<item frame="PasLa" sNom="item32"/>
+				</config>
+				<!-- Day 2  -->
+				<config>
+					<item frame="PasLa" sNom="item32"/>
+				</config>
+				<!-- Day 3  -->
+				<config>
+					<item frame="PasLa" sNom="item32"/>
+				</config>
+				<!-- Day 4  -->
+				<config>
+					<item frame="PasLa" sNom="item32"/>
+				</config>
+				<!-- Day 5  -->
+				<config>
+				
+				</config>
+			</shortcut>
+		</screen>
+		<!-- Screen 4  -->
+		<screen playerStartY="7" playerStartX="1" goBus="DOWN">
+			<itemsMobiles/>
+			<grid>
+				<!-- Row 1  -->
+				<row access="none"/>
+				<row access="none"/>
+				<row access="none"/>
+				<row access="8"/>
+				<!-- Row 5  -->
+				<row access="all">
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType="grass" cellSpeed="2"/>
+				</row>
+				<!-- Row 6  -->
+				<row access="all">
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType="grass" cellSpeed="2"/>
+				</row>
+				<!-- Row 7  -->
+				<row access="all">
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType="grass" cellSpeed="2"/>
+				</row>
+				<!-- Row 8  -->
+				<row access="8,9,10,11">
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType="grass" cellSpeed="2"/>
+				</row>
+				<!-- Row 9  -->
+				<row out="8,9,10,11" access="8,9,10,11">
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType="grass" cellSpeed="2"/>
+				</row>
+			</grid>
+				<!-- Items Bonus  -->
+			<itemsBonus>
+				<!-- Day 1  -->
+				<config>
+					<item cellY="6" cellX="6" bType="skate"/>
+					<item cellY="6" cellX="7" bType="skyPiece_road" timeDrop="2"/>
+					<item cellY="6" cellX="8" bType="skyPiece_road" timeDrop="3"/>
+					<item cellY="6" cellX="9" bType="skyPiece_road" timeDrop="4"/>
+				</config>
+				<!-- Day 2  -->
+				<config>
+					<item cellY="6" cellX="6" bType="skate"/>
+					<item cellY="6" cellX="7" bType="skyPiece_road" timeDrop="2"/>
+					<item cellY="6" cellX="8" bType="skyPiece_road" timeDrop="4"/>
+					<item cellY="6" cellX="9" bType="skyPiece_road" timeDrop="3"/>
+				</config>
+				<!-- Day 3  -->
+				<config>
+					<item cellY="6" cellX="6" bType="skate"/>
+					<item cellY="6" cellX="7" bType="skyPiece_road" timeDrop="4"/>
+					<item cellY="6" cellX="8" bType="skyPiece_road" timeDrop="3"/>
+					<item cellY="6" cellX="9" bType="skyPiece_road" timeDrop="1"/>
+					<item cellY="6" cellX="10" bType="skyPiece_road" timeDrop="2"/>
+				</config>
+				<!-- Day 4  -->
+				<config>
+					<item cellY="6" cellX="6" bType="skate"/>
+					<item cellY="6" cellX="7" bType="skyPiece_road" timeDrop="2"/>
+					<item cellY="6" cellX="8" bType="skyPiece_road" timeDrop="3"/>
+					<item cellY="6" cellX="9" bType="skyPiece_road" timeDrop="4"/>
+					<item cellY="6" cellX="10" bType="skyPiece_road" timeDrop="4"/>
+				</config>
+				<!-- Day 5  -->
+				<config>
+					<item cellY="6" cellX="6" bType="skate"/>
+					<item cellY="5" cellX="3" bType="skyPiece_road" timeDrop="2"/>
+					<item cellY="7" cellX="7" bType="skyPiece_road" timeDrop="3"/>
+					<item cellY="5" cellX="8" bType="skyPiece_road" timeDrop="4"/>
+					<item cellY="6" cellX="9" bType="skyPiece_road" timeDrop="4"/>
+					<item cellY="9" cellX="9" bType="skyPiece_road" timeDrop="2"/>
+				</config>
+			</itemsBonus>
+		</screen>
+	</environment>
+	<!-- ENVIRONNEMENT 5 : School  -->
+	<environment tileY="9" tileX="11">
+		<!-- Screen 1  -->
+		<screen playerStartY="1" playerStartX="9" goBus="LEFT">
+			<!-- Cars  -->
+			<itemsMobiles>
+				<!-- Day 1  -->
+				<config>
+					<item moveDir="DOWN" speed="4" waitStart="2"/>
+				</config>
+				<!-- Day 2  -->
+				<config>
+					<item moveDir="DOWN" speed="4" waitStart="2"/>
+					<item moveDir="UP" speed="6" waitStart="4"/>
+				</config>
+				<!-- Day 3  -->
+				<config>
+					<item moveDir="DOWN" speed="4" waitStart="0"/>
+					<item moveDir="UP" speed="6" waitStart="4"/>
+				</config>
+				<!-- Day 4  -->
+				<config>
+					<item moveDir="DOWN" speed="4" waitStart="2"/>
+					<item moveDir="UP" speed="6" waitStart="3"/>
+					<item moveDir="RIGHT" speed="6" waitStart="0"/>
+				</config>
+				<!-- Day 5  -->
+				<config>
+					<item moveDir="DOWN" speed="5" waitStart="1"/>
+					<item moveDir="UP" speed="6" waitStart="3"/>
+					<item moveDir="RIGHT" speed="6" waitStart="0"/>
+					<item moveDir="LEFT" speed="6" waitStart="0"/>
+				</config>
+			</itemsMobiles>
+			<grid>
+				<!-- Row 1  -->
+				<row access="7,8,9,10">
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+				</row>
+				<row access="8,9,10" cTypeAll=""/>
+				<row access="8,9,10" cTypeAll=""/>
+				<row access="8,9,10" cTypeAll=""/>
+				<!-- Row 5  -->
+				<row access="1,2,3,4,5,6,7,8,9,10">
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+				</row>
+				<row out= "1" access="all" cTypeAll=""/>
+				<row out= "1" access="all" cTypeAll=""/>
+				<row out= "1" access="all" cTypeAll=""/>
+				<!-- Row 9  -->
+				<row access="all">
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType="grass" cellSpeed="2"/>
+				</row>
+			</grid>
+			<!-- Items Bonus  -->
+			<itemsBonus>
+				<!-- Day 1  -->
+				<config>
+					<item cellY="9" cellX="7" bType="skyPiece_grass" timeDrop="2"/>
+					<item cellY="5" cellX="3" bType="skyPiece_road" timeDrop="4"/>
+					<item cellY="8" cellX="9" bType="skyPiece_road" timeDrop="3"/>
+				</config>
+				<!-- Day 2  -->
+				<config>
+					<item cellY="9" cellX="7" bType="skyPiece_grass" timeDrop="4"/>
+					<item cellY="5" cellX="3" bType="skyPiece_road" timeDrop="2"/>
+					<item cellY="8" cellX="9" bType="skyPiece_road" timeDrop="3"/>
+				</config>
+				<!-- Day 3  -->
+				<config>
+					<item cellY="2" cellX="9" bType="timefreezy_road"/>
+					<item cellY="9" cellX="7" bType="skyPiece_grass" timeDrop="3"/>
+					<item cellY="5" cellX="3" bType="skyPiece_road" timeDrop="4"/>
+					<item cellY="8" cellX="9" bType="skyPiece_road" timeDrop="1"/>
+					<item cellY="3" cellX="9" bType="skyPiece_road" timeDrop="2"/>
+				</config>
+				<!-- Day 4  -->
+				<config>
+					<item cellY="1" cellX="9" bType="timefreezy_road"/>
+					<item cellY="9" cellX="7" bType="skyPiece_grass" timeDrop="2"/>
+					<item cellY="5" cellX="3" bType="skyPiece_road" timeDrop="3"/>
+					<item cellY="8" cellX="9" bType="skyPiece_road" timeDrop="4"/>
+					<item cellY="3" cellX="9" bType="skyPiece_road" timeDrop="1"/>
+				</config>
+				<!-- Day 5  -->
+				<config>
+					<item cellY="9" cellX="7" bType="skyPiece_grass" timeDrop="3"/>
+					<item cellY="5" cellX="3" bType="skyPiece_road" timeDrop="2"/>
+					<item cellY="8" cellX="9" bType="skyPiece_road" timeDrop="4"/>
+					<item cellY="3" cellX="9" bType="skyPiece_road" timeDrop="1"/>
+					<item cellY="9" cellX="11" bType="skyPiece_grass" timeDrop="3"/>
+				</config>
+			</itemsBonus>
+		</screen>
+		<!-- Screen 2  -->
+		<screen playerStartY="4" playerStartX="11" manHoleY="3" manHoleX="4" shortCutY="1" shortCutX="4" goBus="DOWN">
+			<!-- Cars  -->
+			<itemsMobiles>
+				<!-- Day 1  -->
+				<config>
+					<item moveDir="RIGHT" speed="4" waitStart="2"/>
+				</config>
+				<!-- Day 2  -->
+				<config>
+					<item moveDir="RIGHT" speed="4" waitStart="2"/>
+					<item moveDir="LEFT" speed="6" waitStart="4"/>
+				</config>
+				<!-- Day 3  -->
+				<config>
+					<item moveDir="RIGHT" speed="4" waitStart="0"/>
+					<item moveDir="LEFT" speed="6" waitStart="4"/>
+				</config>
+				<!-- Day 4  -->
+				<config>
+					<item moveDir="RIGHT" speed="4" waitStart="2"/>
+					<item moveDir="LEFT" speed="6" waitStart="3"/>
+					<item moveDir="LEFT" speed="6" waitStart="0"/>
+				</config>
+				<!-- Day 5  -->
+				<config>
+					<item moveDir="RIGHT" speed="5" waitStart="1"/>
+					<item moveDir="LEFT" speed="6" waitStart="3"/>
+					<item moveDir="LEFT" speed="6" waitStart="0"/>
+				</config>
+			</itemsMobiles>
+			<grid>
+				<!-- Row 1  -->
+				<row access="3,4,5,6,7,8">
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+				</row>				
+				<!-- Row 2  -->
+				<row access="3,4,5,6,7,10,11">
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+				</row>					
+				<!-- Row 3  -->
+				<row access="3,4,5,6,7,11">
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+				</row>
+				<!-- Row 4  -->
+				<row access="3,4,5,6,7,8,9,10,11">
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+				</row>
+				<!-- Row 5  -->
+				<row access="3,4,5,6,7,8,9,10,11">
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="gravel" cellSpeed="3"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+				</row>
+				<row access="all" cTypeAll=""/>
+				<row access="all" cTypeAll=""/>
+				<row access="all" cTypeAll=""/>
+				<!-- Row 9  -->
+				<row out="3,4,5" access="3,4,5" cType=""/>		
+			</grid>
+			<!-- Items Bonus  -->
+			<itemsBonus>
+				<!-- Day 1  -->
+				<config>
+					<item cellY="7" cellX="10" bType="timefreezy_road"/>
+					<item cellY="6" cellX="7" bType="skyPiece_grass" timeDrop="2"/>
+					<item cellY="4" cellX="4" bType="skyPiece_road" timeDrop="4"/>
+					<item cellY="7" cellX="2" bType="skyPiece_road" timeDrop="3"/>
+				</config>
+				<!-- Day 2  -->
+				<config>
+					<item cellY="7" cellX="10" bType="timefreezy_road"/>
+					<item cellY="6" cellX="7" bType="skyPiece_grass" timeDrop="4"/>
+					<item cellY="4" cellX="4" bType="skyPiece_road" timeDrop="3"/>
+					<item cellY="7" cellX="2" bType="skyPiece_road" timeDrop="2"/>
+				</config>
+				<!-- Day 3  -->
+				<config>
+					<item cellY="7" cellX="10" bType="timefreezy_road"/>
+					<item cellY="6" cellX="7" bType="skyPiece_road" timeDrop="2"/>
+					<item cellY="4" cellX="4" bType="skyPiece_road" timeDrop="4"/>
+					<item cellY="7" cellX="2" bType="skyPiece_road" timeDrop="3"/>
+					<item cellY="6" cellX="6" bType="skyPiece_road" timeDrop="4"/>
+				</config>
+				<!-- Day 4  -->
+				<config>
+					<item cellY="6" cellX="7" bType="skyPiece_grass" timeDrop="2"/>
+					<item cellY="4" cellX="4" bType="skyPiece_road" timeDrop="3"/>
+					<item cellY="7" cellX="2" bType="skyPiece_road" timeDrop="3"/>
+					<item cellY="6" cellX="6" bType="skyPiece_road" timeDrop="4"/>
+				</config>
+				<!-- Day 5  -->
+				<config>
+					<item cellY="2" cellX="4" bType="timefreezy_road"/>
+					<item cellY="5" cellX="7" bType="skyPiece_grass" timeDrop="1"/>
+					<item cellY="4" cellX="4" bType="skyPiece_road" timeDrop="2"/>
+					<item cellY="7" cellX="2" bType="skyPiece_road" timeDrop="3"/>
+					<item cellY="6" cellX="6" bType="skyPiece_road" timeDrop="4"/>
+					<item cellY="7" cellX="10" bType="skyPiece_road" timeDrop="3"/>
+				</config>
+			</itemsBonus>
+			<!-- Shortcut  -->
+			<shortcut>
+				<!-- Day 1  -->
+				<config>
+					<item frame="1" sNom="item31"/>
+					<item frame="1" sNom="item32"/>
+				</config>
+				<!-- Day 2  -->
+				<config>
+					<item frame="1" sNom="item31"/>
+					<item frame="1" sNom="item32"/>
+				</config>
+				<!-- Day 3  -->
+				<config>
+					<item frame="1" sNom="item31"/>
+					<item frame="1" sNom="item32"/>
+				</config>
+				<!-- Day 4  -->
+				<config>
+					<item frame="1" sNom="item31"/>
+					<item frame="1" sNom="item32"/>
+				</config>
+				<!-- Day 5  -->
+				<config>
+					<item frame="3" sNom="item31"/>
+					<item frame="4" sNom="item32"/>
+				</config>
+			</shortcut>
+		</screen>
+		<!-- Screen 3  -->
+		<screen playerStartY="1" playerStartX="7" goBus="RIGHT">
+			<!-- Cars  -->
+			<itemsMobiles>
+				<!-- Day 1  -->
+				<config>
+					<item moveDir="RIGHT" speed="4" waitStart="2"/>
+				</config>
+				<!-- Day 2  -->
+				<config>
+					<item moveDir="RIGHT" speed="4" waitStart="2"/>
+					<item moveDir="LEFT" speed="6" waitStart="4"/>
+				</config>
+				<!-- Day 3  -->
+				<config>
+					<item moveDir="RIGHT" speed="4" waitStart="0"/>
+					<item moveDir="LEFT" speed="6" waitStart="4"/>
+				</config>
+				<!-- Day 4  -->
+				<config>
+					<item moveDir="RIGHT" speed="4" waitStart="2"/>
+					<item moveDir="LEFT" speed="6" waitStart="3"/>
+					<item moveDir="LEFT" speed="6" waitStart="0"/>
+				</config>
+				<!-- Day 5  -->
+				<config>
+					<item moveDir="RIGHT" speed="6" waitStart="3"/>
+					<item moveDir="LEFT" speed="6" waitStart="3"/>
+					<item moveDir="LEFT" speed="6" waitStart="1"/>
+					<item moveDir="DOWN" speed="7" waitStart="0"/>
+				</config>
+			</itemsMobiles>
+			<grid>
+				<!-- Row 1  -->
+				<row access="2,3,4,5">
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+				</row>
+				<!-- Row 2  -->
+				<row access="2,3,4,5">
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+				</row>	
+				<!-- Row 3  -->
+				<row access="2,3,4,5">
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+				</row>
+				<!-- Row 4  -->
+				<row access="1,2,3,4,5">
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+				</row>
+				<!-- Row 5  -->
+				<row access="1,2,3,4,5">
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+				</row>
+				<row out= "11" access="all" cTypeAll=""/>
+				<row out= "11" access="all" cTypeAll=""/>
+				<row out= "11" access="all" cTypeAll=""/>
+				<!-- Row 9  -->
+				<row access="3,4,5" cTypeAll=""/>
+			</grid>
+			<!-- Items Bonus  -->
+			<itemsBonus>
+				<!-- Day 1  -->
+				<config>
+					<item cellY="7" cellX="1" bType="skate"/>
+					<item cellY="5" cellX="4" bType="skyPiece_road" timeDrop="1"/>
+					<item cellY="6" cellX="4" bType="skyPiece_road" timeDrop="4"/>
+					<item cellY="8" cellX="3" bType="skyPiece_road" timeDrop="3"/>
+				</config>
+				<!-- Day 2  -->
+				<config>
+					<item cellY="7" cellX="1" bType="skate"/>
+					<item cellY="5" cellX="4" bType="skyPiece_road" timeDrop="1"/>
+					<item cellY="6" cellX="4" bType="skyPiece_road" timeDrop="4"/>
+					<item cellY="8" cellX="3" bType="skyPiece_road" timeDrop="3"/>
+				</config>
+				<!-- Day 3  -->
+				<config>
+					<item cellY="7" cellX="1" bType="skate"/>
+					<item cellY="5" cellX="4" bType="skyPiece_road" timeDrop="3"/>
+					<item cellY="6" cellX="4" bType="skyPiece_road" timeDrop="2"/>
+					<item cellY="8" cellX="3" bType="skyPiece_road" timeDrop="4"/>
+					<item cellY="4" cellX="4" bType="skyPiece_road" timeDrop="1"/>
+				</config>
+				<!-- Day 4  -->
+				<config>
+					<item cellY="7" cellX="1" bType="skate"/>
+					<item cellY="5" cellX="4" bType="skyPiece_road" timeDrop="3"/>
+					<item cellY="6" cellX="4" bType="skyPiece_road" timeDrop="1"/>
+					<item cellY="8" cellX="3" bType="skyPiece_road" timeDrop="4"/>
+					<item cellY="4" cellX="4" bType="skyPiece_road" timeDrop="2"/>
+				</config>
+				<!-- Day 5  -->
+				<config>
+					<item cellY="7" cellX="1" bType="skate"/>
+					<item cellY="5" cellX="4" bType="skyPiece_road" timeDrop="1"/>
+					<item cellY="6" cellX="4" bType="skyPiece_road" timeDrop="3"/>
+					<item cellY="8" cellX="3" bType="skyPiece_road" timeDrop="4"/>
+					<item cellY="4" cellX="4" bType="skyPiece_road" timeDrop="2"/>
+					<item cellY="8" cellX="9" bType="skyPiece_road" timeDrop="5"/>
+				</config>
+			</itemsBonus>
+		</screen>
+		<!-- Screen 4  -->
+		<screen playerStartY="7" playerStartX="1" goBus="STOP">
+			<itemsMobiles/>
+			<grid>
+				<!-- Row 1  -->
+				<row access="7,8,9,10">
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+				</row>
+				<!-- Row 2  -->
+				<row access="7,8,9,10,11">
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType="grass" cellSpeed="2"/>
+				</row>	
+				<!-- Row 3  -->
+				<row access="7,8,9,10,11">
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType="grass" cellSpeed="2"/>
+				</row>	
+				<!-- Row 4  -->
+				<row access="7,8,9,10,11">
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType="grass" cellSpeed="2"/>
+				</row>	
+				<!-- Row 5  -->
+				<row access="4,5,7,8,9,10,11">
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType="grass" cellSpeed="2"/>		
+					<cell cType="grass" cellSpeed="2"/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType=""/>
+					<cell cType="grass" cellSpeed="2"/>
+				</row>
+				<row access="all" cTypeAll=""/>
+				<row access="all" cTypeAll=""/>
+				<row access="all" cTypeAll=""/>
+				<!-- Row 9  -->
+				<row access="none"/>
+			</grid>
+			<itemsBonus>
+				<!-- Day 1  -->
+				<config>
+					<item cellY="3" cellX="9" bType="skyPiece_road" timeDrop="15"/>
+					<item cellY="5" cellX="9" bType="skyPiece_road" timeDrop="2"/>
+					<item cellY="8" cellX="5" bType="skyPiece_road" timeDrop="4"/>
+				</config>
+				<!-- Day 2  -->
+				<config>
+					<item cellY="3" cellX="9" bType="skyPiece_road" timeDrop="5"/>
+					<item cellY="5" cellX="9" bType="skyPiece_road" timeDrop="1"/>
+					<item cellY="8" cellX="5" bType="skyPiece_road" timeDrop="10"/>
+				</config>
+				<!-- Day 3  -->
+				<config>
+					<item cellY="3" cellX="9" bType="skyPiece_road" timeDrop="10"/>
+					<item cellY="5" cellX="9" bType="skyPiece_road" timeDrop="14"/>
+					<item cellY="8" cellX="5" bType="skyPiece_road" timeDrop="8"/>
+					<item cellY="7" cellX="10" bType="skyPiece_road" timeDrop="6"/>
+				</config>
+				<!-- Day 4  -->
+				<config>
+					<item cellY="3" cellX="9" bType="skyPiece_road" timeDrop="5"/>
+					<item cellY="5" cellX="9" bType="skyPiece_road" timeDrop="4"/>
+					<item cellY="8" cellX="5" bType="skyPiece_road" timeDrop="7"/>
+					<item cellY="7" cellX="10" bType="skyPiece_road" timeDrop="1"/>
+				</config>
+				<!-- Day 5  -->
+				<config>
+					<item cellY="3" cellX="9" bType="skyPiece_road" timeDrop="7"/>
+					<item cellY="5" cellX="9" bType="skyPiece_road" timeDrop="5"/>
+					<item cellY="8" cellX="5" bType="skyPiece_road" timeDrop="6"/>
+					<item cellY="7" cellX="10" bType="skyPiece_road" timeDrop="8"/>
+					<item cellY="7" cellX="4" bType="skyPiece_road" timeDrop="9"/>
+				</config>
+			</itemsBonus>
+		</screen>
+	</environment>
+</game>

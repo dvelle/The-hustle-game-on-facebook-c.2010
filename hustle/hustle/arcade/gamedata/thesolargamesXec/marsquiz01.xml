@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Questions asked for the planet Mars quiz.
+XML built by Dan Griffiths using questions supplied by the BBC team -->
+
+<content>
+	<questioncount>1</questioncount>
+	<optioncount>3</optioncount>
+	<questionorder>random</questionorder> <!-- options are 'random' or 'sequential' -->
+	<answerorder>random</answerorder>
+	<questionitem>
+		<questiontext>Mars is named after the god of what?</questiontext>
+		<answer>
+			<text>War</text>
+			<iscorrect>yes</iscorrect>
+		</answer>
+		<answer>
+			<text>Cheese</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+		<answer>
+			<text>Music</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+	</questionitem>
+	<questionitem>
+		<questiontext>How long is Mars' year?</questiontext>
+		<answer>
+			<text>687 Earth days</text>
+			<iscorrect>yes</iscorrect>
+		</answer>
+		<answer>
+			<text>487 Earth days</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+		<answer>
+			<text>987 Earth days</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+	</questionitem>
+	<questionitem>
+		<questiontext>What is Mars' surface temperature?</questiontext>
+		<answer>
+			<text>Minus 55 C</text>
+			<iscorrect>yes</iscorrect>
+		</answer>
+		<answer>
+			<text>55 C</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+		<answer>
+			<text>85 C</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+	</questionitem>
+	<questionitem>
+		<questiontext>How long does Mars' day last?</questiontext>
+		<answer>
+			<text>24 hours 37 minutes</text>
+			<iscorrect>yes</iscorrect>
+		</answer>
+		<answer>
+			<text>24 hours</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+		<answer>
+			<text>24 hours 49 minutes</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+	</questionitem>
+	<questionitem>
+		<questiontext>How wide is Mars?</questiontext>
+		<answer>
+			<text>6,792 km</text>
+			<iscorrect>yes</iscorrect>
+		</answer>
+		<answer>
+			<text>7,792 km</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+		<answer>
+			<text>8,792 km</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+	</questionitem>
+	<questionitem>
+		<questiontext>How many moons does Mars have?</questiontext>
+		<answer>
+			<text>Two</text>
+			<iscorrect>yes</iscorrect>
+		</answer>
+		<answer>
+			<text>One</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+		<answer>
+			<text>Three</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+	</questionitem>
+	<questionitem>
+		<questiontext>Mars is also known as what?</questiontext>
+		<answer>
+			<text>The Red Planet</text>
+			<iscorrect>yes</iscorrect>
+		</answer>
+		<answer>
+			<text>The Pink Planet</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+		<answer>
+			<text>The Spongey Planet</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+	</questionitem>
+	<questionitem>
+		<questiontext>Mars' core is made of what?</questiontext>
+		<answer>
+			<text>Iron</text>
+			<iscorrect>yes</iscorrect>
+		</answer>
+		<answer>
+			<text>Stone</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+		<answer>
+			<text>Ice</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+	</questionitem>
+	<questionitem>
+		<questiontext>Which spaceship has not been to Mars?</questiontext>
+		<answer>
+			<text>Mariner</text>
+			<iscorrect>yes</iscorrect>
+		</answer>
+		<answer>
+			<text>Pathfinder</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+		<answer>
+			<text>Mars Express</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+	</questionitem>
+	<questionitem>
+		<questiontext>What is Mars' atmosphere made of?</questiontext>
+		<answer>
+			<text>Carbon dioxide</text>
+			<iscorrect>yes</iscorrect>
+		</answer>
+		<answer>
+			<text>Helium</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+		<answer>
+			<text>Argon</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+	</questionitem>
+</content>

@@ -1,0 +1,35 @@
+<Level nr="6" time="270" start_x="2" start_y="5">
+	<Fence id="0"/>
+	<Floor id="1"/>
+	<Cranes>
+		<Crane id="0" x="0" y="0" dir="e" palletId0="0" palletQuant0="3" palletId1="0" palletQuant1="3" palletId2="0" palletQuant2="3"/>
+	</Cranes>
+	<Pallets>
+		<Pallet id="0" x="2" y="1"/>
+		<Pallet id="2" x="2" y="3"/>
+		<Pallet id="2" x="8" y="3"/>
+		<Pallet id="1" x="5" y="4"/>
+		<Pallet id="1" x="7" y="4"/>
+		<Pallet id="1" x="7" y="5"/>
+		<Pallet id="1" x="1" y="6"/>
+		<Pallet id="1" x="2" y="6"/>
+		<Pallet id="1" x="4" y="6"/>
+		<Pallet id="1" x="6" y="6"/>
+		<Pallet id="1" x="7" y="6"/>
+		<Pallet id="1" x="3" y="7"/>
+		<Pallet id="0" x="1" y="8"/>
+		<Pallet id="0" x="2" y="8"/>
+		<Pallet id="0" x="3" y="8"/>
+		<Pallet id="0" x="4" y="8"/>
+		<Pallet id="0" x="5" y="8"/>
+		<Pallet id="0" x="6" y="8"/>
+		<Pallet id="0" x="7" y="8"/>
+		<Pallet id="0" x="8" y="8"/>
+	</Pallets>
+	<Obstacles>
+		<Obstacle id="17" x="5" y="0"/>
+		<Obstacle id="17" x="6" y="0"/>
+		<Obstacle id="17" x="3" y="1"/>
+		<Obstacle id="24" x="5" y="1"/>
+	</Obstacles>
+</Level>

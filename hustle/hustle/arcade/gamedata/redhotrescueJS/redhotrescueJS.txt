@@ -1,0 +1,1 @@
+&scoreVar=_global.oGame.scoretotal&blah=1

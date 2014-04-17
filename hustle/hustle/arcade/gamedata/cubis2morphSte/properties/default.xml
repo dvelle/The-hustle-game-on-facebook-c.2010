@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<Properties>
+	<Integer id="DATA_GAME_ID">130</Integer>
+	<Boolean id="BOOL_DEBUG">false</Boolean>
+	<Boolean id="LOCALIZE_DEBUG">false</Boolean>
+</Properties>

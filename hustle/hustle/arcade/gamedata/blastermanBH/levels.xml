@@ -1,0 +1,22 @@
+<game levels='20'>
+<lvl id='1' graph='jungle' xml='arcade/gamedata/blastermanBH/levels/level1'/>
+<lvl id='2' graph='desert' xml='arcade/gamedata/blastermanBH/levels/level2'/>
+<lvl id='3' graph='techno' xml='arcade/gamedata/blastermanBH/levels/level3'/>
+<lvl id='4' graph='jungle' xml='arcade/gamedata/blastermanBH/levels/level4'/>
+<lvl id='5' graph='techno' xml='arcade/gamedata/blastermanBH/levels/level5'/>
+<lvl id='6' graph='desert' xml='arcade/gamedata/blastermanBH/levels/level6'/>
+<lvl id='7' graph='jungle' xml='arcade/gamedata/blastermanBH/levels/level7'/>
+<lvl id='8' graph='techno' xml='arcade/gamedata/blastermanBH/levels/level8'/>
+<lvl id='9' graph='jungle' xml='arcade/gamedata/blastermanBH/levels/level9'/>
+<lvl id='10' graph='desert' xml='arcade/gamedata/blastermanBH/levels/level10'/>
+<lvl id='11' graph='techno' xml='arcade/gamedata/blastermanBH/levels/level11'/>
+<lvl id='12' graph='jungle' xml='arcade/gamedata/blastermanBH/levels/level12'/>
+<lvl id='13' graph='jungle' xml='arcade/gamedata/blastermanBH/levels/level13'/>
+<lvl id='14' graph='desert' xml='arcade/gamedata/blastermanBH/levels/level14'/>
+<lvl id='15' graph='techno' xml='arcade/gamedata/blastermanBH/levels/level15'/>
+<lvl id='16' graph='jungle' xml='arcade/gamedata/blastermanBH/levels/level16'/>
+<lvl id='17' graph='desert' xml='arcade/gamedata/blastermanBH/levels/level17'/>
+<lvl id='18' graph='jungle' xml='arcade/gamedata/blastermanBH/levels/level18'/>
+<lvl id='19' graph='techno' xml='arcade/gamedata/blastermanBH/levels/level19'/>
+<lvl id='20' graph='desert' xml='arcade/gamedata/blastermanBH/levels/level20'/>
+</game>

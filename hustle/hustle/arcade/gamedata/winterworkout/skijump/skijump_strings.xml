@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<content>
+	<string id="IDS_SKIJUMP_TITLE">SKI JUMP</string>
+	<string id="IDS_CONFIRM_QUIT">REALLY QUIT?</string>
+	<string id="IDS_QUIT">QUIT</string>
+	<string id="IDS_YES">YES</string>
+	<string id="IDS_NO">NO</string>
+	<string id="IDS_OK">OK</string>
+	<string id="IDS_PLAY">PLAY</string>
+	<string id="IDS_TIME">TIME</string>
+	<string id="IDS_POWER">POWER</string>
+	<string id="IDS_RESULT">EVENT RESULTS</string>
+	<string id="IDS_YOURTIME">Your time was</string>
+	<string id="IDS_YOURDISTANCE">Your distance was</string>
+	<string id="IDS_YOUSCORED">You scored</string>
+	<string id="IDS_INSTRUCTIONS">To get a great distance try to get a full power bar and launch as close to the end of the jump as possible. Then keep the pointer in the middle of the dial.</string>
+	<string id="IDS_INSTSTART">Start descent / Jump</string>
+	<string id="IDS_INSTADJUST">Adjust flight angle</string>
+</content></string>
+	<string id="IDS_INSTJUMP">Jump</string>
+</content>

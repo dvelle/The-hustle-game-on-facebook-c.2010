@@ -1,0 +1,1 @@
+endURL=arcade/gamedata/spillbeanzSte/ending_unknown.swf&downloadURL=

@@ -1,0 +1,1 @@
+nazwa=arcade/gamedata/missilecrisisTh/game017.swf

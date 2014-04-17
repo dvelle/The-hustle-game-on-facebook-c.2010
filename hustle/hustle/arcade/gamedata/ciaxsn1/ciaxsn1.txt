@@ -1,0 +1,1 @@
+&scoreVar=_global.gameObj.score&blah=1

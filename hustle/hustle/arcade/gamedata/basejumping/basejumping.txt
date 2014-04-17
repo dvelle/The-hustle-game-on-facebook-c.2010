@@ -1,0 +1,1 @@
+&scoreVar=getScore()&blah=1

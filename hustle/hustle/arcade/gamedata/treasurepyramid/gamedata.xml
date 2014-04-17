@@ -1,0 +1,68 @@
+<data amo="flor">
+	<defaults tilesize="45" start_up_lives="2" start_up_butterflies="2" live_up_points="50000" butterfly_up_points="20000" dramatic_increment="5" dramatic_pause=".1" dramatic_time_pause="1.5" remaining_lives_value="5000" remaining_butterflies_value="2000"/>
+	<tile_bonus bronze="10" silver="20" gold="30"/>
+	<combo_bonuses>
+		<value regular_combo_plus="1" bonus_score="0" animation="extra">			
+			<screen id="AnimMatch4" soundfx="super"/>
+		</value>
+		<value regular_combo_plus="2" bonus_score="0" animation="extra">
+			<screen id="AnimMatch5" soundfx="extra"/>
+		</value>
+	</combo_bonuses>
+	<consecutive_rounds>
+		<value rounds="1" bonus_score="0">
+			<screen id="AnimCombo1" soundfx="match01"/>
+		</value>
+		<value rounds="2" bonus_score="200">
+			<screen id="AnimCombo2" soundfx="match02"/>
+		</value>
+		<value rounds="3" bonus_score="300">
+			<screen id="AnimCombo3" soundfx="match03"/>
+		</value>
+		<value rounds="4" bonus_score="400">
+			<screen id="AnimCombo4" soundfx="match04"/>
+		</value>
+		<value rounds="5" bonus_score="500">
+			<screen id="AnimCombo5" soundfx="match05"/>
+		</value>
+		<value rounds="6" bonus_score="600">
+			<screen id="AnimCombo6" soundfx="match05"/>
+		</value>
+		<value rounds="7" bonus_score="700">
+			<screen id="AnimCombo7" soundfx="match05"/>
+		</value>
+		<value rounds="8" bonus_score="800">
+			<screen id="AnimCombo8" soundfx="match05"/>
+		</value>
+		<value rounds="9" bonus_score="900">
+			<screen id="AnimCombo9" soundfx="match05"/>
+		</value>
+		<value rounds="10" bonus_score="1000">
+			<screen id="AnimCombo10" soundfx="match5"/>
+		</value>
+		
+	</consecutive_rounds>
+	<messages>
+		<get_ready soundfx="ready" startx="350" starty="500" endx="350" endy="50" velocity="50" stays="40" textcolor="FFFFFF" textsize="50" glowcolor="000000" glowsize="10">
+			<text></text>			
+		</get_ready>
+		<live_up soundfx="lifeup" startx="0" starty="0" endx="0" endy="0" velocity="50" stays="40" textcolor="FFFFFF" textsize="50" glowcolor="1466B8" glowsize="10">
+			<text></text>
+		</live_up>
+		<butterfly_up soundfx="lifeup" startx="0" starty="0" endx="0" endy="0" velocity="50" stays="40" textcolor="FFFFFF" textsize="50" glowcolor="FFCC00" glowsize="10">
+			<text></text>
+		</butterfly_up>
+		<no_more_moves soundfx="nomoves" startx="500" starty="400" endx="300" endy="200" velocity="50" stays="50" textcolor="00FF00" textsize="30" glowcolor="00EE00" glowsize="25">
+			<text></text>
+		</no_more_moves>
+		<no_more_moves_with_butterfly soundfx="nomoves" startx="500" starty="400" endx="300" endy="200" velocity="50" stays="50" textcolor="00FF00" textsize="30" glowcolor="00EE00" glowsize="25">
+			<text></text>
+		</no_more_moves_with_butterfly>
+		<level_cleared soundfx="cleared" startx="500" starty="400" endx="300" endy="200" velocity="50" stays="50" textcolor="00FF00" textsize="30" glowcolor="00EE00" glowsize="25">
+			<text></text>
+		</level_cleared>
+		<live_lost soundfx="ready" startx="350" starty="400" endx="350" endy="150" velocity="50" stays="40" textcolor="FFFFFF" textsize="50" glowcolor="000000" glowsize="10">
+			<text></text>
+		</live_lost>
+	</messages>
+</data>

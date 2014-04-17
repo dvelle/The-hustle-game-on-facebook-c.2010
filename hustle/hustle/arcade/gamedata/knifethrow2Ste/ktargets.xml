@@ -1,0 +1,25 @@
+<targets>
+<target tname="KNANCY KNIFE" swf="1" image="1.jpg" mf="1" />
+<target tname="MATT KNIFE" swf="2" image="2.jpg" mf="2" />
+<target tname="BRITNEY SPEARS" swf="3" image="3.jpg" mf="1" />
+<target tname="PARIS HILTON" swf="4" image="4.jpg" mf="1" />
+<target tname="LINDSAY LOHAN" swf="5" image="5.jpg" mf="1" />
+<target tname="GEORGE W. BUSH" swf="12" image="12.jpg" mf="2" />
+<target tname="TONY BLAIR" swf="13" image="13.jpg" mf="2" />
+<target tname="CONDOLEEZA RICE" swf="14" image="14.jpg" mf="1" />
+<target tname="SPIDERMAN" swf="8" image="8.jpg" mf="2" />
+<target tname="TOM CRUISE" swf="20" image="20.jpg" mf="2" />
+<target tname="JOHNNY DEPP" swf="22" image="22.jpg" mf="2" />
+<target tname="BRAD PITT" swf="21" image="21.jpg" mf="2" />
+<target tname="SCARLETT JOHANSSON" swf="16" image="16.jpg" mf="1" />
+<target tname="SHAKIRA" swf="18" image="18.jpg" mf="1" />
+<target tname="JESSICA ALBA" swf="17" image="17.jpg" mf="1" />
+<target tname="JENNIFER LOPEZ" swf="10" image="10.jpg" mf="1" />
+<target tname="ANGELINA JOLIE" swf="11" image="11.jpg" mf="1" />
+<target tname="KATIE HOLMES" swf="6" image="6.jpg" mf="1" />
+<target tname="HILLARY DUFF" swf="7" image="7.jpg" mf="1" />
+<target tname="HALLE BERRY" swf="15" image="15.jpg" mf="1" />
+<target tname="JESSICA SIMPSON" swf="19" image="19.jpg" mf="1" />
+<target tname="PAMELA ANDERSON" swf="23" image="23.jpg" mf="1" />
+<target tname="KIRSTEN DUNST" swf="9" image="9.jpg" mf="1" />
+</targets>

@@ -1,0 +1,2 @@
+&scoreVar=_parent.Score&blah=1
+

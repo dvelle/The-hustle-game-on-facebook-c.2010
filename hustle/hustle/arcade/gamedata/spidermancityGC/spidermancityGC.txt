@@ -1,0 +1,1 @@
+&scoreVar=_level0.topScoreValue&blah=1

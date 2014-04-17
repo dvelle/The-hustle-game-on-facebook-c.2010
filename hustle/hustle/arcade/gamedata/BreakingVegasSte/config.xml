@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!--config file for BlackJack game-->
+<!--http://www.DISarea.com-->
+<config>
+	<!--the ammount the player starts with , Minimin Bet, Maximum Bet-->
+	<money>500</money>
+	<minbet>5</minbet>
+	<maxbet>100</maxbet>
+	<currency>$</currency>
+	<tips>yes</tips>	
+	<!--Advertising-->
+	<!--can be a .swf file or a .jpg file-->
+	<!--JPG files can be loaded from any domain-->
+	<!--example: http://www.disarea.com/images/items/bj.jpg-->
+	<!--or: adv.swf-->
+	<!--optimal size 286x190-->
+	<adv show="no"></adv>
+	<!--link to the game-->
+	<link></link>
+	
+</config>

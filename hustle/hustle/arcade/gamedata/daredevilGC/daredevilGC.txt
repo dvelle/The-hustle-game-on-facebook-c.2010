@@ -1,0 +1,1 @@
+&scoreVar=GAME_SCORE&blah=1

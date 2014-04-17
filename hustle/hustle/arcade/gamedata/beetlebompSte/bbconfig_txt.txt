@@ -1,0 +1,53 @@
+// this is the text for the cutscenes for the first 5 levels
+
+&cuttext1=Electro-beetles have infested our city! I feel horrible, since it was my lab they escaped from. But how could they have gotten loose? &
+
+&cuttext2=Great job! We have them on the run now.
+More and more, this looks to be a work of sabotage. Somebody had to smuggle the beetles out. I have my suspicions... &
+
+&cuttext3=Folks have fled to cities with working power grids. Little do they know that the beetles reproduce like crazy. The Queen is capable of popping out thousands of electron-hungry babies daily. 
+These bugs will spread... and quickly. We need to keep zapping. &
+
+&cuttext4=My only hope is to follow the bug trails and stumble upon the primary nest. As I observe the beetles in their real-world habitat, I have noted a strange tribalism: when three or more of the like-colored bugs actively approach within range, they leave the primary brood and fly away, discharging all retained electricity and becoming benign, happy bugs again. Most interesting. &
+
+&cuttext5=I have met up with Lyle, a local Electrician. He was shooting pebbles at the beetles, using the oddest gizmo I’d ever seen. Lyle's device is capable of retaining the beetle’s electricity and emitting an electric pulse strong enough to stop their reproduction.  
+With his zapper and shooting skills plus my knowledge of the electro-beetle’s weaknesses, maybe, just maybe, modern civilization has a chance of keeping the lights on. &
+
+//this is the text for tutorials that appear at the start of the first 5 levels
+
+&tutepoptext1=Match 3 bugs of the same color to knock them out of line. Don't let them reach the end. Otherwise, you'll have an infestation! Use the mouse to move and shoot. Press spacebar to discard a bug.&
+
+&tutepoptext2=Try to use rare rainbow bugs! They will match with any color.&
+
+&tutepoptext3=Knock the clock power-up out of line and catch it to stop the bugs from marching forward!&
+
+&tutepoptext4=Knock out and catch the shock and awe power-up. It will bomb away big groups of beetles.&
+
+&tutepoptext5=Knock out and catch the fire power-up to shoot a wave of fire at the bugs!&
+
+//this is the text for the tutorials that appear 
+
+&sparktute=Collect the sparks to charge your power meter! When the meter is full, it will release an energy pulse that will stop any more beetles from appearing!&
+
+&queentute=The queen is retreating! Collect the beetle eggs she drops for bonus points!&
+
+
+//this is the text for the help file
+//this is html text
+
+&helptext1=Move your zapper back and forth with the mouse. Left click to launch a bug, press space to try a different color. &
+
+&helptext2=Create matches of three or more of the same color to make the bugs fly away.  &
+
+&helptext3=Catch the sparks dropped by bugs to charge your zapper. When fully charged, the zapper emits a beam that stops more bugs from coming! &
+
+&helptext4=Hit a control disk out of the path and catch it to get special powers! &
+
+&helptext5=Don't let the bugs reach the last dot or you lose! &
+
+
+
+
+//this confirms all the data has loade
+
+&allconfigdone=true&

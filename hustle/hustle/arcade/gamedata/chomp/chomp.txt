@@ -1,0 +1,1 @@
+&scoreVar=gameState.score&blah=1

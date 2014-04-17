@@ -1,0 +1,1 @@
+endURL=arcade/gamedata/shiftpoker/ending.swf

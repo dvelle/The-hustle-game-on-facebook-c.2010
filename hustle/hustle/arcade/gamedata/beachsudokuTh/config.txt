@@ -1,0 +1,1 @@
+endURL=arcade/gamedata/beachsudokuTh/ending_arkadium.swf

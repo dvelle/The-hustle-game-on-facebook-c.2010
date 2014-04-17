@@ -1,0 +1,60 @@
+<cubislevel
+	version="1.0"
+	seed="0"
+	time="50"
+	cubestogo="52"
+	starcubestogo="52"
+>
+	<description>
+		
+	</description>
+	<initialcubes>
+		<cube type="normal" color="1" index="0" />
+		<cube type="normal" color="1" index="2" />
+		<cube type="normal" color="1" index="3" />
+		<cube type="normal" color="1" index="11" />
+		<cube type="normal" color="1" index="14" />
+		<cube type="normal" color="1" index="24" />
+		<cube type="normal" color="5" index="33" />
+		<cube type="normal" color="0" index="34" />
+		<cube type="normal" color="5" index="35" />
+		<cube type="normal" color="0" index="43" />
+		<cube type="normal" color="5" index="44" />
+		<cube type="normal" color="0" index="45" />
+		<cube type="normal" color="5" index="53" />
+		<cube type="normal" color="0" index="54" />
+		<cube type="normal" color="5" index="55" />
+		<cube type="normal" color="0" index="63" />
+		<cube type="normal" color="5" index="64" />
+		<cube type="normal" color="0" index="65" />
+		<cube type="normal" color="3" index="133" />
+		<cube type="normal" color="0" index="134" />
+		<cube type="normal" color="3" index="135" />
+		<cube type="normal" color="3" index="143" />
+		<cube type="star" color="1" index="144" />
+		<cube type="normal" color="3" index="145" />
+		<cube type="normal" color="0" index="153" />
+		<cube type="star" color="1" index="154" />
+		<cube type="normal" color="0" index="155" />
+		<cube type="normal" color="0" index="164" />
+	</initialcubes>
+	<cubequeue>
+		<random>
+			<cube type="normal" color="0" index="100" />
+			<cube type="normal" color="1" index="85" />
+			<cube type="normal" color="3" index="55" />
+			<cube type="normal" color="5" index="70" />
+			<cube type="wedge" color="0" index="100" />
+			<cube type="wedge" color="1" index="85" />
+			<cube type="wedge" color="3" index="55" />
+			<cube type="wedge" color="5" index="70" />
+			<cube type="osmosis" color="0" index="100" />
+			<cube type="osmosis" color="1" index="85" />
+			<cube type="osmosis" color="3" index="55" />
+			<cube type="osmosis" color="5" index="70" />
+			<cube type="dual" index="100" />
+		</random>
+		<fixed>
+		</fixed>
+	</cubequeue>
+</cubislevel>

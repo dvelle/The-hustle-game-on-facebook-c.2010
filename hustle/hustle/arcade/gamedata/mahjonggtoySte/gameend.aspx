@@ -1,0 +1,1 @@
+<GameEnd><game url='arcade/gamedata/mahjonggtoySte/ending_default.swf' affiliateID='1'/></GameEnd>

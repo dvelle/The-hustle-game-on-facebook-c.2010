@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<content>
+	<string id="IDS_TITLE">WINTER WORKOUT</string>
+	<string id="IDS_INSTRUCTIONS">INSTRUCTIONS</string>
+	<string id="IDS_HISCORETITLE">WINTER WORKOUT CHAMPIONS</string>
+	<string id="IDS_OK">OK</string>
+	<string id="IDS_QUIT">QUIT</string>
+	<string id="IDS_SKIP">SKIP</string>
+	<string id="IDS_MENU">MENU</string>
+	<string id="IDS_SUBMIT">SUBMIT</string>
+	<string id="IDS_PRACTICEMODE">PRACTICE MODE</string>
+	<string id="IDS_PRACTICE">PRACTICE</string>
+	<string id="IDS_HISCORES">HISCORES</string>
+	<string id="IDS_SELECTPLANET">SELECT AN EVENT</string>
+
+	<string id="IDS_PLAYEVENT">PLAY EVENT</string>
+	<string id="IDS_BACK">BACK</string>
+	<string id="IDS_THESOLARGAMES">THE SOLAR GAMES</string>
+	<string id="IDS_INSTRUCTIONTEXT">Help Santa become a lean-mean-present-delivering-machine by putting him through his Winter Workout.\n\n</string>
+	<string id="IDS_CONGRATULATIONS">Congratulations!</string>
+	<string id="IDS_YOUSCORED">You scored</string>
+	<string id="IDS_SUBMITSCORE">Submit your score to see if you're a Winter Workout Champion.</string>
+	<string id="IDS_PLEASEWAIT">PLEASE WAIT...</string>
+	<string id="IDS_YES">YES</string>
+	<string id="IDS_NO">NO</string>
+	<string id="IDS_AREYOUSURE">Are you sure you want to quit?</string>
+</content>

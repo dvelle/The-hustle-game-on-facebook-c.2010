@@ -1,0 +1,2 @@
+&scoreVar=_root.sco&blah=1
+

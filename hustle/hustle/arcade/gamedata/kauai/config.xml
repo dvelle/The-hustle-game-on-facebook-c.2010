@@ -1,0 +1,626 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!---
+@flashout gamedata.as 
+
+use xClean.exe gameconfig.xml for cleaning.
+-->
+<game>
+	<style>
+		<!-- Styles for the symbol text box -->
+		<keyword duration="1" revealEffect="effects.Orbit" revealInterval="0.1" offsetX="1" offsetY="1" cycles="2" repeat="1" />
+		<exclaim xscale="2" yscale="2" />
+	</style>
+	
+	<!-- game config values -->
+	<config>
+		<required1 cls="Array" v="paper,crayons,glitterstick" />
+		<levelWorlds1 cls="Array" v="Lev1Scene1,Lev1Scene2,Lev1Scene3" />
+		<levelStartState1 v="initial" />
+		<levelStartWorld1 v="Lev1Scene1" />
+		<enditem1 v="card" />
+		<completeDialog1 v="stitch_E1" />
+		<startDialog1 v="stitch_S1" />
+		
+		<required2 cls="Array" v="reef" />
+		<levelWorlds2 cls="Array" v="Lev2Scene1,Lev2Scene2,Lev2Scene3,Lev2Scene4,Lev2Scene5,Lev2Scene6" />
+		<levelStartState2 v="lev2start" />
+		<levelStartWorld2 v="Lev2Scene2" />
+		<enditem2 v="reef" />
+		<completeDialog2 v="stitch_E1" />
+		<startDialog2 v="stitch_S1" />
+		
+		<required3 cls="Array" v="machine,sweetness,petlava,happiness" />
+		<levelWorlds3 cls="Array" v="Lev3Scene1,Lev3Scene2,Lev3Scene3,Lev3Scene4,Lev3Scene5" />
+		<levelStartState3 v="lev3start" />
+		<levelStartWorld3 v="Lev3Scene1" />
+		<enditem3 v="cake" />
+		<completeDialog3 v="stitch_E1" />
+		<startDialog3 v="stitch_S1" />
+		
+	</config>
+	
+	<!-- determines what objects are in the game and how they behave -->
+	<object>
+		<a cls="MainCharacter" id="stitch" />
+		<a cls="GameCharacter" id="tenthole,chest,jumba,pleakley,gantu,exp625,lilo,hamsterveil,kisser,huckster"  />
+		<a cls="CollectionItem" id="petlava,glitterstick,sandwhich,paper,crayons,surfwax,key,rebounder,baton,pickles,gumball,flowers,beads" value="100" />
+		<a cls="Collectable" id="kukui" />
+		<a cls="Collectable" id="gift" />
+		<a cls="Door" id="door" />
+	</object>
+	
+	<states>
+		<!-- World Wide Changes for all the characters. -->
+		<state id="initial">
+			<pleakley dialog="pleakley1" anim="ambient" />
+			<jumba dialog="jumba1" anim="ambient" />
+			<gantu dialog="gantu1" anim="ambient" />
+			<lilo dialog="lilo1" anim="ambient" />
+			<exp625 dialog="exp625_1" anim="ambient" />
+			<chest dialog="chest1" anim="closed" />
+			<surfwax dialog="surfwax1" />
+		</state>
+		<state id="lev2start">
+			<jumba dialog="jumba21" anim="ambient" />
+			<pleakley dialog="pleakley21" anim="ambient" />
+			<lilo dialog="lilo21" anim="ambient" />
+			<gantu dialog="gantu21" anim="ambient" block="1" />
+			<exp625 dialog="exp625_21" anim="ambient" block="1" />
+			<pickles dialog="pickles21" anim="ambient" />
+			<hamsterveil dialog="hamsterveil21" anim="ambient" block="1" />
+			<flowers dialog="flowers21" />
+		</state>
+		<state id="lev3start">
+			<jumba dialog="jumba31" anim="ambient" />
+			<pleakley dialog="pleakley31" anim="ambient" />
+			<gantu dialog="gantu31" anim="ambient" />
+			<kisser dialog="kisser31" anim="ambient" />
+			<exp625 dialog="exp625_31" anim="ambient" sleep="0" />
+			<lilo dialog="lilo31" anim="ambient" />
+			<huckster dialog="huckster31" anim="ambient" />
+			<beads dialog="beads31" anim="ambient" />
+			<petlava dialog="petlava31" />
+			<tenthole dialog="hole31" />
+		</state>
+	</states>
+	
+	<!-- dialog for the characters in the game -->
+	<!-- <s style="keyword"/> -->
+	<dialog>
+		<d id="empty"></d>
+		
+		<d id="pleakley1">
+			<c id="stitch">Hello!</c>
+			<c id="pleakley">Well hello Stitch!</c>
+			<q>
+				<opt text="It's Lilo's Birthday.">
+					<c id="pleakley">Is that so? And I didn't get her a thing!</c>
+					<repeat />
+				</opt>
+				<opt text="It... um... beautiful.">
+					<c id="stitch" anim="happyTalkRight">It... um... beautiful.</c>
+					<change id="pleakley" dialog="pleakley2" anim="ambient2" />
+					<c id="pleakley" anim="give" >Why thank you! Art is so freeing!</c>
+					<c id="pleakley" anim="give" >Here's a glitter stick. You can make something too.</c>
+					<call id="stitch" command="takeItem" args="glitterstick" />
+					<c id="stitch">Thanks!</c>
+				</opt>
+				<opt text="See ya!">
+					<exit />
+				</opt>
+			</q>
+		</d>
+		
+		<d id="pleakley2">
+			<c id="pleakley" anim="talk2">Have fun with that glitter stick!</c>
+		</d>
+		
+		<d id="jumba1">
+			<c id="stitch">Hello!</c> 
+			<c id="jumba">Go 'way. Are bothering evil genius me!</c>
+			<c id="stitch">Have something for Stitch?</c> 
+			<c id="jumba">Don't make me to say again!</c>
+		</d>
+		
+		<d id="gantu1">
+			<c id="stitch">Hello!</c>
+			<c id="gantu">You again!</c>
+			<q>
+				<opt text="Can I have paper?">
+					<c id="gantu">Absolutely not!</c>
+					<repeat />
+				</opt>
+				<opt text="What is?">
+					<waitanim id="gantu" anim="unfurl" />
+					<c id="gantu" anim="unfurlTalk" >Experiment 601, wanted all over the galaxy! But especially by Hamsterveil.</c>
+					<waitanim id="gantu" anim="furl" />
+					<repeat />
+				</opt>
+				<opt text="I help you catch!">
+					<change id="gantu" dialog="gantu2" anim="ambient2" />
+					<c id="gantu">This would be a first, but I suppose you can help me...</c>
+					<waitanim id="gantu" anim="give" />
+					<call id="stitch" command="takeItem" args="paper" />
+				</opt>
+				<opt text="See ya!">
+					<exit />
+				</opt>
+			</q>
+		</d>
+		
+		<d id="gantu2"> 
+			<c id="stitch">Hello!</c>
+			<c id="gantu" anim="talk2">Have you seen him?</c>
+		</d>
+		
+		<d id="lilo1">
+			<c id="stitch">Hi Lilo!</c> 
+			<c id="lilo" anim="talkAndWave">Hi Stitch, I'm working on the surfboard.</c> 
+			<q>
+				<opt text="Give sandwich!">
+					<c id="lilo" anim="talkBad">No!<wait time="0.75"/> You're rude!</c>
+					<repeat />
+				</opt>
+				<opt text="PLEASE give sandwich?">
+					<c id="lilo" anim="talkGood">Not unless we trade for something I need.</c>
+					<repeat />
+				</opt>
+				<opt text="Do you need some wax?">
+					<if target="stitch" command="hasItem" args="surfwax" is="1">
+						<call id="stitch" command="useItem" args="surfwax" />
+						<c id="lilo" anim="talkGood">Well, this is a fair trade, I need wax for the surfboard!</c>
+						<waitAnim id="lilo" anim="give" />
+						<call id="stitch" command="takeItem" args="sandwich" />
+						<change id="lilo" dialog="lilo2" anim="ambient2" talkanim="talk2" />
+						<exit/>
+					</if>
+					<c id="lilo">Yeah! Can you find some for me?</c>
+				</opt>
+				<opt text="See ya!">
+					<exit />
+				</opt>
+			</q>
+		</d>
+		
+		<d id="lilo2">
+			<c id="lilo">Thanks for the wax.</c> 
+		</d>
+		
+		<d id="exp625_1">
+			<c id="stitch">Hello!</c> 
+			<c id="exp625">Make yourself useful and get me a sandwich.</c> 
+			<q>
+				<opt text="It's Lilo's birthday!">
+					<c id="exp625">Will there be sandwiches at her party?</c>
+					<repeat />
+				</opt>
+				<opt text="Give Sandwich">
+					<if target="stitch" command="hasItem" args="sandwich" is="1">
+						<change id="exp625" dialog="exp625_2" anim="ambient2" talkanim="talk2" />
+						<call id="exp625" command="playAnim" args="give" />
+						<wait time="5" />
+						<call id="stitch" command="useItem" args="sandwich" />
+						<call id="stitch" command="takeItem" args="key" />
+						<call id="exp625" command="playAnim" args="ambient2" />
+						<exit />
+					</if>
+					<!-- DOES NOT HAVE SANDWICH -->
+					<c id="stitch">I should go find a sandwich first.</c>
+					<c id="exp625">Please...<wait time="1.0"/> hurry!</c>
+				</opt>
+				<opt text="See ya!">
+					<exit />
+				</opt>
+			</q>
+		</d>
+		
+		<d id="surfwax1">
+			<c id="stitch">That looks like wax.</c> 
+			<call id="surfwax" command="setCollected" args="surfwax" />
+			<call id="stitch" command="takeItem" args="surfwax" />
+			<change id="surfwax" dialog="empty" anim="ambient2" talkanim="talk2" />
+		</d>
+		
+		
+		<d id="chest1">
+			<if target="stitch" command="hasItem" args="key" is="1">
+				<change id="chest" dialog="chest2" anim="isOpen" talkanim="talk2" />
+				<call id="chest" command="playAnim" args="open" />
+				<wait time="1" />
+				<call id="stitch" command="takeItem" args="crayons" />
+				<exit />
+			</if>
+			
+			<c id="stitch">It's locked...</c>
+		</d>
+		<d id="chest2">
+			<c id="stitch">There is nothing left in here.</c>
+		</d>
+		
+		<d id="stitch_E1">
+			
+		</d>
+		
+		<!-- level 2 -->
+		<d id="jumba21">
+			<c id="stitch">Hello!</c>
+			<q>
+				<opt text="What making?">
+					<c id="jumba">Making whole sandwich flavor in one little stick of gum!</c>
+					<repeat />
+				</opt>
+				<opt text="Need anything?">
+					<c id="jumba">Have bread, cold cuts, mayonnaise...</c>
+					<c id="jumba">still missing one thing!</c>
+					<repeat />
+				</opt>
+				<opt text="Need some pickle juice?" target="stitch" command="hasItem" args="pickles" is="1">
+					<c id="jumba"><s scaleX="2" scaleY="2">Is perfect!!!</s></c>
+					<c id="jumba">Now can make whole sandwich in one teeny stick of gum!</c>
+					<!-- TODO:: Animation -->
+					<call id="stitch" command="useItem" args="pickles" />
+					<call id="stitch" command="takeItem" args="gumball" />
+					
+					<exit />
+				</opt>
+				<opt text="See ya!">
+					<exit />
+				</opt>
+			</q>
+		</d>
+		
+		<d id="pleakley21">
+			<c id="stitch">Hello!</c>
+			<c id="pleakley">Well hello my little blue bunion!</c>
+			<q>
+				<opt text="What doing?">
+					<c id="pleakley">I'm leap-ercizing!</c>
+					<c id="pleakley">I can get so gloriously high in the sky!</c>
+					<repeat />
+				</opt>
+				<opt text="Take rebounder">
+					<waitforframe id="pleakley" anim="stolen" frame="1" />
+					<call id="stitch" command="takeItem" args="rebounder" />
+					<call id="stitch" command="playAnim" args="stealTramp" />
+					<waitanim id="pleakley" anim="stolen" />
+					<change id="pleakley" dialog="empty" anim="ambient2" />
+					<c id="pleakley">Hey</c>
+					<c id="pleakley">Where did my bounciness go?</c>
+				</opt>
+				<opt text="See ya!">
+					<exit />
+				</opt>
+			</q>
+		</d>
+		
+		<d id="flowers21">
+			<if target="stitch" command="hasItem" args="rebounder" is="1">
+				<if target="stitch" command="hasItem" args="baton" is="1">
+					<if target="stitch" command="hasItem" args="chewedgum" is="1">
+						<!-- play animation -->
+						<call id="stitch" command="playAnim" args="jumpTramp" />
+						<wait time="11" />
+						<c id="stitch">Got it!</c>
+						<call id="stitch" command="takeItem" args="reef" />
+						<call id="flowers" command="setCollected" args="flowers" />
+						<wait time="2" />
+						<exit />
+					</if>
+					
+					<c id="stitch">Not coming loose.</c>
+					<exit />
+				</if>
+				<c id="stitch">Not working...</c>
+				<exit />
+			</if>
+			
+			<c id="stitch">Can not reach.</c>
+		</d>
+		
+		<d id="gantu21">
+			<c id="stitch">Hello!</c>
+			
+		</d>
+		<d id="hamsterveil21">
+			<call id="stitch" command="playAnim" args="pressButton" />
+			<wait time="1" />
+			<waitanim id="hamsterveil" anim="fadeIn" />
+			<c id="hamsterveil" anim="talk">Vat is it, you great blue cow of the sea?</c>
+			<waitanim id="hamsterveil" anim="fadeOut" />
+			<change id="hamsterveil" dialog="hamsterveil22" />
+			<c id="gantu" anim="talk">Stop fiddling with that!</c>
+		</d>
+		
+		<d id="hamsterveil22">
+			<call id="stitch" command="playAnim" args="pressButton" />
+			<wait time="1" />
+			<waitanim id="hamsterveil" anim="fadeIn" />
+			<c id="hamsterveil" anim="talk">Can't you see I'm napping?</c>
+			<change id="hamsterveil" dialog="hamsterveil23" />
+			<waitanim id="hamsterveil" anim="fadeOut" />
+			<c id="gantu" anim="talk">Stop fiddling with that!</c>
+		</d>
+		
+		<d id="hamsterveil23">
+			<call id="stitch" command="playAnim" args="pressButton" />
+			<wait time="1" />
+			<waitanim id="hamsterveil" anim="fadeIn" />
+			<c id="hamsterveil" anim="talk">One more time and I'll fire you twice!</c>
+			<change id="hamsterveil" dialog="hamsterveil24" anim="ambient2" />
+			<c id="gantu" anim="talk">Stop fiddling with that!</c>
+			<call id="gantu" command="playAnim" args="turnAround" />
+			<change id="pickles" dialog="pickles22" />
+		</d>
+		
+		<d id="hamsterveil24"></d>
+		
+		<d id="pickles21">
+			<c id="gantu" anim="talk" ><s style="exclaim">Hey!</s></c>
+			<c id="gantu">Stay out of my fridge, you piglet!</c>
+		</d>
+		
+		<d id="pickles22">
+			<call id="pickles" command="setCollected" args="pickles" />
+			<call id="stitch" command="takeItem" args="pickles" />
+			<change id="pickles" dialog="empty" />
+		</d>
+		
+		<d id="exp625_21">
+			<c id="stitch">Hello!</c>
+			<c id="exp625">You again? Beat it!</c>
+			
+			<q>
+				<opt text="Let me through?">
+					<c id="exp625">Nope - you gotta be this tall to go through this door.</c>
+					<repeat />
+				</opt>
+				<opt text="Want some gum?">
+					<if target="stitch" command="hasItem" args="gumball" is="1">
+						<call id="stitch" command="useItem" args="gumball" />
+						<change id="exp625" dialog="empty" block="0" />
+						<waitanim id="stitch" anim="giveGum" />
+						<c id="exp625" anim="talk">Nah - I need a real sandwich.</c>
+						<call id="stitch" command="playanim" args="removegum" />
+						<waitanim id="exp625" anim="leave" />
+						<call id="stitch" command="takeItem" args="chewedgum" />
+						<exit />
+					</if>
+					
+					<c id="stitch">I need to get some gum?</c>
+				</opt>
+				<opt text="See ya!">
+					<exit />
+				</opt>
+			</q>
+		</d>
+		
+		<d id="lilo21">
+			<c id="stitch">Hi Lilo!</c>
+			<c id="lilo">Don't bother me Stitch. I'm practicing my twirling!</c>
+			
+			<q>
+				<opt text="Give stick to me?">
+					<c id="lilo">No, I really need to practice!</c>
+					<repeat />
+				</opt>
+				<opt text="Stitch wants to learn!">
+					<c id="lilo" anim="talkGood">You do? I can teach you!</c>
+					<waitanim id="lilo" anim="give" />
+					<change id="lilo" dialog="empty" anim="ambient2" />
+					<call id="stitch" command="takeItem" args="baton" />
+				</opt>
+				<opt text="See ya!">
+					<exit />
+				</opt>
+			</q>
+		</d>
+		
+		<d id="doorS21">
+			
+			<if target="exp625" command="getStateValue" args="block" is="1">
+				<run id="exp625_21" />
+			</if>
+			
+			<relocate world="Lev2Scene5" x="80" z="210" />
+		</d>
+		
+		<!-- level3 -->
+		<d id="jumba31">
+			<c id="stitch">Hello!</c>
+			<q>
+				<opt text="This machine make anything?">
+					<c id="jumba" anim="talk" >Yes, evil genius truly genius this time!</c>
+					<call command="playAnim" id="jumba" args="ambient1" />
+					<repeat />
+				</opt>
+				<opt text="This make me cake?">
+					<c id="jumba" anim="talk" >Yes, but needing ingredients.</c>
+					<call command="playAnim" id="jumba" args="ambient1" />
+					<repeat />
+				</opt>
+				<opt text="Need what for making cake?">
+					<c id="jumba" anim="talk" >Three things make cake</c>
+					<c id="jumba" anim="talk" >sweetness...</c>
+					<c id="jumba" anim="talk" >warmth...</c>
+					<c id="jumba" anim="talk" >happiness.</c>
+					<call command="playAnim" id="jumba" args="ambient1" />
+					<waitanim id="jumba" anim="giveRadio" option="stitch" />
+					<call id="stitch" command="takeItem" args="machine" />
+					<change id="jumba" dialog="jumba32" anim="ambient2" />
+					<c id="jumba" anim="ambient2">Go getting them!</c>
+				</opt>
+				<opt text="See ya!">
+					<exit />
+				</opt>
+			</q>
+		</d>
+		<d id="jumba32">
+			<c id="jumba">sweetness...</c>
+			<c id="jumba">warmth...</c>
+			<c id="jumba">happiness.</c>
+		</d>
+		
+		<d id="pleakley31">
+			<c id="stitch">Hello!</c>
+			<q>
+				<opt text="Shall we go on some rides?">
+					<c id="pleakley">Oh I'm afraid not, little one, for my disguise I have to appear ladylike.</c>
+					<repeat />
+				</opt>
+				<opt text="Have something for Stitch?">
+					<c id="pleakley">Sorry, no, I need everything I have Stitch.</c>
+					<repeat />
+				</opt>
+				<opt text="Need some beads?" target="stitch" command="hasItem" args="beads" is="1">
+					
+					<call id="stitch" command="useItem" args="beads" />
+					<c id="pleakley"><s style="exclaim">Beads!</s></c>
+					<c id="pleakley">Just what my disguise needs!</c>
+					<c id="pleakley" anim="give">Here, take this old feather boa.</c>
+					<c id="pleakley" anim="give">It's been tickling me all day!</c>
+					<waitanim id="pleakley" anim="exchange" option="stitch" />
+					<change id="pleakley" dialog="pleakley32" anim="ambient2" />
+					<call id="stitch" command="takeItem" args="boa" />
+				</opt>
+				<opt text="See ya!">
+					<exit />
+				</opt>
+			</q>
+		</d>
+		
+		<d id="gantu31">
+			<c id="stitch">Hi!</c>
+			<c id="gantu">I thought I told you not to breathe my air!</c>
+			<q>
+				<opt text="Gantu grumpy?">
+					<c id="gantu">Grumpy?</c>
+					<c id="gantu">I invented grumpiness!</c>
+					<repeat />
+				</opt>
+				<opt text="How make Gantu happy?">
+					<c id="gantu">Whatever you do, don't tickle me!</c>
+					<repeat />
+				</opt>
+				<opt text="What happens?" target="stitch" command="hasItem" args="boa" is="1" >
+					<change id="gantu" dialog="gantu32" anim="tickle" />
+					<call id="stitch" command="playAnim" args="tickle" />
+					<c id="gantu">I told you not to...</c>
+					<wait time="1" />
+					<c id="gantu">He he...</c>
+					<c id="gantu">Ha ha...</c>
+					<wait time="0.5" />
+					<c id="gantu"><s style="exclaim">HAHAHAHAHA!!!</s></c>
+					<call id="gantu" command="playAnim" args="ambient" />
+					<call id="stitch" command="takeItem" args="happiness" />
+				</opt>
+				<opt text="See ya!">
+					<exit />
+				</opt>
+			</q>
+		</d>
+		
+		<d id="beads31">
+			<call id="beads" command="setCollected" />
+			<change id="beads" dialog="empty" />
+			<call id="stitch" command="takeItem" args="beads" />
+		</d>
+		
+		<d id="kisser31">
+			<c id="stitch">What is?</c>
+			<c id="kisser" anim="talk">Well, sonny boy! Answer my riddles and you get a special surprise!</c>
+			<q>
+				<opt text="Okay, let me play."></opt>
+				<opt text="Not interested">
+					<exit />
+				</opt>
+			</q>
+			<c id="kisser" anim="talk">Choose the word that rhymes...</c>
+			<wait time="0.5" />
+			<c id="kisser" anim="talk">I'm the majestic lady all the way from Salt Lake helping you make Lilo a... </c>
+			<q>
+				<opt text="New surfboard">
+					<c id="kisser" anim="talk">Incorrect.</c>
+					<c id="kisser" anim="talk">Try again.</c>
+					<repeat />
+				</opt>
+				<opt text="Birthday Cake">
+					<c id="kisser"><s style="exclaim" anim="talk">Ooh! You won!</s></c>
+					<c id="kisser" anim="talk">Here comes the special surprise!</c>
+					<call id="stitch" command="playAnim" args="kiss" />
+					<waitanim id="kisser" anim="kiss" />
+					<call id="kisser" command="playAnim" args="ambient2" />
+					<call id="stitch" command="takeItem" args="sweetness" />
+					<change id="kisser" dialog="empty" />
+				</opt>
+				<opt text="Bongo drums">
+					<c id="kisser" anim="talk">Incorrect.</c>
+					<c id="kisser" anim="talk">Try again.</c>
+					<repeat />
+				</opt>
+			</q>
+		</d>
+		
+		<d id="exp625_31">
+			<c id="stitch">Hello!</c>
+			<c id="exp625">What I wouldn't give for a snooze about now.</c>
+			<c id="exp625">it's so WARM in here!</c>
+			<if target="stitch" command="hasItem" args="teddy" is="1">
+				<q>
+					<opt text="Want this teddy bear?">
+						<call id="stitch" command="useItem" args="teddy" />
+						<c id="exp625">See you in Slumberland!</c>
+						<change id="exp625" anim="ambient2" dialog="empty" sleep="1" />
+					</opt>
+					<opt text="See ya.">
+						<exit />
+					</opt>
+				</q>
+			</if>
+			
+		</d>
+		
+		<d id="petlava31">
+			<if target="exp625" command="getStateValue" args="sleep" is="1">
+				<call id="petlava" command="setCollected" />
+				<change id="petlava" dialog="empty" />
+				<call id="stitch" command="takeItem" args="petlava" />
+				<exit />
+			</if>
+			
+			<c id="exp625"><s style="exclaim">Hey!</s></c>
+			<c id="exp625">knock it off.</c>
+		</d>
+		
+		<d id="lilo31">
+			<if target="stitch" command="hasItem" args="scrump" is="1">
+				<c id="lilo">You found her!</c>
+				<call id="stitch" command="useItem" args="scrump" />
+				<waitAnim id="lilo" anim="giveBear" option="stitch" />
+				<call id="stitch" command="takeItem" args="teddy" />
+				<change id="lilo" dialog="lilo32" anim="ambient2" />
+				<exit />
+			</if>
+			
+			<c id="stitch">Hello Lilo!</c>
+			<c id="lilo">Hi Stitch.</c>
+			<wait time="0.5" />
+			<c id="lilo">sigh...</c>
+			<c id="stitch">What wrong?</c>
+			<c id="lilo">I lost Scrump, can you find her?</c>
+		</d>
+		
+		<d id="huckster31">
+			<c id="stitch">Please give me doll.</c>
+			<c id="huckster" anim="talk">Sorry, no.</c>
+		</d>
+		
+		<d id="hole31">
+			<call id="stitch" command="playAnim" args="stealDoll" />
+			<wait time="3" />
+			<call id="stitch" command="takeItem" args="scrump" />
+			<change id="huckster" anim="ambient2" dialog="huckster32" />
+			<change id="tenthole" dialog="empty" />
+		</d>
+		
+	</dialog>
+</game>

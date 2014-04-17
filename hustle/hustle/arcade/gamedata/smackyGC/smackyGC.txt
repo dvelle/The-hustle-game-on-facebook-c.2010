@@ -1,0 +1,1 @@
+&scoreVar=_root.swHighScoreObject.player1Score&blah=1

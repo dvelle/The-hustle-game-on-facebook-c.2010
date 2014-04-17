@@ -1,0 +1,1 @@
+&scoreVar=_root.fullLootScore&blah=1

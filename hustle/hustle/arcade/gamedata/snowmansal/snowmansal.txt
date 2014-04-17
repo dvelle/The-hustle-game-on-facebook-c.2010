@@ -1,0 +1,1 @@
+&scoreVar=_root.snowscore&blah=1

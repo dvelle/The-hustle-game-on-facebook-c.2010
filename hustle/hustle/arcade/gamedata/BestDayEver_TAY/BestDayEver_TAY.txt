@@ -1,0 +1,2 @@
+&scoreVar=_global.Pack.nScore&blah=1
+

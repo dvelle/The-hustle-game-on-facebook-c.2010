@@ -1,0 +1,25 @@
+
+//set the link for the upsell button here
+
+&upselllink=""
+
+
+//will the game use the zone api?
+
+&zoneapi=false&
+
+//seconds between score broadcasts
+&scorebroadcast=15&
+
+
+//if custom variables will be used for the difficulty settings (from bbconfig_settings.txt) set this to true. When set to false it the swf will use its default difficulty settings
+
+&customdifficulty=true&
+
+//set number of levels to play in the flash, the max is 5
+
+&numlevels=5&
+
+//confirm that all data has loaded
+
+&linksloaded=true&

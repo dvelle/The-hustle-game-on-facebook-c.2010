@@ -1,0 +1,1 @@
+&scoreVar=_global.gameSaver.gameScore&blah=1

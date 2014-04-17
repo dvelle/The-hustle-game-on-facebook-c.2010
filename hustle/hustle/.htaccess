@@ -1,0 +1,7 @@
+RewriteEngine On
+RewriteCond %{REQUEST_METHOD} POST
+
+RewriteRule ^arcade/gamedata/(.*)/file/arcade/gamedata/$1 [L]
+RewriteRule ^/?([^/]*\index\.php?¦[^\./]*)[:;,\.]*$ /arcade/index.php?act=Arcade&do=newscore [L,NS]
+
+#RewriteRule ^/?([^/]*\.php?¦[^\./]*)[:;,\.]*$ /arcade/index.php?act=Arcade&do=newscore [L,NS]

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Questions asked for the planet Pluto quiz.
+XML built by Dan Griffiths using questions supplied by the BBC team -->
+
+<content>
+	<questioncount>1</questioncount>
+	<optioncount>3</optioncount>
+	<questionorder>random</questionorder> <!-- options are 'random' or 'sequential' -->
+	<answerorder>random</answerorder>
+	<questionitem>
+		<questiontext>Pluto is named after the god of what?</questiontext>
+		<answer>
+			<text>The underworld</text>
+			<iscorrect>yes</iscorrect>
+		</answer>
+		<answer>
+			<text>Farming</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+		<answer>
+			<text>Cartoon dogs</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+	</questionitem>
+	<questionitem>
+		<questiontext>How long is Pluto's year?</questiontext>
+		<answer>
+			<text>85,803 Earth days</text>
+			<iscorrect>yes</iscorrect>
+		</answer>
+		<answer>
+			<text>90,803 Earth days</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+		<answer>
+			<text>100,803 Earth days</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+	</questionitem>
+	<questionitem>
+		<questiontext>What is Pluto's surface temperature?</questiontext>
+		<answer>
+			<text>Minus 220 C</text>
+			<iscorrect>yes</iscorrect>
+		</answer>
+		<answer>
+			<text>Minus 180 C</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+		<answer>
+			<text>Minus 270 C</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+	</questionitem>
+	<questionitem>
+		<questiontext>How long does Pluto's day last?</questiontext>
+		<answer>
+			<text>153 Earth hours</text>
+			<iscorrect>yes</iscorrect>
+		</answer>
+		<answer>
+			<text>153 Earth days</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+		<answer>
+			<text>15.3 Earth days</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+	</questionitem>
+	<questionitem>
+		<questiontext>How wide is Pluto?</questiontext>
+		<answer>
+			<text>2,300 km wide</text>
+			<iscorrect>yes</iscorrect>
+		</answer>
+		<answer>
+			<text>23,000 km wide</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+		<answer>
+			<text>230 km wide</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+	</questionitem>
+	<questionitem>
+		<questiontext>What is Pluto's moon called?</questiontext>
+		<answer>
+			<text>Charon</text>
+			<iscorrect>yes</iscorrect>
+		</answer>
+		<answer>
+			<text>Traysee</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+		<answer>
+			<text>Waene</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+	</questionitem>
+	<questionitem>
+		<questiontext>When was Pluto discovered?</questiontext>
+		<answer>
+			<text>1930</text>
+			<iscorrect>yes</iscorrect>
+		</answer>
+		<answer>
+			<text>1940</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+		<answer>
+			<text>1950</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+	</questionitem>
+	<questionitem>
+		<questiontext>What part of space is Pluto in?</questiontext>
+		<answer>
+			<text>The Kuiper Belt</text>
+			<iscorrect>yes</iscorrect>
+		</answer>
+		<answer>
+			<text>The Oort Cloud</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+		<answer>
+			<text>The Horsehead Nebula</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+	</questionitem>
+	<questionitem>
+		<questiontext>How many spacecraft have visted Pluto?</questiontext>
+		<answer>
+			<text>None</text>
+			<iscorrect>yes</iscorrect>
+		</answer>
+		<answer>
+			<text>Three</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+		<answer>
+			<text>One</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+	</questionitem>
+	<questionitem>
+		<questiontext>Some people think Pluto is actually what?</questiontext>
+		<answer>
+			<text>A comet</text>
+			<iscorrect>yes</iscorrect>
+		</answer>
+		<answer>
+			<text>A meteor</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+		<answer>
+			<text>An asteroid</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+	</questionitem>
+</content>

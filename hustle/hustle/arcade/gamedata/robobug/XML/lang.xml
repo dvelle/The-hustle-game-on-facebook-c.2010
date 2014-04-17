@@ -1,0 +1,33 @@
+<xml>
+
+	<instructions 
+		run="run"
+		jump="jump (2x for extra boost)" 
+		fall="fall"
+		shoot="shoot"
+		box="box"
+		bug="bugs"
+		options="pause"	
+	/>
+	
+	<staf 
+		info="Stuur ROBOBUG BLASTER naar al je vrienden! Vul 3 namen en emailadressen in druk op send."
+		yourname="your name"
+		youremail="your email"
+		friends="friends"
+		emails="email address"
+		sendok="Send OK!"
+		subject="This is a cool game.. ROBOBUG BLASTER !"
+		hello="Hello"
+		messagea="Deze game moet je checken:"
+		messageb="Kill al de bugs!"
+		bye="Groeten,"
+	/>
+	
+	<highscore
+		name="Vul hier je naam in"
+		email="Vul hier je emailadres in"
+		emailerror="Emailadres niet geldig"
+	/>
+	
+</xml>

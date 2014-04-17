@@ -1,0 +1,56 @@
+<cubislevel
+	version="1.0"
+	seed="0"
+	time="80"
+	cubestogo="52"
+	starcubestogo="52"
+>
+	<description>
+		
+	</description>
+	<initialcubes>
+		<cube type="normal" color="0" index="2" />
+		<cube type="normal" color="4" index="3" />
+		<cube type="normal" color="0" index="4" />
+		<cube type="normal" color="4" index="12" />
+		<cube type="star" color="2" index="13" />
+		<cube type="normal" color="4" index="14" />
+		<cube type="normal" color="0" index="22" />
+		<cube type="normal" color="4" index="23" />
+		<cube type="normal" color="0" index="24" />
+		<cube type="normal" color="4" index="33" />
+		<cube type="normal" color="0" index="43" />
+		<cube type="normal" color="4" index="44" />
+		<cube type="normal" color="4" index="53" />
+		<cube type="normal" color="0" index="63" />
+		<cube type="normal" color="4" index="64" />
+		<cube type="normal" color="4" index="102" />
+		<cube type="normal" color="0" index="103" />
+		<cube type="normal" color="4" index="104" />
+		<cube type="normal" color="0" index="112" />
+		<cube type="normal" color="0" index="114" />
+		<cube type="normal" color="4" index="122" />
+		<cube type="normal" color="0" index="123" />
+		<cube type="normal" color="4" index="124" />
+		<cube type="dual" color="2" color2="0" index="133" orientation="1"/>
+		<cube type="normal" color="4" index="143" />
+		<cube type="star" color="0" index="144" />
+		<cube type="dual" color="2" color2="0" index="153" orientation="1"/>
+		<cube type="normal" color="4" index="163" />
+		<cube type="star" color="0" index="164" />
+	</initialcubes>
+	<cubequeue>
+		<random>
+			<cube type="normal" color="0" index="15" />
+			<cube type="normal" color="2" index="15" />
+			<cube type="normal" color="4" index="15" />
+			<cube type="osmosis" color="1" index="40" />
+			<cube type="osmosis" color="3" index="40" />
+		</random>
+		<fixed>
+			<cube type="normal" color="0" index="0" />
+			<cube type="normal" color="4" index="1" />
+			<cube type="normal" color="2" index="2" />
+		</fixed>
+	</cubequeue>
+</cubislevel>

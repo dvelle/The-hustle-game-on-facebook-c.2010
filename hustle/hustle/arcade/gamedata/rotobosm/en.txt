@@ -1,0 +1,16 @@
+&txthighscores=best scores&
+&txtplay=play!&
+&txtrulestitle=rules&
+&txtgameover=GAME OVER&
+&txtwin=congratulations&
+&txtsubmit=submit score&
+&txtreplay=replay&
+&txtback=back&
+&txtrank=rank&
+&txtnickname=username&
+&txtmission1=Mission complete&
+&txtmission2=Missions complete&
+
+&txtrules=Complete every mission finding an ore block. Click to jump, an other time to land. Good luck!&
+
+&end=1&

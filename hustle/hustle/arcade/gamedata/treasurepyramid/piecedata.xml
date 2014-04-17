@@ -1,0 +1,423 @@
+<data>
+<item id="p1" frame="1" combo="3" bonus_score="10" bonus_time=".4" frequency="50" is_wildcard="0" bomb_model="0" soundfx="match">
+		<match_with>
+			<value>p1</value>
+			<value>p1super</value>
+			<value>p1bomb</value>
+		</match_with>
+		<spawn> 
+			<value required="4" spawns="p1super"/>
+			<value required="5" spawns="p1bomb" />
+		</spawn>
+	</item>
+	<item id="p1super" frame="2" combo="3" bonus_score="25" bonus_time="0" frequency="10" is_wildcard="0" bomb_model="proximity_chain" soundfx="proximity_chain">
+		<match_with>
+			<value>p1</value>
+			<value>p1super</value>
+			<value>p1bomb</value>
+		</match_with>
+		<spawn> 
+			<value required="4" spawns="p1super"/>
+			<value required="5" spawns="p1bomb" />
+		</spawn>
+	</item>
+	<item id="p1bomb" frame="3" combo="3" bonus_score="50" bonus_time="0" frequency="10" is_wildcard="0" bomb_model="p1" soundfx="color">
+		<match_with>
+			<value>p1</value>
+			<value>p1super</value>
+			<value>p1bomb</value>
+		</match_with>
+		<spawn> 
+			<value required="4" spawns="p1super"/>
+			<value required="5" spawns="p1bomb" />
+		</spawn>
+	</item>
+
+
+	<item id="p2" frame="4" combo="3" bonus_score="10" bonus_time=".4" frequency="50" is_wildcard="0" bomb_model="0" soundfx="match">
+		<match_with>
+			<value>p2</value>
+			<value>p2super</value>
+			<value>p2bomb</value>
+		</match_with>
+		<spawn> 
+			<value required="4" spawns="p2super" />
+			<value required="5" spawns="p2bomb" />
+		</spawn>
+	</item>
+	<item id="p2super" frame="5" combo="3" bonus_score="25" bonus_time="0" frequency="10" is_wildcard="0" bomb_model="proximity_chain" soundfx="proximity_chain">
+		<match_with>
+			<value>p2</value>
+			<value>p2super</value>
+			<value>p2bomb</value>
+		</match_with>
+		<spawn> 
+			<value required="4" spawns="p2super" />
+			<value required="5" spawns="p2bomb" />
+		</spawn>
+	</item>
+	<item id="p2bomb" frame="6" combo="3" bonus_score="50" bonus_time="0" frequency="10" is_wildcard="0" bomb_model="p2" soundfx="color">
+		<match_with>
+			<value>p2</value>
+			<value>p2super</value>
+			<value>p2bomb</value>
+		</match_with>
+		<spawn> 
+			<value required="4" spawns="p2super" />
+			<value required="5" spawns="p2bomb" />
+		</spawn>
+	</item>
+
+
+	<item id="p3" frame="7" combo="3" bonus_score="10" bonus_time=".4" frequency="50" is_wildcard="0" bomb_model="0" soundfx="match">
+		<match_with>
+			<value>p3</value>
+			<value>p3super</value>
+			<value>p3bomb</value>
+		</match_with>
+		<spawn> 
+			<value required="4" spawns="p3super" />
+			<value required="5" spawns="p3bomb" />
+		</spawn>
+	</item>
+	<item id="p3super" frame="8" combo="3" bonus_score="25" bonus_time="0" frequency="10" is_wildcard="0" bomb_model="proximity_chain" soundfx="proximity_chain">
+		<match_with>
+			<value>p3</value>
+			<value>p3super</value>
+			<value>p3bomb</value>
+		</match_with>
+		<spawn> 
+			<value required="4" spawns="p3super" />
+			<value required="5" spawns="p3bomb" />
+		</spawn>
+	</item>
+	<item id="p3bomb" frame="9" combo="3" bonus_score="50" bonus_time="0" frequency="10" is_wildcard="0" bomb_model="p3" soundfx="color">
+		<match_with>
+			<value>p3</value>
+			<value>p3super</value>
+			<value>p3bomb</value>
+		</match_with>
+		<spawn> 
+			<value required="4" spawns="p3super" />
+			<value required="5" spawns="p3bomb" />
+		</spawn>
+	</item>
+
+
+	<item id="p4" frame="10" combo="3" bonus_score="10" bonus_time=".4" frequency="50" is_wildcard="0" bomb_model="0" soundfx="match">
+		<match_with>
+			<value>p4</value>
+			<value>p4super</value>
+			<value>p4bomb</value>
+		</match_with>
+		<spawn> 
+			<value required="4" spawns="p4super" />
+			<value required="5" spawns="p4bomb" />
+		</spawn>
+	</item>
+	<item id="p4super" frame="11" combo="3" bonus_score="25" bonus_time="0" frequency="10" is_wildcard="0" bomb_model="proximity_chain" soundfx="proximity_chain">
+		<match_with>
+			<value>p4</value>
+			<value>p4super</value>
+			<value>p4bomb</value>
+		</match_with>
+		<spawn> 
+			<value required="4" spawns="p4super" />
+			<value required="5" spawns="p4bomb" />
+		</spawn>
+	</item>
+	<item id="p4bomb" frame="12" combo="3" bonus_score="50" bonus_time="0" frequency="10" is_wildcard="0" bomb_model="p4" soundfx="color">
+		<match_with>
+			<value>p4</value>
+			<value>p4super</value>
+			<value>p4bomb</value>
+		</match_with>
+		<spawn> 
+			<value required="4" spawns="p4super" />
+			<value required="5" spawns="p4bomb" />
+		</spawn>
+	</item>
+
+
+	<item id="p5" frame="13" combo="3" bonus_score="10" bonus_time=".4" frequency="50" is_wildcard="0" bomb_model="0" soundfx="match">
+		<match_with>
+			<value>p5</value>
+			<value>p5super</value>
+			<value>p5bomb</value>
+		</match_with>
+		<spawn> 
+			<value required="4" spawns="p5super" />
+			<value required="5" spawns="p5bomb" />
+		</spawn>
+	</item>
+	<item id="p5super" frame="14" combo="3" bonus_score="25" bonus_time="0" frequency="10" is_wildcard="0" bomb_model="proximity_chain" soundfx="proximity_chain">
+		<match_with>
+			<value>p5</value>
+			<value>p5super</value>
+			<value>p5bomb</value>
+		</match_with>
+		<spawn> 
+			<value required="4" spawns="p5super" />
+			<value required="5" spawns="p5bomb" />
+		</spawn>
+	</item>
+	<item id="p5bomb" frame="15" combo="3" bonus_score="50" bonus_time="0" frequency="10" is_wildcard="0" bomb_model="p5" soundfx="color">
+		<match_with>
+			<value>p5</value>
+			<value>p5super</value>
+			<value>p5bomb</value>
+		</match_with>
+		<spawn> 
+			<value required="4" spawns="p5super" />
+			<value required="5" spawns="p5bomb" />
+		</spawn>
+	</item>
+
+
+	<item id="p6" frame="16" combo="3" bonus_score="10" bonus_time=".4" frequency="50" is_wildcard="0" bomb_model="0" soundfx="match">
+		<match_with>
+			<value>p6</value>
+			<value>p6super</value>
+			<value>p6bomb</value>
+		</match_with>
+		<spawn> 
+			<value required="4" spawns="p6super" />
+			<value required="5" spawns="p6bomb" />
+		</spawn>
+	</item>
+	<item id="p6super" frame="17" combo="3" bonus_score="25" bonus_time="0" frequency="10" is_wildcard="0" bomb_model="proximity_chain" soundfx="proximity_chain">
+		<match_with>
+			<value>p6</value>
+			<value>p6super</value>
+			<value>p6bomb</value>
+		</match_with>
+		<spawn> 
+			<value required="4" spawns="p6super" />
+			<value required="5" spawns="p6bomb" />
+		</spawn>
+	</item>
+	<item id="p6bomb" frame="18" combo="3" bonus_score="50" bonus_time="0" frequency="10" is_wildcard="0" bomb_model="p6" soundfx="color">
+		<match_with>
+			<value>p6</value>
+			<value>p6super</value>
+			<value>p6bomb</value>
+		</match_with>
+		<spawn> 
+			<value required="4" spawns="p6super" />
+			<value required="5" spawns="p6bomb" />
+		</spawn>
+	</item>	
+
+
+	<item id="p7" frame="19" combo="3" bonus_score="10" bonus_time=".4" frequency="50" is_wildcard="0" bomb_model="0" soundfx="match">
+		<match_with>
+			<value>p7</value>
+			<value>p7super</value>
+			<value>p7bomb</value>
+		</match_with>
+		<spawn> 
+			<value required="4" spawns="p7super" />
+			<value required="5" spawns="p7bomb" />
+		</spawn>
+	</item>
+	<item id="p7super" frame="20" combo="3" bonus_score="25" bonus_time="0" frequency="10" is_wildcard="0" bomb_model="proximity_chain" soundfx="proximity_chain">
+		<match_with>
+			<value>p7</value>
+			<value>p7super</value>
+			<value>p7bomb</value>
+		</match_with>
+		<spawn> 
+			<value required="4" spawns="p7super" />
+			<value required="5" spawns="p7bomb" />
+		</spawn>
+	</item>
+	<item id="p7bomb" frame="21" combo="3" bonus_score="50" bonus_time="0" frequency="10" is_wildcard="0" bomb_model="p7" soundfx="color">
+		<match_with>
+			<value>p7</value>
+			<value>p7super</value>
+			<value>p7bomb</value>
+		</match_with>
+		<spawn> 
+			<value required="4" spawns="p7super" />
+			<value required="5" spawns="p7bomb" />
+		</spawn>
+	</item>
+
+
+	<item id="p8" frame="22" combo="3" bonus_score="10" bonus_time=".4" frequency="50" is_wildcard="0" bomb_model="0" soundfx="match">
+		<match_with>
+			<value>p8</value>
+			<value>p8super</value>
+			<value>p8bomb</value>
+		</match_with>
+		<spawn> 
+			<value required="4" spawns="p8super" />
+			<value required="5" spawns="p8bomb" />
+		</spawn>
+	</item>
+	<item id="p8super" frame="23" combo="3" bonus_score="25" bonus_time="0" frequency="10" is_wildcard="0" bomb_model="proximity_chain" soundfx="proximity_chain">
+		<match_with>
+			<value>p8</value>
+			<value>p8super</value>
+			<value>p8bomb</value>
+		</match_with>
+		<spawn> 
+			<value required="4" spawns="p8super" />
+			<value required="5" spawns="p8bomb" />
+		</spawn>
+	</item>
+	<item id="p8bomb" frame="24" combo="3" bonus_score="50" bonus_time="0" frequency="10" is_wildcard="0" bomb_model="p8" soundfx="color">
+		<match_with>
+			<value>p8</value>
+			<value>p8super</value>
+			<value>p8bomb</value>
+		</match_with>
+		<spawn> 
+			<value required="4" spawns="p8super" />
+			<value required="5" spawns="p8bomb" />
+		</spawn>
+	</item>
+
+
+	<item id="p9" frame="25" combo="3" bonus_score="10" bonus_time=".4" frequency="50" is_wildcard="0" bomb_model="0" soundfx="match">
+		<match_with>
+			<value>p9</value>
+			<value>p9super</value>
+			<value>p9bomb</value>
+		</match_with>
+		<spawn> 
+			<value required="4" spawns="p9super" />
+			<value required="5" spawns="p9bomb" />
+		</spawn>
+	</item>
+	<item id="p9super" frame="26" combo="3" bonus_score="25" bonus_time="0" frequency="10" is_wildcard="0" bomb_model="proximity_chain" soundfx="proximity_chain">
+		<match_with>
+			<value>p9</value>
+			<value>p9super</value>
+			<value>p9bomb</value>
+		</match_with>
+		<spawn> 
+			<value required="4" spawns="p9super" />
+			<value required="5" spawns="p9bomb" />
+		</spawn>
+	</item>
+	<item id="p9bomb" frame="27" combo="3" bonus_score="50" bonus_time="0" frequency="10" is_wildcard="0" bomb_model="p9" soundfx="color">
+		<match_with>
+			<value>p9</value>
+			<value>p9super</value>
+			<value>p9bomb</value>
+		</match_with>
+		<spawn> 
+			<value required="4" spawns="p9super" />
+			<value required="5" spawns="p9bomb" />
+		</spawn>
+	</item>
+
+
+
+	<item id="p10" frame="28" combo="3" bonus_score="10" bonus_time=".4" frequency="50" is_wildcard="0" bomb_model="0" soundfx="match">
+		<match_with>
+			<value>p10</value>
+			<value>p10super</value>
+			<value>p10bomb</value>
+		</match_with>
+		<spawn> 
+			<value required="4" spawns="p10super" />
+			<value required="5" spawns="p10bomb" />
+		</spawn>
+	</item>
+	<item id="p10super" frame="29" combo="3" bonus_score="25" bonus_time="0" frequency="10" is_wildcard="0" bomb_model="proximity_chain" soundfx="proximity_chain">
+		<match_with>
+			<value>p10</value>
+			<value>p10super</value>
+			<value>p10bomb</value>
+		</match_with>
+		<spawn> 
+			<value required="4" spawns="p10super" />
+			<value required="5" spawns="p10bomb" />
+		</spawn>
+	</item>
+	<item id="p10bomb" frame="30" combo="3" bonus_score="50" bonus_time="0" frequency="10" is_wildcard="0" bomb_model="p10" soundfx="color">
+		<match_with>
+			<value>p10</value>
+			<value>p10super</value>
+			<value>p10bomb</value>
+		</match_with>
+		<spawn> 
+			<value required="4" spawns="p10super" />
+			<value required="5" spawns="p10bomb" />
+		</spawn>
+	</item>
+
+
+
+	<item id="p11" frame="31" combo="3" bonus_score="10" bonus_time=".4" frequency="50" is_wildcard="0" bomb_model="0" soundfx="match">
+		<match_with>
+			<value>p11</value>
+			<value>p11super</value>
+			<value>p11bomb</value>
+		</match_with>
+		<spawn> 
+			<value required="4" spawns="p11super" />
+			<value required="5" spawns="p11bomb" />
+		</spawn>
+	</item>
+	<item id="p11super" frame="32" combo="3" bonus_score="25" bonus_time="0" frequency="10" is_wildcard="0" bomb_model="proximity_chain" soundfx="proximity_chain">
+		<match_with>
+			<value>p11</value>
+			<value>p11super</value>
+			<value>p11bomb</value>
+		</match_with>
+		<spawn> 
+			<value required="4" spawns="p11super" />
+			<value required="5" spawns="p11bomb" />
+		</spawn>
+	</item>
+	<item id="p11bomb" frame="33" combo="3" bonus_score="50" bonus_time="0" frequency="10" is_wildcard="0" bomb_model="p11" soundfx="color">
+		<match_with>
+			<value>p11</value>
+			<value>p11super</value>
+			<value>p11bomb</value>
+		</match_with>
+		<spawn> 
+			<value required="4" spawns="p11super" />
+			<value required="5" spawns="p11bomb" />
+		</spawn>
+	</item>
+
+
+
+	<item id="p12" frame="34" combo="3" bonus_score="10" bonus_time=".4" frequency="50" is_wildcard="0" bomb_model="0" soundfx="match">
+		<match_with>
+			<value>p12</value>
+			<value>p12super</value>
+			<value>p12bomb</value>
+		</match_with>
+		<spawn> 
+			<value required="4" spawns="p12super" />
+			<value required="5" spawns="p12bomb" />
+		</spawn>
+	</item>
+	<item id="p12super" frame="35" combo="3" bonus_score="25" bonus_time="0" frequency="10" is_wildcard="0" bomb_model="proximity_chain" soundfx="proximity_chain">
+		<match_with>
+			<value>p12</value>
+			<value>p12super</value>
+			<value>p12bomb</value>
+		</match_with>
+		<spawn> 
+			<value required="4" spawns="p12super" />
+			<value required="5" spawns="p12bomb" />
+		</spawn>
+	</item>
+	<item id="p12bomb" frame="36" combo="3" bonus_score="50" bonus_time="0" frequency="10" is_wildcard="0" bomb_model="p12" soundfx="color">
+		<match_with>
+			<value>p12</value>
+			<value>p12super</value>
+			<value>p12bomb</value>
+		</match_with>
+		<spawn> 
+			<value required="4" spawns="p12super" />
+			<value required="5" spawns="p12bomb" />
+		</spawn>
+	</item>
+</data>

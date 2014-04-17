@@ -1,0 +1,2 @@
+&scoreVar=gameMC.finalScore&blah=1
+

@@ -1,0 +1,1 @@
+&scoreVar=_global.HS_Score&blah=1

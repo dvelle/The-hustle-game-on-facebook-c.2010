@@ -1,0 +1,24 @@
+<level bg="night" cannonX="56" cannonY="194">
+	<item type="undefined" x="undefined" y="undefined" points="" />
+	<item type="tin" x="434.5" y="135" color="passion" numAltoids="5" rotation="0" points="" />
+	<item type="tin" x="429.5" y="180" color="apple" numAltoids="5" rotation="0" points="" />
+	<item type="building" x="595.5" y="380" hasRoof="false" symbolName="building1" stackHeight="45" bottomHeight="45" stackCount="1" rotation="0" points="" />
+	<item type="tin" x="427.5" y="229" type="tin" x="300.5" y="21" color="mango" numAltoids="5" rotation="0" points="" points="" />
+	<item type="tin" x="614.5" y="191" type="tin" x="581.5" y="250" color="rasberry" numAltoids="5" rotation="0" points="" points="" />
+	<item type="tin" x="626.5" y="146" type="tin" x="590.5" y="169" color="tangerine" numAltoids="5" rotation="0" points="" points="" />
+	<item type="tin" x="598.5" y="63" type="tin" x="615.5" y="66" color="passion" numAltoids="5" rotation="0" points="" points="" />
+	<item type="tin" x="540.5" y="56" type="tin" x="540.5" y="56" color="mango" numAltoids="5" rotation="0" points="" points="" />
+	<item type="tin" x="465.5" y="59" type="tin" x="465.5" y="59" color="rasberry" numAltoids="5" rotation="0" points="" points="" />
+	<item type="tin" x="390.5" y="68" type="tin" x="390.5" y="68" color="apple" numAltoids="5" rotation="0" points="" points="" />
+	<item type="tin" x="241.5" y="107" type="tin" x="241.5" y="107" color="tangerine" numAltoids="5" rotation="0" points="" points="" />
+	<item type="tin" x="300.5" y="89" type="tin" x="300.5" y="89" color="passion" numAltoids="5" rotation="0" points="" points="" />
+	<item type="building" x="62.5" y="380" hasRoof="false" type="building" x="63.5" y="380" symbolName="building1" stackHeight="45" bottomHeight="45" stackCount="2" rotation="0" points="" points="" />
+	<item type="building" x="423.5" y="380" hasRoof="true" type="building" x="424.5" y="379" symbolName="building3" stackHeight="45" bottomHeight="45" stackCount="1" rotation="0" points="" points="" />
+	<item type="balloon" x="674.5" y="49" type="balloon" x="691.5" y="64" rotation="0" points="" points="" />
+	<item type="building" x="870.5" y="380" hasRoof="true" type="building" x="870.5" y="378" symbolName="building3" stackHeight="45" bottomHeight="45" stackCount="4" rotation="0" points="" points="" />
+	<item type="bumper" x="618.5" y="289" type="bumper" x="599.5" y="378" negation="true" clipRotation="326" rotation="0" points="" points="" />
+	<item type="building" x="263.5" y="380" hasRoof="true" type="building" x="263.5" y="378" symbolName="building2" stackHeight="45" bottomHeight="45" stackCount="3" rotation="0" points="" points="" />
+	<item type="goal" x="432.5" y="291" type="goal" x="276.5" y="199" rotation="0" points="" points="" />
+	<item type="ring" x="344.5" y="597" numAltoids="35" type="ring" x="344.5" y="597" rotation="0" points="" points="" />
+	<item type="building" x="733.5" y="380" hasRoof="true" type="building" x="734.5" y="379" symbolName="building2" stackHeight="45" bottomHeight="45" stackCount="3" rotation="0" points="" points="" />
+</level>

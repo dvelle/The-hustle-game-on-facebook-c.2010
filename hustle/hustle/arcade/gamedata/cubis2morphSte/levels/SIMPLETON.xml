@@ -1,0 +1,56 @@
+<cubislevel
+	version="1.0"
+	seed="0"
+	time="90"
+	cubestogo="60"
+	starcubestogo="60"
+>
+	<description>
+		
+	</description>
+	<initialcubes>
+		<cube type="immovable" color="-5" index="0" />
+		<cube type="immovable" color="-5" index="1" />
+		<cube type="immovable" color="-5" index="2" />
+		<cube type="immovable" color="-5" index="3" />
+		<cube type="immovable" color="-5" index="4" />
+		<cube type="immovable" color="-5" index="5" />
+		<cube type="immovable" color="-5" index="6" />
+		<cube type="immovable" color="-5" index="16" />
+		<cube type="star" color="4" index="20" />
+		<cube type="star" color="2" index="21" />
+		<cube type="star" color="5" index="22" />
+		<cube type="star" color="1" index="23" />
+		<cube type="star" color="3" index="24" />
+		<cube type="star" color="0" index="25" />
+		<cube type="immovable" color="-5" index="26" />
+		<cube type="immovable" color="-5" index="36" />
+		<cube type="dual" color="4" color2="0" index="40" orientation="1"/>
+		<cube type="dual" color="2" color2="4" index="41" orientation="1"/>
+		<cube type="dual" color="5" color2="2" index="42" orientation="1"/>
+		<cube type="dual" color="1" color2="5" index="43" orientation="1"/>
+		<cube type="dual" color="3" color2="1" index="44" orientation="1"/>
+		<cube type="dual" color="0" color2="3" index="45" orientation="1"/>
+		<cube type="immovable" color="-5" index="46" />
+		<cube type="immovable" color="-5" index="56" />
+		<cube type="normal" color="0" index="60" />
+		<cube type="normal" color="4" index="61" />
+		<cube type="normal" color="2" index="62" />
+		<cube type="normal" color="5" index="63" />
+		<cube type="normal" color="1" index="64" />
+		<cube type="normal" color="3" index="65" />
+		<cube type="immovable" color="-5" index="66" />
+	</initialcubes>
+	<cubequeue>
+		<random>
+			<cube type="normal" color="0" index="100" />
+			<cube type="normal" color="1" index="100" />
+			<cube type="normal" color="2" index="100" />
+			<cube type="normal" color="3" index="100" />
+			<cube type="normal" color="4" index="100" />
+			<cube type="normal" color="5" index="100" />
+		</random>
+		<fixed>
+		</fixed>
+	</cubequeue>
+</cubislevel>

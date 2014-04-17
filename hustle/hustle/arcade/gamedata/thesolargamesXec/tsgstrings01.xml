@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<content>
+	<string id="IDS_INSTRUCTIONS">INSTRUCTIONS</string>
+	<string id="IDS_HISCORETITLE">THE SOLAR GAMES CHAMPIONS</string>
+	<string id="IDS_OK">OK</string>
+	<string id="IDS_QUIT">QUIT</string>
+	<string id="IDS_SKIP">SKIP</string>
+	<string id="IDS_MENU">MENU</string>
+	<string id="IDS_SUBMIT">SUBMIT</string>
+	<string id="IDS_PRACTICEMODE">PRACTICE MODE</string>
+	<string id="IDS_PRACTICE">PRACTICE</string>
+	<string id="IDS_HISCORES">HISCORES</string>
+	<string id="IDS_SELECTPLANET">SELECT A PLANET</string>
+	<string id="IDS_MERCURYLONGJUMP">MERCURY: LONG JUMP</string>
+	<string id="IDS_VENUSSPRINT">VENUS: SPRINT</string>
+	<string id="IDS_MARSHANGGLIDING">MARS: HANG GLIDING</string>
+	<string id="IDS_JUPITERHURDLES">JUPITER (IO): HURDLES</string>
+	<string id="IDS_SATURNSKATING">SATURN: SKATING</string>
+	<string id="IDS_URANUSROWING">URANUS: ROWING</string>
+	<string id="IDS_NEPTUNESWIMMING">NEPTUNE: SWIMMING</string>
+	<string id="IDS_PLUTOSKIJUMP">PLUTO: SKI JUMP</string>
+	<string id="IDS_PLAYEVENT">PLAY EVENT</string>
+	<string id="IDS_BACK">BACK</string>
+	<string id="IDS_THESOLARGAMES">THE SOLAR GAMES</string>
+	<string id="IDS_CHOOSEANOTHER">CHOOSE ANOTHER PLANET</string>
+	<string id="IDS_INFOMARS">With the highest peak in the solar system, Olympus Mons, and the vast canyons of Valles Marineris, Mars offers some amazing Hang Gliding opportunities.  Athletes will need to cover as much distance as possible to win on the Red Planet.</string>
+	<string id="IDS_INFOVENUS">Named after the Roman goddess of love and beauty, Venus actually offers a very harsh environment in which to compete. Athletes sprint across the surface as fast as possible to avoid the thick clouds of sulphuric acid that cover the planet.</string>
+	<string id="IDS_INFOMERCURY">At only 38% of Earth's Gravity, Mercury is the ideal venue for the Long Jump. Expect to see some exceptional distances as the solar system's finest athletes bound across the surface of the Sun's nearest neighbour.</string>
+	<string id="IDS_INFOSATURN">Saturn, with its spectacular system of rings, offers the perfect location for the Space Skating event. Athletes, equipped with their rocket powered speed skates, skate around the planet's rings in the quickest possible time.</string>
+	<string id="IDS_INFOJUPITER">Jupiter doesn't have a surface for athletes to compete on. Luckily Jupiter's fifth moon, Io, offers an ideal location for the Hurdles. Athletes run across the hostile surface of Io, jumping over the areas of molten lava in order to get to the finish line in the shortest possible time.</string>
+	<string id="IDS_INFONEPTUNE">Named after the Roman god of the sea, Neptune is the location for the swimming event. As Neptune is another gas planet with no surface to land on, the swimming event is held on the edge of the atmosphere using specially modified swim suits.</string>
+	<string id="IDS_INFOURANUS">Uranus, like Jupiter, Saturn and Neptune, is made of gas. The atmosphere provides superb conditions for the Rowing event. Piloting the specially design spaceships with their incredible sculling hyperdrives athletes literally row around the planet by skimming along the gaseous surface.</string>
+	<string id="IDS_INFOPLUTO">Pluto is the furthest planet from the Sun making it a very cold place, which is perfect for the Ski Jump.  On a purpose built slope, competitors will ski over the frozen nitrogen surface launching themselves into the air and attempting to jump the furthest.</string>
+	<string id="IDS_INSTRUCTIONTEXT">Travel the Solar System, compete in sporting events and take The Solar Games challenge.\n\nUse Practice mode to hone your skills in events such as hang gliding on Mars, ski jumping on Pluto and skating on the rings of Saturn. Then, when you're up for the challenge, play The Solar Games to accumulate points and earn your place in the league of Solar Games Champions.</string>
+	<string id="IDS_CONGRATULATIONS">Congratulations, you've just completed The Solar Games!</string>
+	<string id="IDS_YOUSCORED">You scored :</string>
+	<string id="IDS_ENTERNAME">Enter name</string>
+	<string id="IDS_QUIZTITLE">THE SOLAR QUIZ</string>
+	<string id="IDS_SUBMITSCORE">Submit your score to see if you're a Solar Games Champion.</string>
+	<string id="IDS_PLEASEWAIT">PLEASE WAIT...</string>
+	<string id="IDS_YES">YES</string>
+	<string id="IDS_NO">NO</string>
+	<string id="IDS_AREYOUSURE">Are you sure you want to quit The Solar Games?</string>
+	<string id="IDS_LINK">Click here for more information about this planet.</string>
+</content>

@@ -1,0 +1,26 @@
+<CN_Game_Config>
+        
+        <!-- all sets of nodes have an "id" This should be either "1" for active or "0" for inactive -->
+        
+        <!-- Specify if a game has tracker functionality and the location of the tracker SWF -->
+        <!-- ** NODE VALUES -->
+        <!-- id= active/inactive (1/0) -->
+        <!-- path= path to tracker SWF -->
+        <trackGame id="0" gameID="002" path="/online/empry.swf" />
+        
+        <!-- Specify if a game has billboards you can have multiple <Billboard> nodes -->
+        <!-- ** NODE VALUES -->
+        <!-- id= active/inactive (1/0) -->
+        <!-- path= path to billboard SWF -->
+        <!-- duration= amount of time (in seconds) the billboard is displayed -->
+        <!-- speed= scrolling speed of ticker text -->
+        <Billboards id="0">
+                
+                <Billboard>
+                        <path>/online/empry.swf</path>
+                        <duration>3</duration>
+                </Billboard>
+
+        </Billboards>
+        
+</CN_Game_Config>

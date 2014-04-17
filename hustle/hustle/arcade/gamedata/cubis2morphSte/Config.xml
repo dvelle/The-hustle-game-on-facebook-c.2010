@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<CONFIG>
+    <levelSkipButtons type="boolean">true</levelSkipButtons>
+	<displayUpsell type="boolean">false</displayUpsell>
+	<AdImg type="string">screen_upsell.jpg</AdImg>
+</CONFIG>

@@ -1,0 +1,1 @@
+&scoreVar=_root.lastscore&blah=1

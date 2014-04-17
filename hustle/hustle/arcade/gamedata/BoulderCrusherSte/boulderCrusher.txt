@@ -1,0 +1,53 @@
+&txt_start=Start Game&
+&txt_tips=Tips&
+&txt_next=next round&
+&txt_how=How to play&
+&txt_easy=Easy&
+&txt_hard=Hard&
+&txt_level=Level&
+&txt_ranking=Rankings:&
+&txt_ranking1=
+
+Under 8000 points = Page
+8000 - 10000 points = Squire
+10000 - 12000 points = Knight
+Over 12000 points = Champion knight&
+&txt_ranktitle1=CHAMPION KNIGHT&
+&txt_ranktitle2=KNIGHT&
+&txt_ranktitle3=SQUIRE&
+&txt_ranktitle4=PAGE&
+&txt_introtext=Santis must use his great strength to protect the other Knights as they approach the Citadel. 
+
+Help him bring the Knights closer to find the Heart of the Shield of the Ages!
+&txt_ready=Klar?&
+&txt_go=GO&
+&txt_evalu=Congratulations!&
+&txt_evalu2=You got&
+&txt_evalu3=and that gives you the rank of a&
+&txt_evalu4=You have to train more to become a Champion Knight&
+&txt_point=point&
+&txt_gameover=Game Over&
+&txt_lives=lives&
+&txt_completed=Complete&
+&txt_energy=energy&
+&txt_load=Loading Game&
+&txt_interface=Loading Interface&
+&txt_yes=ja&
+&txt_no=nej&
+&txt_right=right&
+&txt_wrong=wrong&
+&txt_quit=Send Score&
+&txt_dev=Developed by:&
+&txt_rank=Rank:&
+&txt_score=Score:&
+&txt_sec=sec&
+&txt_again=Play again&
+&txt_help1=You control the game with your mouse.&
+&txt_help2=Move the Hero by moving the mouse left or right.&
+&txt_help3=Move the hero's arm up or down by moving the mouse up or down.
+&txt_help4=Smash the boulder by clicking the mouse.
+You need to smash the last boulder several times&
+&txt_help5=Some boulders bounce high enough for you to run under!&
+&txt_help6=Making a high or low smash gives you more points.&
+&txt_help7=If you don't have time to smash a boulder, try jumping!&
+&languageLoaded=1&

@@ -1,0 +1,1 @@
+endURL=arcade/gamedata/mrmuchTh/gending_arkadium.swf

@@ -1,0 +1,13 @@
+&folders=7&
+&folder0=76&
+&folder_name0=arcade/gamedata/differencesSte/0_beauties&
+&folder1=38&
+&folder_name1=arcade/gamedata/differencesSte/1_animal&
+&folder2=36&
+&folder_name2=arcade/gamedata/differencesSte/2_movie&
+&folder3=30&
+&folder_name3=arcade/gamedata/differencesSte/3_car&
+&folder5=63&
+&folder_name5=arcade/gamedata/differencesSte/5_others&
+&folder6=41&
+&folder_name6=arcade/gamedata/differencesSte/6_art&

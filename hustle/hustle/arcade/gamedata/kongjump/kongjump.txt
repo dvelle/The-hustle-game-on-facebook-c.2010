@@ -1,0 +1,1 @@
+&scoreVar=_global.LevelData.myScore&blah=1

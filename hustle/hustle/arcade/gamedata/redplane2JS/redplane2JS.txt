@@ -1,0 +1,1 @@
+&scoreVar=_root.scs&blah=1

@@ -1,0 +1,7 @@
+[12-Mar-2006 18:47:16] PHP Warning:  fopen(config.xml): failed to open stream: Permission denied in /home/gamingh/public_html/forum/sources/lib/tar.php on line 378
+[12-Mar-2006 18:47:16] PHP Warning:  fopen(dealer.swf): failed to open stream: Permission denied in /home/gamingh/public_html/forum/sources/lib/tar.php on line 378
+[12-Mar-2006 18:47:16] PHP Warning:  fopen(index.html): failed to open stream: Permission denied in /home/gamingh/public_html/forum/sources/lib/tar.php on line 378
+[12-Mar-2006 18:47:16] PHP Warning:  fopen(player1.swf): failed to open stream: Permission denied in /home/gamingh/public_html/forum/sources/lib/tar.php on line 378
+[12-Mar-2006 18:47:16] PHP Warning:  fopen(player2.swf): failed to open stream: Permission denied in /home/gamingh/public_html/forum/sources/lib/tar.php on line 378
+[12-Mar-2006 18:47:16] PHP Warning:  fopen(player3.swf): failed to open stream: Permission denied in /home/gamingh/public_html/forum/sources/lib/tar.php on line 378
+[12-Mar-2006 18:47:16] PHP Warning:  fopen(tips.xml): failed to open stream: Permission denied in /home/gamingh/public_html/forum/sources/lib/tar.php on line 378

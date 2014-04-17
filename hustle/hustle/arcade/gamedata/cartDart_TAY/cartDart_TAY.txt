@@ -1,0 +1,2 @@
+&scoreVar=g_game_tl.score_dis.text&blah=1
+

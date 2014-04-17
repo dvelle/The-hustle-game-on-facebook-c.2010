@@ -1,0 +1,2 @@
+&scoreVar=_parent.vscore&blah=1
+

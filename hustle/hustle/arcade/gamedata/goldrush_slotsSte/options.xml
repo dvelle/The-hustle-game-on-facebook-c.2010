@@ -1,0 +1,14 @@
+<options p="10" game_type="5">
+  -- "p" means the difficulty of the machine (payout miltiplier)
+      5 slot machine:
+      - set to 1-2 for HARD level
+      - set to 4 for MEDIUM level
+      - set to 6-10 for EASY level
+      3 slot machine:
+      - set to 1 for HARD level
+      - set to 2 for MEDIUM level
+      - set to 3-10 for EASY level
+  -- "game_type" means the type of machine
+      - set to 5 for 5-SLOT
+      - set to 3 for 3-SLOT
+</options>

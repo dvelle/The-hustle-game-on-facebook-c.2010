@@ -1,0 +1,1 @@
+&scoreVar=_root.mcScore.txtScore.text&blah=1

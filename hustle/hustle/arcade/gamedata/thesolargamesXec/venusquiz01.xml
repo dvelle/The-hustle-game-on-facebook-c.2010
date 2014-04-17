@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Questions asked for the planet Venus quiz.
+XML built by Dan Griffiths using questions supplied by the BBC team -->
+
+<content>
+	<questioncount>1</questioncount>
+	<optioncount>3</optioncount>
+	<questionorder>random</questionorder> <!-- options are 'random' or 'sequential' -->
+	<answerorder>random</answerorder>
+	<questionitem>
+		<questiontext>Venus is named after the god of what?</questiontext>
+		<answer>
+			<text>Love</text>
+			<iscorrect>yes</iscorrect>
+		</answer>
+		<answer>
+			<text>Animals</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+		<answer>
+			<text>Farming</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+	</questionitem>
+	<questionitem>
+		<questiontext>How long is Venus' year?</questiontext>
+		<answer>
+			<text>255 Earth days</text>
+			<iscorrect>yes</iscorrect>
+		</answer>
+		<answer>
+			<text>125 Earth days</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+		<answer>
+			<text>300 Earth days</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+	</questionitem>
+	<questionitem>
+		<questiontext>What is Venus' surface temperature?</questiontext>
+		<answer>
+			<text>480 C to minus 30 C</text>
+			<iscorrect>yes</iscorrect>
+		</answer>
+		<answer>
+			<text>1500 C</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+		<answer>
+			<text>Minus 60C to minus 200 C</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+	</questionitem>
+	<questionitem>
+		<questiontext>How long does Venus' day last?</questiontext>
+		<answer>
+			<text>243 Earth days</text>
+			<iscorrect>yes</iscorrect>
+		</answer>
+		<answer>
+			<text>243 hours</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+		<answer>
+			<text>24.3 Earth days</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+	</questionitem>
+	<questionitem>
+		<questiontext>How wide is Venus?</questiontext>
+		<answer>
+			<text>12,104 km</text>
+			<iscorrect>yes</iscorrect>
+		</answer>
+		<answer>
+			<text>121,040 km</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+		<answer>
+			<text>1,210 km</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+	</questionitem>
+	<questionitem>
+		<questiontext>How many moons does Venus have?</questiontext>
+		<answer>
+			<text>None</text>
+			<iscorrect>yes</iscorrect>
+		</answer>
+		<answer>
+			<text>Three</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+		<answer>
+			<text>Eight</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+	</questionitem>
+	<questionitem>
+		<questiontext>What is Venus also known as?</questiontext>
+		<answer>
+			<text>The morning star</text>
+			<iscorrect>yes</iscorrect>
+		</answer>
+		<answer>
+			<text>The gem of morning</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+		<answer>
+			<text>The early diamond</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+	</questionitem>
+	<questionitem>
+		<questiontext>Where does the sun rise on Venus?</questiontext>
+		<answer>
+			<text>The west</text>
+			<iscorrect>yes</iscorrect>
+		</answer>
+		<answer>
+			<text>The east</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+		<answer>
+			<text>The north</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+	</questionitem>
+	<questionitem>
+		<questiontext>Which spacecraft has not been to Venus?</questiontext>
+		<answer>
+			<text>Challenger</text>
+			<iscorrect>yes</iscorrect>
+		</answer>
+		<answer>
+			<text>Venera</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+		<answer>
+			<text>Magellan</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+	</questionitem>
+	<questionitem>
+		<questiontext>What is Venus' atmosphere made up of?</questiontext>
+		<answer>
+			<text>Carbon dioxide and acid</text>
+			<iscorrect>yes</iscorrect>
+		</answer>
+		<answer>
+			<text>Nitrogen and water</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+		<answer>
+			<text>Oxygen and water</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+	</questionitem>
+</content>

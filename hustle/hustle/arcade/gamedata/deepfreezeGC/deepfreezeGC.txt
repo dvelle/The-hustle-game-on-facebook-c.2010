@@ -1,0 +1,1 @@
+&scoreVar=_root.game_score&blah=1

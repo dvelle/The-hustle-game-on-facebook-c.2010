@@ -1,0 +1,1 @@
+&scoreVar=_root.player.score&blah=1

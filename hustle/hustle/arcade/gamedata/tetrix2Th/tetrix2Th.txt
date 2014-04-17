@@ -1,0 +1,1 @@
+&scoreVar=_global.score&blah=1

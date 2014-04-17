@@ -1,0 +1,53 @@
+<xml>
+	<title name="dope level" />
+		
+	<map>
+		<platform x="-40" y="120" w="3" a="0.1" s="2" t="machineband" />
+		<platform x="80" y="120" w="2" a="0.1" s="2" t="machineband" />
+		<platform x="160" y="120" w="2" a="0.1" s="2" t="machineband" />
+
+		<platform x="-25" y="377" w="2" a="0.1" s="0" t="platform" />
+		<platform x="269" y="295" w="2" a="0.1" s="0" t="platform" />
+		<platform x="84" y="443" w="8" a="-6.3" s="-2" t="band" />
+		<platform x="-33" y="258" w="5" a="0.1" s="2" t="band" />
+		<platform x="38" y="197" w="8" a="-4" s="-2" t="band" />
+		<platform x="120" y="348" w="3" a="0.1" s="2" t="band" />
+
+		<platform x="30" y="520" w="10" a="0.1" s="1" t="band" senior="1" />
+		<platform x="-10" y="550" w="10" a="0.1" s="0" t="floor" />		
+		<platform x="340" y="465" w="2" a="-5" s="0" t="invisible" />
+	
+	</map>
+
+	<machines>
+		<machine x="50" y="10" t="product" />
+		<machine x="130" y="10" t="piepschuim" />
+		<machine x="210" y="10" t="stamper" />
+	</machines>
+	
+	<player x="30" y="549" />
+	<senior x="300" y="552" />
+
+	<boxes a="70" s="65" />
+	<bugs l="20" p="8" i="5" t="5"/>
+	
+	<barrels>
+		<barrel x="34" y="377" />
+		<barrel x="333" y="295" />
+	</barrels>
+	
+	<bg bg="3" />
+	
+	<music m="5" />
+	
+	
+</xml>
+
+
+
+
+
+
+
+
+

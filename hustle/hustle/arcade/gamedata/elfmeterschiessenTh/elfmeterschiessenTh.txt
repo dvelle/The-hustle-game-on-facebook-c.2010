@@ -1,0 +1,1 @@
+&scoreVar=_root.dlh.yourScore.sfield.text&blah=1

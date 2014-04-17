@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Questions asked for the planet Saturn quiz.
+XML built by Dan Griffiths using questions supplied by the BBC team -->
+
+<content>
+	<questioncount>1</questioncount>
+	<optioncount>3</optioncount>
+	<questionorder>random</questionorder> <!-- options are 'random' or 'sequential' -->
+	<answerorder>random</answerorder>
+	<questionitem>
+		<questiontext>Saturn is named after the god of what?</questiontext>
+		<answer>
+			<text>The harvest</text>
+			<iscorrect>yes</iscorrect>
+		</answer>
+		<answer>
+			<text>Spring</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+		<answer>
+			<text>Rivers</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+	</questionitem>
+	<questionitem>
+		<questiontext>How long is Saturn's year?</questiontext>
+		<answer>
+			<text>10,750 Earth days</text>
+			<iscorrect>yes</iscorrect>
+		</answer>
+		<answer>
+			<text>5,750 Earth days</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+		<answer>
+			<text>15,750 Earth days</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+	</questionitem>
+	<questionitem>
+		<questiontext>What is Saturn's surface temperature?</questiontext>
+		<answer>
+			<text>Minus 180 C</text>
+			<iscorrect>yes</iscorrect>
+		</answer>
+		<answer>
+			<text>Minus 220 C</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+		<answer>
+			<text>Minus 50 C</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+	</questionitem>
+	<questionitem>
+		<questiontext>How long does Saturn's day last?</questiontext>
+		<answer>
+			<text>10 Earth hours 14 minutes</text>
+			<iscorrect>yes</iscorrect>
+		</answer>
+		<answer>
+			<text>7 Earth hours 10 minutes</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+		<answer>
+			<text>10 Earth days 14 hours</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+	</questionitem>
+	<questionitem>
+		<questiontext>How wide is Saturn?</questiontext>
+		<answer>
+			<text>120,536 km</text>
+			<iscorrect>yes</iscorrect>
+		</answer>
+		<answer>
+			<text>100,536 km</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+		<answer>
+			<text>220,536 km</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+	</questionitem>
+	<questionitem>
+		<questiontext>How many moons does Saturn have?</questiontext>
+		<answer>
+			<text>46</text>
+			<iscorrect>yes</iscorrect>
+		</answer>
+		<answer>
+			<text>31</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+		<answer>
+			<text>57</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+	</questionitem>
+	<questionitem>
+		<questiontext>What are Saturn's rings made of?</questiontext>
+		<answer>
+			<text>Ice and rock</text>
+			<iscorrect>yes</iscorrect>
+		</answer>
+		<answer>
+			<text>Frozen helium</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+		<answer>
+			<text>Iron</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+	</questionitem>
+	<questionitem>
+		<questiontext>Winds on Saturn can reach how fast?</questiontext>
+		<answer>
+			<text>400 metres a second</text>
+			<iscorrect>yes</iscorrect>
+		</answer>
+		<answer>
+			<text>200 metres a second</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+		<answer>
+			<text>600 metres a second</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+	</questionitem>
+	<questionitem>
+		<questiontext>Who first saw Saturn's rings?</questiontext>
+		<answer>
+			<text>Galileo</text>
+			<iscorrect>yes</iscorrect>
+		</answer>
+		<answer>
+			<text>Copernicus</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+		<answer>
+			<text>Ptolemy</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+	</questionitem>
+	<questionitem>
+		<questiontext>When were Saturn's rings discovered?</questiontext>
+		<answer>
+			<text>1610</text>
+			<iscorrect>yes</iscorrect>
+		</answer>
+		<answer>
+			<text>1430</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+		<answer>
+			<text>1850</text>
+			<iscorrect>no</iscorrect>
+		</answer>
+	</questionitem>
+</content>

@@ -1,0 +1,1 @@
+endURL=arcade/gamedata/bassfishingproTh/gending_arkadium.swf

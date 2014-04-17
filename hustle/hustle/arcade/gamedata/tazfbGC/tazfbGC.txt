@@ -1,0 +1,1 @@
+&scoreVar=_global.contMain.fStyleNumber(_global.contMain._aGameplay[0], 1)&blah=1

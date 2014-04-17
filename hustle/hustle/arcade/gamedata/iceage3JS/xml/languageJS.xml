@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>	
+<hilgame>	
+<nick>NAME</nick>
+<bplay>PLAY</bplay>
+<howtoplay>HOW TO PLAY</howtoplay>
+<htext1>Aim of the game:</htext1>
+<htext2>Catch 5 acorns and throw them into Scrats basket.</htext2>
+<htext3>Control:</htext3>
+<htext4>You control Eddie (and Crash) rolling on a wooden tube.</htext4>
+<htext5>Eddie accelerates towards your mouse cursor.</htext5>
+<htext6>To pick up Crash or acorns from floor, roll over them.</htext6>
+<htext7>Left mouse button:</htext7>
+<htext8>if Crash has acorn: Throw acorn.</htext8>
+<htext9>You have to hit basket from top, otherwise acorn will bounce back.</htext9>
+<htext10>if Crash has no acorn: Crash jumps to catch acorn.</htext10>
+<htext11>You receive points for each acorn.</htext11>
+<htext12>The more Scrat has to work, the less points you get.</htext12>
+<htext13>Additionally theres a time bonus for being fast</htext13>
+<wrong>wrong</wrong>
+<success>Success!</success>
+<pressmouse>PRESS LEFT MOUSE BUTTON TO start</pressmouse>
+<detailed>DETAILED SCORE</detailed>
+<update>UPDATE SCORE...</update>
+<highscore>HIGHSCORE</highscore>
+</hilgame>

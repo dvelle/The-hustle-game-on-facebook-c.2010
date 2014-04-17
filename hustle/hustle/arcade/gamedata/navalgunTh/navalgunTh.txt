@@ -1,0 +1,1 @@
+&scoreVar=_root.bestScore&blah=1

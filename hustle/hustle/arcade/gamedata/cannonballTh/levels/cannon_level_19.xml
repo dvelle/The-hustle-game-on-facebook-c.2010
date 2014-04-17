@@ -1,0 +1,18 @@
+<level bg="night" cannonX="55.7" cannonY="196.35">
+	<item type="tin" x="545.5" y="88" color="tangerine" numAltoids="5" rotation="0" points="" />
+	<item type="tin" x="460.5" y="85" color="rasberry" numAltoids="5" rotation="0" points="" />
+	<item type="tin" x="381.5" y="91" color="passion" numAltoids="5" rotation="0" points="" />
+	<item type="tin" x="150.5" y="138" color="mango" numAltoids="5" rotation="0" points="" />
+	<item type="tin" x="148.5" y="233" color="apple" numAltoids="5" rotation="0" points="" />
+	<item type="tin" x="145.5" y="323" color="tangerine" numAltoids="5" rotation="0" points="" />
+        <item type="undefined" x="undefined" y="undefined" points="" />
+	<item type="building" x="853.5" y="380" hasRoof="true" symbolName="building3" stackHeight="45" bottomHeight="45" stackCount="5" rotation="0" points="" />
+	<item type="building" x="718.5" y="380" hasRoof="true" symbolName="building2" stackHeight="45" bottomHeight="45" stackCount="5" rotation="0" points="" />
+	<item type="building" x="265.5" y="380" hasRoof="true" type="building" x="466.5" y="379" symbolName="building2" stackHeight="45" bottomHeight="45" stackCount="3" rotation="0" points="" points="" />
+	<item type="goal" x="146.5" y="380" type="goal" x="348.5" y="379" rotation="0" points="" points="" />
+	<item type="ring" x="515.5" y="605" type="ring" x="710.5" y="615" numAltoids="35" rotation="0" points="" points="" />
+	<item type="ring" x="347.5" y="615" type="ring" x="547.5" y="620" numAltoids="35" rotation="0" points="" points="" />
+	<item type="building" x="430.5" y="380" hasRoof="true" type="building" x="628.5" y="378" symbolName="building1" stackHeight="45" bottomHeight="45" stackCount="4" rotation="0" points="" points="" />
+	<item type="balloon" x="598.5" y="149" type="balloon" x="787.5" y="145" rotation="0" points="" points="" />
+	<item type="building" x="39.5" y="380" hasRoof="false" type="building" x="228.5" y="378" symbolName="building3" stackHeight="45" bottomHeight="45" stackCount="2" rotation="0" points="" points="" />
+</level>

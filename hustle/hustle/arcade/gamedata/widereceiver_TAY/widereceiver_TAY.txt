@@ -1,0 +1,2 @@
+&scoreVar=gameMC.gScore&blah=1
+

@@ -1,0 +1,14 @@
+fs1=Use the arrow keys to run around.|You can move diagonally, too.
+&fs2=Don't get hit by traffic!|Watch out, they move fast.
+&fs3=Get across the road to the mobile shop.|Try not to get run over!
+&salestext=Highstreet Headache.
+&win1=Congratulations!
+&win2=You've made it!|Well done.
+&fail1=Unlucky!
+&fail2=That's got to hurt.|Next time, avoid the headache.
+&faillink=Next time, avoid the cars, the lorries, and the headache.
+&enterEmail=Enter your email address:
+&s2ftitle=
+&s2fprivacy=
+
+

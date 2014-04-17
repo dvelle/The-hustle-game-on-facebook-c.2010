@@ -1,0 +1,57 @@
+<xml>
+	<title name="dope level" />
+		
+	<map>
+		<platform x="-40" y="120" w="3" a="0.1" s="2" t="machineband" />
+		<platform x="80" y="120" w="2" a="0.1" s="2" t="machineband" />
+		<platform x="160" y="120" w="2" a="0.1" s="2" t="machineband" />
+
+		<platform x="329" y="195" w="2" a="0.1" s="0" t="platform" />
+		<platform x="329" y="296" w="2" a="0.1" s="0" t="platform" />
+		<platform x="329" y="398" w="2" a="0.1" s="0" t="platform" />
+		<platform x="329" y="100" w="2" a="0.1" s="0" t="platform" />
+		<platform x="47" y="204" w="6" a="-4.3" s="-2" t="band" />
+		<platform x="-20" y="280" w="5" a="-3.1" s="2" t="band" />
+		<platform x="171" y="326" w="2" a="-5.5" s="2" t="band" />
+		<platform x="57" y="373" w="6" a="6.8" s="-1.5" t="band" />
+		<platform x="-33" y="457" w="3" a="-5.8" s="2" t="band" />
+
+
+		<platform x="30" y="520" w="10" a="0.1" s="1" t="band" senior="1" />
+		<platform x="-10" y="550" w="10" a="0.1" s="0" t="floor" />		
+		<platform x="340" y="465" w="2" a="-5" s="0" t="invisible" />
+	
+	</map>
+
+	<machines>
+		<machine x="50" y="10" t="product" />
+		<machine x="130" y="10" t="piepschuim" />
+		<machine x="210" y="10" t="stamper" />
+	</machines>
+	
+	<player x="30" y="549" />
+	<senior x="300" y="552" />
+
+	<boxes a="40" s="35" />
+	<bugs l="16" p="8" i="4" t="4"/>
+	
+	<barrels>
+		<barrel x="356" y="100" />
+		<barrel x="356" y="195" />
+		<barrel x="356" y="296" />
+		<barrel x="356" y="398" />
+	</barrels>
+	
+	<bg bg="3" />
+	
+	<music m="5" />
+	
+	
+</xml>
+
+
+
+
+
+
+

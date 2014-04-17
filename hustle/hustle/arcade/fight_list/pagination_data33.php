@@ -1,0 +1,54 @@
+<?php
+
+include('config.php');
+
+$per_page = 10; 
+
+if($_GET)
+{
+$page=$_GET['page'];
+}
+
+
+
+//get table contents
+$start = ($page-1)*10;
+$sql = "SELECT * FROM arcade_games ORDER BY gameid LIMIT $start,$per_page";
+$result = mysql_query($sql);
+?>
+
+
+	<table width="800px">
+		
+		<?php
+		//Print the contents[php]echo "<a href=\"javascript:ajaxpage('test.htm', 'contentarea');\">test</a>";[/php]
+		//
+		//<a href=../arcade/gamescreen.php?game=$file&amp;width=$width&amp;height=$height target='_parent'>
+		$i = 0;
+		while($result_ar = mysql_fetch_assoc($result)){
+			$id = $result_ar['gameid'];
+			$squery = sprintf("SELECT * FROM arcade_highscores WHERE gamename = ('%s') ORDER by score DESC",
+																				$id);
+				$sresult = mysql_query($squery);
+				$sresult_ar = mysql_fetch_assoc($sresult);
+			$image = $result_ar['stdimage'];
+			$name = $result_ar['shortname'];
+			$file = $result_ar['file'];
+			$width = $result_ar['width']; 
+			$height = $result_ar['height']; 
+			$champ = $sresult_ar['username'];
+			$cscore = $sresult_ar['score'];
+		?>
+		<tr>
+				<td><?php echo "<img src='http://www.12daysoffun.com/hustle/arcade/images/$image' />";?></td>
+				<td><?php echo ucwords($name); 
+				echo "<br />";
+				?></td>
+			</tr>
+			<?php
+			$i+=1;
+			} //while
+		?>
+	</table>
+
+

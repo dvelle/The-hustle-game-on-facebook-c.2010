@@ -1,0 +1,8 @@
+&pic_o=bosch_o.jpg&
+&pic_f=bosch_f.jpg&
+&regionsOnPic=4&
+&region0=189.95,41,13.0000000000001,16,22.8&
+&region1=95,234,10,13,-26.6&
+&region2=220,283,11,16,0&
+&region3=62,122,12,13,0&
+&eof=1&

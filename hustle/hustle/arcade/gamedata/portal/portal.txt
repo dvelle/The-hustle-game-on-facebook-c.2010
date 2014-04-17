@@ -1,0 +1,1 @@
+&scoreVar=_root.xscore&blah=1

@@ -1,0 +1,1 @@
+&scoreVar=game.score&blah=1

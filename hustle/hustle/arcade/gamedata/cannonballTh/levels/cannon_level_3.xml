@@ -1,0 +1,15 @@
+<level bg="night" cannonX="55.7" cannonY="331.35">
+	<item type="undefined" x="undefined" y="undefined" points="" />
+	<item type="car" x="370.5" y="382" rotation="0" points="" />
+	<item type="car" x="558.5" y="382" rotation="0" points="" />
+	<item type="car" x="190.5" y="382" rotation="0" points="" />
+	<item type="tin" x="294.5" y="80" color="apple" numAltoids="5" rotation="0" points="" />
+	<item type="tin" x="362.5" y="114" color="mango" numAltoids="5" rotation="0" points="" />
+	<item type="tin" x="421.5" y="167" color="passion" numAltoids="5" rotation="0" points="" />
+	<item type="tin" x="443.5" y="224" color="rasberry" numAltoids="5" rotation="0" points="" />
+	<item type="tin" x="460.5" y="293" color="tangerine" numAltoids="5" rotation="0" points="" />
+	<item type="goal" x="470.5" y="380" rotation="0" points="" />
+	<item type="building" x="785.5" y="380" hasRoof="true" symbolName="building1" stackHeight="45" bottomHeight="45" stackCount="6" rotation="0" points="" />
+	<item type="building" x="644.5" y="380" hasRoof="true" symbolName="building3" stackHeight="45" bottomHeight="45" stackCount="4" rotation="0" points="" />
+	<item type="building" x="280.5" y="380" hasRoof="true" symbolName="building2" stackHeight="45" bottomHeight="45" stackCount="1" rotation="0" points="" />
+</level>

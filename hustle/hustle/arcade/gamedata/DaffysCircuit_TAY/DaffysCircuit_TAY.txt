@@ -1,0 +1,2 @@
+&scoreVar=_parent.goGame.piScore&blah=1
+

@@ -1,0 +1,2 @@
+&scoreVar=_root.scoreContainer.score&blah=1
+

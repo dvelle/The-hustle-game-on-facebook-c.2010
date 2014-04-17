@@ -1,0 +1,19 @@
+<level bg="night" cannonX="53.7" cannonY="328.35">
+	<item type="undefined" x="undefined" y="undefined" points="" />
+	<item type="goal" x="674.5" y="380" type="goal" x="681.5" y="379" rotation="0" points="" points="" />
+	<item type="ring" x="183.5" y="775" type="ring" x="183.5" y="775" numAltoids="35" rotation="0" points="" points="" />
+	<item type="ring" x="334.5" y="718" type="ring" x="334.5" y="718" numAltoids="35" rotation="0" points="" points="" />
+	<item type="balloon" x="737.5" y="119" type="balloon" x="737.5" y="119" rotation="0" points="" points="" />
+	<item type="house" x="257.5" y="380" type="house" x="257.5" y="378" rotation="0" points="" points="" />
+	<item type="house" x="408.5" y="380" type="house" x="408.5" y="378" rotation="0" points="" points="" />
+	<item type="ring" x="627.5" y="641" type="ring" x="627.5" y="641" numAltoids="35" rotation="0" points="" points="" />
+	<item type="ring" x="482.5" y="677" type="ring" x="482.5" y="677" numAltoids="35" rotation="0" points="" points="" />
+	<item type="house" x="554.5" y="380" type="house" x="554.5" y="376" rotation="0" points="" points="" />
+	<item type="tin" x="218.5" y="247" type="tin" x="218.5" y="247" color="tangerine" numAltoids="5" rotation="0" points="" points="" />
+	<item type="tin" x="280.5" y="219" type="tin" x="280.5" y="219" color="apple" numAltoids="5" rotation="0" points="" points="" />
+	<item type="tin" x="364.5" y="188" type="tin" x="364.5" y="188" color="mango" numAltoids="5" rotation="0" points="" points="" />
+	<item type="tin" x="423.5" y="168" type="tin" x="423.5" y="168" color="passion" numAltoids="5" rotation="0" points="" points="" />
+	<item type="tin" x="510.5" y="147" type="tin" x="510.5" y="147" color="tangerine" numAltoids="5" rotation="0" points="" points="" />
+	<item type="tin" x="573.5" y="130" type="tin" x="573.5" y="130" color="rasberry" numAltoids="5" rotation="0" points="" points="" />
+	<item type="tin" x="664.5" y="129" type="tin" x="664.5" y="129" color="apple" numAltoids="5" rotation="0" points="" points="" />
+</level>

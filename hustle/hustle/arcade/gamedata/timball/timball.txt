@@ -1,0 +1,1 @@
+&scoreVar=_root.points3&blah=1

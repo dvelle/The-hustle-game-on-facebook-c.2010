@@ -1,0 +1,131 @@
+
+&num_choices_per_question=4&
+
+&question0_text=The answer is A.&
+&question0_answer=0&
+&question0_choice0=This is the answer&
+&question0_choice1=This is wrong&
+&question0_choice2=This is also wrong&
+&question0_choice3=Don't pick me...&
+
+&question1_text=The answer is B.&
+&question1_answer=1&
+&question1_choice0=This is wrong&
+&question1_choice1=This is the answer&
+&question1_choice2=This is also wrong&
+&question1_choice3=Don't pick me...&
+
+&question2_text=The answer is C.&
+&question2_answer=2&
+&question2_choice0=This is wrong&
+&question2_choice1=This is also wrong&
+&question2_choice2=This is the answer&
+&question2_choice3=Don't pick me...&
+
+
+
+
+
+&theme0_num_lanes=4&
+&theme0_lanes_y=141,211,281,352&
+&theme0_lane_inversions=False,False,False,False&
+&theme0_add_obstacle_delay=101,87,77,68&
+&theme0_min_obstacle_delay=81,67,57,48&
+&theme0_lane_speeds=-4,4,-4,4&
+&theme0_max_lane_speeds=-8,8,-8,8&
+&theme0_lane0_linkages=vehicle5,vehicle6&
+&theme0_lane1_linkages=vehicle3,vehicle4&
+&theme0_lane2_linkages=vehicle2,vehicle3&
+&theme0_lane3_linkages=vehicle0,vehicle1&
+&theme0_start_point_x=300&
+&theme0_start_point_y=450&
+&theme0_end_point_x=300&
+&theme0_end_point_y=40&
+
+
+&theme1_num_lanes=4&
+&theme1_lanes_y=148,215,284,350&
+&theme1_lane_inversions=True,True,True,True&
+&theme1_add_obstacle_delay=101,87,77,68&
+&theme1_min_obstacle_delay=81,67,57,48&
+&theme1_lane_speeds=-4,4,-4,4&
+&theme1_max_lane_speeds=-8,8,-8,8&
+&theme1_lane0_linkages=log0,log1,log2&
+&theme1_lane1_linkages=boat,turtles0,turtles1,turtles2,turtles3&
+&theme1_lane2_linkages=log0,log1,log2&
+&theme1_lane3_linkages=turtles0,turtles1,turtles2,turtles3,crocodile0,crocodile1&
+&theme1_start_point_x=300&
+&theme1_start_point_y=450&
+&theme1_end_point_x=300&
+&theme1_end_point_y=40&
+
+
+&theme2_num_lanes=4&
+&theme2_lanes_y=128,197,293,349&
+&theme2_lane_inversions=False,False,True,True&
+&theme2_add_obstacle_delay=101,87,77,68&
+&theme2_min_obstacle_delay=81,67,57,48&
+&theme2_lane_speeds=-4,4,-4,4&
+&theme2_max_lane_speeds=-8,8,-8,8&
+&theme2_lane0_linkages=vehicle0,vehicle1,vehicle2,vehicle3,vehicle4,vehicle5,vehicle6&
+&theme2_lane1_linkages=vehicle0,vehicle1,vehicle2,vehicle3,vehicle4,vehicle5,vehicle6&
+&theme2_lane2_linkages=log0,log1,log2,turtles0,turtles1,turtles2,turtles3,crocodile0,crocodile1&
+&theme2_lane3_linkages=log0,log1,log2,turtles0,turtles1,turtles2,turtles3,crocodile0,crocodile1&
+&theme2_start_point_x=300&
+&theme2_start_point_y=450&
+&theme2_end_point_x=300&
+&theme2_end_point_y=40&
+
+
+&theme3_num_lanes=4&
+&theme3_lanes_y=142,202,293,360&
+&theme3_lane_inversions=True,True,False,False&
+&theme3_add_obstacle_delay=101,87,77,68&
+&theme3_min_obstacle_delay=81,67,57,48&
+&theme3_lane_speeds=-4,4,-4,4&
+&theme3_max_lane_speeds=-8,8,-8,8&
+&theme3_lane0_linkages=log0,log1,log2,turtles0,turtles1,turtles2,turtles3,crocodile0,crocodile1&
+&theme3_lane1_linkages=log0,log1,log2,turtles0,turtles1,turtles2,turtles3,crocodile0,crocodile1&
+&theme3_lane2_linkages=vehicle0,vehicle1,vehicle2,vehicle3,vehicle4,vehicle5,vehicle6&
+&theme3_lane3_linkages=vehicle0,vehicle1,vehicle2,vehicle3,vehicle4,vehicle5,vehicle6&
+&theme3_start_point_x=300&
+&theme3_start_point_y=450&
+&theme3_end_point_x=300&
+&theme3_end_point_y=40&
+&theme3_end_point_y=40&
+
+
+&theme4_num_lanes=4&
+&theme4_lanes_y=114,204,267,348&
+&theme4_lane_inversions=True,False,False,True&
+&theme4_add_obstacle_delay=101,87,77,68&
+&theme4_min_obstacle_delay=81,67,57,48&
+&theme4_lane_speeds=-4,4,-4,4&
+&theme4_max_lane_speeds=-8,8,-8,8&
+&theme4_lane0_linkages=log0,log1,log2,turtles0,turtles1,turtles2,turtles3,crocodile0,crocodile1&
+&theme4_lane1_linkages=vehicle0,vehicle1,vehicle2,vehicle3,vehicle4,vehicle5,vehicle6&
+&theme4_lane2_linkages=vehicle0,vehicle1,vehicle2,vehicle3,vehicle4,vehicle5,vehicle6&
+&theme4_lane3_linkages=log0,log1,log2,turtles0,turtles1,turtles2,turtles3,crocodile0,crocodile1&
+&theme4_start_point_x=300&
+&theme4_start_point_y=450&
+&theme4_end_point_x=300&
+&theme4_end_point_y=40&
+
+
+&theme5_num_lanes=4&
+&theme5_lanes_y=114,212,269,369&
+&theme5_lane_inversions=False,True,True,False&
+&theme5_add_obstacle_delay=101,87,77,68&
+&theme5_min_obstacle_delay=81,67,57,48&
+&theme5_lane_speeds=-4,4,-4,4&
+&theme5_max_lane_speeds=-8,8,-8,8&
+&theme5_lane0_linkages=vehicle0,vehicle1,vehicle2,vehicle3,vehicle4,vehicle5,vehicle6&
+&theme5_lane1_linkages=log0,log1,log2,turtles0,turtles1,turtles2,turtles3,crocodile0,crocodile1&
+&theme5_lane2_linkages=log0,log1,log2,turtles0,turtles1,turtles2,turtles3,crocodile0,crocodile1&
+&theme5_lane3_linkages=vehicle0,vehicle1,vehicle2,vehicle3,vehicle4,vehicle5,vehicle6&
+&theme5_start_point_x=300&
+&theme5_start_point_y=450&
+&theme5_end_point_x=300&
+&theme5_end_point_y=40&
+
+

@@ -1,0 +1,62 @@
+<lines game="dond UK" newline="%0A">
+	<line id="line00" value="Ready to play%0ADeal or no Deal?" />
+	<line id="line01" value="HTML">
+		<p align="center">Choose one of the suitcases<br />This will be <font color="#E5BB4B">your</font> suitcase</p>
+	</line>
+	<line id="line02" value="Your%0Asuitcase" />
+	<line id="line03" value="You have chosen%0Ayour suitcase" />
+	<line id="line04" value="%0AGAME OVER" />
+	<line id="line05" value="%0A%0AYou have chosen%0A%0ANo Deal!%0A%0A%0A%0A%0ALet's open more cases to see if you%0Acan be a big winner. . ." />
+	<line id="line05_B" value=" open more cases to see if you%0Acan be a big winner. . ." />
+	<line id="line06_A" value="%0A%0A%0AYou have opened " />
+	<line id="line06_B" value="%0Asuitcases%0A%0AThere are " />
+	<line id="line06_C" value="%0Aunopened%0Asuitcases left" />
+	<line id="line06_D" value="%0A%0AIf you don't take this offer%0Ayou have to open " />
+	<line id="line06_E" value=" more%0A" />
+	<line id="line06_F" value=" before the bank%0Agives you another offer%0A%0AThe bank offers you:" />
+	<line id="line07_A" value="%0A%0AYou have opened " />
+	<line id="line07_B" value=" suitcases%0A%0AThere are " />
+	<line id="line07_C" value=" unopened suitcases left%0A%0AYou closed a deal for%0A" />
+	<line id="line07_D" value="%0A%0AIf you hadn't closed a deal,%0Athe bank would have%0Aoffered you:" />
+
+	<line id="line08" value="%0A%0AYou have opened%0A24 suitcases%0A%0AThere are 2%0Aunopened suitcases left%0A%0AOpen your own suitcase" />
+	<line id="line09_A" value="%0A%0AYou have opened%0A24 suitcases%0A%0AThere are 2%0Aunopened suitcases left%0A%0AYou closed a deal for%0A" />
+
+	<line id="line09_B" value="%0A%0AOpen your own suitcase" />
+	<line id="line10" value="%0A%0A%0AWhat was in your own suitcase?%0A%0ADid you make the best deal?%0A%0APlay the actual game%0Aand win fantastic prizes!" />
+	<line id="line11" value="%0A%0A%0AWhat was in your own suitcase?%0A%0A%0A%0A%0APlay the actual game%0Aand win fantastic prizes!" />
+	<line id="line12" value="Round" />
+	<line id="line13_A" value="%0AOpen " />
+	<line id="line13_B" value=" suitcases" />
+	<line id="line14" value="%0AOpen 1 suitcase" />
+	<line id="line15_A" value="%0A%0ACongratulations%0AYou closed a deal for%0A" />
+	<line id="line15_B" value="%0A%0AYour score is " />
+	<line id="line15_C" value="%0A%0AThink you made%0Athe best deal?%0A%0ALet's continue just to find out!" />
+	<line id="line16" value="%0AYou have chosen%0A%0ANo Deal!%0A%0AHave you passed on%0Aa deal of a lifetime?%0A%0AChoose a category%0Aand answer the question%0Acorrectly to go to%0Athe next round" />
+	<line id="line17" value="%0A%0A%0A%0A%0AAnswer the question%0Acorrectly to go to%0Athe next round" />
+	<line id="line18" value="%0A%0ACorrect!%0A%0AClick on next%0Ato go to the next round" />
+	<line id="line19" value="" />
+	<line id="line20" value="%0A%0A%0ACongratulations!" />
+	<line id="line21" value="%0A%0A%0AIncorrect!%0A%0AGame Over%0A%0APlay again%0Aand win fantastic prizes!" />
+	<line id="line22" value="%0A%0A%0AToo Late!%0A%0AGame Over%0A%0APlay again%0Aand win fantastic prizes!" />
+
+	<line id="line23_A" value="" />
+	<line id="line23_B" value="" />
+	<line id="line24_A" value="%0A%0AYour suitcase contained " />
+	<line id="line24_B" value="%0A%0AYour score is " />
+	<line id="line24_C" value="%0A%0A" />
+	<line id="line24_D" value="%0A%0AYou closed a deal for%0A" />
+	<line id="line25" value="%0A%0A%0AGame over!%0A%0A%0A%0APlay again" />
+
+	<line id="txtButtonPlay" value="play" />
+	<line id="txtButtonNext" value="next" />
+	<line id="txtButtonStart" value="start" />
+	<line id="txtButtonStop" value="stop" />
+	<line id="txtCalculate" value="calculating..." />
+	<line id="txtButtonPlayAgain" value="play%0Aagain" />
+	<line id="txtButtonStartGame" value="Start game" />
+	
+	<var id="euro" value=" " explanation="no euros used in this game" />
+	<var id="roundText" value="Round" />
+	<var id="language" value="UK" />
+</lines>

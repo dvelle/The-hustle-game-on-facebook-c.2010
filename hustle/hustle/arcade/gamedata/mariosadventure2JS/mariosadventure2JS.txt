@@ -1,0 +1,1 @@
+&scoreVar=_root.coinn.coins&blah=1

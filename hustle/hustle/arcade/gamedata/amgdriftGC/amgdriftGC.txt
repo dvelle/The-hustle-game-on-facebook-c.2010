@@ -1,0 +1,1 @@
+&scoreVar=_global.gameoverTotal&blah=1

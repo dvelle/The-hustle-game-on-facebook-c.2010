@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<content>
+	<string id="IDS_SPRINT_TITLE">SPRINT</string>
+	<string id="IDS_CONFIRM_QUIT">REALLY QUIT?</string>
+	<string id="IDS_QUIT">QUIT</string>
+	<string id="IDS_YES">YES</string>
+	<string id="IDS_NO">NO</string>
+	<string id="IDS_OK">OK</string>
+	<string id="IDS_PLAY">PLAY</string>
+	<string id="IDS_RETRY">RETRY</string>
+	<string id="IDS_TIME">TIME</string>
+	<string id="IDS_POWER">POWER</string>
+	<string id="IDS_RESULT">EVENT RESULTS</string>
+	<string id="IDS_YOURTIME">Your time was</string>
+	<string id="IDS_YOURDISTANCE">Your distance was</string>
+	<string id="IDS_YOUSCORED">You scored</string>
+	<string id="IDS_INSTRUCTIONS">Speed is of the essence when you've the whole world to deliver presents to! Help Santa get nimble, bash those power buttons as fast as you can and get a record time!</string>
+	<string id="IDS_INSTPOWER">Bash to run faster</string>
+</content>

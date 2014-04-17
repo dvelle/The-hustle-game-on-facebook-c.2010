@@ -1,0 +1,58 @@
+<cubislevel
+	version="1.0"
+	seed="0"
+	time="65"
+	cubestogo="60"
+	starcubestogo="60"
+>
+	<description>
+		
+	</description>
+	<initialcubes>
+		<cube type="normal" color="0" index="6" />
+		<cube type="normal" color="0" index="11" />
+		<cube type="fractured" color="2" index="12" />
+		<cube type="normal" color="0" index="13" />
+		<cube type="fractured" color="2" index="14" />
+		<cube type="normal" color="0" index="15" />
+		<cube type="normal" color="0" index="20" />
+		<cube type="normal" color="0" index="22" />
+		<cube type="normal" color="0" index="24" />
+		<cube type="normal" color="0" index="32" />
+		<cube type="normal" color="0" index="34" />
+		<cube type="fractured" color="2" index="42" />
+		<cube type="fractured" color="2" index="44" />
+		<cube type="normal" color="0" index="52" />
+		<cube type="normal" color="0" index="54" />
+		<cube type="normal" color="0" index="62" />
+		<cube type="normal" color="0" index="64" />
+		<cube type="fractured" color="4" index="106" />
+		<cube type="fractured" color="4" index="111" />
+		<cube type="star" color="5" index="112" />
+		<cube type="fractured" color="4" index="113" />
+		<cube type="star" color="5" index="114" />
+		<cube type="fractured" color="4" index="115" />
+		<cube type="fractured" color="4" index="120" />
+		<cube type="fractured" color="4" index="122" />
+		<cube type="fractured" color="4" index="124" />
+		<cube type="fractured" color="4" index="132" />
+		<cube type="fractured" color="4" index="134" />
+		<cube type="star" color="5" index="142" />
+		<cube type="star" color="5" index="144" />
+		<cube type="fractured" color="4" index="152" />
+		<cube type="fractured" color="4" index="154" />
+		<cube type="fractured" color="4" index="162" />
+		<cube type="fractured" color="4" index="164" />
+	</initialcubes>
+	<cubequeue>
+		<random>
+			<cube type="normal" color="0" index="25" />
+			<cube type="normal" color="2" index="25" />
+			<cube type="normal" color="4" index="25" />
+			<cube type="normal" color="5" index="25" />
+			<cube type="dual" index="100" />
+		</random>
+		<fixed>
+		</fixed>
+	</cubequeue>
+</cubislevel>
