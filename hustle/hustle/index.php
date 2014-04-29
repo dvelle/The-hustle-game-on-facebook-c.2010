@@ -1,8 +1,8 @@
 <?PHP 
 
 // Get these from http://developers.facebook.com 
-$api_key = '2b154bd6f13c0d2e91ee4619514aeaf9'; 
-$secret = '7fc8a6d46f6e752178aa9c6f99d2cb3e'; 
+$api_key = '##############################'; 
+$secret = '#################################'; 
 // Names and links 
 $app_name = "The Hustle"; 
 $app_url = "the_hustle"; // Assumes application is at http://apps.facebook.com/app-url/ 
